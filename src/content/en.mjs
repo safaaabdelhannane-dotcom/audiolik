@@ -6,7 +6,7 @@ export default {
   meta: {
     title: 'AudioLik · Hearing Correction Centre in Casablanca, Maârif',
     description:
-      'Hearing correction centre in Casablanca (Maârif, Palmier district). Hearing assessments, discreet devices, fitting and follow-up. Book on +212 522 39 37 98.',
+      'Hearing correction centre in Casablanca, Maârif district. Hearing assessments, discreet devices, fitting and follow-up. Book on +212 522 39 37 98.',
     ogAlt: 'AudioLik, hearing correction centre in Casablanca',
     skipToContent: 'Skip to content',
     langLabel: 'Change language',

@@ -15,7 +15,7 @@ export const business = {
   founded: null,
 
   street: '106B Rue Al Jounaid',
-  district: 'Maârif — Palmier',
+  district: 'Maârif',
   city: 'Casablanca',
   region: 'Casablanca-Settat',
   postalCode: null,

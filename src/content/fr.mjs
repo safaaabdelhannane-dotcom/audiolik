@@ -15,7 +15,7 @@ export default {
   meta: {
     title: 'AudioLik · Audioprothésiste à Casablanca, Maârif',
     description:
-      'Centre de correction auditive à Casablanca (Maârif, quartier Palmier). Bilan auditif, appareils discrets, réglages et suivi. Rendez-vous au 05 22 39 37 98.',
+      'Centre de correction auditive à Casablanca, quartier Maârif. Bilan auditif, appareils discrets, réglages et suivi. Rendez-vous au 05 22 39 37 98.',
     ogAlt: 'AudioLik, centre de correction auditive à Casablanca',
     skipToContent: 'Aller au contenu',
     langLabel: 'Changer de langue',
