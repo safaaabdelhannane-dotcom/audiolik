@@ -232,6 +232,7 @@ export default {
     coverageTitle: 'Prise en charge',
     coverage:
       "Selon votre organisme (CNSS, CNOPS, AMO ou mutuelle d'entreprise), une partie de l'appareillage peut être remboursée. Nous préparons les pièces nécessaires à votre dossier.",
+    coverageLink: { slug: 'remboursement-appareils-auditifs-maroc', label: 'Comment monter votre dossier de remboursement' },
     note: 'Les tarifs dépendent du niveau de technologie et de votre perte auditive. Ils vous sont communiqués au centre, après le bilan.',
   },
 

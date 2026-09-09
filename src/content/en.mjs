@@ -211,6 +211,7 @@ export default {
     coverageTitle: 'Reimbursement',
     coverage:
       'Depending on your scheme (CNSS, CNOPS, AMO or a company plan), part of the cost may be reimbursed. We prepare the paperwork your claim needs.',
+    coverageLink: { slug: 'remboursement-appareils-auditifs-maroc', label: 'How to put your reimbursement file together' },
     note: 'Prices depend on the level of technology and on your hearing loss. They are given at the centre, after the assessment.',
   },
 
