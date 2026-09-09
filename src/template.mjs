@@ -126,7 +126,7 @@ const waLink = (prefill) =>
  * label), never a broken image and never an unrelated stock photo: for a
  * health business, a random image is worse than an honest gap.
  */
-function photoSlot(key, t, { className = '', sizes = '' } = {}) {
+function photoSlot(key, t, { className = '', sizes = '', up = '' } = {}) {
   const p = photos[key];
   if (!p) return '';
   const alt = esc(p.alt[t.code] || p.alt.fr);
@@ -134,7 +134,7 @@ function photoSlot(key, t, { className = '', sizes = '' } = {}) {
 
   if (p.src) {
     return `<figure class="${cls}" style="--ratio:${p.ratio}">
-      <img src="${esc(p.src)}" alt="${alt}"
+      <img src="${up}${esc(p.src)}" alt="${alt}"
            ${p.priority ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"
            ${sizes ? `sizes="${sizes}"` : ''}>
     </figure>`;
@@ -395,7 +395,7 @@ ${SPRITE}
           </a>` : ''}
         </div>
       </div>
-      <div class="hero__media">${photoSlot('hero', t, { sizes: '(min-width: 64rem) 40vw, 90vw' })}</div>
+      <div class="hero__media">${photoSlot('hero', t, { sizes: '(min-width: 64rem) 40vw, 90vw', up })}</div>
     </div>
   </section>
 
@@ -454,7 +454,7 @@ ${SPRITE}
       <div class="journey__intro">
         <h2 class="h2">${esc(t.journey.title)}</h2>
         <p class="lede">${esc(t.journey.lede)}</p>
-        ${photoSlot('fitting', t, { className: 'photo--aside' })}
+        ${photoSlot('fitting', t, { className: 'photo--aside', up })}
       </div>
       <ol class="timeline">
         ${t.journey.steps.map((s, i) => `<li class="tl" data-reveal style="--d:${i * 60}ms">
@@ -479,7 +479,7 @@ ${SPRITE}
       </div>
       <div class="bento">
         ${t.solutions.items.map((s, i) => `<article class="cell cell--${s.size}" data-reveal style="--d:${i * 55}ms">
-          ${s.photo ? photoSlot(s.photo, t, { className: 'photo--cell' }) : ''}
+          ${s.photo ? photoSlot(s.photo, t, { className: 'photo--cell', up }) : ''}
           <div class="cell__body">
             <p class="cell__tag">${esc(s.tag)}</p>
             <h3>${esc(s.name)}</h3>
@@ -521,8 +521,8 @@ ${SPRITE}
 
       <div class="centre">
         <div class="centre__photos" data-reveal>
-          ${photoSlot('storefront', t)}
-          ${photoSlot('booth', t)}
+          ${photoSlot('storefront', t, { up })}
+          ${photoSlot('booth', t, { up })}
         </div>
 
         <div class="centre__info" data-reveal style="--d:80ms">
