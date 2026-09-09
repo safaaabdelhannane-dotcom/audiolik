@@ -21,6 +21,8 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 import render from './src/template.mjs';
+import renderPage from './src/page-template.mjs';
+import { pages as SUBPAGES } from './src/pages.mjs';
 import { business, locales, SITE_URL, pendingFields, placeholderFields, pendingPhotos } from './src/business.mjs';
 import fr from './src/content/fr.mjs';
 import ar from './src/content/ar.mjs';
@@ -106,6 +108,30 @@ async function main() {
     console.log(`  ${c.green('✓')} ${out.padEnd(16)} ${c.dim(`${loc.label.padEnd(10)} ${(Buffer.byteLength(html) / 1024).toFixed(1)} KB`)}`);
   }
 
+  /* -- pages secondaires : une par intention de recherche, x 3 langues ----- */
+  const subEmitted = [];
+  for (const entry of SUBPAGES) {
+    for (const loc of locales) {
+      const content = entry[loc.code];
+      if (!content) throw new Error(`Page « ${entry.slug} » : contenu manquant en « ${loc.code} »`);
+      const t = CONTENT[loc.code];
+
+      const html = renderPage(content, t, { lang: loc.code, slug: entry.slug });
+      const rel = loc.path.replace(/^\/v3\/?/, '').replace(/^\//, '').replace(/\/$/, '');
+      const out = join(rel, entry.slug, 'index.html');
+      const abs = join(ROOT, out);
+
+      await mkdir(dirname(abs), { recursive: true });
+      await writeFile(abs, html, 'utf8');
+
+      subEmitted.push({ loc, slug: entry.slug, out, bytes: Buffer.byteLength(html) });
+      pages.push({ loc, out, bytes: Buffer.byteLength(html) });
+    }
+  }
+  if (subEmitted.length) {
+    console.log(`  ${c.green('\u2713')} ${String(subEmitted.length).padStart(2)} pages secondaires ${c.dim(`(${SUBPAGES.length} sujets \u00d7 ${locales.length} langues)`)}`);
+  }
+
   /* -- sitemap: one entry per language, cross-linked with xhtml:link -------- */
   const today = new Date().toISOString().slice(0, 10);
   const sitemap =
@@ -122,6 +148,17 @@ async function main() {
       `    <changefreq>monthly</changefreq>\n` +
       `    <priority>${l.code === business.defaultLang ? '1.0' : '0.8'}</priority>\n` +
       `  </url>\n`).join('') +
+    SUBPAGES.map((entry) =>
+      locales.map((l) =>
+        `  <url>\n` +
+        `    <loc>${SITE_URL}${l.path}${entry.slug}/</loc>\n` +
+        locales.map((a) =>
+          `    <xhtml:link rel="alternate" hreflang="${a.code}" href="${SITE_URL}${a.path}${entry.slug}/"/>\n`).join('') +
+        `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/${entry.slug}/"/>\n` +
+        `    <lastmod>${today}</lastmod>\n` +
+        `    <changefreq>monthly</changefreq>\n` +
+        `    <priority>${l.code === business.defaultLang ? '0.9' : '0.7'}</priority>\n` +
+        `  </url>\n`).join('')).join('') +
     `</urlset>\n`;
   await writeFile(join(ROOT, 'sitemap.xml'), sitemap, 'utf8');
 
