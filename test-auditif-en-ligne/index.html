@@ -96,7 +96,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 </header>
 
 <main id="main">
-  <article class="section">
+  <article class="section section--lead">
     <div class="shell">
       <div class="prose">
         <p class="kicker">Test en ligne</p>
@@ -106,6 +106,34 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
     </div>
   </article>
 
+    <section class="section section--invert" id="test">
+      <div class="shell">
+        <div class="prose prose--center">
+          <p class="kicker">Test en ligne</p>
+          <h2 class="h2">Trois minutes pour en avoir le cœur net.</h2>
+          <p class="lede">Six questions sur votre quotidien. Aucune donnée n&#39;est envoyée : le calcul se fait dans votre navigateur et disparaît quand vous fermez la page.</p>
+        </div>
+
+        <div class="quiz" data-reveal>
+          <div id="quiz-run">
+            <div class="quiz__bar"><i id="quiz-progress"></i></div>
+            <p class="quiz__count" id="quiz-count"></p>
+            <p class="quiz__q" id="quiz-question"></p>
+            <div class="quiz__answers" id="quiz-answers"></div>
+          </div>
+          <div id="quiz-result" class="quiz__result" hidden>
+            <div class="quiz__score"><b id="quiz-score">0</b><span>Votre score</span></div>
+            <h3 id="quiz-title"></h3>
+            <p id="quiz-text"></p>
+            <div class="quiz__actions">
+              <a class="btn" id="quiz-cta" href="/#contact">Prendre rendez-vous <svg class="ico" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+              <button class="btn btn--ghost" type="button" id="quiz-restart">Refaire le test</button>
+            </div>
+          </div>
+          <p class="disclaimer"><svg class="ico" aria-hidden="true"><use href="#i-warning-circle"/></svg><span>Ce questionnaire est un outil d&#39;orientation, pas un diagnostic. Il ne remplace ni un bilan réalisé en centre, ni l&#39;avis d&#39;un médecin ORL.</span></p>
+        </div>
+      </div>
+    </section>
   <article class="section section--continued">
     <div class="shell">
       <div class="prose page__body">

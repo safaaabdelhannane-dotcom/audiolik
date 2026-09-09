@@ -96,7 +96,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 </header>
 
 <main id="main">
-  <article class="section">
+  <article class="section section--lead">
     <div class="shell">
       <div class="prose">
         <p class="kicker">اختبار أونلاين</p>
@@ -106,6 +106,34 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
     </div>
   </article>
 
+    <section class="section section--invert" id="test">
+      <div class="shell">
+        <div class="prose prose--center">
+          <p class="kicker">اختبار إلكتروني</p>
+          <h2 class="h2">ثلاث دقائق تكفي لتوضيح الصورة.</h2>
+          <p class="lede">ستة أسئلة عن حياتك اليومية. لا تُرسَل أي معلومة إلى أي جهة: الحساب يتم داخل متصفّحك ويختفي بمجرّد إغلاق الصفحة.</p>
+        </div>
+
+        <div class="quiz" data-reveal>
+          <div id="quiz-run">
+            <div class="quiz__bar"><i id="quiz-progress"></i></div>
+            <p class="quiz__count" id="quiz-count"></p>
+            <p class="quiz__q" id="quiz-question"></p>
+            <div class="quiz__answers" id="quiz-answers"></div>
+          </div>
+          <div id="quiz-result" class="quiz__result" hidden>
+            <div class="quiz__score"><b id="quiz-score">0</b><span>نتيجتك</span></div>
+            <h3 id="quiz-title"></h3>
+            <p id="quiz-text"></p>
+            <div class="quiz__actions">
+              <a class="btn" id="quiz-cta" href="/ar/#contact">حجز موعد <svg class="ico" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+              <button class="btn btn--ghost" type="button" id="quiz-restart">إعادة الاختبار</button>
+            </div>
+          </div>
+          <p class="disclaimer"><svg class="ico" aria-hidden="true"><use href="#i-warning-circle"/></svg><span>هذا الاستبيان أداة توجيهية وليس تشخيصًا. وهو لا يغني عن فحص السمع في المركز ولا عن رأي طبيب الأنف والأذن والحنجرة.</span></p>
+        </div>
+      </div>
+    </section>
   <article class="section section--continued">
     <div class="shell">
       <div class="prose page__body">
