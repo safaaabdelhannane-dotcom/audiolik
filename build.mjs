@@ -116,7 +116,7 @@ async function main() {
       if (!content) throw new Error(`Page « ${entry.slug} » : contenu manquant en « ${loc.code} »`);
       const t = CONTENT[loc.code];
 
-      const html = renderPage(content, t, { lang: loc.code, slug: entry.slug });
+      const html = renderPage(content, t, { lang: loc.code, slug: entry.slug, widget: entry.widget });
       const rel = loc.path.replace(/^\/v3\/?/, '').replace(/^\//, '').replace(/\/$/, '');
       const out = join(rel, entry.slug, 'index.html');
       const abs = join(ROOT, out);
