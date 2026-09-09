@@ -17,6 +17,7 @@
 
 import { business as B, photos, brand, locales, SITE_URL } from './business.mjs';
 import { SPRITE, icon } from './icons.mjs';
+import { pages as SUBPAGES } from './pages.mjs';
 
 /* ---------------------------------------------------------------- helpers */
 
@@ -261,7 +262,8 @@ export default function render(t, { alternates }) {
   const factValue = (key) => ({
     address:  `<a href="${esc(B.mapsPlaceUrl)}" target="_blank" rel="noopener">${esc(B.street)}, ${esc(B.city)}</a>`,
     phone:    `<a href="tel:${B.phoneE164}" class="lat" dir="ltr">${esc(B.phoneDisplay)}</a>`,
-    district: esc(B.district),
+    // Le quartier porte un nom français ; la page arabe en donne la forme arabe.
+    district: esc(loc.code === 'ar' && B.districtAr ? B.districtAr : B.district),
     pluscode: `<span class="lat" dir="ltr">${esc(B.plusCode)}</span>`,
   }[key] || '');
 
@@ -627,7 +629,7 @@ ${SPRITE}
 
 <footer class="footer">
   <div class="shell">
-    <div class="footer__grid">
+    <div class="footer__grid footer__grid--wide">
       <div class="footer__brand">
         <img src="${up}assets/img/logo-horizontal-inverse.svg"
              alt="${esc(B.name)} — ${esc(brand.tagline)}" width="322" height="98" loading="lazy">
@@ -645,6 +647,10 @@ ${SPRITE}
           ${B.email ? `<li>${icon('envelope-simple')}<a href="mailto:${esc(B.email)}" class="lat" dir="ltr">${esc(B.email)}</a></li>` : ''}
           <li>${icon('map-pin')}<a href="${esc(B.mapsPlaceUrl)}" target="_blank" rel="noopener">${esc(B.street)}, ${esc(B.city)}</a></li>
         </ul>
+      </div>
+      <div>
+        <h3>${esc(t.footer.pagesTitle)}</h3>
+        <ul class="footer__pages">${SUBPAGES.map((e) => `<li><a href="${loc.path}${e.slug}/">${esc(e[t.code].h1)}</a></li>`).join('')}</ul>
       </div>
       <div>
         <h3>${esc(t.center.hoursTitle)}</h3>

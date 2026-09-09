@@ -15,7 +15,8 @@ export const business = {
   founded: null,
 
   street: '106B Rue Al Jounaid',
-  district: 'Maârif',
+  district: 'Les Princesses, Maârif',
+  districtAr: 'الأميرات، المعاريف',
   city: 'Casablanca',
   region: 'Casablanca-Settat',
   postalCode: null,
