@@ -40,7 +40,7 @@ export default {
   },
 
   reassurance: {
-    freeHearingTest:  { title: 'Free hearing test',   text: 'By appointment, no obligation.' },
+    freeHearingTest:  { title: 'Complimentary hearing check',   text: 'By appointment, no obligation.' },
     homeTrial:        { title: 'Try before you buy',            text: 'Test the devices in your everyday life.' },
     unlimitedFollowUp:{ title: 'Fitting and follow-up included', text: 'For as long as you wear the device.' },
     childrenFitting:  { title: 'Children and adults',           text: 'Paediatric and adult fitting.' },
@@ -211,11 +211,12 @@ export default {
     coverageTitle: 'Reimbursement',
     coverage:
       'Depending on your scheme (CNSS, CNOPS, AMO or a company plan), part of the cost may be reimbursed. We prepare the paperwork your claim needs.',
-    coverageLink: { slug: 'remboursement-appareils-auditifs-maroc', label: 'How to put your reimbursement file together' },
     note: 'Prices depend on the level of technology and on your hearing loss. They are given at the centre, after the assessment.',
   },
 
   center: {
+    practitionerTitle: 'Who will see you',
+    practitionerSince: 'Practising for {years} years.',
     title: 'In Les Princesses, Maârif, at 106B rue Al Jounaid.',
     lede:
       'A human-scale centre. The same person from the first assessment to the last adjustment, because a successful fitting rests on a continuing relationship.',
@@ -223,7 +224,6 @@ export default {
       { label: 'Address',   key: 'address' },
       { label: 'Phone',     key: 'phone' },
       { label: 'District',  key: 'district' },
-      { label: 'Landmark',  key: 'landmark' },
       { label: 'Plus code', key: 'pluscode' },
     ],
     hoursTitle: 'Opening hours',
@@ -324,7 +324,8 @@ export default {
       messagePlaceholder: 'For example: trouble in noisy rooms, a device to adjust',
       submit: 'Send the request',
       submitHint: 'Opens your email app with the request pre-filled.',
-      required: 'Required field',
+      noscript: 'Your browser is not running the form script. Call the centre or write on WhatsApp — both work right away.',
+    required: 'Required field',
       invalidPhone: 'Incomplete phone number',
       subject: 'Appointment request · AudioLik',
     },
@@ -341,6 +342,9 @@ export default {
   footer: {
     tagline: 'Hearing correction centre. Casablanca, Les Princesses, Maârif.',
     nav: 'Navigation',
+    followTitle: 'The centre online',
+    instagramCta: 'Instagram',
+    reviewCta: 'Leave a review on Google',
     contactTitle: 'Contact',
     pagesTitle: 'Our pages',
     legal: [

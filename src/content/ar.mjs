@@ -211,11 +211,12 @@ export default {
     coverageTitle: 'التغطية الصحية',
     coverage:
       'حسب صندوقك (الضمان الاجتماعي، أو التعاضدية، أو التأمين الإجباري عن المرض، أو تأمين المقاولة)، قد يُسترجع جزء من الكلفة. ونُعدّ لك الوثائق التي يحتاجها ملفّك.',
-    coverageLink: { slug: 'remboursement-appareils-auditifs-maroc', label: 'كيف تُعدّ ملف الاسترجاع' },
     note: 'تختلف الأثمان حسب مستوى التقنية ودرجة ضعف السمع. وتُقدَّم لك في المركز، بعد الفحص.',
   },
 
   center: {
+    practitionerTitle: 'من يستقبلك',
+    practitionerSince: 'يمارس المهنة منذ {years} سنة.',
     title: 'بالمعاريف، في 106B زنقة الجنيد.',
     lede:
       'مركز على مقاس الإنسان. نفس المُحاور من الفحص الأول إلى آخر ضبط، لأن نجاح التجهيز السمعي يقوم على علاقة متواصلة.',
@@ -223,7 +224,6 @@ export default {
       { label: 'العنوان',   key: 'address' },
       { label: 'الهاتف',    key: 'phone' },
       { label: 'الحي',      key: 'district' },
-      { label: 'معلم قريب',  key: 'landmark' },
       { label: 'Plus code', key: 'pluscode' },
     ],
     hoursTitle: 'أوقات العمل',
@@ -324,7 +324,8 @@ export default {
       messagePlaceholder: 'مثلًا: صعوبة في الأماكن الصاخبة، أو جهاز يحتاج ضبطًا',
       submit: 'إرسال الطلب',
       submitHint: 'يفتح تطبيق البريد لديك مع طلب معبَّأ مسبقًا.',
-      required: 'حقل إجباري',
+      noscript: 'متصفّحك لا يشغّل نص الاستمارة. اتصل بالمركز أو اكتب عبر واتساب، وكلاهما يعمل فورًا.',
+    required: 'حقل إجباري',
       invalidPhone: 'رقم الهاتف غير مكتمل',
       subject: 'طلب موعد · أوديوليك',
     },
@@ -341,6 +342,9 @@ export default {
   footer: {
     tagline: 'مركز تصحيح السمع. الدار البيضاء، المعاريف.',
     nav: 'التصفّح',
+    followTitle: 'المركز على الإنترنت',
+    instagramCta: 'إنستغرام',
+    reviewCta: 'اترك رأيك على غوغل',
     contactTitle: 'اتصل بنا',
     pagesTitle: 'صفحاتنا',
     legal: [

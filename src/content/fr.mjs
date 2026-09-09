@@ -53,7 +53,7 @@ export default {
   },
 
   reassurance: {
-    freeHearingTest:  { title: 'Bilan auditif gratuit',   text: 'Sur rendez-vous, sans engagement.' },
+    freeHearingTest:  { title: 'Bilan auditif offert',    text: 'Sur rendez-vous, sans engagement.' },
     homeTrial:        { title: 'Essai avant achat',        text: 'Vous testez les appareils dans votre vraie vie.' },
     unlimitedFollowUp:{ title: 'Réglages et suivi inclus', text: "Aussi longtemps que vous portez l'appareil." },
     childrenFitting:  { title: 'Enfants et adultes',       text: 'Appareillage pédiatrique et adulte.' },
@@ -232,11 +232,12 @@ export default {
     coverageTitle: 'Prise en charge',
     coverage:
       "Selon votre organisme (CNSS, CNOPS, AMO ou mutuelle d'entreprise), une partie de l'appareillage peut être remboursée. Nous préparons les pièces nécessaires à votre dossier.",
-    coverageLink: { slug: 'remboursement-appareils-auditifs-maroc', label: 'Comment monter votre dossier de remboursement' },
     note: 'Les tarifs dépendent du niveau de technologie et de votre perte auditive. Ils vous sont communiqués au centre, après le bilan.',
   },
 
   center: {
+    practitionerTitle: 'Qui vous reçoit',
+    practitionerSince: 'Exerce depuis {years} ans.',
     title: 'Aux Princesses, à Maârif, au 106B rue Al Jounaid.',
     lede:
       "Un centre à taille humaine. Le même interlocuteur du premier bilan au dernier réglage, parce qu'une adaptation réussie repose sur une relation suivie.",
@@ -244,7 +245,6 @@ export default {
       { label: 'Adresse',   key: 'address' },
       { label: 'Téléphone', key: 'phone' },
       { label: 'Quartier',  key: 'district' },
-      { label: 'Repère',    key: 'landmark' },
       { label: 'Plus code', key: 'pluscode' },
     ],
     hoursTitle: "Horaires d'ouverture",
@@ -345,7 +345,8 @@ export default {
       messagePlaceholder: 'Par exemple : une gêne dans le bruit, un appareil à régler',
       submit: 'Envoyer la demande',
       submitHint: 'Ouvre votre messagerie avec la demande pré-remplie.',
-      required: 'Champ obligatoire',
+      noscript: "Votre navigateur n'exécute pas le script du formulaire. Appelez le centre ou écrivez sur WhatsApp, les deux fonctionnent tout de suite.",
+    required: 'Champ obligatoire',
       invalidPhone: 'Numéro de téléphone incomplet',
       subject: 'Demande de rendez-vous · AudioLik',
     },
@@ -362,6 +363,9 @@ export default {
   footer: {
     tagline: 'Centre de correction auditive. Casablanca, Les Princesses, Maârif.',
     nav: 'Navigation',
+    followTitle: 'Le centre en ligne',
+    instagramCta: 'Instagram',
+    reviewCta: 'Laisser un avis sur Google',
     contactTitle: 'Contact',
     pagesTitle: 'Nos pages',
     legal: [
