@@ -507,6 +507,7 @@ ${SPRITE}
         <div class="budget__cover">
           <h4>${esc(t.pricing.coverageTitle)}</h4>
           <p>${esc(t.pricing.coverage)}</p>
+          ${t.pricing.coverageLink ? `<p><a href="${loc.path}${esc(t.pricing.coverageLink.slug)}/">${esc(t.pricing.coverageLink.label)} ${icon('arrow-right')}</a></p>` : ''}
         </div>
       </aside>
     </div>
