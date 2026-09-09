@@ -222,6 +222,7 @@ export default {
       { label: 'العنوان',   key: 'address' },
       { label: 'الهاتف',    key: 'phone' },
       { label: 'الحي',      key: 'district' },
+      { label: 'معلم قريب',  key: 'landmark' },
       { label: 'Plus code', key: 'pluscode' },
     ],
     hoursTitle: 'أوقات العمل',

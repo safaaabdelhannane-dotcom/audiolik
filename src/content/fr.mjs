@@ -53,7 +53,7 @@ export default {
   },
 
   reassurance: {
-    freeHearingTest:  { title: 'Bilan auditif offert',    text: 'Sur rendez-vous, sans engagement.' },
+    freeHearingTest:  { title: 'Bilan auditif gratuit',   text: 'Sur rendez-vous, sans engagement.' },
     homeTrial:        { title: 'Essai avant achat',        text: 'Vous testez les appareils dans votre vraie vie.' },
     unlimitedFollowUp:{ title: 'Réglages et suivi inclus', text: "Aussi longtemps que vous portez l'appareil." },
     childrenFitting:  { title: 'Enfants et adultes',       text: 'Appareillage pédiatrique et adulte.' },
@@ -243,6 +243,7 @@ export default {
       { label: 'Adresse',   key: 'address' },
       { label: 'Téléphone', key: 'phone' },
       { label: 'Quartier',  key: 'district' },
+      { label: 'Repère',    key: 'landmark' },
       { label: 'Plus code', key: 'pluscode' },
     ],
     hoursTitle: "Horaires d'ouverture",

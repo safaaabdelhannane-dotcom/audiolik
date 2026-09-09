@@ -40,7 +40,7 @@ export default {
   },
 
   reassurance: {
-    freeHearingTest:  { title: 'Complimentary hearing check',   text: 'By appointment, no obligation.' },
+    freeHearingTest:  { title: 'Free hearing test',   text: 'By appointment, no obligation.' },
     homeTrial:        { title: 'Try before you buy',            text: 'Test the devices in your everyday life.' },
     unlimitedFollowUp:{ title: 'Fitting and follow-up included', text: 'For as long as you wear the device.' },
     childrenFitting:  { title: 'Children and adults',           text: 'Paediatric and adult fitting.' },
@@ -222,6 +222,7 @@ export default {
       { label: 'Address',   key: 'address' },
       { label: 'Phone',     key: 'phone' },
       { label: 'District',  key: 'district' },
+      { label: 'Landmark',  key: 'landmark' },
       { label: 'Plus code', key: 'pluscode' },
     ],
     hoursTitle: 'Opening hours',
