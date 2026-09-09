@@ -1077,3 +1077,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   body { background: #fff; color: #000; font-size: 11pt; }
   .section { padding-block: 1rem; }
 }
+
+/* Pied de page — cinquième colonne : les pages thématiques.
+   Sans ce lien depuis chaque page, Google ne les découvre que par le sitemap,
+   ce qui est le chemin le plus lent et le moins bien pondéré. */
+@media (min-width: 62rem) {
+  .footer__grid--wide { grid-template-columns: 1.1fr repeat(4, minmax(0, 1fr)); }
+}
+.footer__pages { font-size: .9375rem; }
