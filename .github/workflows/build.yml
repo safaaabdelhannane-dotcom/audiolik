@@ -1,0 +1,60 @@
+# Régénération automatique du site.
+#
+# Avant : il fallait lancer « node build.mjs » sur un ordinateur, puis penser à
+# committer les fichiers générés. Un oubli et le site en ligne ne correspondait
+# plus aux sources.
+#
+# Maintenant : dès qu'un fichier de src/ (un texte, une page, le gabarit) ou
+# build.mjs change sur main, GitHub relance le build lui-même et publie les
+# fichiers HTML régénérés. Il n'y a plus qu'un seul endroit à modifier : la
+# source. Le site suit tout seul.
+#
+# Le commit de sortie porte [skip ci] : il ne redéclenche pas ce workflow.
+
+name: Construire le site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'assets/**'
+      - 'build.mjs'
+      - '.github/workflows/build.yml'
+  workflow_dispatch: # permet aussi de le lancer à la main depuis l'onglet Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  # Deux modifications coup sur coup ne doivent pas produire deux builds
+  # concurrents qui se marchent dessus au moment de pousser.
+  group: build-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Générer le site
+        run: node build.mjs
+
+      - name: Publier les fichiers régénérés
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Rien à publier : les fichiers générés étaient déjà à jour."
+            exit 0
+          fi
+          git commit -m "Site régénéré depuis les sources [skip ci]"
+          git push
