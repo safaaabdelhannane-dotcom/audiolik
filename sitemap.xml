@@ -7,7 +7,7 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/"/>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,7 +17,7 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/"/>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -27,8 +27,308 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/"/>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/centre-de-correction-auditive-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/centre-de-correction-auditive-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/centre-de-correction-auditive-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/centre-de-correction-auditive-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/centre-de-correction-auditive-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/centre-de-correction-auditive-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/centre-de-correction-auditive-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/centre-de-correction-auditive-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/centre-de-correction-auditive-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/centre-de-correction-auditive-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/centre-de-correction-auditive-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/centre-de-correction-auditive-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/centre-de-correction-auditive-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/centre-de-correction-auditive-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/centre-de-correction-auditive-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/audioprothesiste-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/audioprothesiste-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/audioprothesiste-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/audioprothesiste-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/audioprothesiste-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/audioprothesiste-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/audioprothesiste-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/audioprothesiste-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/audioprothesiste-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/audioprothesiste-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/audioprothesiste-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/audioprothesiste-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/audioprothesiste-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/audioprothesiste-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/audioprothesiste-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/bilan-auditif-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/bilan-auditif-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/bilan-auditif-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/bilan-auditif-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/bilan-auditif-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/bilan-auditif-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/bilan-auditif-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/bilan-auditif-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/bilan-auditif-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/bilan-auditif-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/bilan-auditif-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/bilan-auditif-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/bilan-auditif-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/bilan-auditif-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/bilan-auditif-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/appareils-auditifs-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/appareils-auditifs-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/appareils-auditifs-casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-casablanca/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/perte-auditive/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/perte-auditive/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/perte-auditive/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/perte-auditive/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/perte-auditive/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/perte-auditive/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/perte-auditive/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/perte-auditive/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/perte-auditive/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/perte-auditive/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/perte-auditive/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/perte-auditive/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/perte-auditive/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/perte-auditive/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/perte-auditive/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/appareils-auditifs-intra-auriculaires/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-intra-auriculaires/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-intra-auriculaires/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-intra-auriculaires/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-intra-auriculaires/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/appareils-auditifs-intra-auriculaires/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-intra-auriculaires/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-intra-auriculaires/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-intra-auriculaires/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-intra-auriculaires/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/appareils-auditifs-intra-auriculaires/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-intra-auriculaires/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-intra-auriculaires/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-intra-auriculaires/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-intra-auriculaires/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/appareils-auditifs-contour-oreille/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-contour-oreille/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-contour-oreille/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-contour-oreille/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-contour-oreille/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/appareils-auditifs-contour-oreille/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-contour-oreille/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-contour-oreille/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-contour-oreille/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-contour-oreille/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/appareils-auditifs-contour-oreille/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-contour-oreille/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-contour-oreille/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-contour-oreille/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-contour-oreille/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/appareils-auditifs-rechargeables-bluetooth/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-rechargeables-bluetooth/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-rechargeables-bluetooth/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-rechargeables-bluetooth/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-rechargeables-bluetooth/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/appareils-auditifs-rechargeables-bluetooth/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-rechargeables-bluetooth/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-rechargeables-bluetooth/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-rechargeables-bluetooth/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-rechargeables-bluetooth/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/appareils-auditifs-rechargeables-bluetooth/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/appareils-auditifs-rechargeables-bluetooth/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/appareils-auditifs-rechargeables-bluetooth/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/appareils-auditifs-rechargeables-bluetooth/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/appareils-auditifs-rechargeables-bluetooth/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/entretien-et-reparation-appareils-auditifs/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/entretien-et-reparation-appareils-auditifs/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/entretien-et-reparation-appareils-auditifs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/entretien-et-reparation-appareils-auditifs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/entretien-et-reparation-appareils-auditifs/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/entretien-et-reparation-appareils-auditifs/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/entretien-et-reparation-appareils-auditifs/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/entretien-et-reparation-appareils-auditifs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/entretien-et-reparation-appareils-auditifs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/entretien-et-reparation-appareils-auditifs/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/entretien-et-reparation-appareils-auditifs/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/entretien-et-reparation-appareils-auditifs/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/entretien-et-reparation-appareils-auditifs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/entretien-et-reparation-appareils-auditifs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/entretien-et-reparation-appareils-auditifs/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/protections-auditives-sur-mesure/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/protections-auditives-sur-mesure/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/protections-auditives-sur-mesure/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/protections-auditives-sur-mesure/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/protections-auditives-sur-mesure/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/ar/protections-auditives-sur-mesure/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/protections-auditives-sur-mesure/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/protections-auditives-sur-mesure/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/protections-auditives-sur-mesure/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/protections-auditives-sur-mesure/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audiolik.ma/en/protections-auditives-sur-mesure/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiolik.ma/protections-auditives-sur-mesure/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://audiolik.ma/ar/protections-auditives-sur-mesure/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiolik.ma/en/protections-auditives-sur-mesure/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiolik.ma/protections-auditives-sur-mesure/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
