@@ -48,6 +48,15 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 <style>
 /* Pages éditoriales : la feuille principale est pensée pour une page d'accueil
    très composée. Ici le texte se lit d'un trait, il lui faut sa propre respiration. */
+/* L'introduction et le corps sont deux <article> distincts, pour qu'un bloc
+   pleine largeur (le test auditif) puisse se glisser entre les deux. Sans ce
+   bloc, les deux ne doivent former qu'une seule respiration : on annule alors
+   la marge haute du second. */
+.section--continued { padding-block-start: 0; }
+/* Quand le test suit l'introduction, les deux doivent se toucher : le bandeau
+   sombre fait déjà la séparation, un blanc de plus en ferait deux. */
+.section--lead { padding-block-end: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
+.section--invert + .section--continued { padding-block-start: var(--section-y); }
 .page__body h2 { margin-block: clamp(2.25rem, 1.5rem + 2vw, 3.25rem) .75rem; }
 .page__body h2:first-child { margin-block-start: 0; }
 .page__body p + p { margin-block-start: .85rem; }
@@ -94,7 +103,11 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <h1>Centre de correction auditive à Casablanca</h1>
         <p class="lede">AudioLik est un centre de correction auditive installé aux Princesses, à Maârif. On y mesure ce que vous n&#39;entendez plus, on vous l&#39;explique, et si un appareil peut aider, on l&#39;adapte avec vous, réglage après réglage.</p>
       </div>
+    </div>
+  </article>
 
+  <article class="section section--continued">
+    <div class="shell">
       <div class="prose page__body">
       <h2>Ce qu’est un centre de correction auditive</h2>
         <p>C&#39;est le lieu où l&#39;on mesure votre audition, où l&#39;on vous explique les résultats, et où l&#39;on adapte un appareil si c&#39;est utile. Ce n&#39;est pas un magasin : la partie visible, l&#39;appareil, ne représente qu&#39;une petite part du travail. L&#39;essentiel se joue avant, pendant le bilan, et après, pendant les mois de réglage.</p>
@@ -132,9 +145,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
       <div class="shell">
         <div class="prose"><p class="kicker">Ce qu’on nous demande le plus.</p></div>
         <div class="faq">
-          <details><summary>Faut-il prendre rendez-vous ?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Oui, pour vous consacrer le temps nécessaire. Un appel ou un message WhatsApp suffit, on vous propose un créneau dans la semaine.</p></div></details>
-          <details><summary>Combien coûte un appareillage ?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Les tarifs dépendent du niveau de technologie et de votre perte auditive. Ils vous sont communiqués au centre, après le bilan. Vous repartez avec un devis détaillé, et rien n&#39;est signé le jour même.</p></div></details>
-          <details><summary>Y a-t-il une prise en charge ?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Selon votre organisme (CNSS, CNOPS, AMO ou mutuelle d&#39;entreprise), une partie de l&#39;appareillage peut être remboursée. Nous préparons les pièces nécessaires à votre dossier.</p></div></details>
+          <details><summary>Faut-il prendre rendez-vous ?</summary><div><p>Oui, pour vous consacrer le temps nécessaire. Un appel ou un message WhatsApp suffit, on vous propose un créneau dans la semaine.</p></div></details>
+          <details><summary>Combien coûte un appareillage ?</summary><div><p>Les tarifs dépendent du niveau de technologie et de votre perte auditive. Ils vous sont communiqués au centre, après le bilan. Vous repartez avec un devis détaillé, et rien n&#39;est signé le jour même.</p></div></details>
+          <details><summary>Y a-t-il une prise en charge ?</summary><div><p>Selon votre organisme (CNSS, CNOPS, AMO ou mutuelle d&#39;entreprise), une partie de l&#39;appareillage peut être remboursée. Nous préparons les pièces nécessaires à votre dossier.</p></div></details>
         </div>
       </div>
     </section>
@@ -154,7 +167,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
       </div>
       <div>
         <h3>Nos pages</h3>
-        <ul class="footer__pages"><li><a href="/centre-de-correction-auditive-casablanca/">Centre de correction auditive à Casablanca</a></li><li><a href="/audioprothesiste-casablanca/">Audioprothésiste à Casablanca, aux Princesses</a></li><li><a href="/bilan-auditif-casablanca/">Bilan auditif à Casablanca</a></li><li><a href="/appareils-auditifs-casablanca/">Appareils auditifs à Casablanca</a></li><li><a href="/perte-auditive/">Comprendre la perte auditive</a></li><li><a href="/appareils-auditifs-intra-auriculaires/">Les appareils auditifs les plus discrets</a></li><li><a href="/appareils-auditifs-contour-oreille/">Les contours d&#39;oreille</a></li><li><a href="/appareils-auditifs-rechargeables-bluetooth/">Rechargeables et connectés</a></li><li><a href="/entretien-et-reparation-appareils-auditifs/">Entretien et réparation d&#39;appareils auditifs</a></li><li><a href="/protections-auditives-sur-mesure/">Protections auditives sur mesure</a></li></ul>
+        <ul class="footer__pages"><li><a href="/centre-de-correction-auditive-casablanca/">Centre de correction auditive à Casablanca</a></li><li><a href="/audioprothesiste-casablanca/">Audioprothésiste à Casablanca, aux Princesses</a></li><li><a href="/bilan-auditif-casablanca/">Bilan auditif à Casablanca</a></li><li><a href="/appareils-auditifs-casablanca/">Appareils auditifs à Casablanca</a></li><li><a href="/perte-auditive/">Comprendre la perte auditive</a></li><li><a href="/appareils-auditifs-intra-auriculaires/">Les appareils auditifs les plus discrets</a></li><li><a href="/appareils-auditifs-contour-oreille/">Les contours d&#39;oreille</a></li><li><a href="/appareils-auditifs-rechargeables-bluetooth/">Rechargeables et connectés</a></li><li><a href="/entretien-et-reparation-appareils-auditifs/">Entretien et réparation d&#39;appareils auditifs</a></li><li><a href="/protections-auditives-sur-mesure/">Protections auditives sur mesure</a></li><li><a href="/test-auditif-en-ligne/">Test auditif en ligne</a></li><li><a href="/remboursement-appareils-auditifs-maroc/">Remboursement des appareils auditifs au Maroc</a></li></ul>
       </div>
       <div>
         <h3>Contact</h3>
@@ -176,5 +189,41 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
   </div>
 </footer>
 
+<script>
+window.__AUDIOLIK__ = {
+  lang: "fr",
+  tz: "Africa/Casablanca",
+  hours: [{"day":"monday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"tuesday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"wednesday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"thursday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"friday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"saturday","slots":[["09:00","13:00"]]},{"day":"sunday","slots":[]}],
+  strings: {
+    open: "Ouvert",
+    closed: "Fermé",
+    until: "jusqu’à",
+    opensAt: "ouvre à",
+    callOpen: "Ouvert, on décroche",
+    callClosed: "Fermé pour le moment",
+    required: "Champ obligatoire",
+    invalidPhone: "Numéro de téléphone incomplet",
+    progress: "Question {n} sur {total}",
+    subject: "Demande de rendez-vous · AudioLik",
+    themeLight: "Thème clair",
+    themeDark: "Thème sombre",
+    labels: {
+      name: "Votre nom",
+      phone: "Votre téléphone",
+      reason: "Motif",
+      message: "Votre message (facultatif)"
+    }
+  },
+  quiz: {
+    questions: ["Vous demandez à vos interlocuteurs de répéter.","Vous avez du mal à suivre une conversation quand plusieurs personnes parlent.","On vous fait remarquer que la télévision ou la radio est trop forte.","Vous entendez un sifflement, un bourdonnement ou un souffle dans les oreilles.","Vous évitez certains lieux, restaurants ou réunions, à cause du bruit.","Vous entendez qu'on vous parle, mais vous ne comprenez pas les mots."],
+    answers: [{"label":"Jamais","value":0},{"label":"Parfois","value":1},{"label":"Souvent","value":2}],
+    results: [{"max":3,"title":"Rien d’alarmant aujourd’hui.","text":"Vos réponses ne montrent pas de gêne marquée. Après 60 ans, un contrôle tous les deux ans reste une bonne habitude, comme pour la vue."},{"max":7,"title":"Quelques signaux à surveiller.","text":"Plusieurs situations vous mettent déjà en difficulté. Un bilan permet de savoir s'il s'agit d'une vraie perte, d'un bouchon de cérumen ou d'autre chose. C'est indolore et ça prend moins d'une heure."},{"max":12,"title":"Un bilan est vivement recommandé.","text":"Vos réponses décrivent une gêne installée au quotidien. Plus une perte auditive est prise tôt, plus le cerveau garde sa capacité à décoder la parole, et plus l'adaptation à un appareil est simple."}]
+  },
+  email: "contact@audiolik.ma",
+  whatsapp: "212669571565",
+  waQuizPrefill: "Bonjour, je viens de faire le test auditif en ligne (score {score}/{max}) et je souhaite prendre rendez-vous pour un bilan."
+};
+</script>
+<script src="../assets/js/site.js" defer></script>
 </body>
 </html>

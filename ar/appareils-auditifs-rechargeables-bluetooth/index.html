@@ -48,6 +48,15 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 <style>
 /* Pages éditoriales : la feuille principale est pensée pour une page d'accueil
    très composée. Ici le texte se lit d'un trait, il lui faut sa propre respiration. */
+/* L'introduction et le corps sont deux <article> distincts, pour qu'un bloc
+   pleine largeur (le test auditif) puisse se glisser entre les deux. Sans ce
+   bloc, les deux ne doivent former qu'une seule respiration : on annule alors
+   la marge haute du second. */
+.section--continued { padding-block-start: 0; }
+/* Quand le test suit l'introduction, les deux doivent se toucher : le bandeau
+   sombre fait déjà la séparation, un blanc de plus en ferait deux. */
+.section--lead { padding-block-end: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
+.section--invert + .section--continued { padding-block-start: var(--section-y); }
 .page__body h2 { margin-block: clamp(2.25rem, 1.5rem + 2vw, 3.25rem) .75rem; }
 .page__body h2:first-child { margin-block-start: 0; }
 .page__body p + p { margin-block-start: .85rem; }
@@ -94,7 +103,11 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <h1>قابل للشحن ومتّصل</h1>
         <p class="lede">تطوّران غيّرا الحياة اليومية أكثر من أيّ تحسين في الصوت: الشحن والاتّصال اللاسلكي.</p>
       </div>
+    </div>
+  </article>
 
+  <article class="section section--continued">
+    <div class="shell">
       <div class="prose page__body">
       <h2>وداعًا للبطاريات</h2>
         <p>توضع الأجهزة في علبتها مساءً، وتُستعاد صباحًا. لا بطارية صغيرة تُغيَّر كل بضعة أيام، ولا انقطاع في اللحظة الخطأ، ولا نفايات صغيرة.</p>
@@ -125,8 +138,8 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
       <div class="shell">
         <div class="prose"><p class="kicker">أكثر ما يُسأل عنه.</p></div>
         <div class="faq">
-          <details><summary>كم تدوم الشحنة الواحدة؟<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>عمليًا، يومًا كاملًا، بما في ذلك البثّ. وليلة واحدة على القاعدة تكفي للانطلاق من جديد. والقيم الدقيقة تختلف حسب النموذج وتُقدَّم لك في المركز.</p></div></details>
-          <details><summary>هل يلزم هاتف حديث؟<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>ليس بالضرورة، لكن الاتّصال الأسهل يتحقّق مع هاتف من السنوات الأخيرة. ونتحقّق من التوافق مع هاتفك قبل أيّ اختيار.</p></div></details>
+          <details><summary>كم تدوم الشحنة الواحدة؟</summary><div><p>عمليًا، يومًا كاملًا، بما في ذلك البثّ. وليلة واحدة على القاعدة تكفي للانطلاق من جديد. والقيم الدقيقة تختلف حسب النموذج وتُقدَّم لك في المركز.</p></div></details>
+          <details><summary>هل يلزم هاتف حديث؟</summary><div><p>ليس بالضرورة، لكن الاتّصال الأسهل يتحقّق مع هاتف من السنوات الأخيرة. ونتحقّق من التوافق مع هاتفك قبل أيّ اختيار.</p></div></details>
         </div>
       </div>
     </section>
@@ -146,7 +159,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
       </div>
       <div>
         <h3>صفحاتنا</h3>
-        <ul class="footer__pages"><li><a href="/ar/centre-de-correction-auditive-casablanca/">مركز تصحيح السمع بالدار البيضاء</a></li><li><a href="/ar/audioprothesiste-casablanca/">أخصائي السمعيات بالدار البيضاء، بالأميرات</a></li><li><a href="/ar/bilan-auditif-casablanca/">فحص السمع بالدار البيضاء</a></li><li><a href="/ar/appareils-auditifs-casablanca/">الأجهزة السمعية بالدار البيضاء</a></li><li><a href="/ar/perte-auditive/">فهم ضعف السمع</a></li><li><a href="/ar/appareils-auditifs-intra-auriculaires/">الأجهزة السمعية الأكثر خفاءً</a></li><li><a href="/ar/appareils-auditifs-contour-oreille/">الأجهزة خلف الأذن</a></li><li><a href="/ar/appareils-auditifs-rechargeables-bluetooth/">قابل للشحن ومتّصل</a></li><li><a href="/ar/entretien-et-reparation-appareils-auditifs/">صيانة وإصلاح الأجهزة السمعية</a></li><li><a href="/ar/protections-auditives-sur-mesure/">واقيات سمعية على المقاس</a></li></ul>
+        <ul class="footer__pages"><li><a href="/ar/centre-de-correction-auditive-casablanca/">مركز تصحيح السمع بالدار البيضاء</a></li><li><a href="/ar/audioprothesiste-casablanca/">أخصائي السمعيات بالدار البيضاء، بالأميرات</a></li><li><a href="/ar/bilan-auditif-casablanca/">فحص السمع بالدار البيضاء</a></li><li><a href="/ar/appareils-auditifs-casablanca/">الأجهزة السمعية بالدار البيضاء</a></li><li><a href="/ar/perte-auditive/">فهم ضعف السمع</a></li><li><a href="/ar/appareils-auditifs-intra-auriculaires/">الأجهزة السمعية الأكثر خفاءً</a></li><li><a href="/ar/appareils-auditifs-contour-oreille/">الأجهزة خلف الأذن</a></li><li><a href="/ar/appareils-auditifs-rechargeables-bluetooth/">قابل للشحن ومتّصل</a></li><li><a href="/ar/entretien-et-reparation-appareils-auditifs/">صيانة وإصلاح الأجهزة السمعية</a></li><li><a href="/ar/protections-auditives-sur-mesure/">واقيات سمعية على المقاس</a></li><li><a href="/ar/test-auditif-en-ligne/">اختبار السمع أونلاين</a></li><li><a href="/ar/remboursement-appareils-auditifs-maroc/">استرجاع مصاريف السماعات الطبية بالمغرب</a></li></ul>
       </div>
       <div>
         <h3>اتصل بنا</h3>
@@ -168,5 +181,41 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
   </div>
 </footer>
 
+<script>
+window.__AUDIOLIK__ = {
+  lang: "ar",
+  tz: "Africa/Casablanca",
+  hours: [{"day":"monday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"tuesday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"wednesday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"thursday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"friday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"saturday","slots":[["09:00","13:00"]]},{"day":"sunday","slots":[]}],
+  strings: {
+    open: "مفتوح",
+    closed: "مغلق",
+    until: "حتى",
+    opensAt: "يفتح على",
+    callOpen: "مفتوح، نردّ على اتصالك",
+    callClosed: "مغلق حاليًا",
+    required: "حقل إجباري",
+    invalidPhone: "رقم الهاتف غير مكتمل",
+    progress: "السؤال {n} من {total}",
+    subject: "طلب موعد · أوديوليك",
+    themeLight: "مظهر فاتح",
+    themeDark: "مظهر داكن",
+    labels: {
+      name: "اسمك",
+      phone: "رقم هاتفك",
+      reason: "سبب الطلب",
+      message: "رسالتك (اختياري)"
+    }
+  },
+  quiz: {
+    questions: ["تطلب من محدّثيك إعادة ما قالوه.","تجد صعوبة في متابعة حديث يشارك فيه عدة أشخاص.","ينبّهك من حولك إلى أن صوت التلفاز أو المذياع مرتفع.","تسمع طنينًا أو أزيزًا أو حفيفًا في أذنيك.","تتجنّب أماكن معيّنة، كالمطاعم أو الاجتماعات، بسبب الضجيج.","تسمع أن أحدًا يخاطبك، لكنك لا تميّز الكلمات."],
+    answers: [{"label":"أبدًا","value":0},{"label":"أحيانًا","value":1},{"label":"غالبًا","value":2}],
+    results: [{"max":3,"title":"لا شيء مقلق اليوم.","text":"إجاباتك لا تشير إلى صعوبة واضحة. وبعد سنّ الستين يبقى إجراء فحص كل سنتين عادة سليمة، تمامًا كفحص النظر."},{"max":7,"title":"بعض المؤشّرات تستحق الانتباه.","text":"عدّة مواقف تضعك في حرج فعلي. الفحص يوضّح ما إذا كان الأمر ضعفًا حقيقيًا في السمع، أو مجرّد سدادة صملاخية، أو شيئًا آخر. وهو غير مؤلم ولا يتجاوز الساعة."},{"max":12,"title":"نوصي بشدّة بإجراء فحص.","text":"إجاباتك تصف صعوبة استقرّت في حياتك اليومية. كلّما عولج ضعف السمع مبكّرًا، حافظ الدماغ على قدرته على تمييز الكلام، وصار التأقلم مع الجهاز أسهل."}]
+  },
+  email: "contact@audiolik.ma",
+  whatsapp: "212669571565",
+  waQuizPrefill: "مرحبًا، أنهيت للتوّ اختبار السمع الإلكتروني (النتيجة {score}/{max}) وأرغب في حجز موعد للفحص."
+};
+</script>
+<script src="../../assets/js/site.js" defer></script>
 </body>
 </html>

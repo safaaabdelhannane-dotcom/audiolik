@@ -48,6 +48,15 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 <style>
 /* Pages éditoriales : la feuille principale est pensée pour une page d'accueil
    très composée. Ici le texte se lit d'un trait, il lui faut sa propre respiration. */
+/* L'introduction et le corps sont deux <article> distincts, pour qu'un bloc
+   pleine largeur (le test auditif) puisse se glisser entre les deux. Sans ce
+   bloc, les deux ne doivent former qu'une seule respiration : on annule alors
+   la marge haute du second. */
+.section--continued { padding-block-start: 0; }
+/* Quand le test suit l'introduction, les deux doivent se toucher : le bandeau
+   sombre fait déjà la séparation, un blanc de plus en ferait deux. */
+.section--lead { padding-block-end: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
+.section--invert + .section--continued { padding-block-start: var(--section-y); }
 .page__body h2 { margin-block: clamp(2.25rem, 1.5rem + 2vw, 3.25rem) .75rem; }
 .page__body h2:first-child { margin-block-start: 0; }
 .page__body p + p { margin-block-start: .85rem; }
@@ -94,7 +103,11 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <h1>Hearing aids in Casablanca</h1>
         <p class="lede">The two questions we are asked most: &quot;how much does it cost&quot; and &quot;does it show&quot;. Here are clear answers.</p>
       </div>
+    </div>
+  </article>
 
+  <article class="section section--continued">
+    <div class="shell">
       <div class="prose page__body">
       <h2>The price, said plainly</h2>
         <p>A hearing aid is a five-year decision, not a single invoice. What costs is not the casing: it is the time spent matching it to your hearing, then adjusting it until you stop thinking about it.</p>
@@ -132,8 +145,8 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
       <div class="shell">
         <div class="prose"><p class="kicker">What people ask us most.</p></div>
         <div class="faq">
-          <details><summary>Can I try before choosing?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Yes. All adjustments during the trial period are included in the price, and you test where it counts: at the table, on the phone, at the market.</p></div></details>
-          <details><summary>How long does a hearing aid last?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Several years, and longer the better it is maintained. Cleaning, filter changes and repairs are done at the centre.</p></div></details>
+          <details><summary>Can I try before choosing?</summary><div><p>Yes. All adjustments during the trial period are included in the price, and you test where it counts: at the table, on the phone, at the market.</p></div></details>
+          <details><summary>How long does a hearing aid last?</summary><div><p>Several years, and longer the better it is maintained. Cleaning, filter changes and repairs are done at the centre.</p></div></details>
         </div>
       </div>
     </section>
@@ -153,7 +166,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
       </div>
       <div>
         <h3>Our pages</h3>
-        <ul class="footer__pages"><li><a href="/en/centre-de-correction-auditive-casablanca/">Hearing correction centre in Casablanca</a></li><li><a href="/en/audioprothesiste-casablanca/">Hearing aid specialist in Casablanca, Les Princesses</a></li><li><a href="/en/bilan-auditif-casablanca/">Hearing assessment in Casablanca</a></li><li><a href="/en/appareils-auditifs-casablanca/">Hearing aids in Casablanca</a></li><li><a href="/en/perte-auditive/">Understanding hearing loss</a></li><li><a href="/en/appareils-auditifs-intra-auriculaires/">The most discreet hearing aids</a></li><li><a href="/en/appareils-auditifs-contour-oreille/">Behind-the-ear hearing aids</a></li><li><a href="/en/appareils-auditifs-rechargeables-bluetooth/">Rechargeable and connected</a></li><li><a href="/en/entretien-et-reparation-appareils-auditifs/">Hearing aid maintenance and repair</a></li><li><a href="/en/protections-auditives-sur-mesure/">Custom hearing protection</a></li></ul>
+        <ul class="footer__pages"><li><a href="/en/centre-de-correction-auditive-casablanca/">Hearing correction centre in Casablanca</a></li><li><a href="/en/audioprothesiste-casablanca/">Hearing aid specialist in Casablanca, Les Princesses</a></li><li><a href="/en/bilan-auditif-casablanca/">Hearing assessment in Casablanca</a></li><li><a href="/en/appareils-auditifs-casablanca/">Hearing aids in Casablanca</a></li><li><a href="/en/perte-auditive/">Understanding hearing loss</a></li><li><a href="/en/appareils-auditifs-intra-auriculaires/">The most discreet hearing aids</a></li><li><a href="/en/appareils-auditifs-contour-oreille/">Behind-the-ear hearing aids</a></li><li><a href="/en/appareils-auditifs-rechargeables-bluetooth/">Rechargeable and connected</a></li><li><a href="/en/entretien-et-reparation-appareils-auditifs/">Hearing aid maintenance and repair</a></li><li><a href="/en/protections-auditives-sur-mesure/">Custom hearing protection</a></li><li><a href="/en/test-auditif-en-ligne/">Online hearing test</a></li><li><a href="/en/remboursement-appareils-auditifs-maroc/">Hearing aid reimbursement in Morocco</a></li></ul>
       </div>
       <div>
         <h3>Contact</h3>
@@ -175,5 +188,41 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
   </div>
 </footer>
 
+<script>
+window.__AUDIOLIK__ = {
+  lang: "en",
+  tz: "Africa/Casablanca",
+  hours: [{"day":"monday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"tuesday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"wednesday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"thursday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"friday","slots":[["09:00","13:00"],["14:30","18:30"]]},{"day":"saturday","slots":[["09:00","13:00"]]},{"day":"sunday","slots":[]}],
+  strings: {
+    open: "Open",
+    closed: "Closed",
+    until: "until",
+    opensAt: "opens at",
+    callOpen: "Open, we pick up",
+    callClosed: "Closed right now",
+    required: "Required field",
+    invalidPhone: "Incomplete phone number",
+    progress: "Question {n} of {total}",
+    subject: "Appointment request · AudioLik",
+    themeLight: "Light theme",
+    themeDark: "Dark theme",
+    labels: {
+      name: "Your name",
+      phone: "Your phone number",
+      reason: "Reason",
+      message: "Your message (optional)"
+    }
+  },
+  quiz: {
+    questions: ["You ask people to repeat themselves.","You struggle to follow a conversation when several people are talking.","People point out that the television or radio is too loud.","You hear ringing, buzzing or hissing in your ears.","You avoid certain places, restaurants or meetings, because of the noise.","You can hear that someone is speaking, but you cannot make out the words."],
+    answers: [{"label":"Never","value":0},{"label":"Sometimes","value":1},{"label":"Often","value":2}],
+    results: [{"max":3,"title":"Nothing concerning today.","text":"Your answers do not point to significant difficulty. After 60, a check every two years remains a good habit, much like an eye test."},{"max":7,"title":"A few signals worth watching.","text":"Several situations already put you at a disadvantage. An assessment tells you whether this is genuine hearing loss, earwax, or something else. It is painless and takes under an hour."},{"max":12,"title":"An assessment is strongly recommended.","text":"Your answers describe difficulty that has settled into daily life. The earlier hearing loss is addressed, the better the brain retains its ability to decode speech, and the easier the adjustment to a device."}]
+  },
+  email: "contact@audiolik.ma",
+  whatsapp: "212669571565",
+  waQuizPrefill: "Hello, I have just taken the online hearing check (score {score}/{max}) and would like to book an assessment."
+};
+</script>
+<script src="../../assets/js/site.js" defer></script>
 </body>
 </html>
