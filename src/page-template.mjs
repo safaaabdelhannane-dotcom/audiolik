@@ -17,6 +17,7 @@
 import { business as B, brand, locales, SITE_URL } from './business.mjs';
 import { SPRITE, icon } from './icons.mjs';
 import { pages as SUBPAGES } from './pages.mjs';
+import { runtimeScripts } from './runtime-config.mjs';
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -35,9 +36,9 @@ const waLink = (prefill) =>
 /**
  * @param {object} page   contenu de la page dans UNE langue (voir src/pages.mjs)
  * @param {object} t      le module de contenu de la langue (fr/ar/en) — en-tête, pied de page
- * @param {object} opts   { lang, slug }
+ * @param {object} opts   { lang, slug, widget } — widget: 'quiz' insère le test auditif
  */
-export default function renderPage(page, t, { lang, slug }) {
+export default function renderPage(page, t, { lang, slug, widget = null }) {
   const loc = locales.find((l) => l.code === lang);
   const rtl = loc.dir === 'rtl';
 
@@ -106,7 +107,7 @@ export default function renderPage(page, t, { lang, slug }) {
       <div class="shell">
         <div class="prose"><p class="kicker">${esc(t.faq.title)}</p></div>
         <div class="faq">
-          ${page.faq.map((f) => `<details><summary>${esc(f.q)}${icon('plus')}</summary><div><p>${rich(f.a)}</p></div></details>`).join('\n          ')}
+          ${page.faq.map((f) => `<details><summary>${esc(f.q)}</summary><div><p>${rich(f.a)}</p></div></details>`).join('\n          ')}
         </div>
       </div>
     </section>`
@@ -115,6 +116,43 @@ export default function renderPage(page, t, { lang, slug }) {
   const related = (page.related || [])
     .map((r) => `<a href="${loc.path}${r.slug}/">${esc(r.label)}</a>`)
     .join(' · ');
+
+  /* -- widget : le test auditif, réutilisé tel quel depuis la page d'accueil --
+     Le même balisage et la même configuration ; seul le bouton de fin change de
+     cible, puisqu'il n'y a pas de formulaire de contact sur une page secondaire.
+     assets/js/site.js n'active le module que si #quiz-run et #quiz-result
+     existent : les autres pages ne chargent donc rien d'inutile. */
+  const quiz = widget === 'quiz'
+    ? `
+    <section class="section section--invert" id="test">
+      <div class="shell">
+        <div class="prose prose--center">
+          <p class="kicker">${esc(t.quiz.kicker)}</p>
+          <h2 class="h2">${esc(t.quiz.title)}</h2>
+          <p class="lede">${esc(t.quiz.lede)}</p>
+        </div>
+
+        <div class="quiz" data-reveal>
+          <div id="quiz-run">
+            <div class="quiz__bar"><i id="quiz-progress"></i></div>
+            <p class="quiz__count" id="quiz-count"></p>
+            <p class="quiz__q" id="quiz-question"></p>
+            <div class="quiz__answers" id="quiz-answers"></div>
+          </div>
+          <div id="quiz-result" class="quiz__result" hidden>
+            <div class="quiz__score"><b id="quiz-score">0</b><span>${esc(t.quiz.scoreLabel)}</span></div>
+            <h3 id="quiz-title"></h3>
+            <p id="quiz-text"></p>
+            <div class="quiz__actions">
+              <a class="btn" id="quiz-cta" href="${home}#contact">${esc(t.quiz.ctaBook)} ${icon('arrow-right')}</a>
+              <button class="btn btn--ghost" type="button" id="quiz-restart">${esc(t.quiz.ctaRestart)}</button>
+            </div>
+          </div>
+          <p class="disclaimer">${icon('warning-circle')}<span>${esc(t.quiz.disclaimer)}</span></p>
+        </div>
+      </div>
+    </section>`
+    : '';
 
   return `<!doctype html>
 <html lang="${loc.htmlLang}" dir="${loc.dir}">
@@ -163,6 +201,15 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 <style>
 /* Pages éditoriales : la feuille principale est pensée pour une page d'accueil
    très composée. Ici le texte se lit d'un trait, il lui faut sa propre respiration. */
+/* L'introduction et le corps sont deux <article> distincts, pour qu'un bloc
+   pleine largeur (le test auditif) puisse se glisser entre les deux. Sans ce
+   bloc, les deux ne doivent former qu'une seule respiration : on annule alors
+   la marge haute du second. */
+.section--continued { padding-block-start: 0; }
+/* Quand le test suit l'introduction, les deux doivent se toucher : le bandeau
+   sombre fait déjà la séparation, un blanc de plus en ferait deux. */
+.section--lead { padding-block-end: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
+.section--invert + .section--continued { padding-block-start: var(--section-y); }
 .page__body h2 { margin-block: clamp(2.25rem, 1.5rem + 2vw, 3.25rem) .75rem; }
 .page__body h2:first-child { margin-block-start: 0; }
 .page__body p + p { margin-block-start: .85rem; }
@@ -198,14 +245,18 @@ ${SPRITE}
 </header>
 
 <main id="main">
-  <article class="section">
+  <article class="section${quiz ? ' section--lead' : ''}">
     <div class="shell">
       <div class="prose">
         <p class="kicker">${esc(page.kicker)}</p>
         <h1>${esc(page.h1)}</h1>
         <p class="lede">${rich(page.lede)}</p>
       </div>
-
+    </div>
+  </article>
+${quiz}
+  <article class="section section--continued">
+    <div class="shell">
       <div class="prose page__body">
 ${sections}
       </div>
@@ -258,6 +309,7 @@ ${faq}
   </div>
 </footer>
 
+${runtimeScripts(t, { up })}
 </body>
 </html>
 `;

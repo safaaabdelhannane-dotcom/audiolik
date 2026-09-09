@@ -18,6 +18,7 @@
 import { business as B, photos, brand, locales, SITE_URL } from './business.mjs';
 import { SPRITE, icon } from './icons.mjs';
 import { pages as SUBPAGES } from './pages.mjs';
+import { runtimeScripts } from './runtime-config.mjs';
 
 /* ---------------------------------------------------------------- helpers */
 
@@ -25,7 +26,6 @@ const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
            .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
-const jsStr = (s) => JSON.stringify(String(s)).replace(/</g, '\\u003c');
 
 const DAY_SCHEMA = {
   monday: 'Monday', tuesday: 'Tuesday', wednesday: 'Wednesday', thursday: 'Thursday',
@@ -265,6 +265,7 @@ export default function render(t, { alternates }) {
     // Le quartier porte un nom français ; la page arabe en donne la forme arabe.
     district: esc(loc.code === 'ar' && B.districtAr ? B.districtAr : B.district),
     pluscode: `<span class="lat" dir="ltr">${esc(B.plusCode)}</span>`,
+    landmark: esc(loc.code === 'ar' ? B.landmarkAr : loc.code === 'en' ? B.landmarkEn : B.landmark),
   }[key] || '');
 
   /* -- document ------------------------------------------------------------ */
@@ -676,42 +677,7 @@ ${SPRITE}
        : `<a class="btn" href="#contact">${esc(t.nav.cta)}</a>`}
 </div>
 
-<script>
-window.__AUDIOLIK__ = {
-  lang: ${jsStr(t.code)},
-  tz: ${jsStr(B.timezone)},
-  hours: ${JSON.stringify(B.hours)},
-  strings: {
-    open: ${jsStr(t.hero.statusOpen)},
-    closed: ${jsStr(t.hero.statusClosed)},
-    until: ${jsStr(t.hero.statusUntil)},
-    opensAt: ${jsStr(t.hero.statusOpensAt)},
-    callOpen: ${jsStr(O.call.open)},
-    callClosed: ${jsStr(O.call.closed)},
-    required: ${jsStr(t.contact.form.required)},
-    invalidPhone: ${jsStr(t.contact.form.invalidPhone)},
-    progress: ${jsStr(t.quiz.progress)},
-    subject: ${jsStr(t.contact.form.subject)},
-    themeLight: ${jsStr(t.meta.themeLight)},
-    themeDark: ${jsStr(t.meta.themeDark)},
-    labels: {
-      name: ${jsStr(t.contact.form.name)},
-      phone: ${jsStr(t.contact.form.phone)},
-      reason: ${jsStr(t.contact.form.reason)},
-      message: ${jsStr(t.contact.form.message)}
-    }
-  },
-  quiz: {
-    questions: ${JSON.stringify(t.quiz.questions)},
-    answers: ${JSON.stringify(t.quiz.answers)},
-    results: ${JSON.stringify(t.quiz.results)}
-  },
-  email: ${B.email ? jsStr(B.email) : 'null'},
-  whatsapp: ${B.whatsapp ? jsStr(B.whatsapp) : 'null'},
-  waQuizPrefill: ${jsStr(t.contact.whatsappPrefillQuiz)}
-};
-</script>
-<script src="${up}assets/js/site.js" defer></script>
+${runtimeScripts(t, { up })}
 </body>
 </html>
 `;

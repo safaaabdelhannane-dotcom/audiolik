@@ -11,9 +11,10 @@
  *
  * RÈGLES D'ÉCRITURE — les mêmes que pour l'accueil :
  *   · aucun prix chiffré (ils sont communiqués au centre, après le bilan) ;
- *   · aucune promesse non confirmée (business.claims est encore à false :
- *     ni « bilan gratuit », ni « essai à domicile », ni « suivi illimité »,
- *     ni « cabine insonorisée », ni « appareillage enfants ») ;
+ *   · aucune promesse non confirmée. Le seul engagement confirmé par le centre
+ *     est le BILAN AUDITIF GRATUIT (business.claims.freeHearingTest, 09/2026).
+ *     Restent à false, donc interdits d'écriture : essai à domicile, suivi
+ *     illimité, cabine insonorisée, appareillage enfants ;
  *   · le vocabulaire est celui déjà validé dans src/content/<lang>.mjs.
  *
  * Balisage accepté dans les textes : *gras* et [libellé](url).
@@ -22,6 +23,7 @@
 import batchA from './pages-batch-a.mjs';
 import batchB from './pages-batch-b.mjs';
 import batchC from './pages-batch-c.mjs';
+import batchD from './pages-batch-d.mjs';
 
 const core = [
   /* ======================================================================
@@ -231,6 +233,6 @@ const core = [
   },
 ];
 
-export const pages = [...core, ...batchA, ...batchB, ...batchC];
+export const pages = [...core, ...batchA, ...batchB, ...batchC, ...batchD];
 
 export default pages;

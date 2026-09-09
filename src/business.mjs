@@ -23,6 +23,11 @@ export const business = {
   country: 'MA',
   plusCode: 'H9H2+7C Casablanca',
 
+  // Repere physique : les gens cherchent par point de repere autant que par rue.
+  landmark:   'À côté du Stade Mohammed V',
+  landmarkAr: 'بجوار ملعب محمد الخامس',
+  landmarkEn: 'Next to the Mohammed V Stadium',
+
   phoneDisplay: '05 22 39 37 98',
   phoneE164: '+212522393798',
 
@@ -54,7 +59,7 @@ export const business = {
   timezone: 'Africa/Casablanca',
 
   claims: {
-    freeHearingTest: false,
+    freeHearingTest: true,   // confirme par le centre (09/2026)
     homeTrial: false,
     unlimitedFollowUp: false,
     childrenFitting: false,
