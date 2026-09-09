@@ -13,9 +13,9 @@ export default {
   dir: 'ltr',
 
   meta: {
-    title: 'AudioLik · Audioprothésiste à Casablanca, Maârif',
+    title: 'AudioLik · Audioprothésiste à Casablanca, Les Princesses',
     description:
-      'Centre de correction auditive à Casablanca, quartier Maârif. Bilan auditif, appareils discrets, réglages et suivi. Rendez-vous au 05 22 39 37 98.',
+      'Centre de correction auditive à Casablanca, quartier Les Princesses (Maârif). Bilan auditif, appareils discrets, réglages et suivi. Rendez-vous au 05 22 39 37 98.',
     ogAlt: 'AudioLik, centre de correction auditive à Casablanca',
     skipToContent: 'Aller au contenu',
     langLabel: 'Changer de langue',
@@ -236,7 +236,7 @@ export default {
   },
 
   center: {
-    title: 'À Maârif, au 106B rue Al Jounaid.',
+    title: 'Aux Princesses, à Maârif, au 106B rue Al Jounaid.',
     lede:
       "Un centre à taille humaine. Le même interlocuteur du premier bilan au dernier réglage, parce qu'une adaptation réussie repose sur une relation suivie.",
     facts: [
@@ -358,9 +358,10 @@ export default {
   },
 
   footer: {
-    tagline: 'Centre de correction auditive. Casablanca, Maârif.',
+    tagline: 'Centre de correction auditive. Casablanca, Les Princesses, Maârif.',
     nav: 'Navigation',
     contactTitle: 'Contact',
+    pagesTitle: 'Nos pages',
     legal: [
       "AudioLik est un centre de correction auditive. Les informations publiées sur ce site sont d'ordre général et ne constituent pas un avis médical.",
       "Seul un bilan réalisé au centre, complété si nécessaire par une consultation ORL, permet d'évaluer votre audition.",

@@ -4,9 +4,9 @@ export default {
   dir: 'ltr',
 
   meta: {
-    title: 'AudioLik · Hearing Correction Centre in Casablanca, Maârif',
+    title: 'AudioLik · Hearing Correction Centre in Casablanca, Les Princesses',
     description:
-      'Hearing correction centre in Casablanca, Maârif district. Hearing assessments, discreet devices, fitting and follow-up. Book on +212 522 39 37 98.',
+      'Hearing correction centre in Casablanca, Les Princesses (Maârif). Hearing assessments, discreet devices, fitting and follow-up. Book on +212 522 39 37 98.',
     ogAlt: 'AudioLik, hearing correction centre in Casablanca',
     skipToContent: 'Skip to content',
     langLabel: 'Change language',
@@ -215,7 +215,7 @@ export default {
   },
 
   center: {
-    title: 'In Maârif, at 106B rue Al Jounaid.',
+    title: 'In Les Princesses, Maârif, at 106B rue Al Jounaid.',
     lede:
       'A human-scale centre. The same person from the first assessment to the last adjustment, because a successful fitting rests on a continuing relationship.',
     facts: [
@@ -337,9 +337,10 @@ export default {
   },
 
   footer: {
-    tagline: 'Hearing correction centre. Casablanca, Maârif.',
+    tagline: 'Hearing correction centre. Casablanca, Les Princesses, Maârif.',
     nav: 'Navigation',
     contactTitle: 'Contact',
+    pagesTitle: 'Our pages',
     legal: [
       'AudioLik is a hearing correction centre. The information published on this site is general in nature and does not constitute medical advice.',
       'Only an assessment carried out at the centre, together with an ENT consultation where necessary, can evaluate your hearing.',
