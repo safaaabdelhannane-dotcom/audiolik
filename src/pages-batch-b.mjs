@@ -26,6 +26,8 @@ export default [
             name: 'ESSENTIEL',
             price: 'À partir de 5 000 DH',
             unit: 'par appareil',
+            visual: 'bte',
+            visualCaption: 'Contour d’oreille à pile — illustration',
             desc: 'Une solution fiable pour retrouver une écoute confortable au quotidien.',
             features: [
               'Pour les environnements calmes à modérément animés',
@@ -44,6 +46,8 @@ export default [
             badge: 'Le choix le plus demandé',
             price: 'De 7 000 à 12 000 DH',
             unit: 'par appareil',
+            visual: 'ric',
+            visualCaption: 'Écouteur déporté discret — illustration',
             desc: 'Davantage de confort pour une vie quotidienne active et des environnements sonores variés.',
             features: [
               'Pour les conversations, sorties et repas en famille',
@@ -61,6 +65,8 @@ export default [
             name: 'PREMIUM',
             price: 'À partir de 14 000 DH',
             unit: 'par appareil',
+            visual: 'ric-charge',
+            visualCaption: 'Rechargeable et connecté — illustration',
             desc: 'Des technologies avancées pour les situations d’écoute les plus exigeantes.',
             features: [
               'Pour les restaurants, réunions et conversations de groupe',
@@ -74,6 +80,8 @@ export default [
             whatsappPrefill: 'Bonjour, je souhaite recevoir des informations sur les solutions auditives Premium à partir de 14 000 DH.',
           },
         ],
+        brandsLabel: 'Marques :',
+        brandsNote: 'Nous appareillons avec des fabricants reconnus, notamment *Signia* et *Phonak*. Les images ci-dessus illustrent les types d’appareils ; le modèle précis est choisi avec vous après le bilan, selon votre audition et votre quotidien.',
         note: 'Tarifs indicatifs par appareil. Le prix définitif dépend de votre audition, du modèle choisi et des fonctionnalités nécessaires. Des solutions technologiques plus avancées peuvent être proposées après l’étude de vos besoins. Un devis détaillé vous est remis après le bilan, sans engagement.',
         after: [
           'Lorsque les deux oreilles présentent une perte auditive, une solution pour deux appareils peut être recommandée. Le tarif complet est alors indiqué clairement sur votre devis personnalisé.',
@@ -199,6 +207,8 @@ export default [
             name: 'الأساسي',
             price: 'ابتداءً من 5 000 درهم',
             unit: 'لكل جهاز',
+            visual: 'bte',
+            visualCaption: 'جهاز خلف الأذن بالبطارية — رسم توضيحي',
             desc: 'حلّ موثوق لاستعادة سمع مريح في حياتك اليومية.',
             features: [
               'للأماكن الهادئة إلى متوسّطة الحركة',
@@ -217,6 +227,8 @@ export default [
             badge: 'الاختيار الأكثر طلبًا',
             price: 'من 7 000 إلى 12 000 درهم',
             unit: 'لكل جهاز',
+            visual: 'ric',
+            visualCaption: 'سمّاعة داخل القناة دقيقة — رسم توضيحي',
             desc: 'راحة أكبر لحياة يومية نشيطة وبيئات صوتية متنوّعة.',
             features: [
               'للمحادثات والخرجات ووجبات العائلة',
@@ -234,6 +246,8 @@ export default [
             name: 'بريميوم',
             price: 'ابتداءً من 14 000 درهم',
             unit: 'لكل جهاز',
+            visual: 'ric-charge',
+            visualCaption: 'قابل للشحن ومتّصل — رسم توضيحي',
             desc: 'تقنيات متقدّمة لأصعب مواقف الاستماع.',
             features: [
               'للمطاعم والاجتماعات والمحادثات الجماعية',
@@ -247,6 +261,8 @@ export default [
             whatsappPrefill: 'السلام عليكم، أرغب في الحصول على معلومات حول الحلول السمعية بريميوم ابتداءً من 14 000 درهم.',
           },
         ],
+        brandsLabel: 'العلامات:',
+        brandsNote: 'نجهّز بأجهزة من صانعين معروفين، منهم *Signia* و*Phonak*. الرسوم أعلاه توضّح أنواع الأجهزة؛ أمّا الطراز الدقيق فيُختار معك بعد الفحص، حسب سمعك وحياتك اليومية.',
         note: 'أثمان إرشادية لكل جهاز. يتوقّف الثمن النهائي على سمعك والطراز المختار والوظائف اللازمة. يمكن اقتراح حلول تقنية أكثر تقدّمًا بعد دراسة احتياجاتك. تتسلّم عرض أثمان مفصّلًا بعد الفحص، دون أي التزام.',
         after: [
           'عندما يكون ضعف السمع في الأذنين معًا، قد يُنصح بحلّ بجهازين. ويُذكر الثمن الكامل حينها بوضوح في عرض الأثمان الشخصي.',
@@ -372,6 +388,8 @@ export default [
             name: 'ESSENTIAL',
             price: 'From MAD 5,000',
             unit: 'per device',
+            visual: 'bte',
+            visualCaption: 'Battery behind-the-ear — illustration',
             desc: 'A reliable solution to enjoy comfortable hearing again, every day.',
             features: [
               'For quiet to moderately busy environments',
@@ -390,6 +408,8 @@ export default [
             badge: 'Most requested',
             price: 'MAD 7,000 to 12,000',
             unit: 'per device',
+            visual: 'ric',
+            visualCaption: 'Discreet receiver-in-canal — illustration',
             desc: 'More comfort for an active daily life and varied sound environments.',
             features: [
               'For conversations, outings and family meals',
@@ -407,6 +427,8 @@ export default [
             name: 'PREMIUM',
             price: 'From MAD 14,000',
             unit: 'per device',
+            visual: 'ric-charge',
+            visualCaption: 'Rechargeable and connected — illustration',
             desc: 'Advanced technology for the most demanding listening situations.',
             features: [
               'For restaurants, meetings and group conversations',
@@ -420,6 +442,8 @@ export default [
             whatsappPrefill: 'Hello, I would like information about the Premium hearing solutions from MAD 14,000.',
           },
         ],
+        brandsLabel: 'Brands:',
+        brandsNote: 'We fit devices from recognised manufacturers, including *Signia* and *Phonak*. The images above illustrate the types of device; the exact model is chosen with you after the assessment, based on your hearing and your daily life.',
         note: 'Indicative prices per device. The final price depends on your hearing, the chosen model and the features you need. More advanced technology may be suggested once your needs have been assessed. You receive a detailed quote after the assessment, with no obligation.',
         after: [
           'When both ears have a hearing loss, a two-device solution may be recommended. The full price is then shown clearly on your personalised quote.',

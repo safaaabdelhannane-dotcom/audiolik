@@ -67,7 +67,8 @@ export const business = {
   },
 
   priceRange: null,
-  brands: [],
+  // Marques avec lesquelles le centre appareille (confirmé par le centre, 09/2026).
+  brands: ['Signia', 'Phonak'],
   languages: ['fr', 'ar', 'en'],
   defaultLang: 'fr',
 };

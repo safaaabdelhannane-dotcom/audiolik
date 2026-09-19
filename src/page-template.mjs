@@ -16,6 +16,7 @@
 
 import { business as B, brand, locales, SITE_URL } from './business.mjs';
 import { SPRITE, icon } from './icons.mjs';
+import { DEVICE_SVG } from './device-art.mjs';
 import { pages as SUBPAGES } from './pages.mjs';
 import { runtimeScripts } from './runtime-config.mjs';
 
@@ -132,9 +133,11 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
         <li class="tarif${c.featured ? ' tarif--featured' : ''}">
           <article class="tarif__card" aria-labelledby="tarif-${esc(c.key)}">
             ${c.badge ? `<p class="tarif__badge">${esc(c.badge)}</p>` : ''}
+            ${c.visual && DEVICE_SVG[c.visual] ? `<figure class="tarif__visual">${DEVICE_SVG[c.visual]}<figcaption>${esc(c.visualCaption || '')}</figcaption></figure>` : ''}
             <h3 class="tarif__name" id="tarif-${esc(c.key)}">${esc(c.name)}</h3>
             <p class="tarif__price"><strong>${esc(c.price)}</strong><span>${esc(c.unit)}</span></p>
             <p class="tarif__desc">${esc(c.desc)}</p>
+            ${P.brandsLabel && B.brands.length ? `<p class="tarif__brands">${esc(P.brandsLabel)} <span class="lat" dir="ltr">${B.brands.map(esc).join(' · ')}</span></p>` : ''}
             <ul class="ticks tarif__feats">${c.features.map((f) => `<li>${icon('check')}<span>${rich(f)}</span></li>`).join('')}</ul>
             ${B.whatsapp ? `<a class="btn${c.featured ? '' : ' btn--ghost'} tarif__btn" href="${esc(waLink(c.whatsappPrefill))}" target="_blank" rel="noopener" aria-label="${esc(c.ariaLabel)}">${icon('whatsapp-logo')}<span>${esc(c.cta)}</span></a>` : ''}
           </article>
@@ -144,6 +147,7 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
       <div class="tarifs__after">
         ${P.note ? `<p class="tarifs__note">${rich(P.note)}</p>` : ''}
         ${(P.after || []).map((p) => `<p>${rich(p)}</p>`).join('\n        ')}
+        ${P.brandsNote && B.brands.length ? `<p class="tarifs__brands">${rich(P.brandsNote)}</p><ul class="brands" role="list">${B.brands.map((b) => `<li class="lat" dir="ltr">${esc(b)}</li>`).join('')}</ul>` : ''}
       </div>
 `
     : '';
@@ -179,6 +183,15 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
 .tarifs__after p + p { margin-block-start: .85rem; }
 .tarifs__note { padding: 1rem 1.15rem; background: var(--surface-2); border: 1px solid var(--rule);
   border-inline-start: 3px solid var(--accent); border-radius: var(--r-md); color: var(--ink); font-size: var(--t-sm); line-height: 1.55; }
+.tarif__visual { margin: 0 0 1.1rem; padding: .9rem 1rem .6rem; border-radius: var(--r-md); background: var(--bg-tint);
+  color: var(--accent); --dev-fill: var(--surface); --dev-surface: var(--surface); text-align: center; }
+.tarif__visual svg { display: block; inline-size: 100%; max-inline-size: 11rem; block-size: auto; margin-inline: auto; }
+.tarif__visual figcaption { margin-block-start: .35rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-muted); }
+.tarif__brands { margin: .9rem 0 0; font-size: var(--t-2xs, .8125rem); font-weight: 600; color: var(--ink-muted); }
+.tarif__brands span { color: var(--ink); font-weight: 700; letter-spacing: .02em; }
+.brands { list-style: none; margin: .9rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.brands li { padding: .45rem 1rem; border: 1px solid var(--rule-strong); border-radius: var(--r-md); background: var(--surface);
+  font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; letter-spacing: .02em; color: var(--ink); }
 .page__body h3 { margin-block: 0 .75rem; }
 .page__body .ticks + p { margin-block-start: 1.25rem; }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
@@ -308,7 +321,7 @@ ${SPRITE}
     </a>
 
     <nav class="nav" id="nav" aria-label="${esc(t.footer.nav)}">
-      ${t.nav.items.map((n) => `<a class="nav__link" href="${home}${n.href}">${esc(n.label)}</a>`).join('\n      ')}
+      ${t.nav.items.map((n) => `<a class="nav__link" href="${home}${n.href}"${n.href.startsWith(slug + '/') ? ' aria-current="page"' : ''}>${esc(n.label)}</a>`).join('\n      ')}
     </nav>
 
     <div class="header__actions">
