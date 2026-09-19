@@ -27,7 +27,7 @@ export default [
             price: 'À partir de 5 000 DH',
             unit: 'par appareil',
             visual: 'bte',
-            visualCaption: 'Contour d’oreille à pile — photo d’illustration',
+            visualCaption: 'Contour d’oreille à pile',
             desc: 'Une solution fiable pour retrouver une écoute confortable au quotidien.',
             features: [
               'Pour les environnements calmes à modérément animés',
@@ -47,7 +47,7 @@ export default [
             price: 'De 7 000 à 12 000 DH',
             unit: 'par appareil',
             visual: 'ric',
-            visualCaption: 'Écouteur déporté discret — photo d’illustration',
+            visualCaption: 'Écouteur déporté discret',
             desc: 'Davantage de confort pour une vie quotidienne active et des environnements sonores variés.',
             features: [
               'Pour les conversations, sorties et repas en famille',
@@ -66,7 +66,7 @@ export default [
             price: 'À partir de 14 000 DH',
             unit: 'par appareil',
             visual: 'ric-charge',
-            visualCaption: 'Rechargeable et connecté — photo d’illustration',
+            visualCaption: 'Rechargeable et connecté',
             desc: 'Des technologies avancées pour les situations d’écoute les plus exigeantes.',
             features: [
               'Pour les restaurants, réunions et conversations de groupe',
@@ -208,7 +208,7 @@ export default [
             price: 'ابتداءً من 5 000 درهم',
             unit: 'للجهاز الواحد',
             visual: 'bte',
-            visualCaption: 'جهاز خلف الأذن يعمل بالبطارية — صورة توضيحية',
+            visualCaption: 'جهاز خلف الأذن يعمل بالبطارية',
             desc: 'حلّ موثوق يعيد إليك سمعًا مريحًا في حياتك اليومية.',
             features: [
               'مناسبة للأماكن الهادئة أو متوسطة الضجيج',
@@ -228,7 +228,7 @@ export default [
             price: 'من 7 000 إلى 12 000 درهم',
             unit: 'للجهاز الواحد',
             visual: 'ric',
-            visualCaption: 'جهاز بسمّاعة داخل القناة — صورة توضيحية',
+            visualCaption: 'جهاز بسمّاعة داخل القناة',
             desc: 'راحة أكبر لحياة يومية نشيطة ولبيئات صوتية متنوّعة.',
             features: [
               'مناسبة للمحادثات والخرجات والجلسات العائلية',
@@ -247,7 +247,7 @@ export default [
             price: 'ابتداءً من 14 000 درهم',
             unit: 'للجهاز الواحد',
             visual: 'ric-charge',
-            visualCaption: 'جهاز قابل للشحن ومتّصل — صورة توضيحية',
+            visualCaption: 'جهاز قابل للشحن ومتّصل',
             desc: 'تقنيات متطوّرة لأصعب مواقف الاستماع.',
             features: [
               'مناسبة للمطاعم والاجتماعات والمحادثات الجماعية',
@@ -389,7 +389,7 @@ export default [
             price: 'From MAD 5,000',
             unit: 'per device',
             visual: 'bte',
-            visualCaption: 'Battery behind-the-ear — illustrative photo',
+            visualCaption: 'Battery behind-the-ear',
             desc: 'A reliable solution to enjoy comfortable hearing again, every day.',
             features: [
               'For quiet to moderately busy environments',
@@ -409,7 +409,7 @@ export default [
             price: 'MAD 7,000 to 12,000',
             unit: 'per device',
             visual: 'ric',
-            visualCaption: 'Discreet receiver-in-canal — illustrative photo',
+            visualCaption: 'Discreet receiver-in-canal',
             desc: 'More comfort for an active daily life and varied sound environments.',
             features: [
               'For conversations, outings and family meals',
@@ -428,7 +428,7 @@ export default [
             price: 'From MAD 14,000',
             unit: 'per device',
             visual: 'ric-charge',
-            visualCaption: 'Rechargeable and connected — illustrative photo',
+            visualCaption: 'Rechargeable and connected',
             desc: 'Advanced technology for the most demanding listening situations.',
             features: [
               'For restaurants, meetings and group conversations',

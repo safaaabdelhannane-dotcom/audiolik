@@ -3,7 +3,8 @@
  *
  * ⚠ ORIGINE : images GÉNÉRÉES par IA (septembre 2026). Elles ne représentent
  * ni le centre, ni son équipe, ni de vrais patients, et les appareils sont
- * génériques (aucune marque). D'où la légende « Photo d'illustration ».
+ * génériques (aucune marque). La légende « Photo d'illustration » a été
+ * retirée à la demande du centre (09/2026) ; CAPTION reste disponible.
  * Une vraie prise de vue au centre reste préférable à terme.
  *
  * Fichiers : assets/img/site/<nom>-800.webp, -1600.webp (1200 px de large pour

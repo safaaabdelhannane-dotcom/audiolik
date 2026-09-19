@@ -17,7 +17,7 @@
 import { business as B, brand, locales, SITE_URL } from './business.mjs';
 import { SPRITE, icon } from './icons.mjs';
 import { DEVICE_SVG } from './device-art.mjs';
-import { IMG, CAPTION, alt as imgAlt, PAGE_IMAGES, CARD_PHOTOS } from './page-images.mjs';
+import { IMG, alt as imgAlt, PAGE_IMAGES, CARD_PHOTOS } from './page-images.mjs';
 import { pages as SUBPAGES } from './pages.mjs';
 import { runtimeScripts } from './runtime-config.mjs';
 
@@ -107,7 +107,6 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
       return `
         <figure class="page__figure${cls}">
           <div class="page__figure-media">${f.items.map((n) => picture(n, sizes)).join('')}</div>
-          <figcaption>${esc(CAPTION[lang])}</figcaption>
         </figure>`;
     })
     .join('');
