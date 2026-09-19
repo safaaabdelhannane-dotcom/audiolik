@@ -17,6 +17,7 @@
 import { business as B, brand, locales, SITE_URL } from './business.mjs';
 import { SPRITE, icon } from './icons.mjs';
 import { DEVICE_SVG } from './device-art.mjs';
+import { IMG, CAPTION, alt as imgAlt, PAGE_IMAGES, CARD_PHOTOS } from './page-images.mjs';
 import { pages as SUBPAGES } from './pages.mjs';
 import { runtimeScripts } from './runtime-config.mjs';
 
@@ -89,9 +90,31 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
   }
   const jsonLd = { '@context': 'https://schema.org', '@graph': graph };
 
+  /* -- photos d'illustration ------------------------------------------------
+     WebP en 800 et 1600 px (le navigateur choisit), JPEG en secours. Les
+     dimensions sont fixées pour éviter tout décalage pendant le chargement. */
+  const picture = (name, sizes, cls = '') => {
+    const [w, h] = IMG[name];
+    const base = `${up}assets/img/site/${name}`;
+    return `<picture><source type="image/webp" srcset="${base}-800.webp 800w, ${base}-1600.webp ${w}w" sizes="${sizes}"><img${cls ? ` class="${cls}"` : ''} src="${base}-1200.jpg" alt="${esc(imgAlt(name, lang))}" width="${w}" height="${h}" loading="lazy" decoding="async"></picture>`;
+  };
+  const figures = (i) => (PAGE_IMAGES[slug] || [])
+    .filter((f) => f.after === i && f.items.every((n) => IMG[n]))
+    .map((f) => {
+      const portrait = f.items.length === 1 && IMG[f.items[0]][1] > IMG[f.items[0]][0];
+      const cls = f.items.length > 1 ? ' page__figure--gallery' : portrait ? ' page__figure--portrait' : '';
+      const sizes = f.items.length > 1 ? '(min-width: 40rem) 15rem, 100vw' : '(min-width: 48rem) 44rem, 100vw';
+      return `
+        <figure class="page__figure${cls}">
+          <div class="page__figure-media">${f.items.map((n) => picture(n, sizes)).join('')}</div>
+          <figcaption>${esc(CAPTION[lang])}</figcaption>
+        </figure>`;
+    })
+    .join('');
+
   /* -- corps --------------------------------------------------------------- */
   const sections = page.sections
-    .map((s) => {
+    .map((s, i) => {
       const paras = (s.p || []).map((p) => `<p>${rich(p)}</p>`).join('\n        ');
       const list = s.list && s.list.length
         ? `<ul class="ticks">${s.list.map((li) => `<li>${icon('check')}<span>${rich(li)}</span></li>`).join('')}</ul>`
@@ -101,7 +124,7 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
       const id = s.id ? ` id="${esc(s.id)}"` : '';
       return `      <${tag}${id}>${esc(s.h3 || s.h2)}</${tag}>
         ${paras}
-        ${list}`;
+        ${list}${figures(i)}`;
     })
     .join('\n\n');
 
@@ -133,7 +156,9 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
         <li class="tarif${c.featured ? ' tarif--featured' : ''}">
           <article class="tarif__card" aria-labelledby="tarif-${esc(c.key)}">
             ${c.badge ? `<p class="tarif__badge">${esc(c.badge)}</p>` : ''}
-            ${c.visual && DEVICE_SVG[c.visual] ? `<figure class="tarif__visual">${DEVICE_SVG[c.visual]}<figcaption>${esc(c.visualCaption || '')}</figcaption></figure>` : ''}
+            ${CARD_PHOTOS[c.key] && IMG[CARD_PHOTOS[c.key]]
+              ? `<figure class="tarif__visual tarif__visual--photo">${picture(CARD_PHOTOS[c.key], '(min-width: 60rem) 22rem, (min-width: 40rem) 34rem, 100vw')}<figcaption>${esc(c.visualCaption || '')}</figcaption></figure>`
+              : c.visual && DEVICE_SVG[c.visual] ? `<figure class="tarif__visual">${DEVICE_SVG[c.visual]}<figcaption>${esc(c.visualCaption || '')}</figcaption></figure>` : ''}
             <h3 class="tarif__name" id="tarif-${esc(c.key)}">${esc(c.name)}</h3>
             <p class="tarif__price"><strong>${esc(c.price)}</strong><span>${esc(c.unit)}</span></p>
             <p class="tarif__desc">${esc(c.desc)}</p>
@@ -190,6 +215,9 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
   color: var(--accent); --dev-fill: var(--surface); --dev-surface: var(--surface); text-align: center; }
 .tarif__visual svg { display: block; inline-size: 100%; max-inline-size: 11rem; block-size: auto; margin-inline: auto; }
 .tarif__visual figcaption { margin-block-start: .35rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-muted); }
+.tarif__visual--photo { padding: 0; overflow: hidden; }
+.tarif__visual--photo img { display: block; inline-size: 100%; block-size: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.tarif__visual--photo figcaption { margin: 0; padding: .5rem .75rem .6rem; }
 .tarif__brands { margin: .9rem 0 0; font-size: var(--t-2xs, .8125rem); font-weight: 600; color: var(--ink-muted); }
 .tarif__brands span { color: var(--ink); font-weight: 700; letter-spacing: .02em; }
 .brands { list-style: none; margin: .9rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
@@ -303,6 +331,13 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Photos d'illustration dans le corps des pages. */
+.page__figure { margin: clamp(1.5rem, 1.2rem + 1vw, 2.25rem) 0 0; }
+.page__figure-media img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--r-lg); background: var(--surface-2); }
+.page__figure--portrait { max-inline-size: 26rem; }
+.page__figure--gallery .page__figure-media { display: grid; gap: .75rem; }
+@media (min-width: 40rem) { .page__figure--gallery .page__figure-media { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.page__figure figcaption { margin-block-start: .5rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-faint); }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
 .page__cta .btn__row { flex-wrap: wrap; }
 .page__cta .btn { max-inline-size: 100%; }${pricingCss}
