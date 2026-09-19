@@ -498,6 +498,7 @@ ${SPRITE}
         <h2 class="h2">${esc(t.pricing.title)}</h2>
         ${t.pricing.argument.map((p) => `<p>${esc(p)}</p>`).join('\n        ')}
         <p class="budget__note">${icon('info')}<span>${esc(t.pricing.note)}</span></p>
+        ${t.pricing.pricesLink ? `<p><a class="btn btn--ghost btn--sm" href="${loc.path}${esc(t.pricing.pricesLink.slug)}/#${esc(t.pricing.pricesLink.hash)}"><span>${esc(t.pricing.pricesLink.label)}</span>${icon('arrow-right')}</a></p>` : ''}
       </div>
       <aside class="budget__box" data-reveal style="--d:90ms">
         <h3>${esc(t.pricing.includedTitle)}</h3>

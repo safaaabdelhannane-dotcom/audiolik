@@ -10,10 +10,11 @@
  * l'accueil, et les hreflang relient les trois entre elles.
  *
  * RÈGLES D'ÉCRITURE — les mêmes que pour l'accueil :
- *   · aucun prix chiffré (ils sont communiqués au centre, après le bilan) —
- *     SEULE EXCEPTION : la carte tarifaire indicative de la page
- *     /appareils-auditifs-casablanca/ dans les trois langues (tarifs par
- *     appareil validés, 09/2026) ;
+ *   · prix : uniquement les tarifs INDICATIFS PAR APPAREIL validés par le centre
+ *     (09/2026) — Essentiel dès 5 000 DH, Confort 7 000 à 12 000 DH, Premium dès
+ *     14 000 DH. Source de référence : la carte tarifaire de
+ *     /appareils-auditifs-casablanca/ ; l'accueil et la page centre la reprennent.
+ *     Jamais de montant de remboursement ;
  *   · aucune promesse non confirmée. Le seul engagement confirmé par le centre
  *     est le BILAN AUDITIF GRATUIT (business.claims.freeHearingTest, 09/2026).
  *     Restent à false, donc interdits d'écriture : essai à domicile, suivi
@@ -88,7 +89,7 @@ const core = [
         },
         {
           q: 'Combien coûte un appareillage ?',
-          a: "Les tarifs dépendent du niveau de technologie et de votre perte auditive. Ils vous sont communiqués au centre, après le bilan. Vous repartez avec un devis détaillé, et rien n'est signé le jour même.",
+          a: "À titre indicatif et par appareil : gamme Essentiel à partir de 5 000 DH, Confort de 7 000 à 12 000 DH, Premium à partir de 14 000 DH. Le prix définitif dépend de votre audition et du modèle choisi ; il figure sur le devis détaillé remis après le bilan, et rien n'est signé le jour même.",
         },
         {
           q: 'Y a-t-il une prise en charge ?',
@@ -154,7 +155,7 @@ const core = [
         },
         {
           q: 'كم يكلّف التجهيز السمعي؟',
-          a: 'تختلف الأثمان حسب مستوى التقنية ودرجة ضعف السمع. وتُقدَّم لك في المركز، بعد الفحص. تغادر ومعك عرض أثمان مفصّل، ولا توقيع في اليوم نفسه.',
+          a: 'على سبيل الإرشاد ولكل جهاز: فئة الأساسي ابتداءً من 5 000 درهم، والراحة من 7 000 إلى 12 000 درهم، وبريميوم ابتداءً من 14 000 درهم. ويتوقّف الثمن النهائي على سمعك والطراز المختار، ويُذكر في عرض الأثمان المفصّل الذي يُسلَّم بعد الفحص، ولا توقيع في اليوم نفسه.',
         },
         {
           q: 'هل هناك تغطية صحية؟',
@@ -220,7 +221,7 @@ const core = [
         },
         {
           q: 'How much does a hearing aid cost?',
-          a: "Prices depend on the level of technology and on your hearing loss. They are given to you at the centre, after the assessment. You leave with a detailed quote, and nothing is signed on the day.",
+          a: "As a guide, per device: Essential range from MAD 5,000, Comfort MAD 7,000 to 12,000, Premium from MAD 14,000. The final price depends on your hearing and the chosen model; it is set out in the detailed quote given after the assessment, and nothing is signed on the day.",
         },
         {
           q: 'Is there any reimbursement?',

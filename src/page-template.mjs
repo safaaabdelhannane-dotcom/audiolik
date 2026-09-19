@@ -193,10 +193,7 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
 .brands li { padding: .45rem 1rem; border: 1px solid var(--rule-strong); border-radius: var(--r-md); background: var(--surface);
   font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; letter-spacing: .02em; color: var(--ink); }
 .page__body h3 { margin-block: 0 .75rem; }
-.page__body .ticks + p { margin-block-start: 1.25rem; }
-/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
-.page__cta .btn__row { flex-wrap: wrap; }
-.page__cta .btn { max-inline-size: 100%; }`
+.page__body .ticks + p { margin-block-start: 1.25rem; }`
     : '';
 
   const related = (page.related || [])
@@ -302,7 +299,10 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__body .ticks { margin-block-start: 1.25rem; }
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
-.page__related a { color: inherit; }${pricingCss}
+.page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }${pricingCss}
 </style>
 
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
