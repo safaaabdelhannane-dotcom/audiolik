@@ -662,6 +662,14 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* Pas de hover : les cellules ne sont pas cliquables, un lift mentirait. */
 .cell__body { padding: clamp(1.6rem, 1.25rem + 1.4vw, 2.4rem); }
 .cell .photo { border-radius: 0; --ratio: 4 / 3; }
+/* Tuiles larges illustrées : photo à côté du texte sur grand écran. */
+@media (min-width: 64rem) {
+  .cell--wide:has(> .photo) { flex-direction: row; }
+  .cell--wide > .photo { flex: 0 0 42%; aspect-ratio: auto; }
+}
+/* Photo en bandeau (section « Votre audition »). */
+.photo--band { --ratio: 3 / 2; margin-block-end: clamp(1.75rem, 1.25rem + 1.5vw, 2.5rem); }
+@media (min-width: 48rem) { .photo--band { --ratio: 21 / 9; } }
 .cell--feature .cell__body { margin-block-start: auto; }
 /* Les tuiles courtes s'étirent à la hauteur de rangée imposée par la tuile
    principale. Contenu centré verticalement, sinon le vide s'accumule en bas et
