@@ -94,7 +94,7 @@ export default [
       related: [
         { slug: 'appareils-auditifs-contour-oreille', label: 'خلف الأذن' },
         { slug: 'appareils-auditifs-rechargeables-bluetooth', label: 'قابل للشحن وبلوتوث' },
-        { slug: 'appareils-auditifs-casablanca', label: 'الثمن والتغطية' },
+        { slug: 'appareils-auditifs-casablanca', label: 'السعر والتغطية' },
       ],
     },
     en: {

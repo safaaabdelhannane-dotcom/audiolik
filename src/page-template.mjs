@@ -168,6 +168,9 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
   margin: 0; padding: .35rem .85rem; border-radius: var(--r-pill); background: var(--accent); color: var(--on-accent);
   font-size: var(--label-size); font-weight: 700; letter-spacing: var(--label-track); text-transform: uppercase; white-space: nowrap; }
 [dir='rtl'] .tarif__badge { transform: translate(50%, -50%); }
+/* Arabe : pas d'espacement entre lettres (il casse les liaisons), corps un peu plus grand. */
+[dir='rtl'] .tarif__name, [dir='rtl'] .tarif__badge { letter-spacing: 0; font-family: var(--font-arabic); }
+[dir='rtl'] .tarif__name { font-size: 1rem; }
 .tarif__name { margin: 0; font-family: var(--font-body); font-size: var(--label-size); font-weight: 700;
   letter-spacing: var(--label-track); color: var(--accent); }
 .tarif__price { margin: .9rem 0 0; display: flex; flex-direction: column; gap: .2rem; }
