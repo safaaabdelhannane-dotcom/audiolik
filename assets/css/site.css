@@ -412,6 +412,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .btn--hero { display: none; }
 }
 
+/* Menu à six entrées (ajout de « Tarifs ») : juste au-dessus du point de bascule
+   vers le menu burger, on resserre un peu pour que l'en-tête tienne sans débord. */
+@media (min-width: 62.001rem) and (max-width: 72rem) {
+  .nav { gap: .15rem; }
+  .nav__link { font-size: .875rem; padding-inline: .2rem; }
+}
+
 /* ==========================================================================
    Photographies (et cadres d'attente)
    ========================================================================== */
