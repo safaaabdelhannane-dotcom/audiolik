@@ -380,7 +380,7 @@ ${SPRITE}
 ${quiz}
   <article class="section section--continued">
     <div class="shell">
-${pricing}      <div class="prose page__body">
+${pricing}      <div class="prose page__body">${figures(-1)}
 ${sections}
       </div>
 

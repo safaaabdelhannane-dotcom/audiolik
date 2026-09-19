@@ -1,3 +1,4 @@
+import { alt as siteAlt } from './page-images.mjs';
 /**
  * v2 — source unique des faits. Identique à v1 sur le fond (NAP, horaires,
  * géo), avec en plus le référentiel PHOTO, qui manquait entièrement à v1.
@@ -93,7 +94,19 @@ export const business = {
 
    Déposer les fichiers dans assets/img/photos/ puis renseigner `src`.
    ========================================================================== */
+const sitePhoto = (name, file, ratio) => ({
+  src: `assets/img/site/${file}`,
+  ratio,
+  alt: { fr: siteAlt(name, 'fr'), ar: siteAlt(name, 'ar'), en: siteAlt(name, 'en') },
+});
+
 export const photos = {
+  /* Accueil : photos d'illustration générées (voir src/page-images.mjs). */
+  homeWorn:    sitePhoto('appareil-porte-oreille', 'appareil-porte-oreille-1600.webp', '4 / 3'),
+  homeIntra:   sitePhoto('appareil-intra-ite', 'appareil-intra-ite-800.webp', '4 / 3'),
+  homeContour: sitePhoto('essentiel-contour-pile', 'essentiel-contour-pile-800.webp', '4 / 3'),
+  homeSigns:   sitePhoto('homme-tv-famille', 'homme-tv-famille-1600.webp', '21 / 9'),
+
   hero: {
     src: 'assets/img/photos/hero.jpg',
     ratio: '4 / 5',

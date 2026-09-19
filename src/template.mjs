@@ -409,6 +409,7 @@ ${SPRITE}
         <h2 class="h2">${esc(t.signs.title)}</h2>
         <p class="lede">${esc(t.signs.lede)}</p>
       </div>
+      ${photoSlot('homeSigns', t, { className: 'photo--band', up })}
       <ol class="signs">
         ${t.signs.items.map((s, i) => `<li class="sign" data-reveal style="--d:${i * 50}ms">
           <span class="sign__ico">${icon(s.icon)}</span>

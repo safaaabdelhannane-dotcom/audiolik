@@ -134,25 +134,30 @@ export const alt = (name, lang) => (ALT[name] && ALT[name][lang]) || '';
 
 /* Emplacement des photos par page (identique dans les trois langues). */
 export const PAGE_IMAGES = {
-  'centre-de-correction-auditive-casablanca': [{ after: 1, items: ['personne-senior-famille'] }],
-  'audioprothesiste-casablanca':              [{ after: 1, items: ['essai-appareil'] }],
-  'bilan-auditif-casablanca':                 [{ after: 0, items: ['consultation-bilan'] }],
-  'perte-auditive':                           [{ after: 0, items: ['homme-tv-famille'] }],
+  // after: -1 = photo en tête de page, juste sous l'introduction.
+  'centre-de-correction-auditive-casablanca': [{ after: -1, items: ['personne-senior-famille'] }],
+  'audioprothesiste-casablanca':              [{ after: -1, items: ['essai-appareil'] }],
+  'bilan-auditif-casablanca':                 [{ after: -1, items: ['consultation-bilan'] }],
+  'perte-auditive':                           [{ after: -1, items: ['homme-tv-famille'] }],
+  'test-auditif-en-ligne':                    [{ after: -1, items: ['couple-restaurant'] }],
+  'remboursement-appareils-auditifs-maroc':   [{ after: 4, items: ['consultation-bilan'] }],
+  'entretien-et-reparation-appareils-auditifs': [{ after: 2, items: ['gamme-toutes-formes'] }],
   'appareils-auditifs-casablanca': [
     { after: 2, items: ['couple-restaurant'] },
     { after: 4, items: ['gamme-toutes-formes'] },
   ],
   'appareils-auditifs-intra-auriculaires': [
+    { after: -1, items: ['appareil-porte-oreille'] },
     { after: 0, items: ['appareil-ecouteur-deporte'] },
     { after: 1, items: ['appareil-intra-ite', 'appareil-intra-cic', 'appareil-invisible-iic'] },
   ],
   'appareils-auditifs-contour-oreille': [
-    { after: 0, items: ['appareil-contour-classique'] },
+    { after: -1, items: ['appareil-contour-classique'] },
     { after: 2, items: ['appareil-porte-oreille'] },
   ],
   'appareils-auditifs-rechargeables-bluetooth': [
+    { after: -1, items: ['femme-active-rechargeable'] },
     { after: 0, items: ['appareil-rechargeable-chargeur'] },
-    { after: 1, items: ['femme-active-rechargeable'] },
   ],
 };
 
