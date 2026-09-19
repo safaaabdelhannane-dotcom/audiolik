@@ -213,7 +213,8 @@ export default {
     coverage:
       'Depending on your scheme (CNSS, CNOPS, AMO or a company plan), part of the cost may be reimbursed. We prepare the paperwork your claim needs.',
     coverageLink: { slug: 'remboursement-appareils-auditifs-maroc', label: 'How to put your reimbursement file together' },
-    note: 'Prices depend on the level of technology and on your hearing loss. They are given at the centre, after the assessment.',
+    note: 'Indicative prices per device: Essential from MAD 5,000, Comfort MAD 7,000 to 12,000, Premium from MAD 14,000. The final price is on the quote you receive after the assessment.',
+    pricesLink: { slug: 'appareils-auditifs-casablanca', hash: 'prix', label: 'See our price list' },
   },
 
   center: {

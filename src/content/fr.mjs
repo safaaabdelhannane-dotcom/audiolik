@@ -234,7 +234,8 @@ export default {
     coverage:
       "Selon votre organisme (CNSS, CNOPS, AMO ou mutuelle d'entreprise), une partie de l'appareillage peut être remboursée. Nous préparons les pièces nécessaires à votre dossier.",
     coverageLink: { slug: 'remboursement-appareils-auditifs-maroc', label: 'Comment monter votre dossier de remboursement' },
-    note: 'Les tarifs dépendent du niveau de technologie et de votre perte auditive. Ils vous sont communiqués au centre, après le bilan.',
+    note: 'Tarifs indicatifs par appareil : Essentiel à partir de 5 000 DH, Confort de 7 000 à 12 000 DH, Premium à partir de 14 000 DH. Le prix définitif figure sur le devis remis après le bilan.',
+    pricesLink: { slug: 'appareils-auditifs-casablanca', hash: 'prix', label: 'Voir la carte tarifaire' },
   },
 
   center: {
