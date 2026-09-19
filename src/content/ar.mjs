@@ -21,6 +21,7 @@ export default {
       { href: '#test', label: 'اختبار إلكتروني' },
       { href: '#parcours', label: 'مسار العلاج' },
       { href: '#solutions', label: 'حلولنا' },
+      { href: 'appareils-auditifs-casablanca/#prix', label: 'الأثمان' },
       { href: '#centre', label: 'المركز' },
     ],
     cta: 'حجز موعد',

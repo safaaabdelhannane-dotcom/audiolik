@@ -21,6 +21,7 @@ export default {
       { href: '#test', label: 'Online check' },
       { href: '#parcours', label: 'How it works' },
       { href: '#solutions', label: 'Solutions' },
+      { href: 'appareils-auditifs-casablanca/#prix', label: 'Prices' },
       { href: '#centre', label: 'The centre' },
     ],
     cta: 'Book',
