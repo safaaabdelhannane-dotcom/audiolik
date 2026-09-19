@@ -93,6 +93,15 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .tarifs__after p + p { margin-block-start: .85rem; }
 .tarifs__note { padding: 1rem 1.15rem; background: var(--surface-2); border: 1px solid var(--rule);
   border-inline-start: 3px solid var(--accent); border-radius: var(--r-md); color: var(--ink); font-size: var(--t-sm); line-height: 1.55; }
+.tarif__visual { margin: 0 0 1.1rem; padding: .9rem 1rem .6rem; border-radius: var(--r-md); background: var(--bg-tint);
+  color: var(--accent); --dev-fill: var(--surface); --dev-surface: var(--surface); text-align: center; }
+.tarif__visual svg { display: block; inline-size: 100%; max-inline-size: 11rem; block-size: auto; margin-inline: auto; }
+.tarif__visual figcaption { margin-block-start: .35rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-muted); }
+.tarif__brands { margin: .9rem 0 0; font-size: var(--t-2xs, .8125rem); font-weight: 600; color: var(--ink-muted); }
+.tarif__brands span { color: var(--ink); font-weight: 700; letter-spacing: .02em; }
+.brands { list-style: none; margin: .9rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.brands li { padding: .45rem 1rem; border: 1px solid var(--rule-strong); border-radius: var(--r-md); background: var(--surface);
+  font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; letter-spacing: .02em; color: var(--ink); }
 .page__body h3 { margin-block: 0 .75rem; }
 .page__body .ticks + p { margin-block-start: 1.25rem; }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
@@ -120,7 +129,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
       <a class="nav__link" href="/#test">Test en ligne</a>
       <a class="nav__link" href="/#parcours">Le parcours</a>
       <a class="nav__link" href="/#solutions">Nos solutions</a>
-      <a class="nav__link" href="/appareils-auditifs-casablanca/#prix">Tarifs</a>
+      <a class="nav__link" href="/appareils-auditifs-casablanca/#prix" aria-current="page">Tarifs</a>
       <a class="nav__link" href="/#centre">Le centre</a>
     </nav>
 
@@ -152,9 +161,17 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <li class="tarif">
           <article class="tarif__card" aria-labelledby="tarif-essentiel">
             
+            <figure class="tarif__visual"><svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 22c-14 2-22 16-20 34 2 16 10 28 20 32 6 2 10-2 9-8-3-12-4-24 0-38 2-8 0-20-9-20z" fill="var(--dev-fill)"/>
+    <path d="M57 22c6-10 20-14 30-8 8 5 10 16 6 26"/>
+    <path d="M93 40c-2 10-2 20 6 26"/>
+    <ellipse cx="108" cy="70" rx="11" ry="8" fill="var(--dev-fill)"/>
+    <circle cx="49" cy="46" r="2.5" fill="currentColor" stroke="none"/>
+    <path d="M47 70h8"/></svg><figcaption>Contour d’oreille à pile — illustration</figcaption></figure>
             <h3 class="tarif__name" id="tarif-essentiel">ESSENTIEL</h3>
             <p class="tarif__price"><strong>À partir de 5 000 DH</strong><span>par appareil</span></p>
             <p class="tarif__desc">Une solution fiable pour retrouver une écoute confortable au quotidien.</p>
+            <p class="tarif__brands">Marques : <span class="lat" dir="ltr">Signia · Phonak</span></p>
             <ul class="ticks tarif__feats"><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Pour les environnements calmes à modérément animés</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Réglages adaptés à votre audiogramme</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Modèles à pile selon les besoins et les disponibilités</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Bilan, adaptation et contrôles de suivi inclus</span></li></ul>
             <a class="btn btn--ghost tarif__btn" href="https://wa.me/212669571565?text=Bonjour%2C%20je%20souhaite%20recevoir%20des%20informations%20sur%20la%20gamme%20Essentiel%20%C3%A0%20partir%20de%205%20000%20DH." target="_blank" rel="noopener" aria-label="Demander un devis pour la gamme Essentiel sur WhatsApp (nouvel onglet)"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg><span>Demander un devis</span></a>
           </article>
@@ -162,9 +179,17 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <li class="tarif tarif--featured">
           <article class="tarif__card" aria-labelledby="tarif-confort">
             <p class="tarif__badge">Le choix le plus demandé</p>
+            <figure class="tarif__visual"><svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M62 26c-10 2-15 13-14 26 1 12 7 21 14 24 5 2 8-1 7-6-2-9-3-18 0-28 2-7 0-17-7-16z" fill="var(--dev-fill)"/>
+    <path d="M62 26c10-12 30-12 38 0 5 8 3 20-3 30" stroke-width="2"/>
+    <path d="M97 56l6 9" stroke-width="2"/>
+    <rect x="99" y="63" width="10" height="7" rx="3" transform="rotate(35 104 66)" fill="var(--dev-fill)"/>
+    <path d="M110 72c4 0 8 3 8 7s-4 6-8 5" fill="var(--dev-fill)" stroke-width="2.5"/>
+    <circle cx="56" cy="44" r="2.2" fill="currentColor" stroke="none"/></svg><figcaption>Écouteur déporté discret — illustration</figcaption></figure>
             <h3 class="tarif__name" id="tarif-confort">CONFORT</h3>
             <p class="tarif__price"><strong>De 7 000 à 12 000 DH</strong><span>par appareil</span></p>
             <p class="tarif__desc">Davantage de confort pour une vie quotidienne active et des environnements sonores variés.</p>
+            <p class="tarif__brands">Marques : <span class="lat" dir="ltr">Signia · Phonak</span></p>
             <ul class="ticks tarif__feats"><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Pour les conversations, sorties et repas en famille</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Meilleure gestion de la parole dans le bruit</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Modèles discrets disponibles</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Rechargeable et Bluetooth selon le modèle</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Bilan, essai, réglages et suivi inclus</span></li></ul>
             <a class="btn tarif__btn" href="https://wa.me/212669571565?text=Bonjour%2C%20je%20souhaite%20recevoir%20des%20informations%20sur%20la%20gamme%20Confort%20de%207%20000%20%C3%A0%2012%20000%20DH." target="_blank" rel="noopener" aria-label="Découvrir la gamme Confort sur WhatsApp (nouvel onglet)"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg><span>Découvrir la gamme</span></a>
           </article>
@@ -172,9 +197,16 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <li class="tarif">
           <article class="tarif__card" aria-labelledby="tarif-premium">
             
+            <figure class="tarif__visual"><svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(-4 -6) scale(.78)"><path d="M62 26c-10 2-15 13-14 26 1 12 7 21 14 24 5 2 8-1 7-6-2-9-3-18 0-28 2-7 0-17-7-16z" fill="var(--dev-fill)"/><circle cx="56" cy="44" r="2.6" fill="currentColor" stroke="none"/></g>
+    <g transform="translate(26 -6) scale(.78)"><path d="M62 26c-10 2-15 13-14 26 1 12 7 21 14 24 5 2 8-1 7-6-2-9-3-18 0-28 2-7 0-17-7-16z" fill="var(--dev-fill)"/><circle cx="56" cy="44" r="2.6" fill="currentColor" stroke="none"/></g>
+    <rect x="24" y="52" width="84" height="34" rx="13" fill="var(--dev-surface, #fff)"/>
+    <path d="M58 72h16" stroke-width="2.5"/>
+    <path d="M122 34c5 4 5 12 0 16M130 28c9 7 9 21 0 28" stroke-width="2.5"/></svg><figcaption>Rechargeable et connecté — illustration</figcaption></figure>
             <h3 class="tarif__name" id="tarif-premium">PREMIUM</h3>
             <p class="tarif__price"><strong>À partir de 14 000 DH</strong><span>par appareil</span></p>
             <p class="tarif__desc">Des technologies avancées pour les situations d’écoute les plus exigeantes.</p>
+            <p class="tarif__brands">Marques : <span class="lat" dir="ltr">Signia · Phonak</span></p>
             <ul class="ticks tarif__feats"><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Pour les restaurants, réunions et conversations de groupe</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Traitement avancé de la parole dans le bruit</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Solutions rechargeables et connectées selon le modèle</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Technologie et fonctionnalités premium</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Accompagnement et réglages personnalisés inclus</span></li></ul>
             <a class="btn btn--ghost tarif__btn" href="https://wa.me/212669571565?text=Bonjour%2C%20je%20souhaite%20recevoir%20des%20informations%20sur%20les%20solutions%20auditives%20Premium%20%C3%A0%20partir%20de%2014%20000%20DH." target="_blank" rel="noopener" aria-label="Découvrir les solutions Premium sur WhatsApp (nouvel onglet)"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg><span>Découvrir les solutions Premium</span></a>
           </article>
@@ -185,6 +217,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <p class="tarifs__note">Tarifs indicatifs par appareil. Le prix définitif dépend de votre audition, du modèle choisi et des fonctionnalités nécessaires. Des solutions technologiques plus avancées peuvent être proposées après l’étude de vos besoins. Un devis détaillé vous est remis après le bilan, sans engagement.</p>
         <p>Lorsque les deux oreilles présentent une perte auditive, une solution pour deux appareils peut être recommandée. Le tarif complet est alors indiqué clairement sur votre devis personnalisé.</p>
         <p>Tout commence par un <a href="/bilan-auditif-casablanca/">bilan auditif au centre</a>. Pour comparer les fonctions, notre page sur les <a href="/appareils-auditifs-rechargeables-bluetooth/">appareils rechargeables et Bluetooth</a> les détaille, et celle sur le <a href="/remboursement-appareils-auditifs-maroc/">remboursement des appareils auditifs au Maroc</a> explique la prise en charge.</p>
+        <p class="tarifs__brands">Nous appareillons avec des fabricants reconnus, notamment <strong>Signia</strong> et <strong>Phonak</strong>. Les images ci-dessus illustrent les types d’appareils ; le modèle précis est choisi avec vous après le bilan, selon votre audition et votre quotidien.</p><ul class="brands" role="list"><li class="lat" dir="ltr">Signia</li><li class="lat" dir="ltr">Phonak</li></ul>
       </div>
       <div class="prose page__body">
       <h3 id="prix-facteurs">Ce qui fait varier le prix</h3>
