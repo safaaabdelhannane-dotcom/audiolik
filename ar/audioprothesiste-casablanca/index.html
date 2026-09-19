@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/ar/"},{"@type":"ListItem","position":2,"name":"أخصائي السمعيات بالدار البيضاء، بالأميرات","item":"https://audiolik.ma/ar/audioprothesiste-casablanca/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/ar/audioprothesiste-casablanca/","url":"https://audiolik.ma/ar/audioprothesiste-casablanca/","name":"أخصائي السمعيات بالدار البيضاء، الأميرات · أوديوليك","description":"أخصائي السمعيات بالدار البيضاء: فحص السمع بموعد مسبق، تجربة أجهزة دقيقة، الضبط والمتابعة. أوديوليك، 106B زنقة الجنيد، الأميرات، المعاريف.","inLanguage":"ar-MA","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/ar/audioprothesiste-casablanca/#faq","mainEntity":[{"@type":"Question","name":"ما الفرق بين أخصائي السمعيات وطبيب الأنف والأذن والحنجرة؟","acceptedAnswer":{"@type":"Answer","text":"طبيب الأنف والأذن والحنجرة يشخّص أمراض الأذن ويعالجها. أمّا أخصائي السمعيات فيقيس درجة الضعف، ويختار الجهاز ويركّبه ويضبطه، ثم يتولّى المتابعة. والمهنتان تعملان معًا."}},{"@type":"Question","name":"هل يمكنني الحضور مع أحد أقاربي؟","acceptedAnswer":{"@type":"Answer","text":"طبعًا، بل ننصح بذلك. القريب يساعد على وصف مواقف الحياة اليومية، وستكونان اثنين لحفظ الشرح."}}]}]}</script>

@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/"},{"@type":"ListItem","position":2,"name":"Les contours d'oreille","item":"https://audiolik.ma/appareils-auditifs-contour-oreille/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/appareils-auditifs-contour-oreille/","url":"https://audiolik.ma/appareils-auditifs-contour-oreille/","name":"Appareils auditifs contour d'oreille · AudioLik Casablanca","description":"Contours d'oreille à Casablanca : robustes, faciles à manipuler, autonomie confortable. La référence pour les pertes sévères. Bilan et réglages chez AudioLik.","inLanguage":"fr-MA","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/appareils-auditifs-contour-oreille/#faq","mainEntity":[{"@type":"Question","name":"Est-ce que ça tient bien en place ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le boîtier repose derrière l'oreille et l'embout, souvent moulé sur mesure, assure le maintien. C'est le format le plus stable, y compris en activité."}},{"@type":"Question","name":"Convient-il aux enfants ?","acceptedAnswer":{"@type":"Answer","text":"C'est le format le plus adapté : robuste, puissant, et l'embout se refait à mesure que l'oreille grandit sans changer l'appareil."}}]}]}</script>

@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/ar/"},{"@type":"ListItem","position":2,"name":"فهم ضعف السمع","item":"https://audiolik.ma/ar/perte-auditive/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/ar/perte-auditive/","url":"https://audiolik.ma/ar/perte-auditive/","name":"ضعف السمع: العلامات والأسباب وما العمل · أوديوليك الدار البيضاء","description":"كيف تتعرّف على تراجع سمعك، ولماذا يمرّ دون انتباه، وما الذي يمكن فعله، ومتى تستشير. شرح مبسّط من أوديوليك، الدار البيضاء.","inLanguage":"ar-MA","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/ar/perte-auditive/#faq","mainEntity":[{"@type":"Question","name":"هل الطنين في الأذن خطير؟","acceptedAnswer":{"@type":"Answer","text":"الطنين ليس مرضًا في ذاته، بل عَرَضًا. وهو يرافق غالبًا ضعفًا في السمع، قد يكون خفيفًا. والفحص يبيّن ما وراءه."}},{"@type":"Question","name":"هل يُعالَج ضعف السمع؟","acceptedAnswer":{"@type":"Answer","text":"ذلك يتوقّف على السبب. السدادة تُزال، والالتهاب يُعالَج. أمّا الضعف المرتبط بالسنّ أو بالضجيج فلا يُصلَح، لكنه يُعوَّض جيدًا بجهاز ملائم."}}]}]}</script>

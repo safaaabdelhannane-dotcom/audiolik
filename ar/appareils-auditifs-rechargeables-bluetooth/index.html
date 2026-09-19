@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/ar/"},{"@type":"ListItem","position":2,"name":"قابل للشحن ومتّصل","item":"https://audiolik.ma/ar/appareils-auditifs-rechargeables-bluetooth/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/ar/appareils-auditifs-rechargeables-bluetooth/","url":"https://audiolik.ma/ar/appareils-auditifs-rechargeables-bluetooth/","name":"أجهزة سمعية قابلة للشحن وبلوتوث · أوديوليك الدار البيضاء","description":"أجهزة سمعية قابلة للشحن ومتّصلة بالدار البيضاء: وداعًا للبطاريات، والمكالمات وصوت التلفاز مباشرة في الجهاز. أوديوليك، الأميرات، المعاريف.","inLanguage":"ar-MA","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/ar/appareils-auditifs-rechargeables-bluetooth/#faq","mainEntity":[{"@type":"Question","name":"كم تدوم الشحنة الواحدة؟","acceptedAnswer":{"@type":"Answer","text":"عمليًا، يومًا كاملًا، بما في ذلك البثّ. وليلة واحدة على القاعدة تكفي للانطلاق من جديد. والقيم الدقيقة تختلف حسب النموذج وتُقدَّم لك في المركز."}},{"@type":"Question","name":"هل يلزم هاتف حديث؟","acceptedAnswer":{"@type":"Answer","text":"ليس بالضرورة، لكن الاتّصال الأسهل يتحقّق مع هاتف من السنوات الأخيرة. ونتحقّق من التوافق مع هاتفك قبل أيّ اختيار."}}]}]}</script>

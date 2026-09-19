@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/"},{"@type":"ListItem","position":2,"name":"Comprendre la perte auditive","item":"https://audiolik.ma/perte-auditive/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/perte-auditive/","url":"https://audiolik.ma/perte-auditive/","name":"Perte auditive : signes, causes et quoi faire · AudioLik Casablanca","description":"Comment reconnaître une baisse d'audition, pourquoi elle passe inaperçue, ce qu'on peut faire et quand consulter. Expliqué simplement par AudioLik, Casablanca.","inLanguage":"fr-MA","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/perte-auditive/#faq","mainEntity":[{"@type":"Question","name":"Un bourdonnement dans l’oreille, est-ce grave ?","acceptedAnswer":{"@type":"Answer","text":"Un acouphène n'est pas une maladie en soi, c'est un symptôme. Il accompagne souvent une perte auditive, parfois discrète. Un bilan permet de savoir ce qu'il y a derrière."}},{"@type":"Question","name":"La perte auditive se soigne-t-elle ?","acceptedAnswer":{"@type":"Answer","text":"Cela dépend de la cause. Un bouchon se retire, une infection se soigne. Une perte liée à l'âge ou au bruit ne se répare pas, mais elle se compense très bien avec un appareil adapté."}}]}]}</script>

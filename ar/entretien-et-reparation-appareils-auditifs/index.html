@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/ar/"},{"@type":"ListItem","position":2,"name":"صيانة وإصلاح الأجهزة السمعية","item":"https://audiolik.ma/ar/entretien-et-reparation-appareils-auditifs/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/ar/entretien-et-reparation-appareils-auditifs/","url":"https://audiolik.ma/ar/entretien-et-reparation-appareils-auditifs/","name":"صيانة وإصلاح الأجهزة السمعية · أوديوليك الدار البيضاء","description":"تنظيف، تغيير المصافي، إصلاح وتصليح الأجهزة السمعية بالدار البيضاء. بطاريات، كبسولات تجفيف وقطع تبديل في أوديوليك.","inLanguage":"ar-MA","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/ar/entretien-et-reparation-appareils-auditifs/#faq","mainEntity":[{"@type":"Question","name":"جهازي يصفر، ما العمل؟","acceptedAnswer":{"@type":"Answer","text":"الصفير يأتي دائمًا تقريبًا من قالب غير مركّب جيدًا، أو متّسخ، أو صار واسعًا. ويُضبط ذلك في دقائق داخل المركز."}},{"@type":"Question","name":"هل يمكن تنظيف الجهاز بالماء؟","acceptedAnswer":{"@type":"Answer","text":"لا، أبدًا. قطعة قماش جافّة، وفرشاة دقيقة، وكبسولة تجفيف ليلًا. فالماء والكحول يُتلفان الإلكترونيات والأغشية."}}]}]}</script>

@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/en/"},{"@type":"ListItem","position":2,"name":"Hearing aid maintenance and repair","item":"https://audiolik.ma/en/entretien-et-reparation-appareils-auditifs/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/en/entretien-et-reparation-appareils-auditifs/","url":"https://audiolik.ma/en/entretien-et-reparation-appareils-auditifs/","name":"Hearing Aid Maintenance and Repair · AudioLik Casablanca","description":"Cleaning, filter changes, troubleshooting and repair of hearing aids in Casablanca. Batteries, drying capsules and replacement domes at AudioLik.","inLanguage":"en","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/en/entretien-et-reparation-appareils-auditifs/#faq","mainEntity":[{"@type":"Question","name":"My device whistles, what should I do?","acceptedAnswer":{"@type":"Answer","text":"Whistling almost always comes from a dome that is badly placed, clogged, or has become too loose. It is sorted in a few minutes at the centre."}},{"@type":"Question","name":"Can a device be cleaned with water?","acceptedAnswer":{"@type":"Answer","text":"No, never. A dry cloth, a fine brush, and a drying capsule overnight. Water and alcohol damage the electronics and the membranes."}}]}]}</script>

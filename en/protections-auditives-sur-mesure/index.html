@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/en/"},{"@type":"ListItem","position":2,"name":"Custom hearing protection","item":"https://audiolik.ma/en/protections-auditives-sur-mesure/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/en/protections-auditives-sur-mesure/","url":"https://audiolik.ma/en/protections-auditives-sur-mesure/","name":"Custom Hearing Protection in Casablanca · AudioLik","description":"Custom-moulded earplugs in Casablanca: sleep, swimming, music, worksite. Ear impression and advice at AudioLik, Les Princesses, Maârif.","inLanguage":"en","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/en/protections-auditives-sur-mesure/#faq","mainEntity":[{"@type":"Question","name":"How long does a custom earplug last?","acceptedAnswer":{"@type":"Answer","text":"Several years if cleaned regularly with warm soapy water and dried. It should be remade if the canal changes, after significant weight gain or loss for instance."}},{"@type":"Question","name":"Can you still hear with musician protection?","acceptedAnswer":{"@type":"Answer","text":"Yes, that is the point of the filter: it lowers the level evenly across all frequencies, so the sound stays faithful, simply quieter."}}]}]}</script>

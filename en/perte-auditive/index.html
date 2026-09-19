@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/en/"},{"@type":"ListItem","position":2,"name":"Understanding hearing loss","item":"https://audiolik.ma/en/perte-auditive/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/en/perte-auditive/","url":"https://audiolik.ma/en/perte-auditive/","name":"Hearing Loss: Signs, Causes and What to Do · AudioLik Casablanca","description":"How to recognise fading hearing, why it goes unnoticed, what can be done and when to seek advice. Explained plainly by AudioLik, Casablanca.","inLanguage":"en","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/en/perte-auditive/#faq","mainEntity":[{"@type":"Question","name":"Is ringing in the ear serious?","acceptedAnswer":{"@type":"Answer","text":"Tinnitus is not a disease in itself, it is a symptom. It often accompanies a hearing loss, sometimes a mild one. An assessment shows what lies behind it."}},{"@type":"Question","name":"Can hearing loss be cured?","acceptedAnswer":{"@type":"Answer","text":"It depends on the cause. Earwax can be removed, an infection treated. Loss linked to age or noise cannot be repaired, but it is very well compensated with a suitable device."}}]}]}</script>

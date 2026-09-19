@@ -64,6 +64,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }
 </style>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AudioLik","item":"https://audiolik.ma/ar/"},{"@type":"ListItem","position":2,"name":"واقيات سمعية على المقاس","item":"https://audiolik.ma/ar/protections-auditives-sur-mesure/"}]},{"@type":"WebPage","@id":"https://audiolik.ma/ar/protections-auditives-sur-mesure/","url":"https://audiolik.ma/ar/protections-auditives-sur-mesure/","name":"واقيات سمعية على المقاس بالدار البيضاء · أوديوليك","description":"سدادات مصنوعة على المقاس بالدار البيضاء: للنوم والسباحة والموسيقى وأوراش البناء. أخذ البصمة والاستشارة في أوديوليك، الأميرات، المعاريف.","inLanguage":"ar-MA","isPartOf":{"@id":"https://audiolik.ma/#website"},"about":{"@id":"https://audiolik.ma/#organization"}},{"@type":"FAQPage","@id":"https://audiolik.ma/ar/protections-auditives-sur-mesure/#faq","mainEntity":[{"@type":"Question","name":"كم تدوم السدادة المصنوعة على المقاس؟","acceptedAnswer":{"@type":"Answer","text":"سنوات عدّة إذا نُظّفت بانتظام بماء فاتر وصابون ثم جُفّفت. وينبغي إعادة صنعها إذا تغيّرت القناة، بعد زيادة أو نقصان كبير في الوزن مثلًا."}},{"@type":"Question","name":"هل يمكن السماع مع واقية الموسيقيين؟","acceptedAnswer":{"@type":"Answer","text":"نعم، وهذه هي فائدة المِصفاة: تخفض المستوى بانتظام على كل الترددات، فيبقى الصوت أمينًا، لكن أقلّ شدّة."}}]}]}</script>
