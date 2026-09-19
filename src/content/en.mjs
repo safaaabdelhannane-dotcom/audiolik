@@ -155,7 +155,7 @@ export default {
         text: 'A slim housing behind the ear, a tiny receiver in the canal. Natural sound, an open ear, all but invisible from the front.',
         icon: 'ear',
         size: 'feature',
-        photo: 'devices',
+        photo: 'homeWorn',
       },
       {
         name: 'In-the-ear',
@@ -163,6 +163,7 @@ export default {
         text: 'Custom-moulded to your canal. Nothing sits behind the ear.',
         icon: 'ear',
         size: 'wide',
+        photo: 'homeIntra',
       },
       {
         name: 'Behind-the-ear',
@@ -170,6 +171,7 @@ export default {
         text: 'Robust, easy to handle, long battery life. The reference for severe loss and for children.',
         icon: 'ear',
         size: 'wide',
+        photo: 'homeContour',
       },
       {
         name: 'Rechargeable and Bluetooth',

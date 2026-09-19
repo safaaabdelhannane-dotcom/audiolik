@@ -155,7 +155,7 @@ export default {
         text: 'علبة رفيعة خلف الأذن وسمّاعة صغيرة جدًّا داخل القناة. صوت طبيعي، أذن غير مسدودة، ولا يكاد يُرى من الأمام.',
         icon: 'ear',
         size: 'feature',
-        photo: 'devices',
+        photo: 'homeWorn',
       },
       {
         name: 'داخل الأذن',
@@ -163,6 +163,7 @@ export default {
         text: 'مصنوع على مقاس بصمة قناة أذنك. لا شيء يظهر خلف الأذن.',
         icon: 'ear',
         size: 'wide',
+        photo: 'homeIntra',
       },
       {
         name: 'خلف الأذن',
@@ -170,6 +171,7 @@ export default {
         text: 'متين، سهل الاستعمال، وذو استقلالية مريحة. المرجع في حالات الضعف الشديد وعند الأطفال.',
         icon: 'ear',
         size: 'wide',
+        photo: 'homeContour',
       },
       {
         name: 'قابل للشحن وبلوتوث',

@@ -174,7 +174,7 @@ export default {
         text: "Un boîtier fin derrière l'oreille, un écouteur minuscule dans le conduit. Son naturel, oreille peu obstruée, quasi invisible de face.",
         icon: 'ear',
         size: 'feature',
-        photo: 'devices',
+        photo: 'homeWorn',
       },
       {
         name: 'Intra-auriculaire',
@@ -182,6 +182,7 @@ export default {
         text: "Moulé sur l'empreinte de votre conduit. Rien ne dépasse derrière l'oreille.",
         icon: 'ear',
         size: 'wide',
+        photo: 'homeIntra',
       },
       {
         name: "Contour d'oreille",
@@ -189,6 +190,7 @@ export default {
         text: 'Robuste, facile à manipuler, autonomie confortable. La référence pour les pertes sévères et pour les enfants.',
         icon: 'ear',
         size: 'wide',
+        photo: 'homeContour',
       },
       {
         name: 'Rechargeable et Bluetooth',
