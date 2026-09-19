@@ -28,6 +28,10 @@ export const IMG = {
   'gamme-toutes-formes':            [1600, 900],
   'homme-tv-famille':               [1600, 1067],
   'personne-senior-famille':        [1200, 1500],
+  // Série homogène pour les cartes tarifaires (même fond, même lumière).
+  'essentiel-contour-pile':         [1600, 1200],
+  'confort-ecouteur-deporte':       [1600, 1200],
+  'premium-rechargeable-connecte':  [1600, 1200],
 };
 
 export const CAPTION = {
@@ -38,6 +42,21 @@ export const CAPTION = {
 
 /* Textes alternatifs, dans les trois langues. */
 const ALT = {
+  'essentiel-contour-pile': {
+    fr: "Contour d'oreille beige à pile, avec tube transparent et embout sur mesure",
+    ar: 'جهاز سمعي خلف الأذن بلون بيج يعمل بالبطارية، مع أنبوب شفّاف وقالب أذن على المقاس',
+    en: 'Beige battery behind-the-ear hearing aid with clear tube and custom earmould',
+  },
+  'confort-ecouteur-deporte': {
+    fr: 'Appareil discret à écouteur déporté, gris argent, avec fil fin et dôme souple',
+    ar: 'جهاز سمعي صغير بسمّاعة داخل القناة بلون فضّي، مع سلك رفيع وقبّة ليّنة',
+    en: 'Discreet silver receiver-in-canal hearing aid with thin wire and soft dome',
+  },
+  'premium-rechargeable-connecte': {
+    fr: 'Deux appareils rechargeables dans leur boîtier de charge, à côté d’un smartphone',
+    ar: 'جهازان سمعيان قابلان للشحن داخل علبة الشحن، بجانب هاتف ذكي',
+    en: 'Two rechargeable hearing aids in their charging case next to a smartphone',
+  },
   'appareil-contour-classique': {
     fr: "Contour d'oreille classique beige avec tube transparent et embout sur mesure",
     ar: 'جهاز سمعي خلف الأذن بلون بيج مع أنبوب شفّاف وقالب أذن مصنوع على المقاس',
@@ -138,7 +157,7 @@ export const PAGE_IMAGES = {
 
 /* Photo de chaque carte tarifaire (clé de carte → image). */
 export const CARD_PHOTOS = {
-  essentiel: 'appareil-contour-classique',
-  confort: 'appareil-ecouteur-deporte',
-  premium: 'appareil-rechargeable-chargeur',
+  essentiel: 'essentiel-contour-pile',
+  confort: 'confort-ecouteur-deporte',
+  premium: 'premium-rechargeable-connecte',
 };
