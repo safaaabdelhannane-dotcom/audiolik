@@ -95,7 +95,10 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
       const list = s.list && s.list.length
         ? `<ul class="ticks">${s.list.map((li) => `<li>${icon('check')}<span>${rich(li)}</span></li>`).join('')}</ul>`
         : '';
-      return `      <h2>${esc(s.h2)}</h2>
+      // Une section peut être un sous-titre (h3) de la précédente ; l'id sert d'ancre.
+      const tag = s.h3 ? 'h3' : 'h2';
+      const id = s.id ? ` id="${esc(s.id)}"` : '';
+      return `      <${tag}${id}>${esc(s.h3 || s.h2)}</${tag}>
         ${paras}
         ${list}`;
     })
@@ -103,14 +106,84 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
 
   const faq = page.faq && page.faq.length
     ? `
-    <section class="section section--tint">
+    <section class="section section--tint"${page.faqTitle ? ' aria-labelledby="faq-titre"' : ''}>
       <div class="shell">
-        <div class="prose"><p class="kicker">${esc(t.faq.title)}</p></div>
-        <div class="faq">
+        <div class="prose"><p class="kicker">${esc(t.faq.title)}</p>${page.faqTitle ? `<h2 id="faq-titre">${esc(page.faqTitle)}</h2>` : ''}</div>
+        <div class="faq"${page.faqTitle ? ' id="faq"' : ''}>
           ${page.faq.map((f) => `<details><summary>${esc(f.q)}</summary><div><p>${rich(f.a)}</p></div></details>`).join('\n          ')}
         </div>
       </div>
     </section>`
+    : '';
+
+  /* -- carte tarifaire (facultative) -----------------------------------------
+     Trois cartes égales, chacune avec son lien WhatsApp prérempli. Placée juste
+     après l'introduction, avant les sections de texte. Seules les pages qui
+     déclarent `pricing` la reçoivent, avec leur CSS : les autres pages ne
+     chargent pas un octet de plus. */
+  const P = page.pricing;
+  const pricing = P
+    ? `      <div class="prose page__body">
+      <h2 id="${esc(P.id || 'prix')}">${esc(P.h2)}</h2>
+        ${(P.intro || []).map((p) => `<p>${rich(p)}</p>`).join('\n        ')}
+      </div>
+
+      <ul class="tarifs" role="list">${P.cards.map((c) => `
+        <li class="tarif${c.featured ? ' tarif--featured' : ''}">
+          <article class="tarif__card" aria-labelledby="tarif-${esc(c.key)}">
+            ${c.badge ? `<p class="tarif__badge">${esc(c.badge)}</p>` : ''}
+            <h3 class="tarif__name" id="tarif-${esc(c.key)}">${esc(c.name)}</h3>
+            <p class="tarif__price"><strong>${esc(c.price)}</strong><span>${esc(c.unit)}</span></p>
+            <p class="tarif__desc">${esc(c.desc)}</p>
+            <ul class="ticks tarif__feats">${c.features.map((f) => `<li>${icon('check')}<span>${rich(f)}</span></li>`).join('')}</ul>
+            ${B.whatsapp ? `<a class="btn${c.featured ? '' : ' btn--ghost'} tarif__btn" href="${esc(waLink(c.whatsappPrefill))}" target="_blank" rel="noopener" aria-label="${esc(c.ariaLabel)}">${icon('whatsapp-logo')}<span>${esc(c.cta)}</span></a>` : ''}
+          </article>
+        </li>`).join('')}
+      </ul>
+
+      <div class="tarifs__after">
+        ${P.note ? `<p class="tarifs__note">${rich(P.note)}</p>` : ''}
+        ${(P.after || []).map((p) => `<p>${rich(p)}</p>`).join('\n        ')}
+      </div>
+`
+    : '';
+
+  const pricingCss = P
+    ? `
+/* Carte tarifaire : trois cartes égales sur ordinateur, une par ligne sur mobile. */
+.tarifs { list-style: none; margin: clamp(1.75rem, 1.25rem + 1.5vw, 2.5rem) 0 0; padding: 0;
+  display: grid; grid-template-columns: 1fr; gap: 1.25rem; max-width: 72rem; }
+@media (min-width: 60rem) { .tarifs { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; } }
+@media (min-width: 40rem) and (max-width: 59.99rem) { .tarifs { max-width: 34rem; } }
+.tarif { display: flex; padding-block-start: .9rem; }   /* place réservée au badge, identique pour les trois */
+.tarif__card { position: relative; display: flex; flex-direction: column; inline-size: 100%;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-lg);
+  box-shadow: var(--shadow); padding: clamp(1.5rem, 1.2rem + 1vw, 2rem); }
+.tarif--featured .tarif__card { border: 2px solid var(--accent); box-shadow: var(--shadow-lg); }
+.tarif__badge { position: absolute; inset-block-start: 0; inset-inline-start: 50%; transform: translate(-50%, -50%);
+  margin: 0; padding: .35rem .85rem; border-radius: var(--r-pill); background: var(--accent); color: var(--on-accent);
+  font-size: var(--label-size); font-weight: 700; letter-spacing: var(--label-track); text-transform: uppercase; white-space: nowrap; }
+[dir='rtl'] .tarif__badge { transform: translate(50%, -50%); }
+.tarif__name { margin: 0; font-family: var(--font-body); font-size: var(--label-size); font-weight: 700;
+  letter-spacing: var(--label-track); color: var(--accent); }
+.tarif__price { margin: .9rem 0 0; display: flex; flex-direction: column; gap: .2rem; }
+.tarif__price strong { font-family: var(--font-display); font-weight: 600; color: var(--ink);
+  font-size: clamp(1.625rem, 1.35rem + 1vw, 2.125rem); line-height: 1.15; letter-spacing: -.015em; overflow-wrap: anywhere; }
+.tarif__price span { font-size: var(--t-sm); font-weight: 600; color: var(--ink-muted); }
+.tarif__desc { margin: 1rem 0 0; color: var(--ink-muted); line-height: 1.5; }
+.tarif__feats { margin: 1.25rem 0 1.75rem; padding-block-start: 1.25rem; border-block-start: 1px solid var(--rule); align-content: start; }
+.tarif__btn { margin-block-start: auto; inline-size: 100%; padding-inline: 1rem; }
+@media (max-width: 26rem), (min-width: 60rem) and (max-width: 74.99rem) { .tarif__btn { white-space: normal; text-align: center; text-wrap: balance; } }
+.tarif, .tarif__card { min-inline-size: 0; }
+.tarifs__after { max-width: 44rem; margin-block: 1.5rem clamp(2.5rem, 2rem + 2vw, 3.5rem); }
+.tarifs__after p + p { margin-block-start: .85rem; }
+.tarifs__note { padding: 1rem 1.15rem; background: var(--surface-2); border: 1px solid var(--rule);
+  border-inline-start: 3px solid var(--accent); border-radius: var(--r-md); color: var(--ink); font-size: var(--t-sm); line-height: 1.55; }
+.page__body h3 { margin-block: 0 .75rem; }
+.page__body .ticks + p { margin-block-start: 1.25rem; }
+/* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
+.page__cta .btn__row { flex-wrap: wrap; }
+.page__cta .btn { max-inline-size: 100%; }`
     : '';
 
   const related = (page.related || [])
@@ -216,7 +289,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__body .ticks { margin-block-start: 1.25rem; }
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
-.page__related a { color: inherit; }
+.page__related a { color: inherit; }${pricingCss}
 </style>
 
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
@@ -257,7 +330,7 @@ ${SPRITE}
 ${quiz}
   <article class="section section--continued">
     <div class="shell">
-      <div class="prose page__body">
+${pricing}      <div class="prose page__body">
 ${sections}
       </div>
 

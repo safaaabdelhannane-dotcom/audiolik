@@ -5,64 +5,177 @@ export default [
     slug: 'appareils-auditifs-casablanca',
     fr: {
       kicker: 'Les appareils',
-      title: 'Appareils auditifs à Casablanca : prix, discrétion, essai · AudioLik',
+      title: 'Prix des appareils auditifs à Casablanca | AUDIOLIK',
       description:
-        "Appareils auditifs discrets, rechargeables et connectés à Casablanca. Ce que le prix comprend, la prise en charge, l'essai avant de décider. AudioLik, Les Princesses, Maârif.",
+        'Découvrez les prix indicatifs des appareils auditifs à Casablanca, ce que le tarif comprend et le remboursement. Bilan et essai chez AUDIOLIK.',
       h1: 'Appareils auditifs à Casablanca',
       lede:
-        "Les deux questions qu'on nous pose le plus : « combien ça coûte » et « est-ce que ça se voit ». Voici des réponses nettes.",
+        "Les deux questions qu'on nous pose le plus : « combien ça coûte » et « est-ce que ça se voit ». Voici des réponses nettes, par votre [audioprothésiste à Casablanca](/audioprothesiste-casablanca/), aux Princesses.",
+      /* Carte tarifaire — tarifs indicatifs PAR APPAREIL validés par le centre
+         (09/2026). C'est la seule page qui affiche des prix chiffrés : les
+         versions arabe et anglaise ne sont pas encore mises à jour. */
+      pricing: {
+        id: 'prix',
+        h2: 'Prix des appareils auditifs à Casablanca',
+        intro: [
+          'AUDIOLIK propose plusieurs niveaux de technologie pour adapter votre appareil auditif à votre audition, à votre quotidien et à votre budget. Les tarifs ci-dessous sont indiqués par appareil et comprennent l’accompagnement nécessaire à une adaptation personnalisée.',
+        ],
+        cards: [
+          {
+            key: 'essentiel',
+            name: 'ESSENTIEL',
+            price: 'À partir de 5 000 DH',
+            unit: 'par appareil',
+            desc: 'Une solution fiable pour retrouver une écoute confortable au quotidien.',
+            features: [
+              'Pour les environnements calmes à modérément animés',
+              'Réglages adaptés à votre audiogramme',
+              'Modèles à pile selon les besoins et les disponibilités',
+              'Bilan, adaptation et contrôles de suivi inclus',
+            ],
+            cta: 'Demander un devis',
+            ariaLabel: 'Demander un devis pour la gamme Essentiel sur WhatsApp (nouvel onglet)',
+            whatsappPrefill: 'Bonjour, je souhaite recevoir des informations sur la gamme Essentiel à partir de 5 000 DH.',
+          },
+          {
+            key: 'confort',
+            name: 'CONFORT',
+            featured: true,
+            badge: 'Le choix le plus demandé',
+            price: 'De 7 000 à 12 000 DH',
+            unit: 'par appareil',
+            desc: 'Davantage de confort pour une vie quotidienne active et des environnements sonores variés.',
+            features: [
+              'Pour les conversations, sorties et repas en famille',
+              'Meilleure gestion de la parole dans le bruit',
+              'Modèles discrets disponibles',
+              'Rechargeable et Bluetooth selon le modèle',
+              'Bilan, essai, réglages et suivi inclus',
+            ],
+            cta: 'Découvrir la gamme',
+            ariaLabel: 'Découvrir la gamme Confort sur WhatsApp (nouvel onglet)',
+            whatsappPrefill: 'Bonjour, je souhaite recevoir des informations sur la gamme Confort de 7 000 à 12 000 DH.',
+          },
+          {
+            key: 'premium',
+            name: 'PREMIUM',
+            price: 'À partir de 14 000 DH',
+            unit: 'par appareil',
+            desc: 'Des technologies avancées pour les situations d’écoute les plus exigeantes.',
+            features: [
+              'Pour les restaurants, réunions et conversations de groupe',
+              'Traitement avancé de la parole dans le bruit',
+              'Solutions rechargeables et connectées selon le modèle',
+              'Technologie et fonctionnalités premium',
+              'Accompagnement et réglages personnalisés inclus',
+            ],
+            cta: 'Découvrir les solutions Premium',
+            ariaLabel: 'Découvrir les solutions Premium sur WhatsApp (nouvel onglet)',
+            whatsappPrefill: 'Bonjour, je souhaite recevoir des informations sur les solutions auditives Premium à partir de 14 000 DH.',
+          },
+        ],
+        note: 'Tarifs indicatifs par appareil. Le prix définitif dépend de votre audition, du modèle choisi et des fonctionnalités nécessaires. Des solutions technologiques plus avancées peuvent être proposées après l’étude de vos besoins. Un devis détaillé vous est remis après le bilan, sans engagement.',
+        after: [
+          'Lorsque les deux oreilles présentent une perte auditive, une solution pour deux appareils peut être recommandée. Le tarif complet est alors indiqué clairement sur votre devis personnalisé.',
+          'Tout commence par un [bilan auditif au centre](/bilan-auditif-casablanca/). Pour comparer les fonctions, notre page sur les [appareils rechargeables et Bluetooth](/appareils-auditifs-rechargeables-bluetooth/) les détaille, et celle sur le [remboursement des appareils auditifs au Maroc](/remboursement-appareils-auditifs-maroc/) explique la prise en charge.',
+        ],
+      },
       sections: [
         {
-          h2: 'Le prix, dit clairement',
+          h3: 'Ce qui fait varier le prix',
+          id: 'prix-facteurs',
           p: [
             "Un appareillage se raisonne sur cinq ans, pas sur une facture. Ce qui coûte cher, ce n'est pas le boîtier : c'est le temps passé à l'adapter à votre audition, puis à le régler jusqu'à ce qu'il devienne inutile d'y penser.",
-            "Les tarifs dépendent du niveau de technologie et de votre perte auditive. Ils vous sont communiqués au centre, après le bilan — parce qu'annoncer un chiffre avant d'avoir mesuré n'aurait aucun sens. Vous repartez avec un devis détaillé, et rien n'est signé le jour même.",
+            "Il n'y a donc pas un prix unique pour une prothèse auditive au Maroc. Le tarif dépend :",
           ],
-        },
-        {
-          h2: 'Ce que le prix comprend',
-          p: [],
           list: [
-            "L'adaptation initiale et la prise d'empreinte si nécessaire",
-            "Tous les réglages de la période d'essai",
-            'Les contrôles de suivi et le nettoyage en centre',
-            'La garantie constructeur et le dépannage',
-            'Un devis et une facture conformes pour votre dossier de remboursement',
+            "*Du niveau de perte auditive* : une perte sévère demande un appareil plus puissant qu'une perte légère.",
+            "*De la forme de l'appareil* : [intra-auriculaire](/appareils-auditifs-intra-auriculaires/) logé dans le conduit ou [contour d'oreille](/appareils-auditifs-contour-oreille/).",
+            '*Du niveau technologique* : finesse du traitement du son, nombre de programmes, adaptation automatique aux lieux.',
+            "*Du fonctionnement à pile ou rechargeable*, avec ou sans connexion Bluetooth au téléphone et à la télévision.",
+            '*De vos besoins de compréhension dans le bruit* : restaurants, réunions, familles nombreuses.',
+            "*Du suivi et des réglages compris* : chez nous, ils font partie du prix, pas d'une facture à part.",
           ],
         },
         {
-          h2: 'La prise en charge',
+          h2: 'Que comprend le prix chez AUDIOLIK ?',
+          id: 'prix-compris',
           p: [
-            "Selon votre organisme (CNSS, CNOPS, AMO ou mutuelle d'entreprise), une partie de l'appareillage peut être remboursée. Nous préparons les pièces nécessaires à votre dossier.",
+            "Le prix exact vous est communiqué après votre bilan auditif — annoncer un chiffre définitif avant d'avoir mesuré n'aurait aucun sens. Vous repartez avec un devis détaillé, et rien n'est signé le jour même. Il comprend :",
+          ],
+          list: [
+            "*Le bilan auditif et l'étude de vos besoins* : on mesure votre audition et on parle de vos situations difficiles.",
+            "*L'essai de la solution auditive* dans votre vie de tous les jours, avant de décider.",
+            "*L'adaptation initiale*, avec prise d'empreinte si nécessaire.",
+            '*Les réglages progressifs*, le temps que votre cerveau se réhabitue aux sons.',
+            "*Les contrôles de suivi* pour vérifier que l'appareil reste bien réglé.",
+            '*Le nettoyage au centre* et le changement des filtres.',
+            '*La garantie constructeur* et le dépannage.',
+            "*L'accompagnement pour votre dossier de remboursement* : devis et facture conformes, pièces à réunir.",
+          ],
+        },
+        {
+          h2: 'Une oreille ou deux : comment le budget est-il calculé ?',
+          id: 'une-ou-deux-oreilles',
+          p: [
+            "Les tarifs indiqués plus haut sont donnés par appareil. Le nombre d'appareils ne se choisit pas à l'avance : c'est le bilan auditif qui dit si une oreille ou les deux ont besoin d'aide.",
+            "En cas de perte bilatérale, c'est-à-dire aux deux oreilles, un appareillage des deux côtés est souvent conseillé. Le cerveau localise les sons en comparant ce qu'il reçoit de chaque oreille : avec deux appareils, on repère mieux d'où vient une voix et on comprend mieux dans le bruit. Avec une seule oreille appareillée, on entend plus fort, mais on comprend moins bien. Le devis indique alors clairement le prix des deux appareils.",
+          ],
+        },
+        {
+          h2: 'Remboursement des appareils auditifs au Maroc',
+          id: 'remboursement',
+          p: [
+            "Une partie de l'appareillage peut être prise en charge. Le montant dépend notamment de votre régime — CNSS, CNOPS ou AMO — et de votre mutuelle, s'il y en a une : nous ne pouvons donc pas vous promettre un montant à l'avance.",
+            'De notre côté, nous vous remettons un devis et une facture conformes et nous vous aidons à constituer le dossier. Les régimes concernés, les pièces à réunir et la démarche sont détaillés sur notre page [remboursement des appareils auditifs au Maroc](/remboursement-appareils-auditifs-maroc/).',
           ],
         },
         {
           h2: 'Est-ce que ça se voit ?',
+          id: 'discretion',
           p: [
-            "Beaucoup moins qu'on ne l'imagine. Les modèles à [écouteur déporté](/appareils-auditifs-intra-auriculaires/) sont invisibles de face, et les intra-auriculaires sont entièrement logés dans le conduit. La plupart des gens autour de vous ne le remarqueront pas.",
-          ],
-        },
-        {
-          h2: 'Une oreille ou deux ?',
-          p: [
-            "Si les deux oreilles sont atteintes, on appareille les deux : le cerveau localise les sons en comparant ce qu'il reçoit de chaque côté. Avec une seule oreille appareillée, on entend plus fort, mais on comprend moins bien dans le bruit.",
+            "Beaucoup moins qu'on ne l'imagine. Les [contours à écouteur déporté](/appareils-auditifs-contour-oreille/) sont invisibles de face, et les [intra-auriculaires](/appareils-auditifs-intra-auriculaires/) sont entièrement logés dans le conduit. La plupart des gens autour de vous ne le remarqueront pas.",
           ],
         },
       ],
+      faqTitle: 'Questions fréquentes sur le prix des appareils auditifs',
       faq: [
         {
-          q: 'Peut-on essayer avant de choisir ?',
-          a: "Oui. Tous les réglages de la période d'essai sont compris dans le prix, et vous testez là où ça compte : à table, au téléphone, au marché.",
+          q: "Quel est le prix d'un appareil auditif à Casablanca ?",
+          a: "Chez AUDIOLIK, les tarifs indicatifs sont de 5 000 DH minimum pour la gamme Essentiel, de 7 000 à 12 000 DH pour la gamme Confort et de 14 000 DH minimum pour la gamme Premium, par appareil. Le prix définitif dépend de votre audition, du modèle choisi et des fonctionnalités nécessaires : il figure sur le devis détaillé remis après le bilan auditif, sans engagement.",
+        },
+        {
+          q: 'Le prix est-il indiqué pour une oreille ou pour deux ?',
+          a: "Les tarifs indiqués s'entendent par appareil, donc pour une oreille. Si le bilan montre qu'il faut appareiller les deux oreilles, le devis comprend deux appareils et le montant total y est indiqué clairement.",
+        },
+        {
+          q: "Peut-on essayer un appareil auditif avant de l'acheter ?",
+          a: "Oui. Une période d'essai permet de tester la solution auditive dans votre vie de tous les jours : à table, au téléphone, au marché. Les réglages de cette période sont compris, et rien n'est signé le jour du bilan.",
+        },
+        {
+          q: 'Les réglages et le suivi sont-ils compris ?',
+          a: "Oui. L'adaptation initiale, les réglages progressifs, les contrôles de suivi et le nettoyage au centre font partie du prix. Ils sont détaillés sur votre devis.",
+        },
+        {
+          q: 'Les appareils auditifs sont-ils remboursés au Maroc ?',
+          a: "Une partie de l'appareillage peut être prise en charge. Le montant dépend de votre régime (CNSS, CNOPS, AMO) et de votre éventuelle mutuelle : il n'est donc pas possible d'annoncer un remboursement fixe. Nous vous aidons à réunir les pièces du dossier.",
+        },
+        {
+          q: 'Quelle différence de prix entre un appareil à pile et un rechargeable ?',
+          a: "À niveau technologique égal, un appareil rechargeable coûte en général un peu plus cher à l'achat, car il intègre une batterie et un chargeur. En contrepartie, vous n'achetez plus de piles. L'écart exact dépend du modèle et figure sur le devis.",
         },
         {
           q: 'Combien de temps dure un appareil auditif ?',
-          a: "Plusieurs années, et d'autant plus longtemps qu'il est entretenu. Le nettoyage, le changement des filtres et le dépannage se font au centre.",
+          a: "Plusieurs années, en général autour de cinq ans, et d'autant plus longtemps qu'il est entretenu. Le nettoyage, le changement des filtres et le dépannage se font au centre.",
         },
       ],
       related: [
+        { slug: 'bilan-auditif-casablanca', label: 'Bilan auditif' },
+        { slug: 'audioprothesiste-casablanca', label: 'Audioprothésiste à Casablanca' },
         { slug: 'appareils-auditifs-intra-auriculaires', label: 'Intra-auriculaires' },
         { slug: 'appareils-auditifs-contour-oreille', label: "Contours d'oreille" },
         { slug: 'appareils-auditifs-rechargeables-bluetooth', label: 'Rechargeables et Bluetooth' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: 'Remboursement' },
       ],
     },
     ar: {
