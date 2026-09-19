@@ -11,8 +11,9 @@
  *
  * RÈGLES D'ÉCRITURE — les mêmes que pour l'accueil :
  *   · aucun prix chiffré (ils sont communiqués au centre, après le bilan) —
- *     SEULE EXCEPTION : la carte tarifaire indicative de la page française
- *     /appareils-auditifs-casablanca/ (tarifs par appareil validés, 09/2026) ;
+ *     SEULE EXCEPTION : la carte tarifaire indicative de la page
+ *     /appareils-auditifs-casablanca/ dans les trois langues (tarifs par
+ *     appareil validés, 09/2026) ;
  *   · aucune promesse non confirmée. Le seul engagement confirmé par le centre
  *     est le BILAN AUDITIF GRATUIT (business.claims.freeHearingTest, 09/2026).
  *     Restent à false, donc interdits d'écriture : essai à domicile, suivi
