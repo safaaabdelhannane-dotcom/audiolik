@@ -64,6 +64,13 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Photos d'illustration dans le corps des pages. */
+.page__figure { margin: clamp(1.5rem, 1.2rem + 1vw, 2.25rem) 0 0; }
+.page__figure-media img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--r-lg); background: var(--surface-2); }
+.page__figure--portrait { max-inline-size: 26rem; }
+.page__figure--gallery .page__figure-media { display: grid; gap: .75rem; }
+@media (min-width: 40rem) { .page__figure--gallery .page__figure-media { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.page__figure figcaption { margin-block-start: .5rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-faint); }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
 .page__cta .btn__row { flex-wrap: wrap; }
 .page__cta .btn { max-inline-size: 100%; }
@@ -122,6 +129,10 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <p>We start by talking. In which situations do you hear less well: at a restaurant, on the phone, with family? Since when? Then comes the measurement, which is painless. Around 45 minutes.</p>
         <p>You leave with a plain explanation of your results and, if a device can help, a reasoned proposal — two or three models, not a catalogue. Nothing is signed on the day.</p>
         
+        <figure class="page__figure">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../../assets/img/site/essai-appareil-800.webp 800w, ../../assets/img/site/essai-appareil-1600.webp 1600w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../../assets/img/site/essai-appareil-1200.jpg" alt="A hearing aid being fitted behind a patient’s ear" width="1600" height="1067" loading="lazy" decoding="async"></picture></div>
+          <figcaption>Illustrative photo</figcaption>
+        </figure>
 
       <h2>The same person, from start to finish</h2>
         <p>At AudioLik, whoever measured your hearing is the one who follows you. A successful fitting rests on a continuing relationship: by the third adjustment, someone has to remember what you said at the first.</p>

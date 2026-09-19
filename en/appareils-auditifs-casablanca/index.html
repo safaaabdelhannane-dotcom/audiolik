@@ -64,6 +64,13 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Photos d'illustration dans le corps des pages. */
+.page__figure { margin: clamp(1.5rem, 1.2rem + 1vw, 2.25rem) 0 0; }
+.page__figure-media img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--r-lg); background: var(--surface-2); }
+.page__figure--portrait { max-inline-size: 26rem; }
+.page__figure--gallery .page__figure-media { display: grid; gap: .75rem; }
+@media (min-width: 40rem) { .page__figure--gallery .page__figure-media { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.page__figure figcaption { margin-block-start: .5rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-faint); }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
 .page__cta .btn__row { flex-wrap: wrap; }
 .page__cta .btn { max-inline-size: 100%; }
@@ -103,6 +110,9 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
   color: var(--accent); --dev-fill: var(--surface); --dev-surface: var(--surface); text-align: center; }
 .tarif__visual svg { display: block; inline-size: 100%; max-inline-size: 11rem; block-size: auto; margin-inline: auto; }
 .tarif__visual figcaption { margin-block-start: .35rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-muted); }
+.tarif__visual--photo { padding: 0; overflow: hidden; }
+.tarif__visual--photo img { display: block; inline-size: 100%; block-size: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.tarif__visual--photo figcaption { margin: 0; padding: .5rem .75rem .6rem; }
 .tarif__brands { margin: .9rem 0 0; font-size: var(--t-2xs, .8125rem); font-weight: 600; color: var(--ink-muted); }
 .tarif__brands span { color: var(--ink); font-weight: 700; letter-spacing: .02em; }
 .brands { list-style: none; margin: .9rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
@@ -164,13 +174,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <li class="tarif">
           <article class="tarif__card" aria-labelledby="tarif-essentiel">
             
-            <figure class="tarif__visual"><svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M58 22c-14 2-22 16-20 34 2 16 10 28 20 32 6 2 10-2 9-8-3-12-4-24 0-38 2-8 0-20-9-20z" fill="var(--dev-fill)"/>
-    <path d="M57 22c6-10 20-14 30-8 8 5 10 16 6 26"/>
-    <path d="M93 40c-2 10-2 20 6 26"/>
-    <ellipse cx="108" cy="70" rx="11" ry="8" fill="var(--dev-fill)"/>
-    <circle cx="49" cy="46" r="2.5" fill="currentColor" stroke="none"/>
-    <path d="M47 70h8"/></svg><figcaption>Battery behind-the-ear — illustration</figcaption></figure>
+            <figure class="tarif__visual tarif__visual--photo"><picture><source type="image/webp" srcset="../../assets/img/site/appareil-contour-classique-800.webp 800w, ../../assets/img/site/appareil-contour-classique-1600.webp 1600w" sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 34rem, 100vw"><img src="../../assets/img/site/appareil-contour-classique-1200.jpg" alt="Classic beige behind-the-ear hearing aid with clear tube and custom earmould" width="1600" height="1200" loading="lazy" decoding="async"></picture><figcaption>Battery behind-the-ear — illustrative photo</figcaption></figure>
             <h3 class="tarif__name" id="tarif-essentiel">ESSENTIAL</h3>
             <p class="tarif__price"><strong>From MAD 5,000</strong><span>per device</span></p>
             <p class="tarif__desc">A reliable solution to enjoy comfortable hearing again, every day.</p>
@@ -182,13 +186,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <li class="tarif tarif--featured">
           <article class="tarif__card" aria-labelledby="tarif-confort">
             <p class="tarif__badge">Most requested</p>
-            <figure class="tarif__visual"><svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M62 26c-10 2-15 13-14 26 1 12 7 21 14 24 5 2 8-1 7-6-2-9-3-18 0-28 2-7 0-17-7-16z" fill="var(--dev-fill)"/>
-    <path d="M62 26c10-12 30-12 38 0 5 8 3 20-3 30" stroke-width="2"/>
-    <path d="M97 56l6 9" stroke-width="2"/>
-    <rect x="99" y="63" width="10" height="7" rx="3" transform="rotate(35 104 66)" fill="var(--dev-fill)"/>
-    <path d="M110 72c4 0 8 3 8 7s-4 6-8 5" fill="var(--dev-fill)" stroke-width="2.5"/>
-    <circle cx="56" cy="44" r="2.2" fill="currentColor" stroke="none"/></svg><figcaption>Discreet receiver-in-canal — illustration</figcaption></figure>
+            <figure class="tarif__visual tarif__visual--photo"><picture><source type="image/webp" srcset="../../assets/img/site/appareil-ecouteur-deporte-800.webp 800w, ../../assets/img/site/appareil-ecouteur-deporte-1600.webp 1600w" sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 34rem, 100vw"><img src="../../assets/img/site/appareil-ecouteur-deporte-1200.jpg" alt="Silver receiver-in-canal hearing aid with its soft dome" width="1600" height="1200" loading="lazy" decoding="async"></picture><figcaption>Discreet receiver-in-canal — illustrative photo</figcaption></figure>
             <h3 class="tarif__name" id="tarif-confort">COMFORT</h3>
             <p class="tarif__price"><strong>MAD 7,000 to 12,000</strong><span>per device</span></p>
             <p class="tarif__desc">More comfort for an active daily life and varied sound environments.</p>
@@ -200,12 +198,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <li class="tarif">
           <article class="tarif__card" aria-labelledby="tarif-premium">
             
-            <figure class="tarif__visual"><svg viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <g transform="translate(-4 -6) scale(.78)"><path d="M62 26c-10 2-15 13-14 26 1 12 7 21 14 24 5 2 8-1 7-6-2-9-3-18 0-28 2-7 0-17-7-16z" fill="var(--dev-fill)"/><circle cx="56" cy="44" r="2.6" fill="currentColor" stroke="none"/></g>
-    <g transform="translate(26 -6) scale(.78)"><path d="M62 26c-10 2-15 13-14 26 1 12 7 21 14 24 5 2 8-1 7-6-2-9-3-18 0-28 2-7 0-17-7-16z" fill="var(--dev-fill)"/><circle cx="56" cy="44" r="2.6" fill="currentColor" stroke="none"/></g>
-    <rect x="24" y="52" width="84" height="34" rx="13" fill="var(--dev-surface, #fff)"/>
-    <path d="M58 72h16" stroke-width="2.5"/>
-    <path d="M122 34c5 4 5 12 0 16M130 28c9 7 9 21 0 28" stroke-width="2.5"/></svg><figcaption>Rechargeable and connected — illustration</figcaption></figure>
+            <figure class="tarif__visual tarif__visual--photo"><picture><source type="image/webp" srcset="../../assets/img/site/appareil-rechargeable-chargeur-800.webp 800w, ../../assets/img/site/appareil-rechargeable-chargeur-1600.webp 1600w" sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 34rem, 100vw"><img src="../../assets/img/site/appareil-rechargeable-chargeur-1200.jpg" alt="Two rechargeable hearing aids sitting in their charging case" width="1600" height="1200" loading="lazy" decoding="async"></picture><figcaption>Rechargeable and connected — illustrative photo</figcaption></figure>
             <h3 class="tarif__name" id="tarif-premium">PREMIUM</h3>
             <p class="tarif__price"><strong>From MAD 14,000</strong><span>per device</span></p>
             <p class="tarif__desc">Advanced technology for the most demanding listening situations.</p>
@@ -236,6 +229,10 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <p>The prices shown above are per device. The number of devices is not chosen in advance: the hearing assessment shows whether one ear or both need help.</p>
         <p>With a bilateral loss — in both ears — fitting both sides is often advised. The brain locates sound by comparing what it receives from each ear: with two devices, you can tell better where a voice comes from and understand better in noise. With only one ear fitted, you hear louder but understand less. The quote then clearly shows the price of both devices.</p>
         
+        <figure class="page__figure">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../../assets/img/site/couple-restaurant-800.webp 800w, ../../assets/img/site/couple-restaurant-1600.webp 1600w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../../assets/img/site/couple-restaurant-1200.jpg" alt="A Moroccan couple chatting and laughing in a busy restaurant" width="1600" height="1067" loading="lazy" decoding="async"></picture></div>
+          <figcaption>Illustrative photo</figcaption>
+        </figure>
 
       <h2 id="remboursement">Hearing aid reimbursement in Morocco</h2>
         <p>Part of the cost may be covered. The amount depends in particular on your scheme — CNSS, CNOPS or AMO — and on your top-up insurance, if you have one: so we cannot promise an amount in advance.</p>
@@ -245,6 +242,10 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
       <h2 id="discretion">Does it show?</h2>
         <p>Far less than you would imagine. <a href="/en/appareils-auditifs-contour-oreille/">Receiver-in-canal behind-the-ear</a> models are invisible from the front, and <a href="/en/appareils-auditifs-intra-auriculaires/">in-the-ear</a> devices sit entirely inside the canal. Most people around you will not notice.</p>
         
+        <figure class="page__figure">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../../assets/img/site/gamme-toutes-formes-800.webp 800w, ../../assets/img/site/gamme-toutes-formes-1600.webp 1600w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../../assets/img/site/gamme-toutes-formes-1200.jpg" alt="The different hearing aid styles, from behind-the-ear to invisible in-canal" width="1600" height="900" loading="lazy" decoding="async"></picture></div>
+          <figcaption>Illustrative photo</figcaption>
+        </figure>
       </div>
 
       <div class="prose page__cta">

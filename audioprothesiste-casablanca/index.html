@@ -64,6 +64,13 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Photos d'illustration dans le corps des pages. */
+.page__figure { margin: clamp(1.5rem, 1.2rem + 1vw, 2.25rem) 0 0; }
+.page__figure-media img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--r-lg); background: var(--surface-2); }
+.page__figure--portrait { max-inline-size: 26rem; }
+.page__figure--gallery .page__figure-media { display: grid; gap: .75rem; }
+@media (min-width: 40rem) { .page__figure--gallery .page__figure-media { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.page__figure figcaption { margin-block-start: .5rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-faint); }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
 .page__cta .btn__row { flex-wrap: wrap; }
 .page__cta .btn { max-inline-size: 100%; }
@@ -122,6 +129,10 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <p>On commence par discuter. Dans quelles situations entendez-vous moins bien : au restaurant, au téléphone, en famille ? Depuis quand ? Puis vient la mesure, indolore. Comptez environ 45 minutes.</p>
         <p>Vous repartez avec une explication simple de vos résultats et, si un appareil peut aider, une proposition argumentée — deux ou trois modèles, pas un catalogue. Rien n&#39;est signé le jour même.</p>
         
+        <figure class="page__figure">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../assets/img/site/essai-appareil-800.webp 800w, ../assets/img/site/essai-appareil-1600.webp 1600w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../assets/img/site/essai-appareil-1200.jpg" alt="Pose d&#39;un appareil auditif derrière l&#39;oreille d&#39;un patient" width="1600" height="1067" loading="lazy" decoding="async"></picture></div>
+          <figcaption>Photo d&#39;illustration</figcaption>
+        </figure>
 
       <h2>Le même interlocuteur, du début à la fin</h2>
         <p>Chez AudioLik, la personne qui vous a mesuré est celle qui vous suit. Une adaptation réussie repose sur une relation suivie : au troisième réglage, il faut se souvenir de ce que vous aviez dit au premier.</p>

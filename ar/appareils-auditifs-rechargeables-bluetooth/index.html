@@ -64,6 +64,13 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Photos d'illustration dans le corps des pages. */
+.page__figure { margin: clamp(1.5rem, 1.2rem + 1vw, 2.25rem) 0 0; }
+.page__figure-media img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--r-lg); background: var(--surface-2); }
+.page__figure--portrait { max-inline-size: 26rem; }
+.page__figure--gallery .page__figure-media { display: grid; gap: .75rem; }
+@media (min-width: 40rem) { .page__figure--gallery .page__figure-media { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.page__figure figcaption { margin-block-start: .5rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-faint); }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
 .page__cta .btn__row { flex-wrap: wrap; }
 .page__cta .btn { max-inline-size: 100%; }
@@ -117,11 +124,19 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <p>توضع الأجهزة في علبتها مساءً، وتُستعاد صباحًا. لا بطارية صغيرة تُغيَّر كل بضعة أيام، ولا انقطاع في اللحظة الخطأ، ولا نفايات صغيرة.</p>
         <p>وبالنسبة لأصابع ترتجف قليلًا أو بصر يتراجع، يكفي هذا التغيير وحده غالبًا ليصير الجهاز قابلًا للاستعمال فعلًا كل يوم.</p>
         
+        <figure class="page__figure">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../../assets/img/site/appareil-rechargeable-chargeur-800.webp 800w, ../../assets/img/site/appareil-rechargeable-chargeur-1600.webp 1600w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../../assets/img/site/appareil-rechargeable-chargeur-1200.jpg" alt="جهازان سمعيان قابلان للشحن داخل علبة الشحن" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+          <figcaption>صورة توضيحية</figcaption>
+        </figure>
 
       <h2>الهاتف والتلفاز، مباشرة في الأذنين</h2>
         <p>تصل المكالمات إلى الجهازين معًا، دون المرور بمكبّر صوت الهاتف. وكذلك صوت التلفاز، عبر ناقل صغير — وهو ما يحسم دفعة واحدة أكثر خلافات الصالون تكرارًا: مستوى الصوت.</p>
         <p>وبعض النماذج تُضبَط من تطبيق، لتعديل الصوت بتحفّظ أو تغيير البرنامج في المطعم.</p>
         
+        <figure class="page__figure page__figure--portrait">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../../assets/img/site/femme-active-rechargeable-800.webp 800w, ../../assets/img/site/femme-active-rechargeable-1600.webp 1200w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../../assets/img/site/femme-active-rechargeable-1200.jpg" alt="امرأة تتحدّث في الهاتف في أحد شوارع الدار البيضاء، وخلف أذنها جهاز سمعي صغير" width="1200" height="1500" loading="lazy" decoding="async"></picture></div>
+          <figcaption>صورة توضيحية</figcaption>
+        </figure>
 
       <h2>حدود ينبغي معرفتها</h2>
         <p>للبطارية عمر، كبطارية الهاتف: بعد سنوات تتراجع الاستقلالية وتُستبدَل البطارية في الورشة. والجهاز القابل للشحن إذا نُسي خارج قاعدته يكون فارغًا في الغد — وهي عادة ينبغي اكتسابها.</p>

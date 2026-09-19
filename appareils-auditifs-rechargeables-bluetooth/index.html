@@ -64,6 +64,13 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Photos d'illustration dans le corps des pages. */
+.page__figure { margin: clamp(1.5rem, 1.2rem + 1vw, 2.25rem) 0 0; }
+.page__figure-media img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--r-lg); background: var(--surface-2); }
+.page__figure--portrait { max-inline-size: 26rem; }
+.page__figure--gallery .page__figure-media { display: grid; gap: .75rem; }
+@media (min-width: 40rem) { .page__figure--gallery .page__figure-media { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.page__figure figcaption { margin-block-start: .5rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-faint); }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
 .page__cta .btn__row { flex-wrap: wrap; }
 .page__cta .btn { max-inline-size: 100%; }
@@ -117,11 +124,19 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <p>On pose les appareils dans leur boîtier le soir, on les reprend le matin. Plus de pile minuscule à changer tous les quelques jours, plus de panne au mauvais moment, plus de petits déchets.</p>
         <p>Pour des doigts qui tremblent un peu ou une vue qui baisse, ce seul changement suffit souvent à rendre l&#39;appareil réellement utilisable au quotidien.</p>
         
+        <figure class="page__figure">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../assets/img/site/appareil-rechargeable-chargeur-800.webp 800w, ../assets/img/site/appareil-rechargeable-chargeur-1600.webp 1600w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../assets/img/site/appareil-rechargeable-chargeur-1200.jpg" alt="Deux appareils auditifs rechargeables posés dans leur boîtier de charge" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+          <figcaption>Photo d&#39;illustration</figcaption>
+        </figure>
 
       <h2>Le téléphone et la télévision, directement dans les oreilles</h2>
         <p>Les appels arrivent dans les deux appareils à la fois, sans passer par le haut-parleur du téléphone. Le son de la télévision aussi, via un petit transmetteur — ce qui règle d&#39;un coup la dispute la plus fréquente du salon : le volume.</p>
         <p>Certains modèles se règlent depuis une application, pour ajuster discrètement le volume ou changer de programme au restaurant.</p>
         
+        <figure class="page__figure page__figure--portrait">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../assets/img/site/femme-active-rechargeable-800.webp 800w, ../assets/img/site/femme-active-rechargeable-1600.webp 1200w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../assets/img/site/femme-active-rechargeable-1200.jpg" alt="Femme au téléphone dans une rue de Casablanca, un appareil discret derrière l’oreille" width="1200" height="1500" loading="lazy" decoding="async"></picture></div>
+          <figcaption>Photo d&#39;illustration</figcaption>
+        </figure>
 
       <h2>Quelques limites à connaître</h2>
         <p>Une batterie a une durée de vie, comme celle d&#39;un téléphone : après quelques années, l&#39;autonomie baisse et la batterie se remplace en atelier. Et un appareil rechargeable oublié hors de son socle est un appareil vide le lendemain — c&#39;est une habitude à prendre.</p>

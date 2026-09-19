@@ -64,6 +64,13 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Photos d'illustration dans le corps des pages. */
+.page__figure { margin: clamp(1.5rem, 1.2rem + 1vw, 2.25rem) 0 0; }
+.page__figure-media img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--r-lg); background: var(--surface-2); }
+.page__figure--portrait { max-inline-size: 26rem; }
+.page__figure--gallery .page__figure-media { display: grid; gap: .75rem; }
+@media (min-width: 40rem) { .page__figure--gallery .page__figure-media { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.page__figure figcaption { margin-block-start: .5rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-faint); }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
 .page__cta .btn__row { flex-wrap: wrap; }
 .page__cta .btn { max-inline-size: 100%; }
@@ -117,6 +124,10 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <p>Parce qu&#39;elle progresse par paliers minuscules, sur des années. On monte un peu la télé, on choisit une table au fond du restaurant, on téléphone moins. Chaque ajustement paraît anodin ; mis bout à bout, ils dessinent un retrait.</p>
         <p>C&#39;est pour cela que ce sont presque toujours les proches qui remarquent les premiers. Eux voient l&#39;ensemble ; la personne concernée ne voit que le dernier petit ajustement.</p>
         
+        <figure class="page__figure">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../assets/img/site/homme-tv-famille-800.webp 800w, ../assets/img/site/homme-tv-famille-1600.webp 1600w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../assets/img/site/homme-tv-famille-1200.jpg" alt="Un couple regarde la télévision dans un salon marocain" width="1600" height="1067" loading="lazy" decoding="async"></picture></div>
+          <figcaption>Photo d&#39;illustration</figcaption>
+        </figure>
 
       <h2>Les signes qui doivent alerter</h2>
         

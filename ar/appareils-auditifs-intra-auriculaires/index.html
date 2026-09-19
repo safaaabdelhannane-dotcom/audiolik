@@ -64,6 +64,13 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 .page__cta { margin-block-start: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
 .page__related { margin-block-start: 1.25rem; font-size: var(--t-sm, .95rem); color: var(--ink-muted); }
 .page__related a { color: inherit; }
+/* Photos d'illustration dans le corps des pages. */
+.page__figure { margin: clamp(1.5rem, 1.2rem + 1vw, 2.25rem) 0 0; }
+.page__figure-media img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--r-lg); background: var(--surface-2); }
+.page__figure--portrait { max-inline-size: 26rem; }
+.page__figure--gallery .page__figure-media { display: grid; gap: .75rem; }
+@media (min-width: 40rem) { .page__figure--gallery .page__figure-media { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.page__figure figcaption { margin-block-start: .5rem; font-size: var(--t-2xs, .8125rem); color: var(--ink-faint); }
 /* Boutons d'appel : passent à la ligne sur petit écran au lieu de déborder. */
 .page__cta .btn__row { flex-wrap: wrap; }
 .page__cta .btn { max-inline-size: 100%; }
@@ -117,11 +124,19 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
         <p>علبة رفيعة جدًا تختفي خلف الأذن، موصولة بخيط شفّاف بسمّاعة صغيرة جدًّا داخل القناة. ومن الأمام لا يُرى شيء.</p>
         <p>وهو النموذج الأكثر اقتراحًا اليوم، لأنه يجمع ثلاث خصال نادرًا ما تجتمع: صوت طبيعي، وأذن غير مسدودة — أي دون ذلك الإحساس بالرأس داخل جرّة — وخفاء حقيقي.</p>
         
+        <figure class="page__figure">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../../assets/img/site/appareil-ecouteur-deporte-800.webp 800w, ../../assets/img/site/appareil-ecouteur-deporte-1600.webp 1600w" sizes="(min-width: 48rem) 44rem, 100vw"><img src="../../assets/img/site/appareil-ecouteur-deporte-1200.jpg" alt="جهاز سمعي بسمّاعة داخل القناة بلون فضّي مع قبّة سيليكون ليّنة" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+          <figcaption>صورة توضيحية</figcaption>
+        </figure>
 
       <h2>داخل الأذن: الأكثر خفاءً</h2>
         <p>يُصنع على بصمة قناة أذنك ويستقرّ فيها كاملًا. لا شيء يظهر خلف الأذن، ولا شيء يُرى من الجانب.</p>
         <p>في المقابل، الحجم المتاح أضيق: كل شيء يجب أن يتّسع داخل القناة، بما في ذلك البطارية. وقياس درجة ضعفك هو ما يحدّد إن كان هذا الشكل مناسبًا.</p>
         
+        <figure class="page__figure page__figure--gallery">
+          <div class="page__figure-media"><picture><source type="image/webp" srcset="../../assets/img/site/appareil-intra-ite-800.webp 800w, ../../assets/img/site/appareil-intra-ite-1600.webp 1600w" sizes="(min-width: 40rem) 15rem, 100vw"><img src="../../assets/img/site/appareil-intra-ite-1200.jpg" alt="جهاز سمعي داخل الأذن مصنوع على المقاس بلون البشرة" width="1600" height="1200" loading="lazy" decoding="async"></picture><picture><source type="image/webp" srcset="../../assets/img/site/appareil-intra-cic-800.webp 800w, ../../assets/img/site/appareil-intra-cic-1600.webp 1600w" sizes="(min-width: 40rem) 15rem, 100vw"><img src="../../assets/img/site/appareil-intra-cic-1200.jpg" alt="جهاز سمعي صغير جدًا يوضع في عمق القناة، بجانب طرف إصبع" width="1600" height="1200" loading="lazy" decoding="async"></picture><picture><source type="image/webp" srcset="../../assets/img/site/appareil-invisible-iic-800.webp 800w, ../../assets/img/site/appareil-invisible-iic-1600.webp 1600w" sizes="(min-width: 40rem) 15rem, 100vw"><img src="../../assets/img/site/appareil-invisible-iic-1200.jpg" alt="أذن بداخلها جهاز سمعي غير مرئي مستقرّ في عمق القناة السمعية" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+          <figcaption>صورة توضيحية</figcaption>
+        </figure>
 
       <h2>أيّهما يناسبك؟</h2>
         <p>لا وجود لـ«أفضل جهاز» على الإطلاق، بل فقط الجهاز الذي يناسب درجة ضعفك وشكل قناة أذنك وطبيعة حياتك. قناة ضيّقة، ضعف شديد، مهارة يدوية محدودة: كل عنصر من هذه يوجّه الاختيار.</p>
