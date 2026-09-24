@@ -9,7 +9,7 @@ export default [
       kicker: 'Le métier',
       title: 'Audioprothésiste à Casablanca, aux Princesses · AudioLik',
       description:
-        "Votre audioprothésiste à Casablanca : bilan auditif sur rendez-vous, essai d'appareils discrets, réglages et suivi. AudioLik, 106B rue Al Jounaid, Les Princesses, Maârif.",
+        "Audioprothésiste à Casablanca, diplômée en Europe : bilan auditif gratuit en cabine insonorisée, appareils Signia et Phonak, suivi. AudioLik, Maârif.",
       h1: 'Audioprothésiste à Casablanca, aux Princesses',
       lede:
         "Un audioprothésiste mesure votre audition, vous explique ce qu'il observe et, si c'est utile, vous accompagne vers un appareil qui vous convient — puis le règle avec vous, dans la durée.",
@@ -26,6 +26,27 @@ export default [
           p: [
             "On commence par discuter. Dans quelles situations entendez-vous moins bien : au restaurant, au téléphone, en famille ? Depuis quand ? Puis vient la mesure, indolore. Comptez environ 45 minutes.",
             "Vous repartez avec une explication simple de vos résultats et, si un appareil peut aider, une proposition argumentée — deux ou trois modèles, pas un catalogue. Rien n'est signé le jour même.",
+          ],
+        },
+        {
+          h2: "Une formation européenne récente",
+          p: [
+            "L'audioprothésiste d'AudioLik est diplômée en Espagne, à Madrid, en 2023. Une formation européenne récente, qu'elle met au service d'une seule question : ce que vous comprenez vraiment quand on vous parle.",
+            "C'est elle qui vous reçoit au bilan, elle encore qui adapte l'appareil et qui assure les réglages suivants. Vous n'avez pas à tout réexpliquer à chaque visite.",
+          ],
+        },
+        {
+          h2: "Une cabine insonorisée, pour une mesure fiable",
+          p: [
+            "Les mesures se font sur place, dans une cabine audiométrique insonorisée. Le bruit de la rue, de la climatisation ou d'une conversation voisine ne vient pas se mêler aux sons du test.",
+            "C'est ce qui permet de repérer les sons les plus faibles que votre oreille perçoit réellement. Un audiogramme fiable, c'est la base d'un réglage juste.",
+          ],
+        },
+        {
+          h2: "Un bilan gratuit, sans engagement",
+          p: [
+            "Le [bilan auditif](/bilan-auditif-casablanca/) est gratuit, sur rendez-vous. Vous repartez avec vos résultats expliqués ; et si un appareil n'est pas utile, nous vous le disons.",
+            "Nos solutions auditives démarrent à 5 000 DH — le détail vous est donné lors du bilan, sans engagement. Rien n'est signé le jour même.",
           ],
         },
         {
@@ -83,6 +104,18 @@ export default [
           q: "Faut-il une ordonnance pour venir ?",
           a: "Pas pour le bilan. Pour un remboursement, votre organisme demande en général une prescription d'un médecin ORL. Les étapes sont détaillées sur notre page [remboursement des appareils auditifs au Maroc](/remboursement-appareils-auditifs-maroc/).",
         },
+        {
+          q: "Le bilan auditif est-il payant ?",
+          a: "Non, il est gratuit, sur rendez-vous et sans engagement. Il se déroule en cabine insonorisée et dure environ 45 minutes.",
+        },
+        {
+          q: "Où votre audioprothésiste a-t-elle été formée ?",
+          a: "En Europe : elle est diplômée en Espagne, à Madrid, en 2023. C'est elle qui vous suit du bilan jusqu'aux réglages.",
+        },
+        {
+          q: "À partir de quel prix ?",
+          a: "Nos solutions auditives démarrent à 5 000 DH — le détail vous est donné lors du bilan, sans engagement. Le prix dépend de votre audition et du modèle choisi.",
+        },
       ],
       related: [
         { slug: 'centre-de-correction-auditive-casablanca', label: 'Le centre' },
@@ -95,7 +128,7 @@ export default [
       kicker: 'المهنة',
       title: 'أخصائي السمعيات بالدار البيضاء، الأميرات · أوديوليك',
       description:
-        'أخصائي السمع بالدار البيضاء (الأميرات، المعاريف): فحص السمع، اختيار سماعات طبية مناسبة، الضبط والمتابعة. أوديوليك، للحجز: 05 22 39 37 98.',
+        'أخصائية السمع بالدار البيضاء، بتكوين أوروبي: فحص سمع مجاني في غرفة عازلة، سماعات طبية Signia وPhonak. أوديوليك، للحجز: 05 22 39 37 98.',
       h1: 'أخصائي السمعيات بالدار البيضاء، بالأميرات',
       lede:
         'أخصائي السمعيات، أو أخصائي السمع كما يُقال عادةً، يقيس سمعك، ويشرح لك ما يلاحظه، وإذا كان الجهاز مفيدًا يرافقك نحو ما يناسبك — ثم يضبطه معك، على المدى الطويل.',
@@ -115,6 +148,27 @@ export default [
           ],
         },
         {
+          h2: "تكوين أوروبي حديث",
+          p: [
+            "أخصائية السمع في أوديوليك حاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023. تكوين أوروبي حديث، تضعه في خدمة سؤال واحد: ما الذي تفهمه فعلًا حين يكلّمك أحد.",
+            "هي من تستقبلك في الفحص، وهي من تركّب الجهاز وتتولّى عمليات الضبط اللاحقة. فلا حاجة إلى إعادة شرح كل شيء في كل زيارة.",
+          ],
+        },
+        {
+          h2: "غرفة عازلة للصوت، لقياس موثوق",
+          p: [
+            "تُنجَز القياسات في المركز، داخل غرفة قياس السمع العازلة للصوت. فلا يختلط ضجيج الشارع أو المكيّف أو حديث قريب بأصوات الاختبار.",
+            "وهذا ما يسمح بتحديد أضعف الأصوات التي تدركها أذنك فعلًا. فتخطيط السمع الموثوق هو أساس الضبط الدقيق.",
+          ],
+        },
+        {
+          h2: "فحص مجاني، دون التزام",
+          p: [
+            "[فحص السمع](/ar/bilan-auditif-casablanca/) مجاني، بموعد مسبق. تغادر ومعك شرح لنتائجك؛ وإذا لم يكن الجهاز مفيدًا، أخبرناك بذلك.",
+            "تبدأ حلولنا السمعية من 5 000 درهم، وتُقدَّم لك التفاصيل خلال الفحص، دون أيّ التزام. ولا توقيع في اليوم نفسه.",
+          ],
+        },
+        {
           h2: 'نفس المُحاور، من البداية إلى النهاية',
           p: [
             'في أوديوليك، من قاس سمعك هو من يتابعك. نجاح التجهيز السمعي يقوم على علاقة متواصلة: عند الضبط الثالث، لا بدّ من تذكّر ما قلته في الأول.',
@@ -130,7 +184,7 @@ export default [
         {
           h2: "الأجهزة التي نركّبها",
           p: [
-            "نعتمد في التجهيز على أجهزة من علامتَي Signia وPhonak. ولا يُختار الطراز من كتالوج، بل يُحدَّد بعد الفحص، حسب حالة سمعك وشكل قناة أذنك وحياتك اليومية.",
+            "نعتمد في التجهيز على أجهزة سمعية (سماعات طبية) من علامتَي Signia وPhonak. ولا يُختار الطراز من كتالوج، بل يُحدَّد بعد الفحص، حسب حالة سمعك وشكل قناة أذنك وحياتك اليومية.",
             "هناك ثلاث عائلات كبرى: [الأجهزة بسمّاعة داخل القناة والأجهزة داخل الأذن](/ar/appareils-auditifs-intra-auriculaires/)، وهي الأكثر خفاءً؛ و[الأجهزة خلف الأذن](/ar/appareils-auditifs-contour-oreille/)، وهي الأقوى؛ وحسب الطراز، [نسخ قابلة للشحن ومزوّدة بالبلوتوث](/ar/appareils-auditifs-rechargeables-bluetooth/). وبعد تركيب الجهاز، تتمّ [صيانته وإصلاحه](/ar/entretien-et-reparation-appareils-auditifs/) داخل المركز.",
             "أمّا الميزانية، فتتسلّم بعد الفحص عرض سعر مفصّلًا مطابقًا لـ[ملف استرجاع المصاريف](/ar/remboursement-appareils-auditifs-maroc/).",
           ],
@@ -169,6 +223,18 @@ export default [
           q: "هل أحتاج إلى وصفة طبية للحضور؟",
           a: "ليس لإجراء الفحص. أمّا للاسترجاع، فصندوقك يطلب عادةً وصفة من طبيب الأنف والأذن والحنجرة. والخطوات مفصّلة في صفحتنا حول [استرجاع مصاريف السماعات الطبية بالمغرب](/ar/remboursement-appareils-auditifs-maroc/).",
         },
+        {
+          q: "هل فحص السمع بمقابل؟",
+          a: "لا، إنه مجاني، بموعد مسبق ودون أيّ التزام. ويُجرى داخل غرفة عازلة للصوت ويستغرق حوالي 45 دقيقة.",
+        },
+        {
+          q: "أين تكوّنت أخصائية السمع لديكم؟",
+          a: "في أوروبا: هي حاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023. وهي من تتابعك من الفحص إلى عمليات الضبط.",
+        },
+        {
+          q: "ابتداءً من أيّ سعر؟",
+          a: "تبدأ حلولنا السمعية من 5 000 درهم، وتُقدَّم لك التفاصيل خلال الفحص، دون أيّ التزام. ويتوقّف السعر على حالة سمعك والطراز المختار.",
+        },
       ],
       related: [
         { slug: 'centre-de-correction-auditive-casablanca', label: 'المركز' },
@@ -181,7 +247,7 @@ export default [
       kicker: 'The profession',
       title: 'Hearing Aid Specialist in Casablanca, Les Princesses · AudioLik',
       description:
-        'Your hearing aid specialist in Casablanca: hearing assessment by appointment, trial of discreet devices, adjustments and follow-up. AudioLik, 106B rue Al Jounaid, Les Princesses, Maârif.',
+        'Hearing aid specialist in Casablanca, trained in Europe: free hearing test in a soundproof booth, Signia and Phonak devices, follow-up. AudioLik.',
       h1: 'Hearing aid specialist in Casablanca, Les Princesses',
       lede:
         'A hearing aid specialist measures your hearing, explains what they observe, and if it helps, guides you towards a device that suits you — then adjusts it with you, over time.',
@@ -198,6 +264,27 @@ export default [
           p: [
             'We start by talking. In which situations do you hear less well: at a restaurant, on the phone, with family? Since when? Then comes the measurement, which is painless. Around 45 minutes.',
             'You leave with a plain explanation of your results and, if a device can help, a reasoned proposal — two or three models, not a catalogue. Nothing is signed on the day.',
+          ],
+        },
+        {
+          h2: "A recent European training",
+          p: [
+            "AudioLik's hearing aid specialist graduated in Spain, in Madrid, in 2023. A recent European training, put to work on one question: what you actually understand when someone speaks to you.",
+            "She is the one who sees you at the assessment, who fits the device and who carries out the later adjustments. You do not have to explain everything again at each visit.",
+          ],
+        },
+        {
+          h2: "A soundproof booth, for a reliable measurement",
+          p: [
+            "Measurements are taken on site, in a soundproof audiometric booth. Street noise, air conditioning or a nearby conversation do not mix with the test sounds.",
+            "That is what makes it possible to find the faintest sounds your ear really perceives. A reliable audiogram is the basis of an accurate fitting.",
+          ],
+        },
+        {
+          h2: "A free assessment, with no obligation",
+          p: [
+            "The [hearing assessment](/en/bilan-auditif-casablanca/) is free, by appointment. You leave with your results explained; and if a device is not useful, we tell you so.",
+            "Our hearing solutions start from MAD 5,000 — the details are given to you at the assessment, with no obligation. Nothing is signed on the day.",
           ],
         },
         {
@@ -255,6 +342,18 @@ export default [
           q: "Do I need a prescription to come?",
           a: "Not for the assessment. For reimbursement, your scheme usually asks for a prescription from an ENT doctor. The steps are set out on our page on [hearing aid reimbursement in Morocco](/en/remboursement-appareils-auditifs-maroc/).",
         },
+        {
+          q: "Is the hearing assessment charged?",
+          a: "No, it is free, by appointment and with no obligation. It takes place in a soundproof booth and lasts around 45 minutes.",
+        },
+        {
+          q: "Where was your hearing aid specialist trained?",
+          a: "In Europe: she graduated in Spain, in Madrid, in 2023. She follows you from the assessment through to the adjustments.",
+        },
+        {
+          q: "What is the starting price?",
+          a: "Our hearing solutions start from MAD 5,000 — the details are given to you at the assessment, with no obligation. The price depends on your hearing and the model chosen.",
+        },
       ],
       related: [
         { slug: 'centre-de-correction-auditive-casablanca', label: 'The centre' },
@@ -272,17 +371,24 @@ export default [
     slug: 'bilan-auditif-casablanca',
     fr: {
       kicker: 'Le bilan',
-      title: 'Bilan auditif à Casablanca, sur rendez-vous · AudioLik',
+      title: 'Bilan auditif gratuit à Casablanca · AudioLik',
       description:
-        'Bilan auditif complet à Casablanca (Les Princesses, Maârif) : otoscopie, audiométrie tonale et vocale, explication claire des résultats. AudioLik, sur rendez-vous.',
-      h1: 'Bilan auditif à Casablanca',
+        "Bilan auditif gratuit à Casablanca, en cabine insonorisée : otoscopie, audiométrie tonale et vocale, résultats expliqués, sans engagement. AudioLik.",
+      h1: 'Bilan auditif gratuit à Casablanca',
       lede:
         "On n'entend pas moins bien du jour au lendemain. La perte s'installe si lentement qu'on s'y habitue. Le bilan sert à savoir où vous en êtes, avec des chiffres qu'on vous explique.",
       sections: [
         {
+          h2: "Gratuit, sur rendez-vous, sans engagement",
+          p: [
+            "Le bilan auditif est gratuit. Il se fait sur rendez-vous, pour vous consacrer le temps nécessaire, et il ne vous engage à rien : vous repartez avec vos résultats, que vous ayez besoin d'un appareil ou non.",
+            "Il est réalisé par notre audioprothésiste, diplômée en Espagne, à Madrid, en 2023 — la même personne qui vous suivra ensuite si un appareil peut aider.",
+          ],
+        },
+        {
           h2: 'Comment ça se passe',
           p: [
-            "Un échange de quelques minutes sur votre quotidien, puis une otoscopie — parfois la gêne vient simplement d'un bouchon de cérumen. Vient ensuite l'audiométrie tonale : vous signalez les sons que vous percevez, à différentes hauteurs et intensités.",
+            "Un échange de quelques minutes sur votre quotidien, puis une otoscopie — parfois la gêne vient simplement d'un bouchon de cérumen. Vient ensuite l'audiométrie tonale, en cabine insonorisée : vous signalez les sons que vous percevez, à différentes hauteurs et intensités.",
             "Enfin l'audiométrie vocale, avec des mots, pour mesurer ce que vous comprenez et pas seulement ce que vous entendez. Le tout est indolore et dure environ 45 minutes.",
           ],
         },
@@ -314,6 +420,13 @@ export default [
             "Six questions sur votre quotidien, trois minutes, et aucune donnée envoyée : le calcul se fait dans votre navigateur. C'est un outil d'orientation, pas un diagnostic — [faites le test](/#test), puis venez au centre pour la vraie mesure.",
           ],
         },
+        {
+          h2: "Une cabine insonorisée, pour des résultats fiables",
+          p: [
+            "Les mesures se font dans une cabine audiométrique insonorisée. Sans le bruit ambiant, on repère les sons les plus faibles que vous percevez vraiment : c'est la condition d'un audiogramme fiable.",
+            "Si un appareil est utile, nos solutions auditives démarrent à 5 000 DH — le détail vous est donné lors du bilan, sans engagement. Nous proposons les marques Signia et Phonak ; le détail est sur la page [appareils auditifs à Casablanca](/appareils-auditifs-casablanca/).",
+          ],
+        },
       ],
       faq: [
         {
@@ -328,6 +441,18 @@ export default [
           q: 'À partir de quel âge faut-il faire un bilan ?',
           a: "À tout âge, dès qu'un signe apparaît. Après 60 ans, un contrôle tous les deux ans est une bonne habitude, comme pour la vue.",
         },
+        {
+          q: "Le bilan est-il vraiment gratuit ?",
+          a: "Oui. Il est gratuit, sur rendez-vous et sans engagement : rien n'est signé le jour même, et vous repartez avec vos résultats expliqués.",
+        },
+        {
+          q: "Qui réalise le bilan ?",
+          a: "Notre audioprothésiste, diplômée en Espagne, à Madrid, en 2023. C'est elle qui vous suivra ensuite si un appareil peut aider.",
+        },
+        {
+          q: "Où se font les mesures ?",
+          a: "Au centre, dans une cabine audiométrique insonorisée, pour que le bruit ambiant ne fausse pas les résultats.",
+        },
       ],
       related: [
         { slug: 'perte-auditive', label: 'Comprendre la perte auditive' },
@@ -339,17 +464,24 @@ export default [
     },
     ar: {
       kicker: 'الفحص',
-      title: 'فحص السمع بالدار البيضاء، بموعد مسبق · أوديوليك',
+      title: 'فحص السمع مجانًا بالدار البيضاء · أوديوليك',
       description:
-        'فحص السمع بالدار البيضاء: فحص الأذن وتخطيط السمع النغمي والكلامي، ونصيحة واضحة: هل تحتاج إلى سماعات طبية؟ أوديوليك، للحجز: 05 22 39 37 98.',
-      h1: 'فحص السمع بالدار البيضاء',
+        'فحص سمع مجاني بالدار البيضاء في غرفة عازلة: تخطيط السمع ونصيحة واضحة، هل تحتاج إلى سماعات طبية؟ أوديوليك: 05 22 39 37 98.',
+      h1: 'فحص السمع مجانًا بالدار البيضاء',
       lede:
         'لا يضعف السمع بين ليلة وضحاها. يستقرّ ضعف السمع ببطء إلى أن يألفه المرء. والفحص يبيّن لك أين أنت بالضبط، بأرقام تُشرَح لك.',
       sections: [
         {
+          h2: "مجاني، بموعد مسبق، دون التزام",
+          p: [
+            "فحص السمع مجاني. يُجرى بموعد مسبق، حتى نخصّص لك الوقت اللازم، ولا يُلزمك بأيّ شيء: تغادر ومعك نتائجك، سواء احتجت إلى جهاز أم لا.",
+            "تُجريه أخصائية السمع لدينا، الحاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023، وهي نفسها من ستتابعك بعد ذلك إذا كان الجهاز مفيدًا.",
+          ],
+        },
+        {
           h2: 'كيف يجري الفحص',
           p: [
-            'حديث قصير مع أخصائي السمع عن حياتك اليومية، ثم فحص الأذن — فأحيانًا يكون السبب مجرّد سدادة صملاخ. يلي ذلك قياس السمع النغمي: تشير إلى الأصوات التي تدركها، على درجات مختلفة من الحدّة والشدّة.',
+            'حديث قصير مع أخصائي السمع عن حياتك اليومية، ثم فحص الأذن — فأحيانًا يكون السبب مجرّد سدادة صملاخ. يلي ذلك قياس السمع النغمي، داخل غرفة عازلة للصوت: تشير إلى الأصوات التي تدركها، على درجات مختلفة من الحدّة والشدّة.',
             'وأخيرًا القياس الكلامي، بكلمات، لقياس ما تفهمه لا ما تسمعه فقط. والفحص كلّه غير مؤلم ويستغرق حوالي 45 دقيقة.',
           ],
         },
@@ -357,7 +489,7 @@ export default [
           h2: 'ما تغادر به',
           p: [
             'مخطّط سمعك (تخطيط السمع)، أي منحنى قدرتك السمعية، مشروحًا بلغة بسيطة: ما تسمعه جيدًا، وما يفوتك، وفي أيّ المواقف.',
-            'إذا كان الجهاز السمعي (السماعة الطبية) مفيدًا أخبرناك واقترحنا عليك جهازين أو ثلاثة مناسبة. وإذا لم يكن ضروريًا أخبرناك بذلك أيضًا.',
+            'إذا كانت الأجهزة السمعية (سماعات طبية) مفيدة لك، أخبرناك واقترحنا عليك جهازين أو ثلاثة مناسبة. وإذا لم يكن ضروريًا أخبرناك بذلك أيضًا.',
           ],
         },
         {
@@ -381,6 +513,13 @@ export default [
             'ستّة أسئلة عن حياتك اليومية، ثلاث دقائق، ودون إرسال أيّ بيانات: الحساب يجري داخل متصفّحك. وهو أداة توجيه لا تشخيص — [أجرِ الاختبار](/ar/#test)، ثم تعال إلى المركز للقياس الحقيقي.',
           ],
         },
+        {
+          h2: "غرفة عازلة للصوت، لنتائج موثوقة",
+          p: [
+            "تُنجَز القياسات داخل غرفة قياس السمع العازلة للصوت. فبدون الضجيج المحيط، نحدّد أضعف الأصوات التي تدركها فعلًا: وهذا شرط تخطيط سمع موثوق.",
+            "وإذا كان الجهاز مفيدًا، تبدأ حلولنا السمعية من 5 000 درهم، وتُقدَّم لك التفاصيل خلال الفحص، دون أيّ التزام. ونقترح علامتَي Signia وPhonak؛ والتفاصيل في صفحة [الأجهزة السمعية بالدار البيضاء](/ar/appareils-auditifs-casablanca/).",
+          ],
+        },
       ],
       faq: [
         {
@@ -395,6 +534,18 @@ export default [
           q: 'من أيّ سنّ يُنصح بالفحص؟',
           a: 'في أيّ سنّ، عند ظهور أيّ علامة. وبعد الستين، فحص كل سنتين عادة حسنة، مثل فحص النظر.',
         },
+        {
+          q: "هل الفحص مجاني فعلًا؟",
+          a: "نعم. إنه مجاني، بموعد مسبق ودون أيّ التزام: لا توقيع في اليوم نفسه، وتغادر ومعك شرح لنتائجك.",
+        },
+        {
+          q: "من يُجري الفحص؟",
+          a: "أخصائية السمع لدينا، الحاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023. وهي من ستتابعك بعد ذلك إذا كان الجهاز مفيدًا.",
+        },
+        {
+          q: "أين تُجرى القياسات؟",
+          a: "في المركز، داخل غرفة قياس السمع العازلة للصوت، حتى لا يؤثّر الضجيج المحيط في النتائج.",
+        },
       ],
       related: [
         { slug: 'perte-auditive', label: 'فهم ضعف السمع' },
@@ -406,17 +557,24 @@ export default [
     },
     en: {
       kicker: 'The assessment',
-      title: 'Hearing Assessment in Casablanca, by Appointment · AudioLik',
+      title: 'Free Hearing Test in Casablanca · AudioLik',
       description:
-        'Full hearing assessment in Casablanca (Les Princesses, Maârif): otoscopy, pure-tone and speech audiometry, a clear explanation of the results. AudioLik, by appointment.',
-      h1: 'Hearing assessment in Casablanca',
+        'Free hearing test in Casablanca, in a soundproof booth: otoscopy, pure-tone and speech audiometry, results explained. No obligation. AudioLik, Maârif.',
+      h1: 'Free hearing assessment in Casablanca',
       lede:
         'Hearing does not fade overnight. The loss settles in so slowly that you get used to it. The assessment tells you where you stand, with figures we explain to you.',
       sections: [
         {
+          h2: "Free, by appointment, no obligation",
+          p: [
+            "The hearing assessment is free. It is by appointment, so that we can give you the time it needs, and it commits you to nothing: you leave with your results, whether or not you need a device.",
+            "It is carried out by our hearing aid specialist, who graduated in Spain, in Madrid, in 2023 — the same person who will follow you afterwards if a device can help.",
+          ],
+        },
+        {
           h2: 'How it works',
           p: [
-            'A few minutes talking about your daily life, then otoscopy — sometimes the difficulty is simply earwax. Next comes pure-tone audiometry: you signal the sounds you perceive, at different pitches and intensities.',
+            'A few minutes talking about your daily life, then otoscopy — sometimes the difficulty is simply earwax. Next comes pure-tone audiometry, in a soundproof booth: you signal the sounds you perceive, at different pitches and intensities.',
             'Finally speech audiometry, with words, to measure what you understand and not only what you hear. It is painless throughout and takes around 45 minutes.',
           ],
         },
@@ -448,6 +606,13 @@ export default [
             'Six questions about your daily life, three minutes, and no data sent anywhere: the calculation happens in your browser. It is a guide, not a diagnosis — [take the test](/en/#test), then come to the centre for the real measurement.',
           ],
         },
+        {
+          h2: "A soundproof booth, for reliable results",
+          p: [
+            "Measurements are taken in a soundproof audiometric booth. Without background noise, we can find the faintest sounds you really perceive: that is what makes an audiogram reliable.",
+            "If a device is useful, our hearing solutions start from MAD 5,000 — the details are given to you at the assessment, with no obligation. We offer Signia and Phonak; the details are on our page on [hearing aids in Casablanca](/en/appareils-auditifs-casablanca/).",
+          ],
+        },
       ],
       faq: [
         {
@@ -461,6 +626,18 @@ export default [
         {
           q: 'From what age should I have one?',
           a: 'At any age, as soon as a sign appears. After 60, a check every two years is a good habit, as with eyesight.',
+        },
+        {
+          q: "Is the assessment really free?",
+          a: "Yes. It is free, by appointment and with no obligation: nothing is signed on the day, and you leave with your results explained.",
+        },
+        {
+          q: "Who carries out the assessment?",
+          a: "Our hearing aid specialist, who graduated in Spain, in Madrid, in 2023. She is the one who will follow you afterwards if a device can help.",
+        },
+        {
+          q: "Where are the measurements taken?",
+          a: "At the centre, in a soundproof audiometric booth, so that background noise does not distort the results.",
         },
       ],
       related: [

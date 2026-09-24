@@ -13,7 +13,7 @@ export const business = {
   name: 'AudioLik',
   alternateName: 'Audiolik',        // orthographe de la fiche Google
   legalName: null,
-  founded: null,
+  founded: '2026',                 // ouverture du centre — confirmé par le centre (09/2026)
 
   street: '106B Rue Al Jounaid',
   district: 'Les Princesses, Maârif',
@@ -64,13 +64,25 @@ export const business = {
     homeTrial: false,
     unlimitedFollowUp: false,
     childrenFitting: false,
-    soundproofBooth: false,
+    soundproofBooth: true,   // cabine audiométrique insonorisée — confirmé par le centre (09/2026)
   },
 
-  priceRange: null,
-  // Marques avec lesquelles le centre appareille (confirmé par le centre, 09/2026).
+  // « À partir de 5 000 DH » — confirmé par le centre (09/2026). NE PAS préciser
+  // « par appareil » ou « par paire » : ce point n'est pas confirmé.
+  priceFrom: 5000,
+  priceRange: 'MAD 5000+',
+  // Marques proposées par le centre (confirmé par le centre, 09/2026).
   brands: ['Signia', 'Phonak'],
   languages: ['fr', 'ar', 'en'],
+
+  // Audioprothésiste du centre (confirmé par le centre, 09/2026). Seuls ces
+  // faits sont vérifiés : ni nom, ni établissement précis, ni années
+  // d'expérience. Le centre étant récent, on n'évoque JAMAIS l'ancienneté.
+  audiologist: {
+    diplomaCountry: { fr: 'Espagne', ar: 'إسبانيا', en: 'Spain' },
+    diplomaCity:    { fr: 'Madrid',  ar: 'مدريد',   en: 'Madrid' },
+    diplomaYear: 2023,
+  },
   defaultLang: 'fr',
 };
 

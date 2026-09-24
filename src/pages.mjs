@@ -15,10 +15,13 @@
  *     14 000 DH. Source de référence : la carte tarifaire de
  *     /appareils-auditifs-casablanca/ ; l'accueil et la page centre la reprennent.
  *     Jamais de montant de remboursement ;
- *   · aucune promesse non confirmée. Le seul engagement confirmé par le centre
- *     est le BILAN AUDITIF GRATUIT (business.claims.freeHearingTest, 09/2026).
- *     Restent à false, donc interdits d'écriture : essai à domicile, suivi
- *     illimité, cabine insonorisée, appareillage enfants ;
+ *   · aucune promesse non confirmée. Confirmés par le centre (09/2026) : le
+ *     BILAN AUDITIF GRATUIT et la CABINE INSONORISÉE (business.claims), les
+ *     marques Signia et Phonak, l'ouverture en 2026, l'audioprothésiste
+ *     diplômée en Espagne (Madrid, 2023), un prix « à partir de 5 000 DH »
+ *     (sans préciser appareil ou paire). Restent à false, donc interdits
+ *     d'écriture : essai à domicile, suivi illimité, appareillage enfants.
+ *     Jamais d'ancienneté ni d'années d'expérience : le centre est récent ;
  *   · le vocabulaire est celui déjà validé dans src/content/<lang>.mjs.
  *
  * Balisage accepté dans les textes : *gras* et [libellé](url).
@@ -116,7 +119,7 @@ const core = [
         {
           h2: 'ما هو مركز تصحيح السمع',
           p: [
-            'هو المكان الذي يُقاس فيه سمعك ويُحدَّد فيه ضعف السمع إن وُجد، وتُشرح لك فيه النتائج، ويُلاءم فيه الجهاز السمعي (السماعة الطبية) إذا كان مفيدًا. ليس متجرًا: الجزء الظاهر، أي الجهاز، ليس إلا جزءًا صغيرًا من العمل. الأساس يجري قبل ذلك، أثناء الفحص، وبعده، خلال أشهر الضبط.',
+            'هو المكان الذي يُقاس فيه سمعك ويُحدَّد فيه ضعف السمع إن وُجد، وتُشرح لك فيه النتائج، وتُلاءم فيه الأجهزة السمعية (سماعات طبية) إذا كانت مفيدة. ليس متجرًا: الجزء الظاهر، أي الجهاز، ليس إلا جزءًا صغيرًا من العمل. الأساس يجري قبل ذلك، أثناء الفحص، وبعده، خلال أشهر الضبط.',
             'التجهيز السمعي قرار يُحسَب على خمس سنوات، لا على فاتورة واحدة. وما يكلّف ليس العلبة، بل الوقت المبذول في ملاءمتها مع سمعك، ثم ضبطها إلى أن تنسى وجودها.',
           ],
         },
