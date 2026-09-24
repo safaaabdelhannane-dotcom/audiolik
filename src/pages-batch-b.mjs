@@ -81,7 +81,7 @@ export default [
           },
         ],
         brandsLabel: 'Marques :',
-        brandsNote: 'Nous appareillons avec des fabricants reconnus, notamment *Signia* et *Phonak*. Les images ci-dessus illustrent les types d’appareils ; le modèle précis est choisi avec vous après le bilan, selon votre audition et votre quotidien.',
+        brandsNote: 'Nous proposons les marques *Signia* et *Phonak*. Les images ci-dessus illustrent les types d’appareils ; le modèle précis est choisi avec vous après le bilan, selon votre audition et votre quotidien.',
         note: 'Tarifs indicatifs par appareil. Le prix définitif dépend de votre audition, du modèle choisi et des fonctionnalités nécessaires. Des solutions technologiques plus avancées peuvent être proposées après l’étude de vos besoins. Un devis détaillé vous est remis après le bilan, sans engagement.',
         after: [
           'Lorsque les deux oreilles présentent une perte auditive, une solution pour deux appareils peut être recommandée. Le tarif complet est alors indiqué clairement sur votre devis personnalisé.',
@@ -145,6 +145,13 @@ export default [
             "Beaucoup moins qu'on ne l'imagine. Les [contours à écouteur déporté](/appareils-auditifs-contour-oreille/) sont invisibles de face, et les [intra-auriculaires](/appareils-auditifs-intra-auriculaires/) sont entièrement logés dans le conduit. La plupart des gens autour de vous ne le remarqueront pas.",
           ],
         },
+        {
+          h2: "Nos marques : Signia et Phonak",
+          p: [
+            "Nous proposons des appareils Signia et Phonak, deux fabricants reconnus internationalement. Dans chacune de ces marques, plusieurs formats et niveaux de technologie existent : le choix se fait avec vous, après le [bilan auditif gratuit](/bilan-auditif-casablanca/), selon votre audition et votre quotidien.",
+            "Le bilan se déroule en cabine insonorisée, et l'adaptation est assurée par notre audioprothésiste, diplômée en Espagne. Vous gardez le même interlocuteur du choix de l'appareil jusqu'aux réglages.",
+          ],
+        },
       ],
       faqTitle: 'Questions fréquentes sur le prix des appareils auditifs',
       faq: [
@@ -193,7 +200,7 @@ export default [
         'سماعات طبية وأجهزة سمعية بالدار البيضاء: الأسعار الإرشادية، وما يشمله السعر، وملف الاسترجاع. أوديوليك: 05 22 39 37 98.',
       h1: 'الأجهزة السمعية بالدار البيضاء',
       lede:
-        'أكثر سؤالين يُطرحان علينا عن الأجهزة السمعية (السماعات الطبية): «كم يكلّف الجهاز؟» و«هل يظهر؟». إليك أجوبة واضحة من [أخصائي السمعيات بالدار البيضاء](/ar/audioprothesiste-casablanca/)، بحيّ الأميرات.',
+        'أكثر سؤالين يُطرحان علينا عن الأجهزة السمعية (سماعات طبية): «كم يكلّف الجهاز؟» و«هل يظهر؟». إليك أجوبة واضحة من [أخصائي السمعيات بالدار البيضاء](/ar/audioprothesiste-casablanca/)، بحيّ الأميرات.',
       /* Carte tarifaire — mêmes tarifs indicatifs par appareil que la page FR. */
       pricing: {
         id: 'prix',
@@ -262,7 +269,7 @@ export default [
           },
         ],
         brandsLabel: 'العلامات:',
-        brandsNote: 'نعتمد على أجهزة من علامات معروفة عالميًا، من بينها *Signia* و*Phonak*. الرسوم أعلاه توضّح أنواع الأجهزة فقط؛ أمّا الطراز المناسب فنختاره معك بعد الفحص، حسب حالة سمعك واحتياجاتك اليومية.',
+        brandsNote: 'نقترح علامتَي *Signia* و*Phonak*. الرسوم أعلاه توضّح أنواع الأجهزة فقط؛ أمّا الطراز المناسب فنختاره معك بعد الفحص، حسب حالة سمعك واحتياجاتك اليومية.',
         note: 'أسعار إرشادية للجهاز الواحد. يتوقّف السعر النهائي على حالة سمعك والطراز المختار والوظائف التي تحتاجها. وقد نقترح عليك حلولًا تقنية أكثر تطوّرًا بعد دراسة احتياجاتك. تتسلّم عرض سعر مفصّلًا بعد الفحص، دون أيّ التزام.',
         after: [
           'إذا كان ضعف السمع في الأذنين معًا، فقد يُنصح بجهازين. وفي هذه الحالة يُبيَّن السعر الإجمالي بوضوح في عرض السعر الخاص بك.',
@@ -324,6 +331,13 @@ export default [
           id: 'discretion',
           p: [
             'أقلّ بكثير ممّا تتصوّر. أجهزة [خلف الأذن بسمّاعة داخل القناة](/ar/appareils-auditifs-contour-oreille/) لا تكاد تُرى من الأمام، وأجهزة [داخل الأذن](/ar/appareils-auditifs-intra-auriculaires/) تستقرّ بالكامل في القناة السمعية. ولن يلاحظها أغلب من حولك.',
+          ],
+        },
+        {
+          h2: "علاماتنا: Signia وPhonak",
+          p: [
+            "نقترح أجهزة Signia وPhonak، وهما مصنّعان معروفان عالميًا. ولكلّ علامة منهما عدّة أشكال ومستويات تقنية: ويتمّ الاختيار معك بعد [فحص السمع المجاني](/ar/bilan-auditif-casablanca/)، حسب حالة سمعك وحياتك اليومية.",
+            "يُجرى الفحص داخل غرفة عازلة للصوت، وتتولّى التركيب أخصائية السمع لدينا، المتكوّنة في إسبانيا. وتحتفظ بنفس المُحاور من اختيار الجهاز إلى عمليات الضبط.",
           ],
         },
       ],
@@ -443,7 +457,7 @@ export default [
           },
         ],
         brandsLabel: 'Brands:',
-        brandsNote: 'We fit devices from recognised manufacturers, including *Signia* and *Phonak*. The images above illustrate the types of device; the exact model is chosen with you after the assessment, based on your hearing and your daily life.',
+        brandsNote: 'We offer the *Signia* and *Phonak* brands. The images above illustrate the types of device; the exact model is chosen with you after the assessment, based on your hearing and your daily life.',
         note: 'Indicative prices per device. The final price depends on your hearing, the chosen model and the features you need. More advanced technology may be suggested once your needs have been assessed. You receive a detailed quote after the assessment, with no obligation.',
         after: [
           'When both ears have a hearing loss, a two-device solution may be recommended. The full price is then shown clearly on your personalised quote.',
@@ -505,6 +519,13 @@ export default [
           id: 'discretion',
           p: [
             'Far less than you would imagine. [Receiver-in-canal behind-the-ear](/en/appareils-auditifs-contour-oreille/) models are invisible from the front, and [in-the-ear](/en/appareils-auditifs-intra-auriculaires/) devices sit entirely inside the canal. Most people around you will not notice.',
+          ],
+        },
+        {
+          h2: "Our brands: Signia and Phonak",
+          p: [
+            "We offer Signia and Phonak hearing aids, two internationally recognised manufacturers. Each brand has several formats and technology levels: the choice is made with you, after the [free hearing assessment](/en/bilan-auditif-casablanca/), according to your hearing and your daily life.",
+            "The assessment takes place in a soundproof booth, and the fitting is carried out by our hearing aid specialist, who trained in Spain. You keep the same person from choosing the device through to the adjustments.",
           ],
         },
       ],
@@ -665,7 +686,7 @@ export default [
         },
         {
           q: 'هل يُعالَج ضعف السمع؟',
-          a: 'ذلك يتوقّف على السبب. السدادة تُزال، والالتهاب يُعالَج. أمّا الضعف المرتبط بالسنّ أو بالضجيج فلا يُصلَح، لكنه يُعوَّض جيدًا بجهاز سمعي ملائم (سماعة طبية).',
+          a: 'ذلك يتوقّف على السبب. السدادة تُزال، والالتهاب يُعالَج. أمّا الضعف المرتبط بالسنّ أو بالضجيج فلا يُصلَح، لكنه يُعوَّض جيدًا بأجهزة سمعية ملائمة (سماعات طبية).',
         },
       ],
       related: [
