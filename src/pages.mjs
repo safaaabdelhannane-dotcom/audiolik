@@ -100,6 +100,8 @@ const core = [
         { slug: 'bilan-auditif-casablanca', label: 'Le bilan auditif' },
         { slug: 'appareils-auditifs-casablanca', label: 'Les appareils auditifs' },
         { slug: 'perte-auditive', label: 'Comprendre la perte auditive' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Remboursement des appareils au Maroc" },
+        { slug: 'entretien-et-reparation-appareils-auditifs', label: "Entretien et réparation" },
       ],
     },
     ar: {
@@ -166,6 +168,8 @@ const core = [
         { slug: 'bilan-auditif-casablanca', label: 'فحص السمع' },
         { slug: 'appareils-auditifs-casablanca', label: 'الأجهزة السمعية' },
         { slug: 'perte-auditive', label: 'فهم ضعف السمع' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "استرجاع مصاريف السماعات الطبية" },
+        { slug: 'entretien-et-reparation-appareils-auditifs', label: "الصيانة والإصلاح" },
       ],
     },
     en: {
@@ -232,6 +236,8 @@ const core = [
         { slug: 'bilan-auditif-casablanca', label: 'The hearing assessment' },
         { slug: 'appareils-auditifs-casablanca', label: 'Hearing aids' },
         { slug: 'perte-auditive', label: 'Understanding hearing loss' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Hearing aid reimbursement in Morocco" },
+        { slug: 'entretien-et-reparation-appareils-auditifs', label: "Maintenance and repair" },
       ],
     },
   },

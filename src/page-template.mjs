@@ -20,6 +20,7 @@ import { DEVICE_SVG } from './device-art.mjs';
 import { IMG, alt as imgAlt, PAGE_IMAGES, CARD_PHOTOS } from './page-images.mjs';
 import { pages as SUBPAGES } from './pages.mjs';
 import { runtimeScripts } from './runtime-config.mjs';
+import { organizationSchema, plain } from './schema.mjs';
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -59,6 +60,7 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
 
   /* -- données structurées ------------------------------------------------- */
   const graph = [
+    organizationSchema({ description: t.meta.description, url: `${SITE_URL}${loc.path}`, lang }),
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -84,7 +86,7 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
       mainEntity: page.faq.map((f) => ({
         '@type': 'Question',
         name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a },
+        acceptedAnswer: { '@type': 'Answer', text: plain(f.a) },
       })),
     });
   }
