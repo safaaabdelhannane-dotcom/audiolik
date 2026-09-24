@@ -343,6 +343,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 </style>
 
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
+  <script src="/assets/js/analytics.js" defer></script>
 </head>
 <body>
 ${SPRITE}
