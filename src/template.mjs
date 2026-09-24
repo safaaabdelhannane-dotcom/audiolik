@@ -516,6 +516,9 @@ ${SPRITE}
           <a class="btn btn--ghost" href="${esc(B.mapsDirectionsUrl)}" target="_blank" rel="noopener">
             ${icon('path')} ${esc(t.center.directions)}
           </a>
+          ${B.mapsReviewUrl ? `<a class="btn btn--ghost" href="${esc(B.mapsReviewUrl)}" target="_blank" rel="noopener">
+            ${icon('chat-circle-text')} ${esc(t.testimonials.emptyCta)}
+          </a>` : ''}
         </div>
 
         <div class="centre__map" data-reveal style="--d:140ms">

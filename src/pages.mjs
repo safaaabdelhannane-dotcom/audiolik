@@ -15,13 +15,14 @@
  *     14 000 DH. Source de référence : la carte tarifaire de
  *     /appareils-auditifs-casablanca/ ; l'accueil et la page centre la reprennent.
  *     Jamais de montant de remboursement ;
- *   · aucune promesse non confirmée. Confirmés par le centre (09/2026) : le
- *     BILAN AUDITIF GRATUIT et la CABINE INSONORISÉE (business.claims), les
- *     marques Signia et Phonak, l'ouverture en 2026, l'audioprothésiste
- *     diplômée en Espagne (Madrid, 2023), un prix « à partir de 5 000 DH »
- *     (sans préciser appareil ou paire). Restent à false, donc interdits
- *     d'écriture : essai à domicile, suivi illimité, appareillage enfants.
- *     Jamais d'ancienneté ni d'années d'expérience : le centre est récent ;
+ *   · aucune promesse non confirmée. Confirmés par le centre (09/2026) : bilan
+ *     auditif gratuit, cabine insonorisée, essai avant achat (durée non
+ *     communiquée), suivi illimité, appareillage enfants et adultes, marques
+ *     Signia et Phonak (tous formats), ouverture en 2026, audioprothésiste
+ *     Safaa diplômée en Espagne (Madrid, 2023), prix dès 5 000 DH PAR APPAREIL,
+ *     prise en charge rapide. Toujours interdits : durée de garantie, facilités
+ *     de paiement, tiers payant, avis inventés, nombre de patients, années
+ *     d'expérience ou ancienneté (le centre est récent) ;
  *   · le vocabulaire est celui déjà validé dans src/content/<lang>.mjs.
  *
  * Balisage accepté dans les textes : *gras* et [libellé](url).

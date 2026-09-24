@@ -74,6 +74,9 @@ export function organizationSchema({ description, url, lang }) {
     openingHoursSpecification: openingHoursSchema(),
     areaServed: { '@type': 'City', name: B.city },
     ...(B.priceRange ? { priceRange: B.priceRange } : {}),
+    ...(B.audiologist?.firstName ? { employee: {
+      '@type': 'Person', name: B.audiologist.firstName, jobTitle: B.audiologist.diploma?.fr || 'Audioprothésiste',
+    } } : {}),
     availableLanguage: B.languages,
     currenciesAccepted: 'MAD',
   };

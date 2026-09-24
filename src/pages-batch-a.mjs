@@ -31,7 +31,7 @@ export default [
         {
           h2: "Une formation européenne récente",
           p: [
-            "L'audioprothésiste d'AudioLik est diplômée en Espagne, à Madrid, en 2023. Une formation européenne récente, qu'elle met au service d'une seule question : ce que vous comprenez vraiment quand on vous parle.",
+            "Safaa, l'audioprothésiste d'AudioLik, a obtenu son diplôme d'audioprothésiste en Espagne, à Madrid, en 2023. Une formation européenne récente, qu'elle met au service d'une seule question : ce que vous comprenez vraiment quand on vous parle.",
             "C'est elle qui vous reçoit au bilan, elle encore qui adapte l'appareil et qui assure les réglages suivants. Vous n'avez pas à tout réexpliquer à chaque visite.",
           ],
         },
@@ -46,7 +46,7 @@ export default [
           h2: "Un bilan gratuit, sans engagement",
           p: [
             "Le [bilan auditif](/bilan-auditif-casablanca/) est gratuit, sur rendez-vous. Vous repartez avec vos résultats expliqués ; et si un appareil n'est pas utile, nous vous le disons.",
-            "Nos solutions auditives démarrent à 5 000 DH — le détail vous est donné lors du bilan, sans engagement. Rien n'est signé le jour même.",
+            "Nos solutions auditives démarrent à 5 000 DH par appareil — le détail vous est donné lors du bilan, sans engagement. Rien n'est signé le jour même.",
           ],
         },
         {
@@ -98,7 +98,7 @@ export default [
         },
         {
           q: "Que comprend le suivi après l'appareillage ?",
-          a: "Des contrôles de votre audition, le nettoyage en centre, le changement des filtres et le dépannage. Votre audition évolue avec le temps, et les réglages suivent. Un appareil bien suivi dure plusieurs années de plus.",
+          a: "Des contrôles de votre audition, le nettoyage en centre, le changement des filtres et le dépannage. Votre audition évolue avec le temps, et les réglages suivent. Ce suivi est inclus, sans limite de durée, aussi longtemps que vous portez l'appareil.",
         },
         {
           q: "Faut-il une ordonnance pour venir ?",
@@ -110,11 +110,23 @@ export default [
         },
         {
           q: "Où votre audioprothésiste a-t-elle été formée ?",
-          a: "En Europe : elle est diplômée en Espagne, à Madrid, en 2023. C'est elle qui vous suit du bilan jusqu'aux réglages.",
+          a: "En Europe : Safaa a obtenu son diplôme d'audioprothésiste en Espagne, à Madrid, en 2023. C'est elle qui vous suit du bilan jusqu'aux réglages.",
         },
         {
           q: "À partir de quel prix ?",
-          a: "Nos solutions auditives démarrent à 5 000 DH — le détail vous est donné lors du bilan, sans engagement. Le prix dépend de votre audition et du modèle choisi.",
+          a: "Nos solutions auditives démarrent à 5 000 DH par appareil — le détail vous est donné lors du bilan, sans engagement. Le prix dépend de votre audition et du modèle choisi.",
+        },
+        {
+          q: "Peut-on essayer un appareil avant de l'acheter ?",
+          a: "Oui. Vous essayez l'appareil avant de vous décider, dans votre quotidien. Rien n'est signé le jour du bilan.",
+        },
+        {
+          q: "Les réglages et le suivi sont-ils limités dans le temps ?",
+          a: "Non. Les réglages et le suivi sont inclus, sans limite de durée, aussi longtemps que vous portez l'appareil.",
+        },
+        {
+          q: "Appareillez-vous les enfants ?",
+          a: "Oui. Nous appareillons les enfants comme les adultes. Le premier pas reste le bilan auditif, gratuit et sur rendez-vous.",
         },
       ],
       related: [
@@ -150,7 +162,7 @@ export default [
         {
           h2: "تكوين أوروبي حديث",
           p: [
-            "أخصائية السمع في أوديوليك حاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023. تكوين أوروبي حديث، تضعه في خدمة سؤال واحد: ما الذي تفهمه فعلًا حين يكلّمك أحد.",
+            "صفاء، أخصائية السمع في أوديوليك، حاصلة على شهادتها في تخصّص السمعيات وتركيب الأجهزة السمعية بإسبانيا، بمدريد، سنة 2023. تكوين أوروبي حديث، تضعه في خدمة سؤال واحد: ما الذي تفهمه فعلًا حين يكلّمك أحد.",
             "هي من تستقبلك في الفحص، وهي من تركّب الجهاز وتتولّى عمليات الضبط اللاحقة. فلا حاجة إلى إعادة شرح كل شيء في كل زيارة.",
           ],
         },
@@ -165,7 +177,7 @@ export default [
           h2: "فحص مجاني، دون التزام",
           p: [
             "[فحص السمع](/ar/bilan-auditif-casablanca/) مجاني، بموعد مسبق. تغادر ومعك شرح لنتائجك؛ وإذا لم يكن الجهاز مفيدًا، أخبرناك بذلك.",
-            "تبدأ حلولنا السمعية من 5 000 درهم، وتُقدَّم لك التفاصيل خلال الفحص، دون أيّ التزام. ولا توقيع في اليوم نفسه.",
+            "تبدأ حلولنا السمعية من 5 000 درهم للجهاز الواحد، وتُقدَّم لك التفاصيل خلال الفحص، دون أيّ التزام. ولا توقيع في اليوم نفسه.",
           ],
         },
         {
@@ -217,7 +229,7 @@ export default [
         },
         {
           q: "ماذا تشمل المتابعة بعد التركيب؟",
-          a: "مراقبة سمعك، والتنظيف داخل المركز، وتغيير المصافي، والإصلاح. سمعك يتغيّر مع الوقت، والضبط يواكبه. والجهاز المتابَع جيدًا يدوم سنوات أطول.",
+          a: "مراقبة سمعك، والتنظيف داخل المركز، وتغيير المصافي، والإصلاح. سمعك يتغيّر مع الوقت، والضبط يواكبه. وهذه المتابعة مشمولة، دون حدّ زمني، ما دمت تستعمل الجهاز.",
         },
         {
           q: "هل أحتاج إلى وصفة طبية للحضور؟",
@@ -229,11 +241,23 @@ export default [
         },
         {
           q: "أين تكوّنت أخصائية السمع لديكم؟",
-          a: "في أوروبا: هي حاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023. وهي من تتابعك من الفحص إلى عمليات الضبط.",
+          a: "في أوروبا: صفاء حاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023. وهي من تتابعك من الفحص إلى عمليات الضبط.",
         },
         {
           q: "ابتداءً من أيّ سعر؟",
-          a: "تبدأ حلولنا السمعية من 5 000 درهم، وتُقدَّم لك التفاصيل خلال الفحص، دون أيّ التزام. ويتوقّف السعر على حالة سمعك والطراز المختار.",
+          a: "تبدأ حلولنا السمعية من 5 000 درهم للجهاز الواحد، وتُقدَّم لك التفاصيل خلال الفحص، دون أيّ التزام. ويتوقّف السعر على حالة سمعك والطراز المختار.",
+        },
+        {
+          q: "هل يمكن تجربة الجهاز قبل شرائه؟",
+          a: "نعم. تجرّب الجهاز في حياتك اليومية قبل أن تقرّر. ولا توقيع يوم الفحص.",
+        },
+        {
+          q: "هل الضبط والمتابعة محدودان في الزمن؟",
+          a: "لا. الضبط والمتابعة مشمولان، دون حدّ زمني، ما دمت تستعمل الجهاز.",
+        },
+        {
+          q: "هل تركّبون الأجهزة السمعية للأطفال؟",
+          a: "نعم. نركّب الأجهزة للأطفال كما للكبار. وتبقى الخطوة الأولى فحص السمع، المجاني وبموعد مسبق.",
         },
       ],
       related: [
@@ -269,7 +293,7 @@ export default [
         {
           h2: "A recent European training",
           p: [
-            "AudioLik's hearing aid specialist graduated in Spain, in Madrid, in 2023. A recent European training, put to work on one question: what you actually understand when someone speaks to you.",
+            "Safaa, AudioLik's hearing aid specialist, qualified as a hearing aid specialist in Spain, in Madrid, in 2023. A recent European training, put to work on one question: what you actually understand when someone speaks to you.",
             "She is the one who sees you at the assessment, who fits the device and who carries out the later adjustments. You do not have to explain everything again at each visit.",
           ],
         },
@@ -284,7 +308,7 @@ export default [
           h2: "A free assessment, with no obligation",
           p: [
             "The [hearing assessment](/en/bilan-auditif-casablanca/) is free, by appointment. You leave with your results explained; and if a device is not useful, we tell you so.",
-            "Our hearing solutions start from MAD 5,000 — the details are given to you at the assessment, with no obligation. Nothing is signed on the day.",
+            "Our hearing solutions start from MAD 5,000 per device — the details are given to you at the assessment, with no obligation. Nothing is signed on the day.",
           ],
         },
         {
@@ -336,7 +360,7 @@ export default [
         },
         {
           q: "What does follow-up include after the fitting?",
-          a: "Hearing checks, cleaning at the centre, filter changes and repairs. Your hearing changes over time, and the settings follow. A well-followed device lasts years longer.",
+          a: "Hearing checks, cleaning at the centre, filter changes and repairs. Your hearing changes over time, and the settings follow. This follow-up is included, with no time limit, for as long as you wear the device.",
         },
         {
           q: "Do I need a prescription to come?",
@@ -348,11 +372,23 @@ export default [
         },
         {
           q: "Where was your hearing aid specialist trained?",
-          a: "In Europe: she graduated in Spain, in Madrid, in 2023. She follows you from the assessment through to the adjustments.",
+          a: "In Europe: Safaa qualified as a hearing aid specialist in Spain, in Madrid, in 2023. She follows you from the assessment through to the adjustments.",
         },
         {
           q: "What is the starting price?",
-          a: "Our hearing solutions start from MAD 5,000 — the details are given to you at the assessment, with no obligation. The price depends on your hearing and the model chosen.",
+          a: "Our hearing solutions start from MAD 5,000 per device — the details are given to you at the assessment, with no obligation. The price depends on your hearing and the model chosen.",
+        },
+        {
+          q: "Can I try a hearing aid before buying it?",
+          a: "Yes. You try the device in your daily life before deciding. Nothing is signed on the day of the assessment.",
+        },
+        {
+          q: "Are adjustments and follow-up limited in time?",
+          a: "No. Adjustments and follow-up are included, with no time limit, for as long as you wear the device.",
+        },
+        {
+          q: "Do you fit children?",
+          a: "Yes. We fit children as well as adults. The first step is still the hearing assessment, free and by appointment.",
         },
       ],
       related: [
@@ -381,8 +417,8 @@ export default [
         {
           h2: "Gratuit, sur rendez-vous, sans engagement",
           p: [
-            "Le bilan auditif est gratuit. Il se fait sur rendez-vous, pour vous consacrer le temps nécessaire, et il ne vous engage à rien : vous repartez avec vos résultats, que vous ayez besoin d'un appareil ou non.",
-            "Il est réalisé par notre audioprothésiste, diplômée en Espagne, à Madrid, en 2023 — la même personne qui vous suivra ensuite si un appareil peut aider.",
+            "Le bilan auditif est gratuit. Il se fait sur rendez-vous, avec une prise en charge rapide, pour vous consacrer le temps nécessaire, et il ne vous engage à rien : vous repartez avec vos résultats, que vous ayez besoin d'un appareil ou non.",
+            "Il est réalisé par Safaa, notre audioprothésiste, diplômée en Espagne, à Madrid, en 2023 — la même personne qui vous suivra ensuite si un appareil peut aider.",
           ],
         },
         {
@@ -424,7 +460,7 @@ export default [
           h2: "Une cabine insonorisée, pour des résultats fiables",
           p: [
             "Les mesures se font dans une cabine audiométrique insonorisée. Sans le bruit ambiant, on repère les sons les plus faibles que vous percevez vraiment : c'est la condition d'un audiogramme fiable.",
-            "Si un appareil est utile, nos solutions auditives démarrent à 5 000 DH — le détail vous est donné lors du bilan, sans engagement. Nous proposons les marques Signia et Phonak ; le détail est sur la page [appareils auditifs à Casablanca](/appareils-auditifs-casablanca/).",
+            "Si un appareil est utile, nos solutions auditives démarrent à 5 000 DH par appareil — le détail vous est donné lors du bilan, sans engagement. Nous proposons les marques Signia et Phonak ; le détail est sur la page [appareils auditifs à Casablanca](/appareils-auditifs-casablanca/).",
           ],
         },
       ],
@@ -447,7 +483,7 @@ export default [
         },
         {
           q: "Qui réalise le bilan ?",
-          a: "Notre audioprothésiste, diplômée en Espagne, à Madrid, en 2023. C'est elle qui vous suivra ensuite si un appareil peut aider.",
+          a: "Safaa, notre audioprothésiste, diplômée en Espagne, à Madrid, en 2023. C'est elle qui vous suivra ensuite si un appareil peut aider.",
         },
         {
           q: "Où se font les mesures ?",
@@ -474,8 +510,8 @@ export default [
         {
           h2: "مجاني، بموعد مسبق، دون التزام",
           p: [
-            "فحص السمع مجاني. يُجرى بموعد مسبق، حتى نخصّص لك الوقت اللازم، ولا يُلزمك بأيّ شيء: تغادر ومعك نتائجك، سواء احتجت إلى جهاز أم لا.",
-            "تُجريه أخصائية السمع لدينا، الحاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023، وهي نفسها من ستتابعك بعد ذلك إذا كان الجهاز مفيدًا.",
+            "فحص السمع مجاني. يُجرى بموعد مسبق، مع تكفّل سريع، حتى نخصّص لك الوقت اللازم، ولا يُلزمك بأيّ شيء: تغادر ومعك نتائجك، سواء احتجت إلى جهاز أم لا.",
+            "تُجريه صفاء، أخصائية السمع لدينا، الحاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023، وهي نفسها من ستتابعك بعد ذلك إذا كان الجهاز مفيدًا.",
           ],
         },
         {
@@ -517,7 +553,7 @@ export default [
           h2: "غرفة عازلة للصوت، لنتائج موثوقة",
           p: [
             "تُنجَز القياسات داخل غرفة قياس السمع العازلة للصوت. فبدون الضجيج المحيط، نحدّد أضعف الأصوات التي تدركها فعلًا: وهذا شرط تخطيط سمع موثوق.",
-            "وإذا كان الجهاز مفيدًا، تبدأ حلولنا السمعية من 5 000 درهم، وتُقدَّم لك التفاصيل خلال الفحص، دون أيّ التزام. ونقترح علامتَي Signia وPhonak؛ والتفاصيل في صفحة [الأجهزة السمعية بالدار البيضاء](/ar/appareils-auditifs-casablanca/).",
+            "وإذا كان الجهاز مفيدًا، تبدأ حلولنا السمعية من 5 000 درهم للجهاز الواحد، وتُقدَّم لك التفاصيل خلال الفحص، دون أيّ التزام. ونقترح علامتَي Signia وPhonak؛ والتفاصيل في صفحة [الأجهزة السمعية بالدار البيضاء](/ar/appareils-auditifs-casablanca/).",
           ],
         },
       ],
@@ -540,7 +576,7 @@ export default [
         },
         {
           q: "من يُجري الفحص؟",
-          a: "أخصائية السمع لدينا، الحاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023. وهي من ستتابعك بعد ذلك إذا كان الجهاز مفيدًا.",
+          a: "صفاء، أخصائية السمع لدينا، الحاصلة على شهادتها في إسبانيا، بمدريد، سنة 2023. وهي من ستتابعك بعد ذلك إذا كان الجهاز مفيدًا.",
         },
         {
           q: "أين تُجرى القياسات؟",
@@ -567,8 +603,8 @@ export default [
         {
           h2: "Free, by appointment, no obligation",
           p: [
-            "The hearing assessment is free. It is by appointment, so that we can give you the time it needs, and it commits you to nothing: you leave with your results, whether or not you need a device.",
-            "It is carried out by our hearing aid specialist, who graduated in Spain, in Madrid, in 2023 — the same person who will follow you afterwards if a device can help.",
+            "The hearing assessment is free. It is by appointment, with a quick first appointment, so that we can give you the time it needs, and it commits you to nothing: you leave with your results, whether or not you need a device.",
+            "It is carried out by Safaa, our hearing aid specialist, who graduated in Spain, in Madrid, in 2023 — the same person who will follow you afterwards if a device can help.",
           ],
         },
         {
@@ -610,7 +646,7 @@ export default [
           h2: "A soundproof booth, for reliable results",
           p: [
             "Measurements are taken in a soundproof audiometric booth. Without background noise, we can find the faintest sounds you really perceive: that is what makes an audiogram reliable.",
-            "If a device is useful, our hearing solutions start from MAD 5,000 — the details are given to you at the assessment, with no obligation. We offer Signia and Phonak; the details are on our page on [hearing aids in Casablanca](/en/appareils-auditifs-casablanca/).",
+            "If a device is useful, our hearing solutions start from MAD 5,000 per device — the details are given to you at the assessment, with no obligation. We offer Signia and Phonak; the details are on our page on [hearing aids in Casablanca](/en/appareils-auditifs-casablanca/).",
           ],
         },
       ],
@@ -633,7 +669,7 @@ export default [
         },
         {
           q: "Who carries out the assessment?",
-          a: "Our hearing aid specialist, who graduated in Spain, in Madrid, in 2023. She is the one who will follow you afterwards if a device can help.",
+          a: "Safaa, our hearing aid specialist, who graduated in Spain, in Madrid, in 2023. She is the one who will follow you afterwards if a device can help.",
         },
         {
           q: "Where are the measurements taken?",
