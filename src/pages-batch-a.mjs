@@ -38,7 +38,15 @@ export default [
         {
           h2: 'Venir nous voir',
           p: [
-            "106B rue Al Jounaid, quartier Les Princesses, à Maârif, Casablanca. Sur rendez-vous, du lundi au samedi matin. Nous recevons en arabe, en français et en anglais.",
+            "106B rue Al Jounaid, quartier Les Princesses, à Maârif, Casablanca, à côté du Stade Mohammed V. Sur rendez-vous, du lundi au samedi matin. Nous recevons en arabe, en français et en anglais.",
+          ],
+        },
+        {
+          h2: "Les appareils que nous adaptons",
+          p: [
+            "Nous appareillons avec des appareils Signia et Phonak. Le modèle ne se choisit pas sur catalogue : il se décide après le bilan, selon votre audition, la forme de votre conduit et votre quotidien.",
+            "Trois grandes familles existent : [l'écouteur déporté et l'intra-auriculaire](/appareils-auditifs-intra-auriculaires/), les plus discrets ; [le contour d'oreille](/appareils-auditifs-contour-oreille/), le plus puissant ; et, selon le modèle, [des versions rechargeables et Bluetooth](/appareils-auditifs-rechargeables-bluetooth/). Une fois l'appareil adapté, son [entretien et ses réparations](/entretien-et-reparation-appareils-auditifs/) se font au centre.",
+            "Pour le budget, un devis détaillé vous est remis après le bilan, conforme à votre [dossier de remboursement](/remboursement-appareils-auditifs-maroc/).",
           ],
         },
       ],
@@ -51,11 +59,36 @@ export default [
           q: 'Puis-je venir avec un proche ?',
           a: "Bien sûr, c'est même conseillé. Un proche aide à décrire les situations du quotidien, et vous serez deux à retenir les explications.",
         },
+        {
+          q: "Comment se déroule le premier rendez-vous ?",
+          a: "On commence par parler des situations où vous entendez moins bien. Viennent ensuite l'otoscopie, l'audiométrie tonale puis l'audiométrie vocale, sans aucune douleur. Comptez environ 45 minutes. Vous repartez avec vos résultats expliqués et, si un appareil peut aider, deux ou trois modèles proposés. Rien n'est signé le jour même.",
+        },
+        {
+          q: "Combien de temps faut-il pour s'habituer à un appareil ?",
+          a: "Quelques semaines en général. Au début, des bruits ordinaires, comme un froissement de sac ou vos propres pas, paraissent trop présents : votre cerveau les avait oubliés. Les réglages se font donc par étapes, au rythme de votre adaptation.",
+        },
+        {
+          q: "Quelle différence entre écouteur déporté, intra-auriculaire et contour d'oreille ?",
+          a: "L'écouteur déporté associe un boîtier fin derrière l'oreille et un petit écouteur dans le conduit : c'est le plus courant. L'intra-auriculaire est moulé sur votre conduit et s'y loge entièrement : c'est le plus invisible. Le contour d'oreille est le plus puissant et le plus simple à manipuler, la référence pour les pertes sévères. Le bilan dit lequel convient à votre audition.",
+        },
+        {
+          q: "Avec quelles marques travaillez-vous ?",
+          a: "Nous appareillons avec des appareils Signia et Phonak. Le modèle se choisit avec vous après le bilan, selon votre audition et votre quotidien.",
+        },
+        {
+          q: "Que comprend le suivi après l'appareillage ?",
+          a: "Des contrôles de votre audition, le nettoyage en centre, le changement des filtres et le dépannage. Votre audition évolue avec le temps, et les réglages suivent. Un appareil bien suivi dure plusieurs années de plus.",
+        },
+        {
+          q: "Faut-il une ordonnance pour venir ?",
+          a: "Pas pour le bilan. Pour un remboursement, votre organisme demande en général une prescription d'un médecin ORL. Les étapes sont détaillées sur notre page [remboursement des appareils auditifs au Maroc](/remboursement-appareils-auditifs-maroc/).",
+        },
       ],
       related: [
         { slug: 'centre-de-correction-auditive-casablanca', label: 'Le centre' },
         { slug: 'bilan-auditif-casablanca', label: 'Le bilan auditif' },
         { slug: 'perte-auditive', label: 'La perte auditive' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Remboursement des appareils au Maroc" },
       ],
     },
     ar: {
@@ -91,7 +124,15 @@ export default [
         {
           h2: 'زيارتنا',
           p: [
-            '106B زنقة الجنيد، حي الأميرات، بالمعاريف، الدار البيضاء. بموعد مسبق، من الاثنين إلى صباح السبت. نستقبلكم بالعربية والفرنسية والإنجليزية.',
+            '106B زنقة الجنيد، حي الأميرات، بالمعاريف، الدار البيضاء، بجوار ملعب محمد الخامس. بموعد مسبق، من الاثنين إلى صباح السبت. نستقبلكم بالعربية والفرنسية والإنجليزية.',
+          ],
+        },
+        {
+          h2: "الأجهزة التي نركّبها",
+          p: [
+            "نعتمد في التجهيز على أجهزة من علامتَي Signia وPhonak. ولا يُختار الطراز من كتالوج، بل يُحدَّد بعد الفحص، حسب حالة سمعك وشكل قناة أذنك وحياتك اليومية.",
+            "هناك ثلاث عائلات كبرى: [الأجهزة بسمّاعة داخل القناة والأجهزة داخل الأذن](/ar/appareils-auditifs-intra-auriculaires/)، وهي الأكثر خفاءً؛ و[الأجهزة خلف الأذن](/ar/appareils-auditifs-contour-oreille/)، وهي الأقوى؛ وحسب الطراز، [نسخ قابلة للشحن ومزوّدة بالبلوتوث](/ar/appareils-auditifs-rechargeables-bluetooth/). وبعد تركيب الجهاز، تتمّ [صيانته وإصلاحه](/ar/entretien-et-reparation-appareils-auditifs/) داخل المركز.",
+            "أمّا الميزانية، فتتسلّم بعد الفحص عرض سعر مفصّلًا مطابقًا لـ[ملف استرجاع المصاريف](/ar/remboursement-appareils-auditifs-maroc/).",
           ],
         },
       ],
@@ -104,11 +145,36 @@ export default [
           q: 'هل يمكنني الحضور مع أحد أقاربي؟',
           a: 'طبعًا، بل ننصح بذلك. القريب يساعد على وصف مواقف الحياة اليومية، وستكونان اثنين لحفظ الشرح.',
         },
+        {
+          q: "كيف يجري الموعد الأول؟",
+          a: "نبدأ بالحديث عن المواقف التي تسمع فيها أقلّ. ثم يأتي فحص الأذن، فقياس السمع النغمي ثم الكلامي، دون أيّ ألم. المدّة حوالي 45 دقيقة. وتغادر ومعك شرح لنتائجك، وإذا كان الجهاز مفيدًا، اقتراح لجهازين أو ثلاثة. ولا توقيع في اليوم نفسه.",
+        },
+        {
+          q: "كم يلزم من الوقت للتعوّد على الجهاز السمعي؟",
+          a: "بضعة أسابيع عمومًا. في البداية تبدو أصوات عادية، كحفيف كيس أو وقع خطواتك، حاضرة أكثر من اللازم: فدماغك كان قد نسيها. لذلك يتمّ الضبط على مراحل، بحسب إيقاع تأقلمك.",
+        },
+        {
+          q: "ما الفرق بين الجهاز بسمّاعة داخل القناة، والجهاز داخل الأذن، والجهاز خلف الأذن؟",
+          a: "الجهاز بسمّاعة داخل القناة يجمع علبة رفيعة خلف الأذن وسمّاعة صغيرة داخل القناة: وهو الأكثر انتشارًا. والجهاز داخل الأذن مصنوع على مقاس قناتك ويستقرّ فيها كاملًا: وهو الأكثر خفاءً. أمّا الجهاز خلف الأذن فهو الأقوى والأسهل في الاستعمال، والمرجع في حالات الضعف الشديد. والفحص هو ما يحدّد أيّها يناسب سمعك.",
+        },
+        {
+          q: "ما هي العلامات التي تعملون بها؟",
+          a: "نعتمد في التجهيز على أجهزة Signia وPhonak. ويُختار الطراز معك بعد الفحص، حسب حالة سمعك وحياتك اليومية.",
+        },
+        {
+          q: "ماذا تشمل المتابعة بعد التركيب؟",
+          a: "مراقبة سمعك، والتنظيف داخل المركز، وتغيير المصافي، والإصلاح. سمعك يتغيّر مع الوقت، والضبط يواكبه. والجهاز المتابَع جيدًا يدوم سنوات أطول.",
+        },
+        {
+          q: "هل أحتاج إلى وصفة طبية للحضور؟",
+          a: "ليس لإجراء الفحص. أمّا للاسترجاع، فصندوقك يطلب عادةً وصفة من طبيب الأنف والأذن والحنجرة. والخطوات مفصّلة في صفحتنا حول [استرجاع مصاريف السماعات الطبية بالمغرب](/ar/remboursement-appareils-auditifs-maroc/).",
+        },
       ],
       related: [
         { slug: 'centre-de-correction-auditive-casablanca', label: 'المركز' },
         { slug: 'bilan-auditif-casablanca', label: 'فحص السمع' },
         { slug: 'perte-auditive', label: 'ضعف السمع' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "استرجاع مصاريف السماعات الطبية" },
       ],
     },
     en: {
@@ -144,7 +210,15 @@ export default [
         {
           h2: 'Visiting us',
           p: [
-            '106B rue Al Jounaid, Les Princesses, Maârif, Casablanca. By appointment, Monday to Saturday morning. We see patients in Arabic, French and English.',
+            '106B rue Al Jounaid, Les Princesses, Maârif, Casablanca, next to the Mohammed V Stadium. By appointment, Monday to Saturday morning. We see patients in Arabic, French and English.',
+          ],
+        },
+        {
+          h2: "The devices we fit",
+          p: [
+            "We fit Signia and Phonak hearing aids. The model is not picked from a catalogue: it is decided after the assessment, according to your hearing, the shape of your ear canal and your daily life.",
+            "There are three main families: [receiver-in-canal and in-the-ear devices](/en/appareils-auditifs-intra-auriculaires/), the most discreet; [behind-the-ear devices](/en/appareils-auditifs-contour-oreille/), the most powerful; and, depending on the model, [rechargeable and Bluetooth versions](/en/appareils-auditifs-rechargeables-bluetooth/). Once your device is fitted, [maintenance and repairs](/en/entretien-et-reparation-appareils-auditifs/) are handled at the centre.",
+            "On budget, you receive a detailed quote after the assessment, suitable for your [reimbursement file](/en/remboursement-appareils-auditifs-maroc/).",
           ],
         },
       ],
@@ -157,11 +231,36 @@ export default [
           q: 'Can I come with a relative?',
           a: 'Of course, and it is advisable. A relative helps describe everyday situations, and two people remember the explanations better than one.',
         },
+        {
+          q: "How does the first appointment go?",
+          a: "We start by talking about the situations where you hear less well. Then come otoscopy, pure-tone audiometry and speech audiometry, all painless. Allow around 45 minutes. You leave with your results explained and, if a device can help, two or three suggested models. Nothing is signed on the day.",
+        },
+        {
+          q: "How long does it take to get used to a hearing aid?",
+          a: "A few weeks, usually. At first, ordinary noises, like a rustling bag or your own footsteps, seem too loud: your brain had forgotten them. That is why adjustments are made in stages, at the pace of your adaptation.",
+        },
+        {
+          q: "What is the difference between receiver-in-canal, in-the-ear and behind-the-ear?",
+          a: "A receiver-in-canal device pairs a thin casing behind the ear with a small receiver in the canal: it is the most common. An in-the-ear device is moulded to your canal and sits entirely inside it: it is the most invisible. A behind-the-ear device is the most powerful and the easiest to handle, the reference for severe loss. The assessment tells which one suits your hearing.",
+        },
+        {
+          q: "Which brands do you work with?",
+          a: "We fit Signia and Phonak hearing aids. The model is chosen with you after the assessment, according to your hearing and your daily life.",
+        },
+        {
+          q: "What does follow-up include after the fitting?",
+          a: "Hearing checks, cleaning at the centre, filter changes and repairs. Your hearing changes over time, and the settings follow. A well-followed device lasts years longer.",
+        },
+        {
+          q: "Do I need a prescription to come?",
+          a: "Not for the assessment. For reimbursement, your scheme usually asks for a prescription from an ENT doctor. The steps are set out on our page on [hearing aid reimbursement in Morocco](/en/remboursement-appareils-auditifs-maroc/).",
+        },
       ],
       related: [
         { slug: 'centre-de-correction-auditive-casablanca', label: 'The centre' },
         { slug: 'bilan-auditif-casablanca', label: 'The hearing assessment' },
         { slug: 'perte-auditive', label: 'Hearing loss' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Hearing aid reimbursement in Morocco" },
       ],
     },
   },
@@ -234,6 +333,8 @@ export default [
         { slug: 'perte-auditive', label: 'Comprendre la perte auditive' },
         { slug: 'appareils-auditifs-casablanca', label: 'Les appareils auditifs' },
         { slug: 'centre-de-correction-auditive-casablanca', label: 'Le centre' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Remboursement des appareils au Maroc" },
+        { slug: 'appareils-auditifs-intra-auriculaires', label: "Les appareils les plus discrets" },
       ],
     },
     ar: {
@@ -299,6 +400,8 @@ export default [
         { slug: 'perte-auditive', label: 'فهم ضعف السمع' },
         { slug: 'appareils-auditifs-casablanca', label: 'الأجهزة السمعية' },
         { slug: 'centre-de-correction-auditive-casablanca', label: 'المركز' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "استرجاع مصاريف السماعات الطبية" },
+        { slug: 'appareils-auditifs-intra-auriculaires', label: "الأجهزة الأكثر خفاءً" },
       ],
     },
     en: {
@@ -364,6 +467,8 @@ export default [
         { slug: 'perte-auditive', label: 'Understanding hearing loss' },
         { slug: 'appareils-auditifs-casablanca', label: 'Hearing aids' },
         { slug: 'centre-de-correction-auditive-casablanca', label: 'The centre' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Hearing aid reimbursement in Morocco" },
+        { slug: 'appareils-auditifs-intra-auriculaires', label: "The most discreet hearing aids" },
       ],
     },
   },

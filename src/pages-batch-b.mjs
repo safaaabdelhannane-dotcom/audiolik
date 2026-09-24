@@ -611,6 +611,7 @@ export default [
         { slug: 'bilan-auditif-casablanca', label: 'Faire un bilan auditif' },
         { slug: 'appareils-auditifs-casablanca', label: 'Les appareils auditifs' },
         { slug: 'protections-auditives-sur-mesure', label: 'Protéger son audition' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Remboursement des appareils au Maroc" },
       ],
     },
     ar: {
@@ -671,6 +672,7 @@ export default [
         { slug: 'bilan-auditif-casablanca', label: 'إجراء فحص السمع' },
         { slug: 'appareils-auditifs-casablanca', label: 'الأجهزة السمعية' },
         { slug: 'protections-auditives-sur-mesure', label: 'حماية السمع' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "استرجاع مصاريف السماعات الطبية" },
       ],
     },
     en: {
@@ -731,6 +733,7 @@ export default [
         { slug: 'bilan-auditif-casablanca', label: 'Have a hearing assessment' },
         { slug: 'appareils-auditifs-casablanca', label: 'Hearing aids' },
         { slug: 'protections-auditives-sur-mesure', label: 'Protecting your hearing' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Hearing aid reimbursement in Morocco" },
       ],
     },
   },

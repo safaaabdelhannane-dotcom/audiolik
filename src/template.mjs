@@ -19,6 +19,7 @@ import { business as B, photos, brand, locales, SITE_URL } from './business.mjs'
 import { SPRITE, icon } from './icons.mjs';
 import { pages as SUBPAGES } from './pages.mjs';
 import { runtimeScripts } from './runtime-config.mjs';
+import { organizationSchema, plain } from './schema.mjs';
 
 /* ---------------------------------------------------------------- helpers */
 
@@ -27,25 +28,7 @@ const esc = (s) =>
            .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
 
-const DAY_SCHEMA = {
-  monday: 'Monday', tuesday: 'Tuesday', wednesday: 'Wednesday', thursday: 'Thursday',
-  friday: 'Friday', saturday: 'Saturday', sunday: 'Sunday',
-};
 const WEEK = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
-
-function openingHoursSchema() {
-  const groups = new Map();
-  for (const { day, slots } of B.hours) {
-    for (const [opens, closes] of slots) {
-      const k = `${opens}|${closes}`;
-      if (!groups.has(k)) groups.set(k, { opens, closes, days: [] });
-      groups.get(k).days.push(DAY_SCHEMA[day]);
-    }
-  }
-  return [...groups.values()].map((g) => ({
-    '@type': 'OpeningHoursSpecification', dayOfWeek: g.days, opens: g.opens, closes: g.closes,
-  }));
-}
 
 /** "Lundi – Vendredi 09:00–13:00 et 14:30–18:30 · Samedi 09:00–13:00", from real data. */
 function humanHours(t) {
@@ -154,7 +137,7 @@ export default function render(t, { alternates }) {
   const up = loc.code === B.defaultLang ? '' : '../';
   const canonical = SITE_URL + loc.path;
   const wa = waLink(t.contact.whatsappPrefill);
-  const ogImage = `${SITE_URL}/v3/assets/img/og-${t.code}.png`;
+  const ogImage = `${SITE_URL}/assets/img/og-${t.code}.png`;
   const O = t.contact.options;
   const hours = humanHours(t);
   const availability = O.call.availability.replace('{hours}', hours);
@@ -162,30 +145,7 @@ export default function render(t, { alternates }) {
   const heading = esc(t.hero.title).replace(/\*([^*]+)\*/g, '<span class="accent">$1</span>');
 
   /* -- structured data ----------------------------------------------------- */
-  const org = {
-    '@type': ['MedicalBusiness', 'Store'],
-    '@id': `${SITE_URL}/#organization`,
-    name: B.name,
-    ...(B.alternateName ? { alternateName: B.alternateName } : {}),
-    description: t.meta.description,
-    url: canonical,
-    image: ogImage,
-    logo: `${SITE_URL}/v3/assets/img/logo-audiolik.svg`,
-    telephone: B.phoneE164,
-    ...(B.email ? { email: B.email } : {}),
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: B.street, addressLocality: B.city, addressRegion: B.region,
-      ...(B.postalCode ? { postalCode: B.postalCode } : {}),
-      addressCountry: B.country,
-    },
-    geo: { '@type': 'GeoCoordinates', latitude: B.geo.lat, longitude: B.geo.lng },
-    hasMap: B.mapsPlaceUrl,
-    openingHoursSpecification: openingHoursSchema(),
-    areaServed: { '@type': 'City', name: B.city },
-    availableLanguage: ['fr', 'ar', 'en'],
-    currenciesAccepted: 'MAD',
-  };
+  const org = organizationSchema({ description: t.meta.description, url: canonical, lang: t.code });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -196,10 +156,11 @@ export default function render(t, { alternates }) {
       { '@type': 'FAQPage', '@id': `${canonical}#faq`,
         mainEntity: t.faq.items.map((f) => ({
           '@type': 'Question', name: f.q,
-          acceptedAnswer: { '@type': 'Answer', text: f.a },
+          acceptedAnswer: { '@type': 'Answer', text: plain(f.a) },
         })) },
       ...t.solutions.items.map((s) => ({
         '@type': 'Service', name: s.name, description: s.text,
+        ...(s.link ? { url: `${SITE_URL}${loc.path}${s.link.slug}/` } : {}),
         provider: { '@id': `${SITE_URL}/#organization` },
         areaServed: { '@type': 'City', name: B.city },
       })),
@@ -487,6 +448,7 @@ ${SPRITE}
             <p class="cell__tag">${esc(s.tag)}</p>
             <h3>${esc(s.name)}</h3>
             <p>${esc(s.text)}</p>
+            ${s.link ? `<p class="cell__more"><a href="${loc.path}${esc(s.link.slug)}/">${esc(s.link.label)}</a></p>` : ''}
           </div>
         </article>`).join('\n        ')}
       </div>

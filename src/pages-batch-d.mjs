@@ -85,6 +85,7 @@ export const batchD = [
         { slug: 'bilan-auditif-casablanca', label: 'Le bilan auditif au centre' },
         { slug: 'perte-auditive', label: 'Comprendre la perte auditive' },
         { slug: 'centre-de-correction-auditive-casablanca', label: 'Le centre' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Remboursement des appareils au Maroc" },
       ],
     },
 
@@ -147,6 +148,7 @@ export const batchD = [
         { slug: 'bilan-auditif-casablanca', label: 'فحص السمع داخل المركز' },
         { slug: 'perte-auditive', label: 'فهم ضعف السمع' },
         { slug: 'centre-de-correction-auditive-casablanca', label: 'المركز' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "استرجاع مصاريف السماعات الطبية" },
       ],
     },
 
@@ -209,6 +211,7 @@ export const batchD = [
         { slug: 'bilan-auditif-casablanca', label: 'The hearing assessment' },
         { slug: 'perte-auditive', label: 'Understanding hearing loss' },
         { slug: 'centre-de-correction-auditive-casablanca', label: 'The centre' },
+        { slug: 'remboursement-appareils-auditifs-maroc', label: "Hearing aid reimbursement in Morocco" },
       ],
     },
   },

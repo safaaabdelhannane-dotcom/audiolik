@@ -155,6 +155,7 @@ export default {
         text: 'علبة رفيعة خلف الأذن وسمّاعة صغيرة جدًّا داخل القناة. صوت طبيعي، أذن غير مسدودة، ولا يكاد يُرى من الأمام.',
         icon: 'ear',
         size: 'feature',
+        link: { slug: 'appareils-auditifs-casablanca', label: 'كل أنواع الأجهزة السمعية' },
         photo: 'homeWorn',
       },
       {
@@ -163,6 +164,7 @@ export default {
         text: 'مصنوع على مقاس بصمة قناة أذنك. لا شيء يظهر خلف الأذن.',
         icon: 'ear',
         size: 'wide',
+        link: { slug: 'appareils-auditifs-intra-auriculaires', label: 'الأجهزة داخل الأذن' },
         photo: 'homeIntra',
       },
       {
@@ -171,6 +173,7 @@ export default {
         text: 'متين، سهل الاستعمال، وذو استقلالية مريحة. المرجع في حالات الضعف الشديد وعند الأطفال.',
         icon: 'ear',
         size: 'wide',
+        link: { slug: 'appareils-auditifs-contour-oreille', label: 'الأجهزة خلف الأذن' },
         photo: 'homeContour',
       },
       {
@@ -179,6 +182,7 @@ export default {
         text: 'وداعًا للبطاريات. المكالمات وصوت التلفاز يصلان مباشرة إلى الجهاز.',
         icon: 'lightning',
         size: 'small',
+        link: { slug: 'appareils-auditifs-rechargeables-bluetooth', label: 'الأجهزة القابلة للشحن والبلوتوث' },
       },
       {
         name: 'واقيات سمعية على المقاس',
@@ -186,6 +190,7 @@ export default {
         text: 'سدادات مصنوعة على المقاس للنوم والسباحة والموسيقى وأوراش البناء.',
         icon: 'shield-check',
         size: 'small',
+        link: { slug: 'protections-auditives-sur-mesure', label: 'الواقيات السمعية على المقاس' },
       },
       {
         name: 'الملحقات والصيانة',
@@ -193,6 +198,7 @@ export default {
         text: 'ميكروفون خارجي، ناقل صوت للتلفاز، بطاريات، كبسولات تجفيف وقطع تبديل.',
         icon: 'faders',
         size: 'small',
+        link: { slug: 'entretien-et-reparation-appareils-auditifs', label: 'صيانة وإصلاح الأجهزة السمعية' },
       },
     ],
   },
