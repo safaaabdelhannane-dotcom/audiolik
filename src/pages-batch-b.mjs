@@ -148,8 +148,8 @@ export default [
         {
           h2: "Nos marques : Signia et Phonak",
           p: [
-            "Nous proposons des appareils Signia et Phonak, deux fabricants reconnus internationalement. Dans chacune de ces marques, plusieurs formats et niveaux de technologie existent : le choix se fait avec vous, après le [bilan auditif gratuit](/bilan-auditif-casablanca/), selon votre audition et votre quotidien.",
-            "Le bilan se déroule en cabine insonorisée, et l'adaptation est assurée par notre audioprothésiste, diplômée en Espagne. Vous gardez le même interlocuteur du choix de l'appareil jusqu'aux réglages.",
+            "Nous proposons des appareils Signia et Phonak, deux fabricants reconnus internationalement. Tous les formats sont proposés au centre : écouteur déporté, intra-auriculaire, contour d'oreille, modèles rechargeables et Bluetooth. Plusieurs niveaux de technologie existent aussi : le choix se fait avec vous, après le [bilan auditif gratuit](/bilan-auditif-casablanca/), selon votre audition et votre quotidien.",
+            "Le bilan se déroule en cabine insonorisée, et l'adaptation est assurée par Safaa, notre audioprothésiste, diplômée en Espagne. Vous gardez le même interlocuteur du choix de l'appareil jusqu'aux réglages.",
           ],
         },
       ],
@@ -336,8 +336,8 @@ export default [
         {
           h2: "علاماتنا: Signia وPhonak",
           p: [
-            "نقترح أجهزة Signia وPhonak، وهما مصنّعان معروفان عالميًا. ولكلّ علامة منهما عدّة أشكال ومستويات تقنية: ويتمّ الاختيار معك بعد [فحص السمع المجاني](/ar/bilan-auditif-casablanca/)، حسب حالة سمعك وحياتك اليومية.",
-            "يُجرى الفحص داخل غرفة عازلة للصوت، وتتولّى التركيب أخصائية السمع لدينا، المتكوّنة في إسبانيا. وتحتفظ بنفس المُحاور من اختيار الجهاز إلى عمليات الضبط.",
+            "نقترح أجهزة Signia وPhonak، وهما مصنّعان معروفان عالميًا. وكل الأشكال متوفّرة في المركز: بسمّاعة داخل القناة، وداخل الأذن، وخلف الأذن، ونماذج قابلة للشحن ومزوّدة بالبلوتوث. كما توجد عدّة مستويات تقنية: ويتمّ الاختيار معك بعد [فحص السمع المجاني](/ar/bilan-auditif-casablanca/)، حسب حالة سمعك وحياتك اليومية.",
+            "يُجرى الفحص داخل غرفة عازلة للصوت، وتتولّى التركيب صفاء، أخصائية السمع لدينا، المتكوّنة في إسبانيا. وتحتفظ بنفس المُحاور من اختيار الجهاز إلى عمليات الضبط.",
           ],
         },
       ],
@@ -524,8 +524,8 @@ export default [
         {
           h2: "Our brands: Signia and Phonak",
           p: [
-            "We offer Signia and Phonak hearing aids, two internationally recognised manufacturers. Each brand has several formats and technology levels: the choice is made with you, after the [free hearing assessment](/en/bilan-auditif-casablanca/), according to your hearing and your daily life.",
-            "The assessment takes place in a soundproof booth, and the fitting is carried out by our hearing aid specialist, who trained in Spain. You keep the same person from choosing the device through to the adjustments.",
+            "We offer Signia and Phonak hearing aids, two internationally recognised manufacturers. Every format is offered at the centre: receiver-in-canal, in-the-ear, behind-the-ear, rechargeable and Bluetooth models. Several technology levels exist too: the choice is made with you, after the [free hearing assessment](/en/bilan-auditif-casablanca/), according to your hearing and your daily life.",
+            "The assessment takes place in a soundproof booth, and the fitting is carried out by Safaa, our hearing aid specialist, who trained in Spain. You keep the same person from choosing the device through to the adjustments.",
           ],
         },
       ],

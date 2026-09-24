@@ -44,9 +44,15 @@ export const business = {
     'https://www.google.com/maps/dir/?api=1&destination=33.5781357,-7.6489239&destination_place_id=ChIJ07o3SIgx19oRIryvGOoI6Is',
   mapsEmbedUrl:
     'https://www.google.com/maps?q=33.5781357,-7.6489239&z=17&hl=fr&output=embed',
-  mapsReviewUrl: null,
+  // Lien « Laisser un avis » de la fiche Google, construit sur le place_id de
+  // mapsDirectionsUrl ; vérifié : il ouvre bien la fiche Audiolik (09/2026).
+  mapsReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJ07o3SIgx19oRIryvGOoI6Is',
 
-  social: { facebook: null, instagram: null, linkedin: null },
+  social: {
+    facebook: 'https://www.facebook.com/profile.php?id=61591236111765',
+    instagram: 'https://www.instagram.com/audiolik/',
+    linkedin: null,
+  },
 
   hours: [
     { day: 'monday',    slots: [['09:00', '13:00'], ['14:30', '18:30']] },
@@ -61,24 +67,28 @@ export const business = {
 
   claims: {
     freeHearingTest: true,   // confirme par le centre (09/2026)
-    homeTrial: false,
-    unlimitedFollowUp: false,
-    childrenFitting: false,
+    homeTrial: true,          // essai avant achat — confirmé par le centre (09/2026), durée non communiquée
+    unlimitedFollowUp: true,  // suivi illimité — confirmé par le centre (09/2026)
+    childrenFitting: true,    // appareillage enfants et adultes — confirmé par le centre (09/2026)
     soundproofBooth: true,   // cabine audiométrique insonorisée — confirmé par le centre (09/2026)
   },
 
-  // « À partir de 5 000 DH » — confirmé par le centre (09/2026). NE PAS préciser
-  // « par appareil » ou « par paire » : ce point n'est pas confirmé.
+  // « À partir de 5 000 DH par appareil » — confirmé par le centre (09/2026),
+  // ainsi que les 3 gammes de la carte tarifaire (prix PAR APPAREIL).
   priceFrom: 5000,
   priceRange: 'MAD 5000+',
-  // Marques proposées par le centre (confirmé par le centre, 09/2026).
+  // Marques proposées par le centre (confirmé, 09/2026). Tous les formats sont
+  // proposés : écouteur déporté, intra, contour, rechargeable, Bluetooth.
   brands: ['Signia', 'Phonak'],
   languages: ['fr', 'ar', 'en'],
 
-  // Audioprothésiste du centre (confirmé par le centre, 09/2026). Seuls ces
-  // faits sont vérifiés : ni nom, ni établissement précis, ni années
-  // d'expérience. Le centre étant récent, on n'évoque JAMAIS l'ancienneté.
+  // Audioprothésiste du centre (confirmé par le centre, 09/2026) : prénom,
+  // diplôme d'audioprothésiste obtenu en Espagne (Madrid, 2023). Pas de nom
+  // d'établissement ni d'années d'expérience. Le centre étant récent, on
+  // n'évoque JAMAIS l'ancienneté.
   audiologist: {
+    firstName: 'Safaa',
+    diploma: { fr: 'Audioprothésiste', ar: 'أخصائية السمع', en: 'Hearing aid specialist' },
     diplomaCountry: { fr: 'Espagne', ar: 'إسبانيا', en: 'Spain' },
     diplomaCity:    { fr: 'Madrid',  ar: 'مدريد',   en: 'Madrid' },
     diplomaYear: 2023,
