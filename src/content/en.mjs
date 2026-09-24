@@ -155,6 +155,7 @@ export default {
         text: 'A slim housing behind the ear, a tiny receiver in the canal. Natural sound, an open ear, all but invisible from the front.',
         icon: 'ear',
         size: 'feature',
+        link: { slug: 'appareils-auditifs-casablanca', label: 'All types of hearing aids' },
         photo: 'homeWorn',
       },
       {
@@ -163,6 +164,7 @@ export default {
         text: 'Custom-moulded to your canal. Nothing sits behind the ear.',
         icon: 'ear',
         size: 'wide',
+        link: { slug: 'appareils-auditifs-intra-auriculaires', label: 'In-the-ear hearing aids' },
         photo: 'homeIntra',
       },
       {
@@ -171,6 +173,7 @@ export default {
         text: 'Robust, easy to handle, long battery life. The reference for severe loss and for children.',
         icon: 'ear',
         size: 'wide',
+        link: { slug: 'appareils-auditifs-contour-oreille', label: 'Behind-the-ear hearing aids' },
         photo: 'homeContour',
       },
       {
@@ -179,6 +182,7 @@ export default {
         text: 'No more batteries. Calls and television streamed straight into the devices.',
         icon: 'lightning',
         size: 'small',
+        link: { slug: 'appareils-auditifs-rechargeables-bluetooth', label: 'Rechargeable and Bluetooth hearing aids' },
       },
       {
         name: 'Custom hearing protection',
@@ -186,6 +190,7 @@ export default {
         text: 'Moulded plugs for sleep, swimming, music or the worksite.',
         icon: 'shield-check',
         size: 'small',
+        link: { slug: 'protections-auditives-sur-mesure', label: 'Custom hearing protection' },
       },
       {
         name: 'Accessories and care',
@@ -193,6 +198,7 @@ export default {
         text: 'Remote microphone, TV streamer, batteries, drying capsules and replacement domes.',
         icon: 'faders',
         size: 'small',
+        link: { slug: 'entretien-et-reparation-appareils-auditifs', label: 'Hearing aid maintenance and repair' },
       },
     ],
   },

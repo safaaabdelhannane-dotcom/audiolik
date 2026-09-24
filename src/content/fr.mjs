@@ -174,6 +174,7 @@ export default {
         text: "Un boîtier fin derrière l'oreille, un écouteur minuscule dans le conduit. Son naturel, oreille peu obstruée, quasi invisible de face.",
         icon: 'ear',
         size: 'feature',
+        link: { slug: 'appareils-auditifs-casablanca', label: "Tous les types d'appareils auditifs" },
         photo: 'homeWorn',
       },
       {
@@ -182,6 +183,7 @@ export default {
         text: "Moulé sur l'empreinte de votre conduit. Rien ne dépasse derrière l'oreille.",
         icon: 'ear',
         size: 'wide',
+        link: { slug: 'appareils-auditifs-intra-auriculaires', label: 'Les appareils intra-auriculaires' },
         photo: 'homeIntra',
       },
       {
@@ -190,6 +192,7 @@ export default {
         text: 'Robuste, facile à manipuler, autonomie confortable. La référence pour les pertes sévères et pour les enfants.',
         icon: 'ear',
         size: 'wide',
+        link: { slug: 'appareils-auditifs-contour-oreille', label: "Les contours d'oreille" },
         photo: 'homeContour',
       },
       {
@@ -198,6 +201,7 @@ export default {
         text: 'Fini les piles. Appels et son de la télévision transmis directement dans les appareils.',
         icon: 'lightning',
         size: 'small',
+        link: { slug: 'appareils-auditifs-rechargeables-bluetooth', label: 'Appareils rechargeables et Bluetooth' },
       },
       {
         name: 'Protections sur-mesure',
@@ -205,6 +209,7 @@ export default {
         text: "Bouchons moulés pour le sommeil, la natation, la musique ou le chantier.",
         icon: 'shield-check',
         size: 'small',
+        link: { slug: 'protections-auditives-sur-mesure', label: 'Protections auditives sur mesure' },
       },
       {
         name: 'Accessoires et entretien',
@@ -212,6 +217,7 @@ export default {
         text: 'Micro déporté, transmetteur TV, piles, pastilles déshydratantes et embouts de rechange.',
         icon: 'faders',
         size: 'small',
+        link: { slug: 'entretien-et-reparation-appareils-auditifs', label: 'Entretien et réparation des appareils' },
       },
     ],
   },
