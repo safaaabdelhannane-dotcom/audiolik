@@ -7,9 +7,9 @@ export default [
     slug: 'audioprothesiste-casablanca',
     fr: {
       kicker: 'Le métier',
-      title: 'Audioprothésiste à Casablanca, aux Princesses · AudioLik',
+      title: 'Audioprothésiste Casablanca · Bilan auditif gratuit · AudioLik',
       description:
-        "Votre audioprothésiste à Casablanca : bilan auditif sur rendez-vous, essai d'appareils discrets, réglages et suivi. AudioLik, 106B rue Al Jounaid, Les Princesses, Maârif.",
+        "Votre audioprothésiste à Casablanca : bilan auditif gratuit sur rendez-vous, essai d'appareils discrets, réglages et suivi. AudioLik, 106B rue Al Jounaid, Les Princesses, Maârif.",
       h1: 'Audioprothésiste à Casablanca, aux Princesses',
       lede:
         "Un audioprothésiste mesure votre audition, vous explique ce qu'il observe et, si c'est utile, vous accompagne vers un appareil qui vous convient — puis le règle avec vous, dans la durée.",
@@ -51,10 +51,15 @@ export default [
           q: 'Puis-je venir avec un proche ?',
           a: "Bien sûr, c'est même conseillé. Un proche aide à décrire les situations du quotidien, et vous serez deux à retenir les explications.",
         },
+        {
+          q: 'Où trouver un audioprothésiste à Casablanca ?',
+          a: "AudioLik reçoit au 106B rue Al Jounaid, quartier Les Princesses, à Maârif. Sur rendez-vous, du lundi au samedi matin, avec un bilan auditif gratuit et sans engagement. Un appel ou un message WhatsApp suffit pour réserver.",
+        },
       ],
       related: [
         { slug: 'centre-de-correction-auditive-casablanca', label: 'Le centre' },
         { slug: 'bilan-auditif-casablanca', label: 'Le bilan auditif' },
+        { slug: 'appareils-auditifs-casablanca', label: 'Prix des appareils auditifs' },
         { slug: 'perte-auditive', label: 'La perte auditive' },
       ],
     },
@@ -173,9 +178,9 @@ export default [
     slug: 'bilan-auditif-casablanca',
     fr: {
       kicker: 'Le bilan',
-      title: 'Bilan auditif à Casablanca, sur rendez-vous · AudioLik',
+      title: 'Bilan auditif gratuit à Casablanca, sur rendez-vous · AudioLik',
       description:
-        'Bilan auditif complet à Casablanca (Les Princesses, Maârif) : otoscopie, audiométrie tonale et vocale, explication claire des résultats. AudioLik, sur rendez-vous.',
+        'Bilan auditif gratuit et complet à Casablanca (Les Princesses, Maârif) : otoscopie, audiométrie tonale et vocale, explication claire des résultats. AudioLik, sur rendez-vous, sans engagement.',
       h1: 'Bilan auditif à Casablanca',
       lede:
         "On n'entend pas moins bien du jour au lendemain. La perte s'installe si lentement qu'on s'y habitue. Le bilan sert à savoir où vous en êtes, avec des chiffres qu'on vous explique.",
@@ -228,6 +233,14 @@ export default [
         {
           q: 'À partir de quel âge faut-il faire un bilan ?',
           a: "À tout âge, dès qu'un signe apparaît. Après 60 ans, un contrôle tous les deux ans est une bonne habitude, comme pour la vue.",
+        },
+        {
+          q: 'Le bilan auditif est-il payant ?',
+          a: "Non. Chez AudioLik, le bilan auditif est gratuit, sur rendez-vous et sans engagement : vous repartez avec vos résultats expliqués, et rien n'est signé le jour même.",
+        },
+        {
+          q: 'Audiologue, audiologiste ou audioprothésiste : qui consulter ?',
+          a: "Pour faire mesurer votre audition et, si besoin, être appareillé, c'est l'audioprothésiste : il réalise le bilan, choisit et règle l'appareil, puis assure le suivi. Pour une douleur, une infection ou une surdité brutale, consultez d'abord un médecin ORL.",
         },
       ],
       related: [
@@ -294,6 +307,10 @@ export default [
           q: 'من أيّ سنّ يُنصح بالفحص؟',
           a: 'في أيّ سنّ، عند ظهور أيّ علامة. وبعد الستين، فحص كل سنتين عادة حسنة، مثل فحص النظر.',
         },
+        {
+          q: 'هل فحص السمع مجاني؟',
+          a: 'نعم. في أوديوليك، فحص السمع مجاني، بموعد مسبق ودون أيّ التزام: تغادر ونتائجك مشروحة، ولا توقيع في اليوم نفسه.',
+        },
       ],
       related: [
         { slug: 'perte-auditive', label: 'فهم ضعف السمع' },
@@ -358,6 +375,10 @@ export default [
         {
           q: 'From what age should I have one?',
           a: 'At any age, as soon as a sign appears. After 60, a check every two years is a good habit, as with eyesight.',
+        },
+        {
+          q: 'Is the hearing assessment free?',
+          a: "Yes. At AudioLik the hearing assessment is free, by appointment and with no commitment: you leave with your results explained, and nothing is signed on the day.",
         },
       ],
       related: [

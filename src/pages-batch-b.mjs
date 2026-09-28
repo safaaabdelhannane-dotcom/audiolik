@@ -5,9 +5,9 @@ export default [
     slug: 'appareils-auditifs-casablanca',
     fr: {
       kicker: 'Les appareils',
-      title: 'Prix des appareils auditifs à Casablanca | AUDIOLIK',
+      title: 'Appareil auditif Casablanca : prix dès 5 000 DH | AudioLik',
       description:
-        'Découvrez les prix indicatifs des appareils auditifs à Casablanca, ce que le tarif comprend et le remboursement. Bilan et essai chez AUDIOLIK.',
+        'Prix des appareils auditifs à Casablanca et au Maroc, par appareil : Essentiel dès 5 000 DH, Confort de 7 000 à 12 000 DH, Premium dès 14 000 DH. Bilan auditif gratuit et essai chez AudioLik.',
       h1: 'Appareils auditifs à Casablanca',
       lede:
         "Les deux questions qu'on nous pose le plus : « combien ça coûte » et « est-ce que ça se voit ». Voici des réponses nettes, par votre [audioprothésiste à Casablanca](/audioprothesiste-casablanca/), aux Princesses.",
@@ -149,7 +149,7 @@ export default [
       faqTitle: 'Questions fréquentes sur le prix des appareils auditifs',
       faq: [
         {
-          q: "Quel est le prix d'un appareil auditif à Casablanca ?",
+          q: "Quel est le prix d'un appareil auditif à Casablanca et au Maroc ?",
           a: "Chez AUDIOLIK, les tarifs indicatifs sont de 5 000 DH minimum pour la gamme Essentiel, de 7 000 à 12 000 DH pour la gamme Confort et de 14 000 DH minimum pour la gamme Premium, par appareil. Le prix définitif dépend de votre audition, du modèle choisi et des fonctionnalités nécessaires : il figure sur le devis détaillé remis après le bilan auditif, sans engagement.",
         },
         {

@@ -38,10 +38,10 @@ const core = [
     slug: 'centre-de-correction-auditive-casablanca',
     fr: {
       kicker: 'Le centre',
-      title: 'Centre de correction auditive à Casablanca · AudioLik',
+      title: 'Centre auditif à Casablanca · Correction auditive · AudioLik',
       description:
-        "Centre de correction auditive à Casablanca, quartier Les Princesses (Maârif). Bilan auditif, appareils discrets, réglages et suivi. Sur rendez-vous, en arabe, français et anglais.",
-      h1: 'Centre de correction auditive à Casablanca',
+        "Centre auditif et de correction auditive à Casablanca, quartier Les Princesses (Maârif). Bilan auditif gratuit, appareils discrets, réglages et suivi. Sur rendez-vous, en arabe, français et anglais.",
+      h1: 'Centre auditif et de correction auditive à Casablanca',
       lede:
         "AudioLik est un centre de correction auditive installé aux Princesses, à Maârif. On y mesure ce que vous n'entendez plus, on vous l'explique, et si un appareil peut aider, on l'adapte avec vous, réglage après réglage.",
       sections: [
@@ -98,6 +98,7 @@ const core = [
       ],
       related: [
         { slug: 'bilan-auditif-casablanca', label: 'Le bilan auditif' },
+        { slug: 'audioprothesiste-casablanca', label: 'Votre audioprothésiste' },
         { slug: 'appareils-auditifs-casablanca', label: 'Les appareils auditifs' },
         { slug: 'perte-auditive', label: 'Comprendre la perte auditive' },
       ],
