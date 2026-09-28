@@ -203,6 +203,14 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
   </div>
 </footer>
 
+<!-- Bandeau d'appel mobile : sur les pages secondaires il n'y a pas de hero
+     à dépasser, il est donc visible dès l'arrivée (data-show="true"). -->
+<div class="callbar" id="callbar" data-show="true">
+  <a class="btn btn--ghost" href="tel:+212522393798"
+     aria-label="Call 05 22 39 37 98"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="lat" dir="ltr">05 22 39 37 98</span></a>
+  <a class="btn btn--wa" href="https://wa.me/212669571565?text=Hello%2C%20I%20would%20like%20to%20book%20a%20hearing%20assessment.%20What%20are%20your%20next%20available%20slots%3F" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>Open WhatsApp</a>
+</div>
+
 <script>
 window.__AUDIOLIK__ = {
   lang: "en",

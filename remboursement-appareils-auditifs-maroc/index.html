@@ -212,6 +212,14 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
   </div>
 </footer>
 
+<!-- Bandeau d'appel mobile : sur les pages secondaires il n'y a pas de hero
+     à dépasser, il est donc visible dès l'arrivée (data-show="true"). -->
+<div class="callbar" id="callbar" data-show="true">
+  <a class="btn btn--ghost" href="tel:+212522393798"
+     aria-label="Appeler 05 22 39 37 98"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="lat" dir="ltr">05 22 39 37 98</span></a>
+  <a class="btn btn--wa" href="https://wa.me/212669571565?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20un%20bilan%20auditif.%20Quelles%20sont%20vos%20prochaines%20disponibilit%C3%A9s%20%3F" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>Ouvrir WhatsApp</a>
+</div>
+
 <script>
 window.__AUDIOLIK__ = {
   lang: "fr",
