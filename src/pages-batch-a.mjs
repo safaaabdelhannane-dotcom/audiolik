@@ -220,6 +220,12 @@ export default [
             "Six questions sur votre quotidien, trois minutes, et aucune donnée envoyée : le calcul se fait dans votre navigateur. C'est un outil d'orientation, pas un diagnostic — [faites le test](/#test), puis venez au centre pour la vraie mesure.",
           ],
         },
+        {
+          h2: "Audiologiste à Casablanca : qui réalise le bilan ?",
+          p: [
+            "Qu'on cherche un audiologiste, un audiologue ou un audioprothésiste, la démarche est la même : faire mesurer son audition. Chez AudioLik, le bilan est réalisé par l'[audioprothésiste](/audioprothesiste-casablanca/) qui vous suivra ensuite. Pour une douleur, une infection ou une baisse brutale, voyez d'abord un ORL — notre page [ORL ou audioprothésiste](/orl-ou-audioprothesiste/) vous aide à choisir.",
+          ],
+        },
       ],
       faq: [
         {
@@ -293,6 +299,12 @@ export default [
             'ستّة أسئلة عن حياتك اليومية، ثلاث دقائق، ودون إرسال أيّ بيانات: الحساب يجري داخل متصفّحك. وهو أداة توجيه لا تشخيص — [أجرِ الاختبار](/ar/#test)، ثم تعال إلى المركز للقياس الحقيقي.',
           ],
         },
+        {
+          h2: "أخصائي قياس السمع بالدار البيضاء: من يُجري الفحص؟",
+          p: [
+            "سواء بحثت عن أخصائي قياس السمع أو أخصائي السمعيات، فالهدف واحد: قياس سمعك. في أوديوليك، يُجري الفحص [أخصائي السمعيات](/ar/audioprothesiste-casablanca/) الذي سيتابعك بعد ذلك. وفي حالة الألم أو الالتهاب أو الانخفاض المفاجئ، استشر أوّلًا طبيب الأنف والأذن والحنجرة — صفحتنا [الطبيب أم أخصائي السمعيات](/ar/orl-ou-audioprothesiste/) تساعدك على الاختيار.",
+          ],
+        },
       ],
       faq: [
         {
@@ -360,6 +372,12 @@ export default [
           h2: 'Before you come, the online test',
           p: [
             'Six questions about your daily life, three minutes, and no data sent anywhere: the calculation happens in your browser. It is a guide, not a diagnosis — [take the test](/en/#test), then come to the centre for the real measurement.',
+          ],
+        },
+        {
+          h2: "Audiologist in Casablanca: who carries out the assessment?",
+          p: [
+            "Whether you are looking for an audiologist or a hearing aid specialist, the goal is the same: having your hearing measured. At AudioLik the assessment is carried out by the [hearing aid specialist](/en/audioprothesiste-casablanca/) who will then follow you up. For pain, infection or a sudden drop, see an ENT first — our page [ENT or hearing aid specialist](/en/orl-ou-audioprothesiste/) helps you choose.",
           ],
         },
       ],

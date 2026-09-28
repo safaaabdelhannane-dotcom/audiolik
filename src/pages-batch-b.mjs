@@ -16,7 +16,7 @@ export default [
          trois langues : garder les trois versions alignées. */
       pricing: {
         id: 'prix',
-        h2: 'Prix des appareils auditifs à Casablanca',
+        h2: 'Prix des appareils auditifs à Casablanca et au Maroc',
         intro: [
           'AUDIOLIK propose plusieurs niveaux de technologie pour adapter votre appareil auditif à votre audition, à votre quotidien et à votre budget. Les tarifs ci-dessous sont indiqués par appareil et comprennent l’accompagnement nécessaire à une adaptation personnalisée.',
         ],
@@ -81,7 +81,7 @@ export default [
           },
         ],
         brandsLabel: 'Marques :',
-        brandsNote: 'Nous appareillons avec des fabricants reconnus, notamment *Signia* et *Phonak*. Les images ci-dessus illustrent les types d’appareils ; le modèle précis est choisi avec vous après le bilan, selon votre audition et votre quotidien.',
+        brandsNote: 'Nous appareillons avec des fabricants reconnus, notamment [Signia](/appareils-auditifs-signia/) et [Phonak](/appareils-auditifs-phonak/). Les images ci-dessus illustrent les types d’appareils ; le modèle précis est choisi avec vous après le bilan, selon votre audition et votre quotidien.',
         note: 'Tarifs indicatifs par appareil. Le prix définitif dépend de votre audition, du modèle choisi et des fonctionnalités nécessaires. Des solutions technologiques plus avancées peuvent être proposées après l’étude de vos besoins. Un devis détaillé vous est remis après le bilan, sans engagement.',
         after: [
           'Lorsque les deux oreilles présentent une perte auditive, une solution pour deux appareils peut être recommandée. Le tarif complet est alors indiqué clairement sur votre devis personnalisé.',
@@ -197,7 +197,7 @@ export default [
       /* Carte tarifaire — mêmes tarifs indicatifs par appareil que la page FR. */
       pricing: {
         id: 'prix',
-        h2: 'أسعار الأجهزة السمعية في الدار البيضاء',
+        h2: 'أسعار سماعة الأذن الطبية والأجهزة السمعية في الدار البيضاء',
         intro: [
           'تقترح أوديوليك عدّة مستويات من التقنية، حتى يتلاءم جهازك السمعي مع حالة سمعك ونمط حياتك وميزانيتك. الأسعار المبيّنة أدناه محدّدة للجهاز الواحد، وتشمل المواكبة اللازمة لملاءمة الجهاز معك بشكل شخصي.',
         ],
@@ -262,7 +262,7 @@ export default [
           },
         ],
         brandsLabel: 'العلامات:',
-        brandsNote: 'نعتمد على أجهزة من علامات معروفة عالميًا، من بينها *Signia* و*Phonak*. الرسوم أعلاه توضّح أنواع الأجهزة فقط؛ أمّا الطراز المناسب فنختاره معك بعد الفحص، حسب حالة سمعك واحتياجاتك اليومية.',
+        brandsNote: 'نعتمد على أجهزة من علامات معروفة عالميًا، من بينها [Signia](/ar/appareils-auditifs-signia/) و[Phonak](/ar/appareils-auditifs-phonak/). الرسوم أعلاه توضّح أنواع الأجهزة فقط؛ أمّا الطراز المناسب فنختاره معك بعد الفحص، حسب حالة سمعك واحتياجاتك اليومية.',
         note: 'أسعار إرشادية للجهاز الواحد. يتوقّف السعر النهائي على حالة سمعك والطراز المختار والوظائف التي تحتاجها. وقد نقترح عليك حلولًا تقنية أكثر تطوّرًا بعد دراسة احتياجاتك. تتسلّم عرض سعر مفصّلًا بعد الفحص، دون أيّ التزام.',
         after: [
           'إذا كان ضعف السمع في الأذنين معًا، فقد يُنصح بجهازين. وفي هذه الحالة يُبيَّن السعر الإجمالي بوضوح في عرض السعر الخاص بك.',
@@ -326,6 +326,14 @@ export default [
             'أقلّ بكثير ممّا تتصوّر. أجهزة [خلف الأذن بسمّاعة داخل القناة](/ar/appareils-auditifs-contour-oreille/) لا تكاد تُرى من الأمام، وأجهزة [داخل الأذن](/ar/appareils-auditifs-intra-auriculaires/) تستقرّ بالكامل في القناة السمعية. ولن يلاحظها أغلب من حولك.',
           ],
         },
+        {
+          h2: "سماعات طبية لضعاف السمع: كيف تختار",
+          id: "kayfa-takhtar",
+          p: [
+            "لا توجد سماعة واحدة تناسب الجميع. الاختيار يتوقّف على درجة ضعف السمع، وشكل الجهاز (خلف الأذن أو داخلها)، والمواقف التي تجد فيها صعوبة، وميزانيتك. لهذا نبدأ دائمًا بـ[فحص سمع مجاني](/ar/bilan-auditif-casablanca/)، ثم نقارن معك بين جهازين أو ثلاثة.",
+            "ولمن يساعد أحد والديه، صفحتنا عن [ضعف السمع عند كبار السن](/ar/perte-auditive-personnes-agees/) تشرح كيف تتحدّث في الأمر.",
+          ],
+        },
       ],
       faqTitle: 'أسئلة شائعة حول أسعار الأجهزة السمعية',
       faq: [
@@ -378,7 +386,7 @@ export default [
       /* Pricing cards — same indicative per-device prices as the FR page. */
       pricing: {
         id: 'prix',
-        h2: 'Hearing aid prices in Casablanca',
+        h2: 'Hearing aid prices in Casablanca and Morocco',
         intro: [
           'AUDIOLIK offers several levels of technology to match your hearing aid to your hearing, your daily life and your budget. The prices below are per device and include the support needed for a personalised fitting.',
         ],
@@ -443,7 +451,7 @@ export default [
           },
         ],
         brandsLabel: 'Brands:',
-        brandsNote: 'We fit devices from recognised manufacturers, including *Signia* and *Phonak*. The images above illustrate the types of device; the exact model is chosen with you after the assessment, based on your hearing and your daily life.',
+        brandsNote: 'We fit devices from recognised manufacturers, including [Signia](/en/appareils-auditifs-signia/) and [Phonak](/en/appareils-auditifs-phonak/). The images above illustrate the types of device; the exact model is chosen with you after the assessment, based on your hearing and your daily life.',
         note: 'Indicative prices per device. The final price depends on your hearing, the chosen model and the features you need. More advanced technology may be suggested once your needs have been assessed. You receive a detailed quote after the assessment, with no obligation.',
         after: [
           'When both ears have a hearing loss, a two-device solution may be recommended. The full price is then shown clearly on your personalised quote.',
@@ -611,6 +619,8 @@ export default [
         { slug: 'bilan-auditif-casablanca', label: 'Faire un bilan auditif' },
         { slug: 'appareils-auditifs-casablanca', label: 'Les appareils auditifs' },
         { slug: 'protections-auditives-sur-mesure', label: 'Protéger son audition' },
+        { slug: 'acouphenes', label: "Acouphènes" },
+        { slug: 'perte-auditive-personnes-agees', label: "Aider un parent âgé" },
       ],
     },
     ar: {
@@ -671,6 +681,8 @@ export default [
         { slug: 'bilan-auditif-casablanca', label: 'إجراء فحص السمع' },
         { slug: 'appareils-auditifs-casablanca', label: 'الأجهزة السمعية' },
         { slug: 'protections-auditives-sur-mesure', label: 'حماية السمع' },
+        { slug: 'acouphenes', label: "طنين الأذن" },
+        { slug: 'perte-auditive-personnes-agees', label: "ضعف السمع عند كبار السن" },
       ],
     },
     en: {
@@ -731,6 +743,8 @@ export default [
         { slug: 'bilan-auditif-casablanca', label: 'Have a hearing assessment' },
         { slug: 'appareils-auditifs-casablanca', label: 'Hearing aids' },
         { slug: 'protections-auditives-sur-mesure', label: 'Protecting your hearing' },
+        { slug: 'acouphenes', label: "Tinnitus" },
+        { slug: 'perte-auditive-personnes-agees', label: "Helping an older parent" },
       ],
     },
   },
