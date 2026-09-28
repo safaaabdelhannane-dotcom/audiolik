@@ -433,6 +433,15 @@ ${faq}
   </div>
 </footer>
 
+<!-- Bandeau d'appel mobile : sur les pages secondaires il n'y a pas de hero
+     à dépasser, il est donc visible dès l'arrivée (data-show="true"). -->
+<div class="callbar" id="callbar" data-show="true">
+  <a class="btn btn--ghost" href="tel:${B.phoneE164}"
+     aria-label="${esc(t.contact.options.call.cta)} ${esc(B.phoneDisplay)}">${icon('phone')}<span class="lat" dir="ltr">${esc(B.phoneDisplay)}</span></a>
+  ${wa ? `<a class="btn btn--wa" href="${esc(wa)}" target="_blank" rel="noopener">${icon('whatsapp-logo')}${esc(t.contact.options.whatsapp.cta)}</a>`
+       : `<a class="btn" href="${home}#contact">${esc(t.nav.cta)}</a>`}
+</div>
+
 ${runtimeScripts(t, { up })}
 </body>
 </html>
