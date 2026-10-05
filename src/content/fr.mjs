@@ -363,16 +363,27 @@ export default {
     pending: 'Photographie à venir',
   },
 
+  consent: {
+    label: 'Choix des cookies',
+    title: 'Cookies et mesure d\'audience',
+    text: "Avec votre accord, nous utilisons Google Analytics pour établir des statistiques de visite. Aucune donnée médicale ni aucune information saisie dans les formulaires n'est transmise. Vous pouvez changer d'avis à tout moment en bas de page.",
+    accept: 'Accepter',
+    refuse: 'Refuser',
+  },
+
   footer: {
     tagline: 'Centre de correction auditive. Casablanca, Les Princesses, Maârif.',
     nav: 'Navigation',
     contactTitle: 'Contact',
     pagesTitle: 'Nos pages',
+    // Numéro de dépôt OMPIC à ajouter quand la procédure sera terminée.
     legal: [
       "AudioLik est un centre de correction auditive. Les informations publiées sur ce site sont d'ordre général et ne constituent pas un avis médical.",
       "Seul un bilan réalisé au centre, complété si nécessaire par une consultation ORL, permet d'évaluer votre audition.",
+    "AudioLik® est une marque déposée à l'OMPIC.",
     ],
     rights: 'Tous droits réservés.',
+    cookies: 'Gérer les cookies',
     backToTop: 'Haut de page',
   },
 };
