@@ -308,7 +308,8 @@ ${alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
-<link rel="icon" href="${up}assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+<link rel="icon" href="${up}assets/favicon-oreille.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="${up}assets/img/apple-touch-icon.png">
 
 <!-- Self-hosted: zero third-party requests, so no visitor IP leaves for a font CDN. -->
