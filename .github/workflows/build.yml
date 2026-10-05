@@ -10,6 +10,10 @@
 # source. Le site suit tout seul.
 #
 # Le commit de sortie porte [skip ci] : il ne redéclenche pas ce workflow.
+#
+# Sécurité : les actions sont épinglées sur un SHA de commit (et non sur un
+# tag « v4 » qui peut être déplacé). Pour mettre à jour, remplacer le SHA par
+# celui du nouveau tag officiel et ajuster le commentaire de version.
 
 name: Construire le site
 
@@ -37,10 +41,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Récupérer le dépôt
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
 
       - name: Installer Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4.4.0
         with:
           node-version: '22'
 
