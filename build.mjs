@@ -173,7 +173,19 @@ async function main() {
   // site sur *.github.io et casse le certificat d'audiolik.ma.
   await writeFile(join(ROOT, 'CNAME'), `${new URL(SITE_URL).hostname}\n`, 'utf8');
 
-  console.log(`  ${c.green('✓')} sitemap.xml, robots.txt, .nojekyll, CNAME`);
+  // security.txt (RFC 9116) : où signaler une faille de sécurité. Servi tel
+  // quel par GitHub Pages grâce à .nojekyll (sinon les dossiers en « . »
+  // seraient ignorés). La date d'expiration est repoussée à chaque build.
+  const expires = new Date(Date.now() + 365 * 24 * 3600 * 1000);
+  expires.setUTCHours(0, 0, 0, 0);
+  await mkdir(join(ROOT, '.well-known'), { recursive: true });
+  await writeFile(join(ROOT, '.well-known', 'security.txt'),
+    `Contact: mailto:${business.email}\n` +
+    `Preferred-Languages: fr, ar, en\n` +
+    `Canonical: ${SITE_URL}/.well-known/security.txt\n` +
+    `Expires: ${expires.toISOString()}\n`, 'utf8');
+
+  console.log(`  ${c.green('✓')} sitemap.xml, robots.txt, .nojekyll, CNAME, .well-known/security.txt`);
 
   const noPhoto = pendingPhotos();
   if (noPhoto.length) {
@@ -187,6 +199,15 @@ async function main() {
     console.log(c.red(`\n  ⚠  ${fake.length} valeurs FICTIVES sont dans les pages générées :\n`));
     fake.forEach((p) => console.log(c.red(`    · business.${p}`)));
     console.log(c.red('    À remplacer avant toute mise en ligne (src/business.mjs).'));
+  }
+
+  /* -- numéro OMPIC de la mention de marque (footer.legal) ------------------ */
+  const ompic = Object.entries(CONTENT)
+    .filter(([, m]) => m.footer.legal.some((p) => p.includes('<À COMPLÉTER>')))
+    .map(([code]) => code);
+  if (ompic.length) {
+    console.log(c.red(`\n  ⚠  Numéro de dépôt OMPIC manquant dans footer.legal (${ompic.join(', ')}) :`));
+    console.log(c.red('    remplacer « <À COMPLÉTER> » dans src/content/*.mjs avant la mise en ligne.'));
   }
 
   /* -- what still needs a real answer -------------------------------------- */

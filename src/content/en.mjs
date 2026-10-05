@@ -342,16 +342,27 @@ export default {
     pending: 'Photograph to come',
   },
 
+  consent: {
+    label: 'Cookie choice',
+    title: 'Cookies and audience measurement',
+    text: 'With your consent, we use Google Analytics to compile visit statistics. No medical data and no information entered in forms is sent. You can change your mind at any time at the bottom of the page.',
+    accept: 'Accept',
+    refuse: 'Decline',
+  },
+
   footer: {
     tagline: 'Hearing correction centre. Casablanca, Les Princesses, Maârif.',
     nav: 'Navigation',
     contactTitle: 'Contact',
     pagesTitle: 'Our pages',
+    // Numéro de dépôt OMPIC à ajouter quand la procédure sera terminée.
     legal: [
       'AudioLik is a hearing correction centre. The information published on this site is general in nature and does not constitute medical advice.',
       'Only an assessment carried out at the centre, together with an ENT consultation where necessary, can evaluate your hearing.',
+    'AudioLik® is a trademark registered with OMPIC.',
     ],
     rights: 'All rights reserved.',
+    cookies: 'Manage cookies',
     backToTop: 'Back to top',
   },
 };

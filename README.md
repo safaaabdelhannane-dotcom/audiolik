@@ -240,3 +240,11 @@ Un bug RTL trouvé par ce balayage et corrigé : le motif d'ondes des cadres pho
 était centré par `inset-inline-start: 50%` + `translate: -50%`, couple qui
 s'inverse en arabe et projetait le motif hors du cadre à **toutes** les largeurs.
 Remplacé par `inset: 0` + `margin: auto`, indépendant de la direction.
+
+
+## Licence & marque
+
+Ce dépôt n'est **pas** open source. Code, design et contenus : **© AudioLik,
+tous droits réservés** — voir [`LICENSE`](LICENSE). « AudioLik » est une marque
+déposée à l'OMPIC. Le fait que ce dépôt soit public (hébergement GitHub Pages)
+ne concède aucune licence, ni sur le code, ni sur le contenu, ni sur la marque.
