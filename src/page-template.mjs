@@ -14,6 +14,7 @@
  *   en/<slug>/index.html     English
  */
 
+import { applyCsp, CSP_SLOT } from './csp.mjs';
 import { business as B, brand, locales, SITE_URL } from './business.mjs';
 import { SPRITE, icon } from './icons.mjs';
 import { DEVICE_SVG } from './device-art.mjs';
@@ -267,11 +268,13 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
     </section>`
     : '';
 
-  return `<!doctype html>
+  return applyCsp(`<!doctype html>
 <html lang="${loc.htmlLang}" dir="${loc.dir}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+${CSP_SLOT}
+<meta name="referrer" content="strict-origin-when-cross-origin">
 
 <title>${esc(page.title)}</title>
 <meta name="description" content="${esc(page.description)}">
@@ -347,7 +350,7 @@ if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}}
 </style>
 
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
-  <script src="/assets/js/analytics.js" defer></script>
+  <script src="/assets/js/consent.js" defer></script>
 </head>
 <body>
 ${SPRITE}
@@ -430,7 +433,7 @@ ${faq}
     <div class="footer__bottom">
       <div class="footer__legal">${t.footer.legal.map((p) => `<p>${esc(p)}</p>`).join('')}</div>
       <p class="footer__copy">
-        <span>© <span class="lat">${new Date().getUTCFullYear()}</span> ${esc(B.name)}. ${esc(t.footer.rights)}</span>
+        <span>© <span class="lat">${new Date().getUTCFullYear()}</span> ${esc(B.name)}. ${esc(t.footer.rights)} <button type="button" class="footer__cookies" data-consent-reopen hidden>${esc(t.footer.cookies)}</button></span>
         <a href="#main">${esc(t.footer.backToTop)} ${icon('arrow-up')}</a>
       </p>
     </div>
@@ -449,5 +452,5 @@ ${faq}
 ${runtimeScripts(t, { up })}
 </body>
 </html>
-`;
+`);
 }
