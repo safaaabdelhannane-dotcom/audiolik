@@ -1102,3 +1102,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .footer__grid--wide { grid-template-columns: 1.1fr repeat(4, minmax(0, 1fr)); }
 }
 .footer__pages { font-size: .9375rem; }
+
+/* Accueil : le métier et le lieu en tête du H1 (référencement), au registre
+   des kickers pour que le titre éditorial garde toute la place. */
+.hero__kicker { display: flex; line-height: 1.4; margin: 0 0 1rem; }
