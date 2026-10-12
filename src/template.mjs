@@ -154,7 +154,7 @@ export default function render(t, { alternates }) {
   const up = loc.code === B.defaultLang ? '' : '../';
   const canonical = SITE_URL + loc.path;
   const wa = waLink(t.contact.whatsappPrefill);
-  const ogImage = `${SITE_URL}/v3/assets/img/og-${t.code}.png`;
+  const ogImage = `${SITE_URL}/assets/img/og-${t.code}.png`;
   const O = t.contact.options;
   const hours = humanHours(t);
   const availability = O.call.availability.replace('{hours}', hours);
@@ -170,7 +170,7 @@ export default function render(t, { alternates }) {
     description: t.meta.description,
     url: canonical,
     image: ogImage,
-    logo: `${SITE_URL}/v3/assets/img/logo-audiolik.svg`,
+    logo: `${SITE_URL}/assets/img/logo-audiolik.svg`,
     telephone: B.phoneE164,
     ...(B.email ? { email: B.email } : {}),
     address: {
@@ -305,12 +305,11 @@ ${alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${
 <meta name="geo.position" content="${B.geo.lat};${B.geo.lng}">
 <meta name="ICBM" content="${B.geo.lat}, ${B.geo.lng}">
 
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
-<link rel="icon" href="${up}assets/favicon-oreille.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="${up}assets/img/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png?v=3">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png?v=3">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png?v=3">
+<link rel="apple-touch-icon" href="${up}assets/img/apple-touch-icon.png?v=3">
 
 <!-- Self-hosted: zero third-party requests, so no visitor IP leaves for a font CDN. -->
 <link rel="preload" as="font" type="font/woff2" href="${up}assets/fonts/gabarito-600-latin.woff2" crossorigin>
