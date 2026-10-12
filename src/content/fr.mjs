@@ -15,7 +15,7 @@ export default {
   meta: {
     title: 'AudioLik · Audioprothésiste à Casablanca, Les Princesses',
     description:
-      'Centre auditif AudioLik à Casablanca, Les Princesses (Maârif) : bilan auditif gratuit, appareils Signia et Phonak dès 5 000 DH, réglages et suivi. Rendez-vous au 05 22 39 37 98.',
+      'AudioLik, audioprothésiste à Casablanca (Les Princesses, Maârif) : appareils auditifs Signia et Phonak dès 5 000 DH, essai avant achat, réglages et suivi illimité. Tél. 05 22 39 37 98.',
     ogAlt: 'AudioLik, centre de correction auditive à Casablanca',
     skipToContent: 'Aller au contenu',
     langLabel: 'Changer de langue',
@@ -42,6 +42,7 @@ export default {
      boutons. Les horaires vivent dans le sous-titre du bouton téléphone, donc
      ils restent visibles sans former un 5ᵉ bloc flottant. */
   hero: {
+    kicker: 'Audioprothésiste à Casablanca · Les Princesses',
     title: 'Réentendre les voix *qui comptent*.',
     lede:
       "On mesure précisément ce que vous n'entendez plus, puis on le rétablit, réglage après réglage.",
@@ -55,6 +56,7 @@ export default {
 
   reassurance: {
     freeHearingTest:  { title: 'Bilan auditif gratuit',   text: 'Sur rendez-vous, sans engagement.' },
+    walkIn:           { title: 'Avec ou sans rendez-vous', text: 'Du lundi au vendredi, et le samedi matin.' },
     homeTrial:        { title: 'Essai avant achat',        text: 'Vous testez les appareils dans votre vraie vie.' },
     unlimitedFollowUp:{ title: 'Réglages et suivi inclus', text: "Aussi longtemps que vous portez l'appareil." },
     childrenFitting:  { title: 'Enfants et adultes',       text: 'Appareillage pédiatrique et adulte.' },

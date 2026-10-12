@@ -6,7 +6,7 @@ export default {
   meta: {
     title: 'AudioLik · Hearing Correction Centre in Casablanca, Les Princesses',
     description:
-      'Hearing correction centre in Casablanca, Les Princesses (Maârif). Hearing assessments, discreet devices, fitting and follow-up. Book on +212 522 39 37 98.',
+      'Hearing aid specialist in Casablanca, Les Princesses (Maârif): Signia and Phonak hearing aids from MAD 5,000, try before you buy, unlimited fitting and follow-up. Call +212 522 39 37 98.',
     ogAlt: 'AudioLik, hearing correction centre in Casablanca',
     skipToContent: 'Skip to content',
     langLabel: 'Change language',
@@ -30,6 +30,7 @@ export default {
   },
 
   hero: {
+    kicker: 'Hearing aid specialist in Casablanca · Les Princesses',
     title: 'Hear the voices *that matter* again.',
     lede: 'We measure exactly what you no longer hear, then bring it back, one adjustment at a time.',
     ctaWhatsapp: 'Message on WhatsApp',
@@ -42,6 +43,7 @@ export default {
 
   reassurance: {
     freeHearingTest:  { title: 'Free hearing test',   text: 'By appointment, no obligation.' },
+    walkIn:           { title: 'Walk in or book',      text: 'Monday to Friday, and Saturday morning.' },
     homeTrial:        { title: 'Try before you buy',            text: 'Test the devices in your everyday life.' },
     unlimitedFollowUp:{ title: 'Fitting and follow-up included', text: 'For as long as you wear the device.' },
     childrenFitting:  { title: 'Children and adults',           text: 'Paediatric and adult fitting.' },
