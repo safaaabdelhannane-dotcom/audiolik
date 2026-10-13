@@ -5,9 +5,9 @@ export default [
     slug: 'appareils-auditifs-casablanca',
     fr: {
       kicker: 'Les appareils',
-      title: 'Appareil auditif Casablanca : prix dès 5 000 DH | AudioLik',
+      title: 'Prix des appareils auditifs au Maroc : dès 5 000 DH · AudioLik',
       description:
-        'Prix des appareils auditifs à Casablanca et au Maroc, par appareil : Essentiel dès 5 000 DH, Confort de 7 000 à 12 000 DH, Premium dès 14 000 DH. Bilan auditif gratuit et essai chez AudioLik.',
+        'Prix des appareils auditifs à Casablanca et au Maroc, par appareil : Essentiel dès 5 000 DH, Confort de 7 000 à 12 000 DH, Premium dès 14 000 DH. Essai avant achat et suivi chez AudioLik, Casablanca.',
       h1: 'Appareils auditifs à Casablanca',
       lede:
         "Les deux questions qu'on nous pose le plus : « combien ça coûte » et « est-ce que ça se voit ». Voici des réponses nettes, par votre [audioprothésiste à Casablanca](/audioprothesiste-casablanca/), aux Princesses.",
@@ -188,9 +188,9 @@ export default [
     },
     ar: {
       kicker: 'الأجهزة',
-      title: 'أسعار الأجهزة السمعية في الدار البيضاء | أوديوليك',
+      title: 'أسعار الأجهزة السمعية بالمغرب: ابتداءً من 5 000 درهم · أوديوليك',
       description:
-        'تعرّف على الأسعار الإرشادية للأجهزة السمعية في الدار البيضاء، وما يشمله السعر، وإمكانيات استرجاع المصاريف. فحص السمع والتجربة لدى أوديوليك.',
+        'أسعار الأجهزة السمعية بالدار البيضاء والمغرب للجهاز الواحد: الأساسية من 5 000 درهم، المريحة من 7 000 إلى 12 000، وبريميوم من 14 000 درهم. التجربة قبل الشراء لدى أوديوليك.',
       h1: 'الأجهزة السمعية بالدار البيضاء',
       lede:
         'أكثر سؤالين يُطرحان علينا: «كم يكلّف الجهاز؟» و«هل يظهر؟». إليك أجوبة واضحة من [أخصائي السمعيات بالدار البيضاء](/ar/audioprothesiste-casablanca/)، بحيّ الأميرات.',
@@ -330,7 +330,7 @@ export default [
           h2: "سماعات طبية لضعاف السمع: كيف تختار",
           id: "kayfa-takhtar",
           p: [
-            "لا توجد سماعة واحدة تناسب الجميع. الاختيار يتوقّف على درجة ضعف السمع، وشكل الجهاز (خلف الأذن أو داخلها)، والمواقف التي تجد فيها صعوبة، وميزانيتك. لهذا نبدأ دائمًا بـ[فحص سمع مجاني](/ar/bilan-auditif-casablanca/)، ثم نقارن معك بين جهازين أو ثلاثة.",
+            "لا توجد سماعة واحدة تناسب الجميع. الاختيار يتوقّف على درجة ضعف السمع، وشكل الجهاز (خلف الأذن أو داخلها)، والمواقف التي تجد فيها صعوبة، وميزانيتك. لهذا نبدأ دائمًا بـ[فحص السمع](/ar/bilan-auditif-casablanca/)، ثم نقارن معك بين جهازين أو ثلاثة.",
             "ولمن يساعد أحد والديه، صفحتنا عن [ضعف السمع عند كبار السن](/ar/perte-auditive-personnes-agees/) تشرح كيف تتحدّث في الأمر.",
           ],
         },
@@ -377,9 +377,9 @@ export default [
     },
     en: {
       kicker: 'The devices',
-      title: 'Hearing Aid Prices in Casablanca | AUDIOLIK',
+      title: 'Hearing Aid Prices in Morocco: from MAD 5,000 · AudioLik',
       description:
-        'Indicative hearing aid prices in Casablanca, what the price includes and reimbursement in Morocco. Hearing assessment and trial at AUDIOLIK.',
+        'Hearing aid prices in Casablanca and Morocco, per device: Essential from MAD 5,000, Comfort MAD 7,000 to 12,000, Premium from MAD 14,000. Try before you buy and follow-up at AudioLik.',
       h1: 'Hearing aids in Casablanca',
       lede:
         'The two questions we are asked most: "how much does it cost" and "does it show". Here are clear answers from your [hearing aid specialist in Casablanca](/en/audioprothesiste-casablanca/), in Les Princesses.',

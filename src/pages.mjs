@@ -16,7 +16,9 @@
  *     /appareils-auditifs-casablanca/ ; l'accueil et la page centre la reprennent.
  *     Jamais de montant de remboursement ;
  *   · aucune promesse non confirmée. Le seul engagement confirmé par le centre
- *     est le BILAN AUDITIF GRATUIT (business.claims.freeHearingTest, 09/2026).
+ *     était le BILAN AUDITIF GRATUIT (business.claims.freeHearingTest, 09/2026) ;
+ *     depuis le 12/10/2026, il n'est plus mis en avant (consigne du centre :
+ *     les ORL n'apprécient pas). Accueil AVEC OU SANS rendez-vous.
  *     Restent à false, donc interdits d'écriture : essai à domicile, suivi
  *     illimité, cabine insonorisée, appareillage enfants ;
  *   · le vocabulaire est celui déjà validé dans src/content/<lang>.mjs.
@@ -41,7 +43,7 @@ const core = [
       kicker: 'Le centre',
       title: 'Centre auditif à Casablanca · Correction auditive · AudioLik',
       description:
-        "Centre auditif et de correction auditive à Casablanca, quartier Les Princesses (Maârif). Bilan auditif gratuit, appareils discrets, réglages et suivi. Sur rendez-vous, en arabe, français et anglais.",
+        "Centre auditif à Casablanca, Les Princesses (Maârif) : bilan auditif, appareils Signia et Phonak, réglages et suivi illimité. Avec ou sans rendez-vous.",
       h1: 'Centre auditif et de correction auditive à Casablanca',
       lede:
         "AudioLik est un centre de correction auditive installé aux Princesses, à Maârif. On y mesure ce que vous n'entendez plus, on vous l'explique, et si un appareil peut aider, on l'adapte avec vous, réglage après réglage.",
@@ -79,7 +81,7 @@ const core = [
         {
           h2: 'Venir au centre',
           p: [
-            "106B rue Al Jounaid, quartier Les Princesses, à Maârif, Casablanca. Sur rendez-vous, du lundi au samedi matin. Nous recevons en arabe, en français et en anglais, et les proches sont les bienvenus — c'est même conseillé, à deux on retient mieux les explications.",
+            "106B rue Al Jounaid, quartier Les Princesses, à Maârif, Casablanca. Avec ou sans rendez-vous, du lundi au vendredi et le samedi matin. Nous recevons en arabe, en français et en anglais, et les proches sont les bienvenus — c'est même conseillé, à deux on retient mieux les explications.",
           ],
         },
       ],
@@ -108,7 +110,7 @@ const core = [
       kicker: 'المركز',
       title: 'مركز تصحيح السمع بالدار البيضاء · أوديوليك',
       description:
-        'مركز تصحيح السمع بالدار البيضاء، حي الأميرات (المعاريف). فحص السمع، أجهزة سمعية دقيقة، الضبط والمتابعة. بموعد مسبق، بالعربية والفرنسية والإنجليزية.',
+        'مركز تصحيح السمع بالدار البيضاء، حي الأميرات (المعاريف). فحص السمع، أجهزة سمعية دقيقة، الضبط والمتابعة. بموعد أو بدون موعد، بالعربية والفرنسية والإنجليزية.',
       h1: 'مركز تصحيح السمع بالدار البيضاء',
       lede:
         'أوديوليك مركز لتصحيح السمع بحي الأميرات، بالمعاريف. نقيس بدقّة ما لم تعد تسمعه، ونشرحه لك، وإذا كان الجهاز مفيدًا نلائمه معك، ضبطًا بعد ضبط.',
@@ -146,7 +148,7 @@ const core = [
         {
           h2: 'الوصول إلى المركز',
           p: [
-            '106B زنقة الجنيد، حي الأميرات، بالمعاريف، الدار البيضاء. بموعد مسبق، من الاثنين إلى صباح السبت. نستقبلكم بالعربية والفرنسية والإنجليزية، ومرافقة أحد الأقارب مُرحّب بها — بل ننصح بها، فالاثنان يحفظان الشرح أفضل من واحد.',
+            '106B زنقة الجنيد، حي الأميرات، بالمعاريف، الدار البيضاء. بموعد أو بدون موعد، من الاثنين إلى الجمعة وصباح السبت. نستقبلكم بالعربية والفرنسية والإنجليزية، ومرافقة أحد الأقارب مُرحّب بها — بل ننصح بها، فالاثنان يحفظان الشرح أفضل من واحد.',
           ],
         },
       ],
@@ -174,7 +176,7 @@ const core = [
       kicker: 'The centre',
       title: 'Hearing Correction Centre in Casablanca · AudioLik',
       description:
-        'Hearing correction centre in Casablanca, Les Princesses (Maârif). Hearing assessment, discreet devices, fitting and follow-up. By appointment, in Arabic, French and English.',
+        'Hearing correction centre in Casablanca, Les Princesses (Maârif). Hearing assessment, discreet devices, fitting and follow-up. With or without an appointment, in Arabic, French and English.',
       h1: 'Hearing correction centre in Casablanca',
       lede:
         "AudioLik is a hearing correction centre in Les Princesses, Maârif. We measure what you no longer hear, explain it to you, and if a device helps, we fit it with you, adjustment after adjustment.",
@@ -212,7 +214,7 @@ const core = [
         {
           h2: 'Coming to the centre',
           p: [
-            "106B rue Al Jounaid, Les Princesses, Maârif, Casablanca. By appointment, Monday to Saturday morning. We see patients in Arabic, French and English, and relatives are welcome — it is even advisable, two people remember explanations better than one.",
+            "106B rue Al Jounaid, Les Princesses, Maârif, Casablanca. With or without an appointment, Monday to Friday and Saturday morning. We see patients in Arabic, French and English, and relatives are welcome — it is even advisable, two people remember explanations better than one.",
           ],
         },
       ],

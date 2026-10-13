@@ -7,9 +7,9 @@ export default [
     slug: 'audioprothesiste-casablanca',
     fr: {
       kicker: 'Le métier',
-      title: 'Audioprothésiste Casablanca · Bilan auditif gratuit · AudioLik',
+      title: 'Audioprothésiste à Casablanca (Maârif, Les Princesses) · AudioLik',
       description:
-        "Votre audioprothésiste à Casablanca : bilan auditif gratuit sur rendez-vous, essai d'appareils discrets, réglages et suivi. AudioLik, 106B rue Al Jounaid, Les Princesses, Maârif.",
+        "Votre audioprothésiste à Casablanca : bilan auditif, essai et réglage d'appareils Signia et Phonak, suivi illimité. Avec ou sans rendez-vous, 106B rue Al Jounaid, Les Princesses, Maârif.",
       h1: 'Audioprothésiste à Casablanca, aux Princesses',
       lede:
         "Un audioprothésiste mesure votre audition, vous explique ce qu'il observe et, si c'est utile, vous accompagne vers un appareil qui vous convient — puis le règle avec vous, dans la durée.",
@@ -36,9 +36,16 @@ export default [
           ],
         },
         {
+          h2: 'Votre audioprothésiste',
+          p: [
+            "Les bilans, l'appareillage et le suivi sont assurés par Safaa Soulimani Abdelhannane, audioprothésiste diplômée d'une université de Madrid, en exercice depuis 2023.",
+            "AudioLik travaille en lien avec les médecins ORL. L'audioprothésiste mesure l'audition, choisit, adapte et règle l'appareil, puis assure le suivi ; le diagnostic et le traitement des maladies de l'oreille restent le rôle du médecin, vers qui nous vous orientons dès qu'un signe le justifie.",
+          ],
+        },
+        {
           h2: 'Venir nous voir',
           p: [
-            "106B rue Al Jounaid, quartier Les Princesses, à Maârif, Casablanca. Sur rendez-vous, du lundi au samedi matin. Nous recevons en arabe, en français et en anglais.",
+            "106B rue Al Jounaid, quartier Les Princesses, à Maârif, Casablanca. Avec ou sans rendez-vous, du lundi au vendredi et le samedi matin. Nous recevons en arabe, en français et en anglais.",
           ],
         },
       ],
@@ -53,7 +60,7 @@ export default [
         },
         {
           q: 'Où trouver un audioprothésiste à Casablanca ?',
-          a: "AudioLik reçoit au 106B rue Al Jounaid, quartier Les Princesses, à Maârif. Sur rendez-vous, du lundi au samedi matin, avec un bilan auditif gratuit et sans engagement. Un appel ou un message WhatsApp suffit pour réserver.",
+          a: "AudioLik reçoit au 106B rue Al Jounaid, quartier Les Princesses, à Maârif. Avec ou sans rendez-vous, du lundi au vendredi et le samedi matin. Un appel ou un message WhatsApp suffit pour réserver un créneau.",
         },
       ],
       related: [
@@ -67,7 +74,7 @@ export default [
       kicker: 'المهنة',
       title: 'أخصائي السمعيات بالدار البيضاء، الأميرات · أوديوليك',
       description:
-        'أخصائي السمعيات بالدار البيضاء: فحص السمع بموعد مسبق، تجربة أجهزة دقيقة، الضبط والمتابعة. أوديوليك، 106B زنقة الجنيد، الأميرات، المعاريف.',
+        'أخصائي السمعيات بالدار البيضاء: فحص السمع، تجربة أجهزة Signia وPhonak وضبطها، ومتابعة دون حدود. بموعد أو بدون موعد، أوديوليك، 106B زنقة الجنيد، الأميرات، المعاريف.',
       h1: 'أخصائي السمعيات بالدار البيضاء، بالأميرات',
       lede:
         'أخصائي السمعيات يقيس سمعك، ويشرح لك ما يلاحظه، وإذا كان الجهاز مفيدًا يرافقك نحو ما يناسبك — ثم يضبطه معك، على المدى الطويل.',
@@ -94,9 +101,16 @@ export default [
           ],
         },
         {
+          h2: 'أخصائية السمعيات لديكم',
+          p: [
+            'يتولّى فحص السمع وتركيب الأجهزة والمتابعة Safaa Soulimani Abdelhannane، أخصائية سمعيات حاصلة على شهادتها من جامعة في مدريد، وتمارس المهنة منذ 2023.',
+            'يعمل أوديوليك بتنسيق مع أطباء الأنف والأذن والحنجرة. تقيس أخصائية السمعيات السمع، وتختار الجهاز وتكيّفه وتضبطه، ثم تتولّى المتابعة؛ أما تشخيص أمراض الأذن وعلاجها فيبقيان من اختصاص الطبيب، ونوجّهك إليه كلما استدعت علامةٌ ذلك.',
+          ],
+        },
+        {
           h2: 'زيارتنا',
           p: [
-            '106B زنقة الجنيد، حي الأميرات، بالمعاريف، الدار البيضاء. بموعد مسبق، من الاثنين إلى صباح السبت. نستقبلكم بالعربية والفرنسية والإنجليزية.',
+            '106B زنقة الجنيد، حي الأميرات، بالمعاريف، الدار البيضاء. بموعد أو بدون موعد، من الاثنين إلى الجمعة وصباح السبت. نستقبلكم بالعربية والفرنسية والإنجليزية.',
           ],
         },
       ],
@@ -120,7 +134,7 @@ export default [
       kicker: 'The profession',
       title: 'Hearing Aid Specialist in Casablanca, Les Princesses · AudioLik',
       description:
-        'Your hearing aid specialist in Casablanca: hearing assessment by appointment, trial of discreet devices, adjustments and follow-up. AudioLik, 106B rue Al Jounaid, Les Princesses, Maârif.',
+        'Your hearing aid specialist in Casablanca: hearing assessment, trial and fitting of Signia and Phonak devices, unlimited follow-up. Walk in or book: 106B rue Al Jounaid, Maârif.',
       h1: 'Hearing aid specialist in Casablanca, Les Princesses',
       lede:
         'A hearing aid specialist measures your hearing, explains what they observe, and if it helps, guides you towards a device that suits you — then adjusts it with you, over time.',
@@ -147,9 +161,16 @@ export default [
           ],
         },
         {
+          h2: 'Your hearing aid specialist',
+          p: [
+            'Assessments, fittings and follow-up are carried out by Safaa Soulimani Abdelhannane, a hearing aid specialist who graduated from a university in Madrid and has been practising since 2023.',
+            'AudioLik works alongside ENT doctors. The hearing aid specialist measures your hearing, chooses, fits and adjusts the device, then provides follow-up; diagnosing and treating ear conditions remains the doctor’s role, and we refer you to one whenever a sign calls for it.',
+          ],
+        },
+        {
           h2: 'Visiting us',
           p: [
-            '106B rue Al Jounaid, Les Princesses, Maârif, Casablanca. By appointment, Monday to Saturday morning. We see patients in Arabic, French and English.',
+            '106B rue Al Jounaid, Les Princesses, Maârif, Casablanca. With or without an appointment, Monday to Friday and Saturday morning. We see patients in Arabic, French and English.',
           ],
         },
       ],
@@ -178,9 +199,9 @@ export default [
     slug: 'bilan-auditif-casablanca',
     fr: {
       kicker: 'Le bilan',
-      title: 'Bilan auditif gratuit à Casablanca, sur rendez-vous · AudioLik',
+      title: 'Bilan auditif à Casablanca (Maârif) · Test d’audition · AudioLik',
       description:
-        'Bilan auditif gratuit et complet à Casablanca (Les Princesses, Maârif) : otoscopie, audiométrie tonale et vocale, explication claire des résultats. AudioLik, sur rendez-vous, sans engagement.',
+        'Bilan auditif complet à Casablanca (Les Princesses, Maârif) : otoscopie, audiométrie tonale et vocale, explication claire des résultats. AudioLik, avec ou sans rendez-vous, sans engagement.',
       h1: 'Bilan auditif à Casablanca',
       lede:
         "On n'entend pas moins bien du jour au lendemain. La perte s'installe si lentement qu'on s'y habitue. Le bilan sert à savoir où vous en êtes, avec des chiffres qu'on vous explique.",
@@ -241,8 +262,8 @@ export default [
           a: "À tout âge, dès qu'un signe apparaît. Après 60 ans, un contrôle tous les deux ans est une bonne habitude, comme pour la vue.",
         },
         {
-          q: 'Le bilan auditif est-il payant ?',
-          a: "Non. Chez AudioLik, le bilan auditif est gratuit, sur rendez-vous et sans engagement : vous repartez avec vos résultats expliqués, et rien n'est signé le jour même.",
+          q: 'Le bilan m’engage-t-il à acheter un appareil ?',
+          a: "Non. Le bilan est sans engagement : vous repartez avec vos résultats expliqués, et rien n'est signé le jour même.",
         },
         {
           q: 'Audiologue, audiologiste ou audioprothésiste : qui consulter ?',
@@ -257,9 +278,9 @@ export default [
     },
     ar: {
       kicker: 'الفحص',
-      title: 'فحص السمع بالدار البيضاء، بموعد مسبق · أوديوليك',
+      title: 'فحص السمع بالدار البيضاء، المعاريف · أوديوليك',
       description:
-        'فحص سمع شامل بالدار البيضاء (الأميرات، المعاريف): فحص الأذن، قياس السمع النغمي والكلامي، وشرح واضح للنتائج. أوديوليك، بموعد مسبق.',
+        'فحص سمع شامل بالدار البيضاء (الأميرات، المعاريف): فحص الأذن، قياس السمع النغمي والكلامي، وشرح واضح للنتائج. أوديوليك، بموعد أو بدون موعد.',
       h1: 'فحص السمع بالدار البيضاء',
       lede:
         'لا يضعف السمع بين ليلة وضحاها. يستقرّ الضعف ببطء إلى أن يألفه المرء. والفحص يبيّن لك أين أنت بالضبط، بأرقام تُشرَح لك.',
@@ -320,8 +341,8 @@ export default [
           a: 'في أيّ سنّ، عند ظهور أيّ علامة. وبعد الستين، فحص كل سنتين عادة حسنة، مثل فحص النظر.',
         },
         {
-          q: 'هل فحص السمع مجاني؟',
-          a: 'نعم. في أوديوليك، فحص السمع مجاني، بموعد مسبق ودون أيّ التزام: تغادر ونتائجك مشروحة، ولا توقيع في اليوم نفسه.',
+          q: 'هل يُلزمني الفحص بشراء جهاز؟',
+          a: 'لا. الفحص دون أيّ التزام: تغادر ونتائجك مشروحة، ولا توقيع في اليوم نفسه.',
         },
       ],
       related: [
@@ -332,9 +353,9 @@ export default [
     },
     en: {
       kicker: 'The assessment',
-      title: 'Hearing Assessment in Casablanca, by Appointment · AudioLik',
+      title: 'Hearing Test & Assessment in Casablanca · AudioLik',
       description:
-        'Full hearing assessment in Casablanca (Les Princesses, Maârif): otoscopy, pure-tone and speech audiometry, a clear explanation of the results. AudioLik, by appointment.',
+        'Full hearing assessment in Casablanca (Les Princesses, Maârif): otoscopy, pure-tone and speech audiometry, a clear explanation of the results. AudioLik, with or without an appointment.',
       h1: 'Hearing assessment in Casablanca',
       lede:
         'Hearing does not fade overnight. The loss settles in so slowly that you get used to it. The assessment tells you where you stand, with figures we explain to you.',
@@ -395,8 +416,8 @@ export default [
           a: 'At any age, as soon as a sign appears. After 60, a check every two years is a good habit, as with eyesight.',
         },
         {
-          q: 'Is the hearing assessment free?',
-          a: "Yes. At AudioLik the hearing assessment is free, by appointment and with no commitment: you leave with your results explained, and nothing is signed on the day.",
+          q: 'Does the assessment commit me to buying a device?',
+          a: "No. The assessment carries no commitment: you leave with your results explained, and nothing is signed on the day.",
         },
       ],
       related: [

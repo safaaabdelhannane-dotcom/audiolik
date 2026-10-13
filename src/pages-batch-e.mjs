@@ -8,7 +8,7 @@
  *
  * Mêmes règles que src/pages.mjs : prix = uniquement les tarifs indicatifs par
  * appareil de la carte tarifaire ; aucun montant de remboursement ; aucune
- * promesse non confirmée (seul le bilan auditif gratuit l'est) ; aucun modèle
+ * promesse non confirmée ; aucun modèle
  * précis promis en stock ; pas d'appareillage enfants.
  */
 export default [
@@ -21,7 +21,7 @@ export default [
       kicker: 'Les marques',
       title: 'Appareils auditifs Signia à Casablanca : gammes et prix · AudioLik',
       description:
-        "Appareils auditifs Signia (ex-Siemens) à Casablanca : formes, rechargeable, Bluetooth et prix indicatifs au Maroc, de 5 000 DH à Premium dès 14 000 DH par appareil. Bilan auditif gratuit chez AudioLik.",
+        "Appareils auditifs Signia (ex-Siemens) à Casablanca : formes, rechargeable, Bluetooth et prix indicatifs au Maroc, de 5 000 DH à Premium dès 14 000 DH par appareil. Essai et suivi chez AudioLik.",
       h1: 'Appareils auditifs Signia à Casablanca',
       lede:
         "Signia fait partie des marques avec lesquelles AudioLik appareille. Voici ce qu'il faut savoir sur la marque, ses formes d'appareils et les prix pratiqués au centre, aux Princesses.",
@@ -53,7 +53,7 @@ export default [
         {
           h2: 'Essayer un Signia à Casablanca',
           p: [
-            "Tout commence par un [bilan auditif gratuit](/bilan-auditif-casablanca/), sur rendez-vous, au 106B rue Al Jounaid, quartier Les Princesses, à Maârif. Si un appareil peut vous aider, nous comparons avec vous deux ou trois modèles, Signia ou d'une autre marque, selon ce qui convient le mieux à votre audition.",
+            "Tout commence par un [bilan auditif](/bilan-auditif-casablanca/), avec ou sans rendez-vous, au 106B rue Al Jounaid, quartier Les Princesses, à Maârif. Si un appareil peut vous aider, nous comparons avec vous deux ou trois modèles, Signia ou d'une autre marque, selon ce qui convient le mieux à votre audition.",
           ],
         },
       ],
@@ -74,14 +74,14 @@ export default [
       related: [
         { slug: 'appareils-auditifs-phonak', label: 'Appareils Phonak' },
         { slug: 'appareils-auditifs-casablanca', label: 'Prix des appareils auditifs' },
-        { slug: 'bilan-auditif-casablanca', label: 'Bilan auditif gratuit' },
+        { slug: 'bilan-auditif-casablanca', label: 'Le bilan auditif' },
       ],
     },
     ar: {
       kicker: 'العلامات',
       title: 'أجهزة Signia السمعية بالدار البيضاء: الفئات والأسعار · أوديوليك',
       description:
-        'أجهزة Signia السمعية (سيمنس سابقًا) بالدار البيضاء: الأشكال، القابلة للشحن، البلوتوث والأسعار الإرشادية بالمغرب، من 5 000 درهم إلى بريميوم ابتداءً من 14 000 درهم للجهاز. فحص سمع مجاني لدى أوديوليك.',
+        'أجهزة Signia السمعية (سيمنس سابقًا) بالدار البيضاء: الأشكال، القابلة للشحن، البلوتوث والأسعار الإرشادية بالمغرب، من 5 000 درهم إلى بريميوم ابتداءً من 14 000 درهم للجهاز. التجربة والمتابعة لدى أوديوليك.',
       h1: 'أجهزة Signia السمعية بالدار البيضاء',
       lede:
         'Signia من العلامات التي نعتمدها في أوديوليك. إليك ما ينبغي معرفته عن العلامة وأشكال أجهزتها والأسعار المعمول بها في المركز، بحي الأميرات.',
@@ -111,7 +111,7 @@ export default [
         {
           h2: 'تجربة جهاز Signia بالدار البيضاء',
           p: [
-            'كل شيء يبدأ بـ[فحص سمع مجاني](/ar/bilan-auditif-casablanca/)، بموعد مسبق، في 106B زنقة الجنيد، حي الأميرات، بالمعاريف. وإذا كان الجهاز مفيدًا، نقارن معك بين جهازين أو ثلاثة، من Signia أو من علامة أخرى، حسب ما يناسب سمعك.',
+            'كل شيء يبدأ بـ[فحص السمع](/ar/bilan-auditif-casablanca/)، بموعد أو بدون موعد، في 106B زنقة الجنيد، حي الأميرات، بالمعاريف. وإذا كان الجهاز مفيدًا، نقارن معك بين جهازين أو ثلاثة، من Signia أو من علامة أخرى، حسب ما يناسب سمعك.',
           ],
         },
       ],
@@ -132,14 +132,14 @@ export default [
       related: [
         { slug: 'appareils-auditifs-phonak', label: 'أجهزة Phonak' },
         { slug: 'appareils-auditifs-casablanca', label: 'أسعار الأجهزة السمعية' },
-        { slug: 'bilan-auditif-casablanca', label: 'فحص سمع مجاني' },
+        { slug: 'bilan-auditif-casablanca', label: 'فحص السمع' },
       ],
     },
     en: {
       kicker: 'Brands',
       title: 'Signia Hearing Aids in Casablanca: Ranges and Prices · AudioLik',
       description:
-        'Signia (formerly Siemens) hearing aids in Casablanca: styles, rechargeable, Bluetooth and guide prices in Morocco, from MAD 5,000 to Premium from MAD 14,000 per device. Free hearing assessment at AudioLik.',
+        'Signia (formerly Siemens) hearing aids in Casablanca: styles, rechargeable, Bluetooth and guide prices in Morocco, from MAD 5,000 to Premium from MAD 14,000 per device. Trial and follow-up at AudioLik.',
       h1: 'Signia hearing aids in Casablanca',
       lede:
         'Signia is one of the brands AudioLik fits. Here is what to know about the brand, its device styles and the prices at the centre in Les Princesses.',
@@ -169,7 +169,7 @@ export default [
         {
           h2: 'Trying a Signia in Casablanca',
           p: [
-            'It all starts with a [free hearing assessment](/en/bilan-auditif-casablanca/), by appointment, at 106B rue Al Jounaid, Les Princesses, Maârif. If a device can help, we compare two or three models with you, Signia or another brand, whichever suits your hearing best.',
+            'It all starts with a [hearing assessment](/en/bilan-auditif-casablanca/), with or without an appointment, at 106B rue Al Jounaid, Les Princesses, Maârif. If a device can help, we compare two or three models with you, Signia or another brand, whichever suits your hearing best.',
           ],
         },
       ],
@@ -190,7 +190,7 @@ export default [
       related: [
         { slug: 'appareils-auditifs-phonak', label: 'Phonak hearing aids' },
         { slug: 'appareils-auditifs-casablanca', label: 'Hearing aid prices' },
-        { slug: 'bilan-auditif-casablanca', label: 'Free hearing assessment' },
+        { slug: 'bilan-auditif-casablanca', label: 'Hearing assessment' },
       ],
     },
   },
@@ -204,7 +204,7 @@ export default [
       kicker: 'Les marques',
       title: 'Appareils auditifs Phonak à Casablanca : rechargeables, prix · AudioLik',
       description:
-        "Appareils auditifs Phonak à Casablanca : rechargeables, Bluetooth, discrets. Prix indicatifs au Maroc de 5 000 DH à Premium dès 14 000 DH par appareil. Bilan auditif gratuit chez AudioLik, Les Princesses.",
+        "Appareils auditifs Phonak à Casablanca : rechargeables, Bluetooth, discrets. Prix indicatifs au Maroc de 5 000 DH à Premium dès 14 000 DH par appareil. Essai et suivi chez AudioLik.",
       h1: 'Appareils auditifs Phonak à Casablanca',
       lede:
         "Phonak fait partie des marques avec lesquelles AudioLik appareille. Ce qu'il faut savoir sur la marque, ses appareils rechargeables et les prix pratiqués au centre.",
@@ -231,7 +231,7 @@ export default [
         {
           h2: 'Essayer un Phonak à Casablanca',
           p: [
-            "Prenez rendez-vous pour un [bilan auditif gratuit](/bilan-auditif-casablanca/) au 106B rue Al Jounaid, Les Princesses, Maârif. Nous vous présentons deux ou trois appareils adaptés à votre audition, Phonak ou d'une autre marque, et vous les essayez dans votre vie de tous les jours.",
+            "Passez faire un [bilan auditif](/bilan-auditif-casablanca/), avec ou sans rendez-vous, au 106B rue Al Jounaid, Les Princesses, Maârif. Nous vous présentons deux ou trois appareils adaptés à votre audition, Phonak ou d'une autre marque, et vous les essayez dans votre vie de tous les jours.",
           ],
         },
       ],
@@ -259,7 +259,7 @@ export default [
       kicker: 'العلامات',
       title: 'أجهزة Phonak السمعية بالدار البيضاء: القابلة للشحن والأسعار · أوديوليك',
       description:
-        'أجهزة Phonak السمعية بالدار البيضاء: قابلة للشحن، بلوتوث، دقيقة. أسعار إرشادية بالمغرب من 5 000 درهم إلى بريميوم ابتداءً من 14 000 درهم للجهاز. فحص سمع مجاني لدى أوديوليك، حي الأميرات.',
+        'أجهزة Phonak السمعية بالدار البيضاء: قابلة للشحن، بلوتوث، دقيقة. أسعار إرشادية بالمغرب من 5 000 درهم إلى بريميوم ابتداءً من 14 000 درهم للجهاز. التجربة والمتابعة لدى أوديوليك.',
       h1: 'أجهزة Phonak السمعية بالدار البيضاء',
       lede:
         'Phonak من العلامات التي نعتمدها في أوديوليك. ما ينبغي معرفته عن العلامة وأجهزتها القابلة للشحن والأسعار المعمول بها في المركز.',
@@ -286,7 +286,7 @@ export default [
         {
           h2: 'تجربة جهاز Phonak بالدار البيضاء',
           p: [
-            'احجز موعدًا لـ[فحص سمع مجاني](/ar/bilan-auditif-casablanca/) في 106B زنقة الجنيد، حي الأميرات، بالمعاريف. نعرض عليك جهازين أو ثلاثة تناسب سمعك، من Phonak أو من علامة أخرى، وتجرّبها في حياتك اليومية.',
+            'تفضّل لإجراء [فحص السمع](/ar/bilan-auditif-casablanca/)، بموعد أو بدون موعد، في 106B زنقة الجنيد، حي الأميرات، بالمعاريف. نعرض عليك جهازين أو ثلاثة تناسب سمعك، من Phonak أو من علامة أخرى، وتجرّبها في حياتك اليومية.',
           ],
         },
       ],
@@ -314,7 +314,7 @@ export default [
       kicker: 'Brands',
       title: 'Phonak Hearing Aids in Casablanca: Rechargeable, Prices · AudioLik',
       description:
-        'Phonak hearing aids in Casablanca: rechargeable, Bluetooth, discreet. Guide prices in Morocco from MAD 5,000 to Premium from MAD 14,000 per device. Free hearing assessment at AudioLik, Les Princesses.',
+        'Phonak hearing aids in Casablanca: rechargeable, Bluetooth, discreet. Guide prices in Morocco from MAD 5,000 to Premium from MAD 14,000 per device. Trial and follow-up at AudioLik.',
       h1: 'Phonak hearing aids in Casablanca',
       lede:
         'Phonak is one of the brands AudioLik fits. What to know about the brand, its rechargeable devices and the prices at the centre.',
@@ -341,7 +341,7 @@ export default [
         {
           h2: 'Trying a Phonak in Casablanca',
           p: [
-            'Book a [free hearing assessment](/en/bilan-auditif-casablanca/) at 106B rue Al Jounaid, Les Princesses, Maârif. We show you two or three devices suited to your hearing, Phonak or another brand, and you try them in your everyday life.',
+            'Come in for a [hearing assessment](/en/bilan-auditif-casablanca/), with or without an appointment, at 106B rue Al Jounaid, Les Princesses, Maârif. We show you two or three devices suited to your hearing, Phonak or another brand, and you try them in your everyday life.',
           ],
         },
       ],
@@ -417,7 +417,7 @@ export default [
         {
           h2: 'Faire le point sur votre audition',
           p: [
-            "Comme les acouphènes accompagnent souvent une perte auditive, un [bilan auditif gratuit](/bilan-auditif-casablanca/) est un bon point de départ. Il se fait sur rendez-vous, aux Princesses, à Maârif. Si le bilan révèle un signe qui relève du médecin, nous vous orientons vers un ORL.",
+            "Comme les acouphènes accompagnent souvent une perte auditive, un [bilan auditif](/bilan-auditif-casablanca/) est un bon point de départ. Il se fait avec ou sans rendez-vous, aux Princesses, à Maârif. Si le bilan révèle un signe qui relève du médecin, nous vous orientons vers un ORL.",
           ],
         },
       ],
@@ -484,7 +484,7 @@ export default [
         {
           h2: 'تقييم سمعك',
           p: [
-            'لأن الطنين يرافق غالبًا ضعف السمع، فإن [فحص السمع المجاني](/ar/bilan-auditif-casablanca/) نقطة انطلاق جيدة. يتمّ بموعد مسبق، بحي الأميرات، بالمعاريف. وإذا كشف الفحص علامة من اختصاص الطبيب، نوجّهك إلى طبيب الأنف والأذن والحنجرة.',
+            'لأن الطنين يرافق غالبًا ضعف السمع، فإن [فحص السمع](/ar/bilan-auditif-casablanca/) نقطة انطلاق جيدة. يتمّ بموعد أو بدون موعد، بحي الأميرات، بالمعاريف. وإذا كشف الفحص علامة من اختصاص الطبيب، نوجّهك إلى طبيب الأنف والأذن والحنجرة.',
           ],
         },
       ],
@@ -551,7 +551,7 @@ export default [
         {
           h2: 'Checking your hearing',
           p: [
-            'Because tinnitus often comes with hearing loss, a [free hearing assessment](/en/bilan-auditif-casablanca/) is a good starting point. It is by appointment, in Les Princesses, Maârif. If the assessment shows a sign that needs a doctor, we refer you to an ENT.',
+            'Because tinnitus often comes with hearing loss, a [hearing assessment](/en/bilan-auditif-casablanca/) is a good starting point. You can come with or without an appointment, in Les Princesses, Maârif. If the assessment shows a sign that needs a doctor, we refer you to an ENT.',
           ],
         },
       ],
@@ -586,7 +586,7 @@ export default [
       kicker: 'S’orienter',
       title: 'ORL ou audioprothésiste à Maârif, Casablanca : qui consulter ? · AudioLik',
       description:
-        "ORL ou audioprothésiste : qui voir en premier quand on entend moins bien ? Rôle de chacun, situations d'urgence, et bilan auditif gratuit à Maârif, Casablanca, chez AudioLik.",
+        "ORL ou audioprothésiste : qui voir en premier quand on entend moins bien ? Rôle de chacun, situations d'urgence, et comment les deux travaillent ensemble. AudioLik, Maârif, Casablanca.",
       h1: 'ORL ou audioprothésiste : qui consulter en premier ?',
       lede:
         "Vous entendez moins bien et vous hésitez entre prendre rendez-vous chez un ORL ou chez un audioprothésiste. Les deux métiers sont complémentaires. Voici comment choisir, selon votre situation.",
@@ -614,7 +614,7 @@ export default [
         {
           h2: 'À Maârif, aux Princesses',
           p: [
-            "AudioLik est installé au 106B rue Al Jounaid, quartier Les Princesses, à Maârif. Le [bilan auditif](/bilan-auditif-casablanca/) y est gratuit, sur rendez-vous, et vous repartez avec vos résultats expliqués. Si nous observons un signe qui relève du médecin, nous vous le disons et vous orientons vers un ORL.",
+            "AudioLik est installé au 106B rue Al Jounaid, quartier Les Princesses, à Maârif. Le [bilan auditif](/bilan-auditif-casablanca/) s'y fait avec ou sans rendez-vous, et vous repartez avec vos résultats expliqués. Si nous observons un signe qui relève du médecin, nous vous le disons et vous orientons vers un ORL.",
           ],
         },
       ],
@@ -630,7 +630,7 @@ export default [
       ],
       related: [
         { slug: 'audioprothesiste-casablanca', label: 'Audioprothésiste à Casablanca' },
-        { slug: 'bilan-auditif-casablanca', label: 'Bilan auditif gratuit' },
+        { slug: 'bilan-auditif-casablanca', label: 'Le bilan auditif' },
         { slug: 'acouphenes', label: 'Acouphènes' },
       ],
     },
@@ -638,7 +638,7 @@ export default [
       kicker: 'التوجيه',
       title: 'طبيب الأنف والأذن والحنجرة أم أخصائي السمعيات بالمعاريف؟ · أوديوليك',
       description:
-        'طبيب الأنف والأذن والحنجرة أم أخصائي السمعيات: من تستشير أولًا حين يضعف سمعك؟ دور كل واحد، الحالات المستعجلة، وفحص سمع مجاني بالمعاريف، الدار البيضاء، لدى أوديوليك.',
+        'طبيب الأنف والأذن والحنجرة أم أخصائي السمعيات: من تستشير أولًا حين يضعف سمعك؟ دور كل واحد، الحالات المستعجلة، وكيف يعمل الاثنان معًا. أوديوليك، المعاريف، الدار البيضاء.',
       h1: 'طبيب الأنف والأذن والحنجرة أم أخصائي السمعيات: من تستشير أولًا؟',
       lede:
         'سمعك ضعف وتتردّد بين حجز موعد عند طبيب الأنف والأذن والحنجرة أو عند أخصائي السمعيات. المهنتان متكاملتان. إليك كيف تختار حسب حالتك.',
@@ -666,7 +666,7 @@ export default [
         {
           h2: 'بالمعاريف، حي الأميرات',
           p: [
-            'يوجد أوديوليك في 106B زنقة الجنيد، حي الأميرات، بالمعاريف. [فحص السمع](/ar/bilan-auditif-casablanca/) مجاني، بموعد مسبق، وتغادر ونتائجك مشروحة. وإذا لاحظنا علامة من اختصاص الطبيب، نخبرك ونوجّهك إليه.',
+            'يوجد أوديوليك في 106B زنقة الجنيد، حي الأميرات، بالمعاريف. [فحص السمع](/ar/bilan-auditif-casablanca/) يتمّ بموعد أو بدون موعد، وتغادر ونتائجك مشروحة. وإذا لاحظنا علامة من اختصاص الطبيب، نخبرك ونوجّهك إليه.',
           ],
         },
       ],
@@ -682,7 +682,7 @@ export default [
       ],
       related: [
         { slug: 'audioprothesiste-casablanca', label: 'أخصائي السمعيات بالدار البيضاء' },
-        { slug: 'bilan-auditif-casablanca', label: 'فحص سمع مجاني' },
+        { slug: 'bilan-auditif-casablanca', label: 'فحص السمع' },
         { slug: 'acouphenes', label: 'طنين الأذن' },
       ],
     },
@@ -690,7 +690,7 @@ export default [
       kicker: 'Finding your way',
       title: 'ENT or Hearing Aid Specialist in Maârif, Casablanca? · AudioLik',
       description:
-        'ENT doctor or hearing aid specialist: who to see first when your hearing drops? Each role, emergencies, and a free hearing assessment in Maârif, Casablanca, at AudioLik.',
+        'ENT doctor or hearing aid specialist: who to see first when your hearing drops? Each role, emergencies, and how the two work together. AudioLik, Maârif, Casablanca.',
       h1: 'ENT or hearing aid specialist: who to see first?',
       lede:
         'Your hearing has dropped and you are unsure whether to book an ENT doctor or a hearing aid specialist. The two professions work hand in hand. Here is how to choose, depending on your situation.',
@@ -718,7 +718,7 @@ export default [
         {
           h2: 'In Maârif, Les Princesses',
           p: [
-            'AudioLik is at 106B rue Al Jounaid, Les Princesses, Maârif. The [hearing assessment](/en/bilan-auditif-casablanca/) is free, by appointment, and you leave with your results explained. If we notice a sign that needs a doctor, we tell you and refer you to an ENT.',
+            'AudioLik is at 106B rue Al Jounaid, Les Princesses, Maârif. You can have a [hearing assessment](/en/bilan-auditif-casablanca/) with or without an appointment, and you leave with your results explained. If we notice a sign that needs a doctor, we tell you and refer you to an ENT.',
           ],
         },
       ],
@@ -734,7 +734,7 @@ export default [
       ],
       related: [
         { slug: 'audioprothesiste-casablanca', label: 'Hearing aid specialist in Casablanca' },
-        { slug: 'bilan-auditif-casablanca', label: 'Free hearing assessment' },
+        { slug: 'bilan-auditif-casablanca', label: 'Hearing assessment' },
         { slug: 'acouphenes', label: 'Tinnitus' },
       ],
     },
@@ -749,7 +749,7 @@ export default [
       kicker: 'Pour vos parents',
       title: 'Perte auditive des personnes âgées : signes et comment aider · AudioLik',
       description:
-        "Presbyacousie : les signes qu'un parent entend moins bien, comment lui en parler, et comment se passe un bilan auditif gratuit à Casablanca. AudioLik, Les Princesses.",
+        "Presbyacousie : les signes qu'un parent entend moins bien, comment lui en parler, et comment se passe un bilan auditif à Casablanca. AudioLik, Les Princesses.",
       h1: 'Perte auditive des personnes âgées : comment aider un parent',
       lede:
         "Votre père monte le son de la télévision, votre mère fait répéter au téléphone. Avec l'âge, l'audition baisse chez beaucoup de personnes, si doucement qu'elles ne s'en rendent pas compte. Voici comment le repérer et en parler.",
@@ -779,7 +779,7 @@ export default [
         {
           h2: 'Comment en parler, et venir ensemble',
           p: [
-            "Parlez des situations plutôt que de l'âge : « au téléphone, tu as du mal », plutôt que « tu deviens sourd ». Proposez un simple [test auditif en ligne](/test-auditif-en-ligne/) à faire ensemble, puis un [bilan auditif gratuit](/bilan-auditif-casablanca/) au centre, sans engagement.",
+            "Parlez des situations plutôt que de l'âge : « au téléphone, tu as du mal », plutôt que « tu deviens sourd ». Proposez un simple [test auditif en ligne](/test-auditif-en-ligne/) à faire ensemble, puis un [bilan auditif](/bilan-auditif-casablanca/) au centre, sans engagement.",
             "Au centre, aux Princesses, les proches sont les bienvenus. C'est même conseillé : à deux, on retient mieux les explications, et vous pouvez décrire les situations du quotidien.",
           ],
         },
@@ -800,7 +800,7 @@ export default [
       ],
       related: [
         { slug: 'perte-auditive', label: 'Comprendre la perte auditive' },
-        { slug: 'bilan-auditif-casablanca', label: 'Bilan auditif gratuit' },
+        { slug: 'bilan-auditif-casablanca', label: 'Le bilan auditif' },
         { slug: 'appareils-auditifs-casablanca', label: 'Prix des appareils auditifs' },
       ],
     },
@@ -808,7 +808,7 @@ export default [
       kicker: 'من أجل والديك',
       title: 'ضعف السمع عند كبار السن: العلامات وكيف تساعد والديك · أوديوليك',
       description:
-        'ضعف السمع المرتبط بالسن: علامات تدلّ على أن أحد والديك يسمع أقلّ، كيف تحدّثه في الأمر، وكيف يجري فحص السمع المجاني بالدار البيضاء. أوديوليك، حي الأميرات.',
+        'ضعف السمع المرتبط بالسن: علامات تدلّ على أن أحد والديك يسمع أقلّ، كيف تحدّثه في الأمر، وكيف يجري فحص السمع بالدار البيضاء. أوديوليك، حي الأميرات.',
       h1: 'ضعف السمع عند كبار السن: كيف تساعد أحد والديك',
       lede:
         'أبوك يرفع صوت التلفاز، وأمّك تطلب الإعادة في الهاتف. مع التقدّم في السن، يضعف السمع عند كثيرين، ببطء شديد لدرجة أنهم لا ينتبهون. إليك كيف تلاحظ ذلك وتتحدّث عنه.',
@@ -838,7 +838,7 @@ export default [
         {
           h2: 'كيف تتحدّث في الأمر، وتأتيان معًا',
           p: [
-            'تحدّث عن المواقف لا عن السن: «في الهاتف تجد صعوبة»، بدل «صرت لا تسمع». اقترح [اختبار سمع أونلاين](/ar/test-auditif-en-ligne/) تقومان به معًا، ثم [فحص سمع مجانيًّا](/ar/bilan-auditif-casablanca/) في المركز، دون أيّ التزام.',
+            'تحدّث عن المواقف لا عن السن: «في الهاتف تجد صعوبة»، بدل «صرت لا تسمع». اقترح [اختبار سمع أونلاين](/ar/test-auditif-en-ligne/) تقومان به معًا، ثم [فحص السمع](/ar/bilan-auditif-casablanca/) في المركز، دون أيّ التزام.',
             'في المركز، بحي الأميرات، مرافقة الأقارب مُرحّب بها، بل ننصح بها: الاثنان يحفظان الشرح أفضل، ويمكنك وصف مواقف الحياة اليومية.',
           ],
         },
@@ -859,7 +859,7 @@ export default [
       ],
       related: [
         { slug: 'perte-auditive', label: 'فهم ضعف السمع' },
-        { slug: 'bilan-auditif-casablanca', label: 'فحص سمع مجاني' },
+        { slug: 'bilan-auditif-casablanca', label: 'فحص السمع' },
         { slug: 'appareils-auditifs-casablanca', label: 'أسعار الأجهزة السمعية' },
       ],
     },
@@ -867,7 +867,7 @@ export default [
       kicker: 'For your parents',
       title: 'Hearing Loss in Older Adults: Signs and How to Help · AudioLik',
       description:
-        'Age-related hearing loss: signs a parent hears less well, how to talk about it, and how a free hearing assessment works in Casablanca. AudioLik, Les Princesses.',
+        'Age-related hearing loss: signs a parent hears less well, how to talk about it, and how a hearing assessment works in Casablanca. AudioLik, Les Princesses.',
       h1: 'Hearing loss in older adults: how to help a parent',
       lede:
         'Your father turns the TV up, your mother asks people to repeat on the phone. With age, hearing drops for many people, so slowly they do not notice. Here is how to spot it and talk about it.',
@@ -897,7 +897,7 @@ export default [
         {
           h2: 'How to raise it, and come together',
           p: [
-            'Talk about situations rather than age: "you struggle on the phone" rather than "you’re going deaf". Suggest a simple [online hearing test](/en/test-auditif-en-ligne/) to do together, then a [free hearing assessment](/en/bilan-auditif-casablanca/) at the centre, with no commitment.',
+            'Talk about situations rather than age: "you struggle on the phone" rather than "you’re going deaf". Suggest a simple [online hearing test](/en/test-auditif-en-ligne/) to do together, then a [hearing assessment](/en/bilan-auditif-casablanca/) at the centre, with no commitment.',
             'At the centre in Les Princesses, relatives are welcome. It is even advisable: two people remember explanations better, and you can describe everyday situations.',
           ],
         },
@@ -918,7 +918,7 @@ export default [
       ],
       related: [
         { slug: 'perte-auditive', label: 'Understanding hearing loss' },
-        { slug: 'bilan-auditif-casablanca', label: 'Free hearing assessment' },
+        { slug: 'bilan-auditif-casablanca', label: 'Hearing assessment' },
         { slug: 'appareils-auditifs-casablanca', label: 'Hearing aid prices' },
       ],
     },

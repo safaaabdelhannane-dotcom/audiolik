@@ -15,7 +15,7 @@
  *    dessiné à la main.
  */
 
-import { business as B, photos, brand, locales, SITE_URL } from './business.mjs';
+import { business as B, photos, brand, locales, SITE_URL, audiologistSchema } from './business.mjs';
 import { SPRITE, icon } from './icons.mjs';
 import { pages as SUBPAGES } from './pages.mjs';
 import { runtimeScripts } from './runtime-config.mjs';
@@ -162,13 +162,21 @@ export default function render(t, { alternates }) {
   const heading = esc(t.hero.title).replace(/\*([^*]+)\*/g, '<span class="accent">$1</span>');
 
   /* -- structured data ----------------------------------------------------- */
+  const sameAs = [B.social.instagram, B.social.facebook, B.social.linkedin, ...(B.listings || [])].filter(Boolean);
+  const amenityName = {
+    wheelchairAccessible: { fr: 'Accessible en fauteuil roulant', ar: 'ولوج الكراسي المتحركة', en: 'Wheelchair accessible' },
+    parking: { fr: 'Parking', ar: 'موقف سيارات', en: 'Parking' },
+  };
+  const amenities = Object.entries(B.amenities || {}).filter(([, on]) => on)
+    .map(([k]) => ({ '@type': 'LocationFeatureSpecification', name: amenityName[k][t.code], value: true }));
+  const audiologist = audiologistSchema(t.code);
   const org = {
     '@type': ['MedicalBusiness', 'Store'],
     '@id': `${SITE_URL}/#organization`,
     name: B.name,
     ...(B.alternateName ? { alternateName: B.alternateName } : {}),
     description: t.meta.description,
-    url: canonical,
+    url: `${SITE_URL}/`,
     image: ogImage,
     logo: `${SITE_URL}/assets/img/logo-audiolik.svg`,
     telephone: B.phoneE164,
@@ -185,6 +193,12 @@ export default function render(t, { alternates }) {
     areaServed: { '@type': 'City', name: B.city },
     availableLanguage: ['fr', 'ar', 'en'],
     currenciesAccepted: 'MAD',
+    ...(B.priceRange ? { priceRange: B.priceRange } : {}),
+    ...(B.founded ? { foundingDate: B.founded } : {}),
+    ...(B.brands.length ? { brand: B.brands.map((name) => ({ '@type': 'Brand', name })) } : {}),
+    ...(sameAs.length ? { sameAs } : {}),
+    ...(amenities.length ? { amenityFeature: amenities } : {}),
+    ...(audiologist ? { employee: audiologist } : {}),
   };
 
   const jsonLd = {
@@ -305,11 +319,11 @@ ${alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${
 <meta name="geo.position" content="${B.geo.lat};${B.geo.lng}">
 <meta name="ICBM" content="${B.geo.lat}, ${B.geo.lng}">
 
-<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
-<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png?v=3">
-<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png?v=3">
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png?v=3">
-<link rel="apple-touch-icon" href="${up}assets/img/apple-touch-icon.png?v=3">
+<link rel="icon" href="/favicon.ico?v=4" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png?v=4">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png?v=4">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png?v=4">
+<link rel="apple-touch-icon" href="${up}assets/img/apple-touch-icon.png?v=4">
 
 <!-- Self-hosted: zero third-party requests, so no visitor IP leaves for a font CDN. -->
 <link rel="preload" as="font" type="font/woff2" href="${up}assets/fonts/gabarito-600-latin.woff2" crossorigin>
@@ -385,7 +399,7 @@ ${SPRITE}
         <p class="status" id="open-status" data-open="false">
           <span class="status__dot"></span><span id="open-status-text"></span>
         </p>
-        <h1>${heading}</h1>
+        <h1>${t.hero.kicker ? `<span class="kicker hero__kicker">${esc(t.hero.kicker)}</span> ` : ''}${heading}</h1>
         <p class="hero__lede">${esc(t.hero.lede)}</p>
         <div class="hero__cta">
           <a class="btn btn--stack" href="tel:${B.phoneE164}">

@@ -52,11 +52,11 @@ export const batchD = [
         {
           h2: 'Après le test',
           p: [
-            "Si le résultat vous invite à consulter, la suite est un bilan auditif au centre : un entretien, un examen du conduit, une audiométrie tonale puis vocale, et une explication des courbes obtenues. Ce bilan est gratuit et sans engagement — on peut très bien en ressortir avec « votre audition va bien, revenez dans deux ans ».",
+            "Si le résultat vous invite à consulter, la suite est un bilan auditif au centre : un entretien, un examen du conduit, une audiométrie tonale puis vocale, et une explication des courbes obtenues. Ce bilan est sans engagement — on peut très bien en ressortir avec « votre audition va bien, revenez dans deux ans ».",
             "Vous pouvez prendre rendez-vous par téléphone ou par WhatsApp. Précisez si vous préférez être reçu en arabe, en français ou en anglais.",
           ],
           list: [
-            'Bilan auditif gratuit, sur rendez-vous',
+            'Bilan auditif au centre, avec ou sans rendez-vous',
             "Résultats expliqués le jour même, courbes à l'appui",
             'Aucun engagement à la sortie',
             'Accueil en arabe, français et anglais',
@@ -66,7 +66,7 @@ export const batchD = [
       faq: [
         {
           q: 'Le test en ligne est-il vraiment gratuit ?',
-          a: "Oui, et sans inscription : rien à créer, aucune adresse à laisser. Le bilan auditif au centre est lui aussi gratuit, sur rendez-vous.",
+          a: "Oui, et sans inscription : rien à créer, aucune adresse à laisser.",
         },
         {
           q: 'Faut-il un casque pour le faire ?',
@@ -114,11 +114,11 @@ export const batchD = [
         {
           h2: 'بعد الاختبار',
           p: [
-            'إذا دعاك النتيجة إلى الاستشارة، فالخطوة التالية هي فحص السمع داخل المركز: حديث، فحص للقناة، قياس سمع نغمي ثم كلامي، وشرح للمنحنيات المحصّل عليها. هذا الفحص مجاني ودون التزام — ومن الممكن جدًا أن تخرج منه بجملة «سمعك بخير، عد بعد سنتين».',
+            'إذا دعاك النتيجة إلى الاستشارة، فالخطوة التالية هي فحص السمع داخل المركز: حديث، فحص للقناة، قياس سمع نغمي ثم كلامي، وشرح للمنحنيات المحصّل عليها. هذا الفحص دون التزام — ومن الممكن جدًا أن تخرج منه بجملة «سمعك بخير، عد بعد سنتين».',
             'يمكنك أخذ موعد عبر الهاتف أو واتساب. أشر إلى اللغة التي تفضّلها: العربية أو الفرنسية أو الإنجليزية.',
           ],
           list: [
-            'فحص سمع مجاني، بموعد مسبق',
+            'فحص السمع في المركز، بموعد أو بدون موعد',
             'شرح النتائج في اليوم نفسه، بالمنحنيات',
             'دون أي التزام عند الخروج',
             'استقبال بالعربية والفرنسية والإنجليزية',
@@ -128,7 +128,7 @@ export const batchD = [
       faq: [
         {
           q: 'هل الاختبار أونلاين مجاني فعلًا؟',
-          a: 'نعم، ودون تسجيل: لا حساب تنشئه ولا بريدًا تتركه. وفحص السمع داخل المركز مجاني أيضًا، بموعد مسبق.',
+          a: 'نعم، ودون تسجيل: لا حساب تنشئه ولا بريدًا تتركه.',
         },
         {
           q: 'هل أحتاج سمّاعات رأس لإجرائه؟',
@@ -176,11 +176,11 @@ export const batchD = [
         {
           h2: 'After the test',
           p: [
-            "If the result suggests you should have it looked at, the next step is a hearing assessment at the centre: a conversation, an examination of the ear canal, pure-tone then speech audiometry, and an explanation of the curves. That assessment is free and carries no obligation — plenty of people leave with “your hearing is fine, come back in two years”.",
+            "If the result suggests you should have it looked at, the next step is a hearing assessment at the centre: a conversation, an examination of the ear canal, pure-tone then speech audiometry, and an explanation of the curves. That assessment carries no obligation — plenty of people leave with “your hearing is fine, come back in two years”.",
             'You can book by phone or on WhatsApp. Say which language you would rather be seen in: Arabic, French or English.',
           ],
           list: [
-            'Free hearing assessment, by appointment',
+            'Hearing assessment at the centre, with or without an appointment',
             'Results explained the same day, curves in hand',
             'No obligation afterwards',
             'Arabic, French and English spoken',
@@ -190,7 +190,7 @@ export const batchD = [
       faq: [
         {
           q: 'Is the online test really free?',
-          a: 'Yes, and there is no sign-up: no account to create, no address to leave. The hearing assessment at the centre is free too, by appointment.',
+          a: 'Yes, and there is no sign-up: no account to create, no address to leave.',
         },
         {
           q: 'Do I need headphones?',

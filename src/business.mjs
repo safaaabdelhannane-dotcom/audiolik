@@ -13,7 +13,7 @@ export const business = {
   name: 'AudioLik',
   alternateName: 'Audiolik',        // orthographe de la fiche Google
   legalName: null,
-  founded: null,
+  founded: '2026',                 // ouverture du centre (confirmé, 10/2026)
 
   street: '106B Rue Al Jounaid',
   district: 'Les Princesses, Maârif',
@@ -46,7 +46,25 @@ export const business = {
     'https://www.google.com/maps?q=33.5781357,-7.6489239&z=17&hl=fr&output=embed',
   mapsReviewUrl: null,
 
-  social: { facebook: null, instagram: null, linkedin: null },
+  social: { facebook: null, instagram: 'https://www.instagram.com/audiolik/', linkedin: null },
+
+  /* Fiches officielles hors site (même nom, adresse, téléphone). Servent de
+     `sameAs` dans les données structurées : Google et les assistants IA
+     relient ainsi le site, la fiche Google et l'annuaire à la même entreprise. */
+  listings: [
+    'https://www.telecontact.ma/annonceur/audiolik/9062799/casablanca.php',
+  ],
+
+  /* L'audioprothésiste du centre (nom et diplôme à afficher, sans photo —
+     demande du centre, 09/2026). */
+  audiologist: {
+    name: 'Safaa Soulimani Abdelhannane',
+    since: '2023',
+    trainedIn: 'Madrid',
+  },
+
+  // Équipements confirmés par le centre (09/2026).
+  amenities: { wheelchairAccessible: true, parking: true },
 
   hours: [
     { day: 'monday',    slots: [['09:00', '13:00'], ['14:30', '18:30']] },
@@ -60,14 +78,17 @@ export const business = {
   timezone: 'Africa/Casablanca',
 
   claims: {
-    freeHearingTest: true,   // confirme par le centre (09/2026)
-    homeTrial: false,
-    unlimitedFollowUp: false,
-    childrenFitting: false,
-    soundproofBooth: false,
+    walkIn: true,            // accueil avec ou sans rendez-vous (confirmé, 09/2026)
+    // Le bilan reste gratuit, mais le centre ne veut plus le mettre en avant :
+    // les ORL n'apprécient pas (consigne du 09/2026, appliquée le 12/10/2026).
+    freeHearingTest: false,
+    homeTrial: true,         // essai avant achat (confirmé, 09/2026)
+    unlimitedFollowUp: true, // suivi illimité (confirmé, 09/2026)
+    childrenFitting: false,  // formation pédiatrique en cours : ne pas afficher
+    soundproofBooth: true,   // cabine audiométrique insonorisée (confirmé, 09/2026)
   },
 
-  priceRange: null,
+  priceRange: 'À partir de 5 000 MAD par appareil',
   // Marques avec lesquelles le centre appareille (confirmé par le centre, 09/2026).
   brands: ['Signia', 'Phonak'],
   languages: ['fr', 'ar', 'en'],
@@ -188,6 +209,28 @@ export const locales = [
   { code: 'ar', dir: 'rtl', label: 'العربية',  short: 'ع',  path: '/ar/', htmlLang: 'ar-MA' },
   { code: 'en', dir: 'ltr', label: 'English',  short: 'EN', path: '/en/', htmlLang: 'en' },
 ];
+
+/** Fiche schema.org de l'audioprothésiste (Person), réutilisée par l'accueil
+ *  (employee de l'entreprise) et par la page « Audioprothésiste ». */
+export function audiologistSchema(lang = 'fr') {
+  const A = business.audiologist;
+  if (!A || !A.name) return null;
+  const jobTitle = { fr: 'Audioprothésiste', ar: 'أخصائية السمعيات', en: 'Hearing aid specialist' }[lang];
+  const description = {
+    fr: `Audioprothésiste diplômée d'une université de ${A.trainedIn}, en exercice depuis ${A.since}.`,
+    ar: `أخصائية سمعيات حاصلة على شهادتها من جامعة في ${A.trainedIn === 'Madrid' ? 'مدريد' : A.trainedIn}، تمارس المهنة منذ ${A.since}.`,
+    en: `Hearing aid specialist who graduated from a university in ${A.trainedIn}, practising since ${A.since}.`,
+  }[lang];
+  return {
+    '@type': 'Person',
+    '@id': `${SITE_URL}/#audioprothesiste`,
+    name: A.name,
+    jobTitle,
+    description,
+    worksFor: { '@id': `${SITE_URL}/#organization` },
+    knowsLanguage: ['fr', 'ar', 'en'],
+  };
+}
 
 /** Renseignés mais faux : indétectables par pendingFields(), donc listés ici.
  *  Vide depuis le 22/07/2026 : WhatsApp, email et domaine sont les vrais. */

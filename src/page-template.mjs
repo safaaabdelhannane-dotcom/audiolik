@@ -14,7 +14,7 @@
  *   en/<slug>/index.html     English
  */
 
-import { business as B, brand, locales, SITE_URL } from './business.mjs';
+import { business as B, brand, locales, SITE_URL, audiologistSchema } from './business.mjs';
 import { SPRITE, icon } from './icons.mjs';
 import { DEVICE_SVG } from './device-art.mjs';
 import { IMG, alt as imgAlt, PAGE_IMAGES, CARD_PHOTOS } from './page-images.mjs';
@@ -40,6 +40,8 @@ const waLink = (prefill) =>
  * @param {object} t      le module de contenu de la langue (fr/ar/en) — en-tête, pied de page
  * @param {object} opts   { lang, slug, widget } — widget: 'quiz' insère le test auditif
  */
+const PAGES_WITH_AUDIOLOGIST = ['audioprothesiste-casablanca'];
+
 export default function renderPage(page, t, { lang, slug, widget = null }) {
   const loc = locales.find((l) => l.code === lang);
   const rtl = loc.dir === 'rtl';
@@ -77,6 +79,11 @@ export default function renderPage(page, t, { lang, slug, widget = null }) {
       about: { '@id': `${SITE_URL}/#organization` },
     },
   ];
+  // Pages qui présentent l'audioprothésiste : on décrit la personne (E-E-A-T).
+  if (PAGES_WITH_AUDIOLOGIST.includes(slug)) {
+    const person = audiologistSchema(lang);
+    if (person) graph.push(person);
+  }
   if (page.faq && page.faq.length) {
     graph.push({
       '@type': 'FAQPage',
@@ -298,11 +305,11 @@ ${alternates}
 <meta name="geo.position" content="${B.geo.lat};${B.geo.lng}">
 <meta name="ICBM" content="${B.geo.lat}, ${B.geo.lng}">
 
-<link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48">
-<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png?v=3">
-<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png?v=3">
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png?v=3">
-<link rel="apple-touch-icon" href="${up}assets/img/apple-touch-icon.png?v=3">
+<link rel="icon" href="/favicon.ico?v=4" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png?v=4">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png?v=4">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png?v=4">
+<link rel="apple-touch-icon" href="${up}assets/img/apple-touch-icon.png?v=4">
 
 <link rel="preload" as="font" type="font/woff2" href="${up}assets/fonts/gabarito-600-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="${up}assets/fonts/figtree-400-latin.woff2" crossorigin>
