@@ -373,6 +373,7 @@ export default {
     legal: [
       "AudioLik est un centre de correction auditive. Les informations publiées sur ce site sont d'ordre général et ne constituent pas un avis médical.",
       "Seul un bilan réalisé au centre, complété si nécessaire par une consultation ORL, permet d'évaluer votre audition.",
+      "AudioLik® est une marque enregistrée à l'OMPIC sous le n° 288296, propriété de la société Audisphere SARL.",
     ],
     rights: 'Tous droits réservés.',
     backToTop: 'Haut de page',
