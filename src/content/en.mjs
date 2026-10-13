@@ -352,7 +352,7 @@ export default {
     legal: [
       'AudioLik is a hearing correction centre. The information published on this site is general in nature and does not constitute medical advice.',
       'Only an assessment carried out at the centre, together with an ENT consultation where necessary, can evaluate your hearing.',
-      'AudioLik® is a trademark registered with OMPIC (Moroccan Office of Industrial and Commercial Property) under No. 288296, owned by Audisphere SARL.',
+      'AudioLik® is a trademark registered with OMPIC (Moroccan Office of Industrial and Commercial Property) under No. 288296.',
     ],
     rights: 'All rights reserved.',
     backToTop: 'Back to top',
