@@ -46,7 +46,7 @@ export default [
         {
           h2: 'Prix d’un appareil auditif Signia au Maroc',
           p: [
-            "Le prix dépend du niveau technologique plus que de la marque. Chez AudioLik, les repères sont les mêmes pour toutes les marques, par appareil : gamme *Essentiel* à partir de 5 000 DH, *Confort* de 7 000 à 12 000 DH, *Premium* à partir de 14 000 DH. Le détail est sur la [carte tarifaire](/appareils-auditifs-casablanca/#prix).",
+            "Le prix dépend du niveau technologique plus que de la marque. Chez AudioLik, les repères sont les mêmes pour toutes les marques, par appareil : gamme *Essentiel* à partir de 5 000 DH, *Confort* de 7 000 à 12 000 DH, *Premium* à partir de 14 000 DH. Le détail est sur la [carte tarifaire](/prix-appareil-auditif-maroc/).",
             "Le modèle précis est choisi avec vous après le bilan. Vous recevez un devis détaillé, et rien n'est signé le jour même.",
           ],
         },
@@ -104,7 +104,7 @@ export default [
         {
           h2: 'سعر جهاز Signia السمعي بالمغرب',
           p: [
-            'يتوقّف السعر على المستوى التقني أكثر من العلامة. في أوديوليك، المراجع نفسها لكل العلامات، للجهاز الواحد: الفئة *الأساسية* ابتداءً من 5 000 درهم، وفئة *الراحة* من 7 000 إلى 12 000 درهم، وفئة *بريميوم* ابتداءً من 14 000 درهم. التفاصيل في [جدول الأسعار](/ar/appareils-auditifs-casablanca/#prix).',
+            'يتوقّف السعر على المستوى التقني أكثر من العلامة. في أوديوليك، المراجع نفسها لكل العلامات، للجهاز الواحد: الفئة *الأساسية* ابتداءً من 5 000 درهم، وفئة *الراحة* من 7 000 إلى 12 000 درهم، وفئة *بريميوم* ابتداءً من 14 000 درهم. التفاصيل في [جدول الأسعار](/ar/prix-appareil-auditif-maroc/).',
             'يُختار الطراز الدقيق معك بعد الفحص. تتسلّم عرض سعر مفصّلًا، ولا توقيع في اليوم نفسه.',
           ],
         },
@@ -162,7 +162,7 @@ export default [
         {
           h2: 'Signia hearing aid prices in Morocco',
           p: [
-            'The price depends on the technology level more than the brand. At AudioLik the guide prices are the same for every brand, per device: *Essential* from MAD 5,000, *Comfort* MAD 7,000 to 12,000, *Premium* from MAD 14,000. Details are on the [price list](/en/appareils-auditifs-casablanca/#prix).',
+            'The price depends on the technology level more than the brand. At AudioLik the guide prices are the same for every brand, per device: *Essential* from MAD 5,000, *Comfort* MAD 7,000 to 12,000, *Premium* from MAD 14,000. Details are on the [price list](/en/prix-appareil-auditif-maroc/).',
             'The exact model is chosen with you after the assessment. You receive a detailed quote, and nothing is signed on the day.',
           ],
         },
@@ -224,7 +224,7 @@ export default [
         {
           h2: 'Prix d’un appareil auditif Phonak au Maroc',
           p: [
-            "Chez AudioLik, le prix suit le niveau technologique, quelle que soit la marque, par appareil : *Essentiel* à partir de 5 000 DH, *Confort* de 7 000 à 12 000 DH, *Premium* à partir de 14 000 DH. Les modèles rechargeables se trouvent à partir de la gamme Confort, selon le modèle. Le détail est sur la [carte tarifaire](/appareils-auditifs-casablanca/#prix).",
+            "Chez AudioLik, le prix suit le niveau technologique, quelle que soit la marque, par appareil : *Essentiel* à partir de 5 000 DH, *Confort* de 7 000 à 12 000 DH, *Premium* à partir de 14 000 DH. Les modèles rechargeables se trouvent à partir de la gamme Confort, selon le modèle. Le détail est sur la [carte tarifaire](/prix-appareil-auditif-maroc/).",
             "Le modèle précis est choisi après le bilan, avec un devis détaillé. Rien n'est signé le jour même.",
           ],
         },
@@ -279,7 +279,7 @@ export default [
         {
           h2: 'سعر جهاز Phonak السمعي بالمغرب',
           p: [
-            'في أوديوليك، يتبع السعر المستوى التقني أيًّا كانت العلامة، للجهاز الواحد: *الأساسية* ابتداءً من 5 000 درهم، *الراحة* من 7 000 إلى 12 000 درهم، *بريميوم* ابتداءً من 14 000 درهم. الطرازات القابلة للشحن متوفّرة ابتداءً من فئة الراحة، حسب الطراز. التفاصيل في [جدول الأسعار](/ar/appareils-auditifs-casablanca/#prix).',
+            'في أوديوليك، يتبع السعر المستوى التقني أيًّا كانت العلامة، للجهاز الواحد: *الأساسية* ابتداءً من 5 000 درهم، *الراحة* من 7 000 إلى 12 000 درهم، *بريميوم* ابتداءً من 14 000 درهم. الطرازات القابلة للشحن متوفّرة ابتداءً من فئة الراحة، حسب الطراز. التفاصيل في [جدول الأسعار](/ar/prix-appareil-auditif-maroc/).',
             'يُختار الطراز الدقيق بعد الفحص، مع عرض سعر مفصّل. ولا توقيع في اليوم نفسه.',
           ],
         },
@@ -334,7 +334,7 @@ export default [
         {
           h2: 'Phonak hearing aid prices in Morocco',
           p: [
-            'At AudioLik the price follows the technology level, whatever the brand, per device: *Essential* from MAD 5,000, *Comfort* MAD 7,000 to 12,000, *Premium* from MAD 14,000. Rechargeable models start from the Comfort range, depending on the model. Details are on the [price list](/en/appareils-auditifs-casablanca/#prix).',
+            'At AudioLik the price follows the technology level, whatever the brand, per device: *Essential* from MAD 5,000, *Comfort* MAD 7,000 to 12,000, *Premium* from MAD 14,000. Rechargeable models start from the Comfort range, depending on the model. Details are on the [price list](/en/prix-appareil-auditif-maroc/).',
             'The exact model is chosen after the assessment, with a detailed quote. Nothing is signed on the day.',
           ],
         },
@@ -795,7 +795,7 @@ export default [
         },
         {
           q: 'Combien coûte un appareil auditif pour une personne âgée ?',
-          a: "Le prix ne dépend pas de l'âge mais du niveau technologique : par appareil, Essentiel à partir de 5 000 DH, Confort de 7 000 à 12 000 DH, Premium à partir de 14 000 DH. Voir la [carte tarifaire](/appareils-auditifs-casablanca/#prix).",
+          a: "Le prix ne dépend pas de l'âge mais du niveau technologique : par appareil, Essentiel à partir de 5 000 DH, Confort de 7 000 à 12 000 DH, Premium à partir de 14 000 DH. Voir la [carte tarifaire](/prix-appareil-auditif-maroc/).",
         },
       ],
       related: [
@@ -854,7 +854,7 @@ export default [
         },
         {
           q: 'كم يكلّف الجهاز السمعي لكبار السن؟',
-          a: 'السعر لا يتوقّف على السن بل على المستوى التقني: للجهاز الواحد، الأساسية ابتداءً من 5 000 درهم، الراحة من 7 000 إلى 12 000 درهم، بريميوم ابتداءً من 14 000 درهم. انظر [جدول الأسعار](/ar/appareils-auditifs-casablanca/#prix).',
+          a: 'السعر لا يتوقّف على السن بل على المستوى التقني: للجهاز الواحد، الأساسية ابتداءً من 5 000 درهم، الراحة من 7 000 إلى 12 000 درهم، بريميوم ابتداءً من 14 000 درهم. انظر [جدول الأسعار](/ar/prix-appareil-auditif-maroc/).',
         },
       ],
       related: [
@@ -913,7 +913,7 @@ export default [
         },
         {
           q: 'How much does a hearing aid cost for an older person?',
-          a: 'The price depends on the technology level, not age: per device, Essential from MAD 5,000, Comfort MAD 7,000 to 12,000, Premium from MAD 14,000. See the [price list](/en/appareils-auditifs-casablanca/#prix).',
+          a: 'The price depends on the technology level, not age: per device, Essential from MAD 5,000, Comfort MAD 7,000 to 12,000, Premium from MAD 14,000. See the [price list](/en/prix-appareil-auditif-maroc/).',
         },
       ],
       related: [
