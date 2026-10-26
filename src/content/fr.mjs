@@ -30,7 +30,7 @@ export default {
       { href: '#test', label: 'Test en ligne' },
       { href: '#parcours', label: 'Le parcours' },
       { href: '#solutions', label: 'Nos solutions' },
-      { href: 'appareils-auditifs-casablanca/#prix', label: 'Tarifs' },
+      { href: 'prix-appareil-auditif-maroc/', label: 'Tarifs' },
       { href: '#centre', label: 'Le centre' },
     ],
     cta: 'Rendez-vous',
