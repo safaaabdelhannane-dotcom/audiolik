@@ -84,7 +84,7 @@ export const business = {
     freeHearingTest: false,
     homeTrial: true,         // essai avant achat (confirmé, 09/2026)
     unlimitedFollowUp: true, // suivi illimité (confirmé, 09/2026)
-    childrenFitting: false,  // formation pédiatrique en cours : ne pas afficher
+    childrenFitting: true,  // confirmé par le centre (26/10/2026)
     soundproofBooth: true,   // cabine audiométrique insonorisée (confirmé, 09/2026)
   },
 
