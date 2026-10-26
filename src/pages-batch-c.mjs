@@ -36,7 +36,7 @@ export default [
         {
           h2: "Prix d’un appareil auditif invisible au Maroc",
           p: [
-            "Ce qui fait le prix, c'est d'abord le niveau technologique, pas la seule discrétion. Chez AudioLik, les repères sont donnés par appareil : Essentiel à partir de 5 000 DH, Confort de 7 000 à 12 000 DH, Premium à partir de 14 000 DH — voir la [carte tarifaire](/appareils-auditifs-casablanca/#prix).",
+            "Ce qui fait le prix, c'est d'abord le niveau technologique, pas la seule discrétion. Chez AudioLik, les repères sont donnés par appareil : Essentiel à partir de 5 000 DH, Confort de 7 000 à 12 000 DH, Premium à partir de 14 000 DH — voir la [carte tarifaire](/prix-appareil-auditif-maroc/).",
             "Un intra-auriculaire sur mesure demande une prise d'empreinte, et tous les conduits ne s'y prêtent pas : c'est le bilan qui le dit. Le prix exact du modèle retenu figure sur votre devis.",
           ],
         },
@@ -90,7 +90,7 @@ export default [
         {
           h2: "سعر الجهاز السمعي غير المرئي بالمغرب",
           p: [
-            "ما يحدّد السعر هو المستوى التقني أوّلًا، لا الخفاء وحده. في أوديوليك، المراجع للجهاز الواحد: الأساسية ابتداءً من 5 000 درهم، الراحة من 7 000 إلى 12 000 درهم، بريميوم ابتداءً من 14 000 درهم — انظر [جدول الأسعار](/ar/appareils-auditifs-casablanca/#prix).",
+            "ما يحدّد السعر هو المستوى التقني أوّلًا، لا الخفاء وحده. في أوديوليك، المراجع للجهاز الواحد: الأساسية ابتداءً من 5 000 درهم، الراحة من 7 000 إلى 12 000 درهم، بريميوم ابتداءً من 14 000 درهم — انظر [جدول الأسعار](/ar/prix-appareil-auditif-maroc/).",
             "الجهاز داخل الأذن على المقاس يتطلّب أخذ بصمة، وليست كل القنوات مناسبة له: الفحص هو الذي يحدّد ذلك. والسعر الدقيق للطراز المختار يُذكر في عرض السعر.",
           ],
         },
@@ -144,7 +144,7 @@ export default [
         {
           h2: "Invisible hearing aid prices in Morocco",
           p: [
-            "What sets the price is first the technology level, not discretion alone. At AudioLik, guide prices are per device: Essential from MAD 5,000, Comfort MAD 7,000 to 12,000, Premium from MAD 14,000 — see the [price list](/en/appareils-auditifs-casablanca/#prix).",
+            "What sets the price is first the technology level, not discretion alone. At AudioLik, guide prices are per device: Essential from MAD 5,000, Comfort MAD 7,000 to 12,000, Premium from MAD 14,000 — see the [price list](/en/prix-appareil-auditif-maroc/).",
             "A custom in-the-ear device needs an ear impression, and not every ear canal suits one: the assessment tells. The exact price of the chosen model is on your quote.",
           ],
         },
@@ -346,7 +346,7 @@ export default [
           h2: "Prix d’un appareil auditif rechargeable au Maroc",
           p: [
             "Chez AudioLik, les appareils rechargeables se trouvent à partir de la gamme Confort (7 000 à 12 000 DH par appareil) et en Premium (à partir de 14 000 DH), selon le modèle. À niveau égal, un rechargeable coûte un peu plus cher à l'achat, mais vous n'achetez plus de piles.",
-            "Le détail est sur la [carte tarifaire](/appareils-auditifs-casablanca/#prix), et nos pages [Phonak](/appareils-auditifs-phonak/) et [Signia](/appareils-auditifs-signia/) présentent les deux marques avec lesquelles nous appareillons.",
+            "Le détail est sur la [carte tarifaire](/prix-appareil-auditif-maroc/), et nos pages [Phonak](/appareils-auditifs-phonak/) et [Signia](/appareils-auditifs-signia/) présentent les deux marques avec lesquelles nous appareillons.",
           ],
         },
       ],
@@ -399,7 +399,7 @@ export default [
           h2: "سعر الجهاز السمعي القابل للشحن بالمغرب",
           p: [
             "في أوديوليك، الأجهزة القابلة للشحن متوفّرة ابتداءً من فئة الراحة (7 000 إلى 12 000 درهم للجهاز) وفي فئة بريميوم (ابتداءً من 14 000 درهم)، حسب الطراز. عند المستوى نفسه، الجهاز القابل للشحن أغلى قليلًا عند الشراء، لكنك لا تشتري البطاريات بعد ذلك.",
-            "التفاصيل في [جدول الأسعار](/ar/appareils-auditifs-casablanca/#prix)، وصفحتا [Phonak](/ar/appareils-auditifs-phonak/) و[Signia](/ar/appareils-auditifs-signia/) تعرّفان بالعلامتين اللتين نعتمدهما.",
+            "التفاصيل في [جدول الأسعار](/ar/prix-appareil-auditif-maroc/)، وصفحتا [Phonak](/ar/appareils-auditifs-phonak/) و[Signia](/ar/appareils-auditifs-signia/) تعرّفان بالعلامتين اللتين نعتمدهما.",
           ],
         },
       ],
@@ -452,7 +452,7 @@ export default [
           h2: "Rechargeable hearing aid prices in Morocco",
           p: [
             "At AudioLik, rechargeable devices start from the Comfort range (MAD 7,000 to 12,000 per device) and are available in Premium (from MAD 14,000), depending on the model. At the same level, a rechargeable costs a little more to buy, but you no longer buy batteries.",
-            "Details are on the [price list](/en/appareils-auditifs-casablanca/#prix), and our [Phonak](/en/appareils-auditifs-phonak/) and [Signia](/en/appareils-auditifs-signia/) pages present the two brands we fit.",
+            "Details are on the [price list](/en/prix-appareil-auditif-maroc/), and our [Phonak](/en/appareils-auditifs-phonak/) and [Signia](/en/appareils-auditifs-signia/) pages present the two brands we fit.",
           ],
         },
       ],
