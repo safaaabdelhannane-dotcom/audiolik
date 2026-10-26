@@ -34,6 +34,7 @@ import batchE from './pages-batch-e.mjs';
 import batchF from './pages-batch-f.mjs';
 import batchG from './pages-batch-g.mjs';
 import batchH from './pages-batch-h.mjs';
+import batchI from './pages-batch-i.mjs';
 
 const core = [
   /* ======================================================================
@@ -244,6 +245,6 @@ const core = [
   },
 ];
 
-export const pages = [...core, ...batchA, ...batchB, ...batchC, ...batchD, ...batchE, ...batchF, ...batchG, ...batchH];
+export const pages = [...core, ...batchA, ...batchB, ...batchC, ...batchD, ...batchE, ...batchF, ...batchG, ...batchH, ...batchI];
 
 export default pages;
