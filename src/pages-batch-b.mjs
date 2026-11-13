@@ -563,7 +563,7 @@ export default [
     slug: 'perte-auditive',
     fr: {
       kicker: 'Comprendre',
-      title: "Perte auditive : signes, causes et quoi faire · AudioLik Casablanca",
+      title: "Perte auditive : signes, causes et quoi faire · AudioLik",
       description:
         "Comment reconnaître une baisse d'audition, pourquoi elle passe inaperçue, ce qu'on peut faire et quand consulter. Expliqué simplement par AudioLik, Casablanca.",
       h1: 'Comprendre la perte auditive',
