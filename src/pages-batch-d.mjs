@@ -28,7 +28,7 @@ export const batchD = [
     widget: 'quiz',
     fr: {
       kicker: 'Test en ligne',
-      title: 'Test auditif en ligne gratuit (3 min) · Test d’audition · AudioLik',
+      title: 'Test auditif en ligne gratuit (3 min) · AudioLik Casablanca',
       description:
         "Test auditif en ligne gratuit : un test d'audition en trois minutes, sans inscription. Six situations du quotidien pour savoir si un bilan auditif s'impose. AudioLik, Casablanca, Les Princesses (Maârif).",
       h1: 'Test auditif en ligne',
@@ -225,7 +225,7 @@ export const batchD = [
     slug: 'remboursement-appareils-auditifs-maroc',
     fr: {
       kicker: 'Prise en charge',
-      title: 'Remboursement appareil auditif au Maroc : CNSS, CNOPS, AMO · AudioLik',
+      title: 'Remboursement appareil auditif au Maroc : CNSS, CNOPS, AMO',
       description:
         "CNSS, CNOPS, AMO, FAR, mutuelle d'entreprise : comment se monte un dossier de prise en charge pour un appareil auditif au Maroc, quelles pièces réunir et dans quel ordre. AudioLik, Casablanca.",
       h1: 'Remboursement des appareils auditifs au Maroc',
@@ -309,7 +309,7 @@ export const batchD = [
 
     ar: {
       kicker: 'التغطية الصحية',
-      title: 'استرجاع مصاريف السماعات الطبية بالمغرب: CNSS وCNOPS وAMO · AudioLik',
+      title: 'استرجاع مصاريف السماعات الطبية بالمغرب: CNSS وCNOPS وAMO',
       description:
         'CNSS، CNOPS، AMO، القوات المسلحة الملكية، تأمين تكميلي: كيف يُبنى ملف التكفل بسمّاعة طبية بالمغرب، وما الوثائق المطلوبة وبأي ترتيب. AudioLik، الدار البيضاء.',
       h1: 'استرجاع مصاريف السماعات الطبية بالمغرب',
