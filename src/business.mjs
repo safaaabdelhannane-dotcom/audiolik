@@ -20,7 +20,7 @@ export const business = {
   districtAr: 'الأميرات، المعاريف',
   city: 'Casablanca',
   region: 'Casablanca-Settat',
-  postalCode: null,
+  postalCode: '20330',
   country: 'MA',
   plusCode: 'H9H2+7C Casablanca',
 
@@ -46,13 +46,15 @@ export const business = {
     'https://www.google.com/maps?q=33.5781357,-7.6489239&z=17&hl=fr&output=embed',
   mapsReviewUrl: null,
 
-  social: { facebook: null, instagram: 'https://www.instagram.com/audiolik/', linkedin: null },
+  social: { facebook: 'https://www.facebook.com/61591236111765/', instagram: 'https://www.instagram.com/audiolik/', linkedin: null },
 
   /* Fiches officielles hors site (même nom, adresse, téléphone). Servent de
      `sameAs` dans les données structurées : Google et les assistants IA
      relient ainsi le site, la fiche Google et l'annuaire à la même entreprise. */
   listings: [
     'https://www.telecontact.ma/annonceur/audiolik/9062799/casablanca.php',
+    'https://www.goafricaonline.com/ma/1203634-audiolik-audioprothesistes-casablanca-maroc',
+    'https://www.city-info.ma/casablanca/fr/org/3368567429/42904/',
   ],
 
   /* L'audioprothésiste du centre (nom et diplôme à afficher, sans photo —
