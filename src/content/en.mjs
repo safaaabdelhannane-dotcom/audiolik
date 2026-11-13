@@ -4,7 +4,7 @@ export default {
   dir: 'ltr',
 
   meta: {
-    title: 'AudioLik · Hearing Correction Centre in Casablanca, Les Princesses',
+    title: 'AudioLik · Hearing Aid Centre in Casablanca, Les Princesses',
     description:
       'Hearing aid specialist in Casablanca, Les Princesses (Maârif): Signia and Phonak hearing aids from MAD 5,000, try before you buy, unlimited fitting and follow-up. Call +212 522 39 37 98.',
     ogAlt: 'AudioLik, hearing correction centre in Casablanca',
