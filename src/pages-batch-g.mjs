@@ -21,7 +21,7 @@ export default [
     slug: 'lexique-audition-darija',
     fr: {
       kicker: 'Se comprendre',
-      title: "L'audition en darija : les mots pour en parler · AudioLik Casablanca",
+      title: "L'audition en darija : les mots pour en parler · AudioLik",
       description:
         "Smaa dial lwden, tanin, ma kansm3ch mzyan : le vocabulaire de l'audition en darija, en arabe et en français, pour expliquer ce que vous ressentez et comprendre ce qu'on vous répond.",
       h1: "Parler de son audition en darija",
@@ -218,7 +218,7 @@ export default [
     slug: 'acheter-appareil-auditif-occasion-internet',
     fr: {
       kicker: 'Avant d’acheter',
-      title: "Appareil auditif pas cher, d'occasion ou sur internet : ce qu'il faut savoir · AudioLik",
+      title: "Appareil auditif pas cher, d'occasion ou sur internet ?",
       description:
         "Appareil auditif d'occasion, amplificateur à bas prix, achat en ligne : ce qui fonctionne, ce qui ne fonctionne pas, et pourquoi un appareil non réglé ne sert à rien. AudioLik, Casablanca.",
       h1: "Appareil auditif pas cher, d'occasion ou acheté en ligne",
@@ -429,7 +429,7 @@ export default [
     slug: 'audioprothesiste-maarif-les-princesses',
     fr: {
       kicker: 'Nous trouver',
-      title: 'Audioprothésiste à Maârif, quartier Les Princesses · AudioLik Casablanca',
+      title: 'Audioprothésiste à Maârif, Les Princesses · Casablanca',
       description:
         "Un audioprothésiste à Maârif, quartier Les Princesses : adresse, accès, stationnement et quartiers desservis à Casablanca. Avec ou sans rendez-vous, chez AudioLik.",
       h1: 'Audioprothésiste à Maârif, quartier Les Princesses',
@@ -625,7 +625,7 @@ export default [
     slug: 'oreille-bouchee-cerumen',
     fr: {
       kicker: 'Comprendre',
-      title: 'Oreille bouchée et bouchon de cérumen : que faire · AudioLik Casablanca',
+      title: 'Oreille bouchée, bouchon de cérumen : que faire · AudioLik',
       description:
         "Oreille bouchée, sensation d'oreille pleine, bouchon de cérumen : les causes, ce qu'il ne faut surtout pas faire, et quand consulter un ORL. AudioLik, Casablanca.",
       h1: 'Oreille bouchée : les causes et ce qu’il faut faire',
