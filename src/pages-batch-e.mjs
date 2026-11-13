@@ -19,7 +19,7 @@ export default [
     slug: 'appareils-auditifs-signia',
     fr: {
       kicker: 'Les marques',
-      title: 'Appareils auditifs Signia à Casablanca : gammes et prix · AudioLik',
+      title: 'Appareils auditifs Signia à Casablanca : prix · AudioLik',
       description:
         "Appareils auditifs Signia (ex-Siemens) à Casablanca : formes, rechargeable, Bluetooth et prix indicatifs au Maroc, de 5 000 DH à Premium dès 14 000 DH par appareil. Essai et suivi chez AudioLik.",
       h1: 'Appareils auditifs Signia à Casablanca',
@@ -202,7 +202,7 @@ export default [
     slug: 'appareils-auditifs-phonak',
     fr: {
       kicker: 'Les marques',
-      title: 'Appareils auditifs Phonak à Casablanca : rechargeables, prix · AudioLik',
+      title: 'Appareils auditifs Phonak à Casablanca : prix · AudioLik',
       description:
         "Appareils auditifs Phonak à Casablanca : rechargeables, Bluetooth, discrets. Prix indicatifs au Maroc de 5 000 DH à Premium dès 14 000 DH par appareil. Essai et suivi chez AudioLik.",
       h1: 'Appareils auditifs Phonak à Casablanca',
@@ -257,7 +257,7 @@ export default [
     },
     ar: {
       kicker: 'العلامات',
-      title: 'أجهزة Phonak السمعية بالدار البيضاء: القابلة للشحن والأسعار · أوديوليك',
+      title: 'أجهزة Phonak السمعية بالدار البيضاء: الأسعار · أوديوليك',
       description:
         'أجهزة Phonak السمعية بالدار البيضاء: قابلة للشحن، بلوتوث، دقيقة. أسعار إرشادية بالمغرب من 5 000 درهم إلى بريميوم ابتداءً من 14 000 درهم للجهاز. التجربة والمتابعة لدى أوديوليك.',
       h1: 'أجهزة Phonak السمعية بالدار البيضاء',
@@ -312,7 +312,7 @@ export default [
     },
     en: {
       kicker: 'Brands',
-      title: 'Phonak Hearing Aids in Casablanca: Rechargeable, Prices · AudioLik',
+      title: 'Phonak Hearing Aids in Casablanca: Prices · AudioLik',
       description:
         'Phonak hearing aids in Casablanca: rechargeable, Bluetooth, discreet. Guide prices in Morocco from MAD 5,000 to Premium from MAD 14,000 per device. Trial and follow-up at AudioLik.',
       h1: 'Phonak hearing aids in Casablanca',
@@ -374,7 +374,7 @@ export default [
     slug: 'acouphenes',
     fr: {
       kicker: 'Comprendre',
-      title: 'Acouphènes : causes, traitement et quand consulter · AudioLik Casablanca',
+      title: 'Acouphènes : causes, traitement, quand consulter · AudioLik',
       description:
         "Sifflement, bourdonnement dans l'oreille : ce que sont les acouphènes, leurs causes, les solutions qui aident et les signes qui imposent de consulter un ORL. AudioLik, Casablanca.",
       h1: 'Acouphènes : comprendre et agir',
@@ -584,7 +584,7 @@ export default [
     slug: 'orl-ou-audioprothesiste',
     fr: {
       kicker: 'S’orienter',
-      title: 'ORL ou audioprothésiste à Maârif, Casablanca : qui consulter ? · AudioLik',
+      title: 'ORL ou audioprothésiste à Casablanca : qui consulter ?',
       description:
         "ORL ou audioprothésiste : qui voir en premier quand on entend moins bien ? Rôle de chacun, situations d'urgence, et comment les deux travaillent ensemble. AudioLik, Maârif, Casablanca.",
       h1: 'ORL ou audioprothésiste : qui consulter en premier ?',
@@ -636,7 +636,7 @@ export default [
     },
     ar: {
       kicker: 'التوجيه',
-      title: 'طبيب الأنف والأذن والحنجرة أم أخصائي السمعيات بالمعاريف؟ · أوديوليك',
+      title: 'طبيب الأنف والأذن والحنجرة أم أخصائي السمعيات؟ · أوديوليك',
       description:
         'طبيب الأنف والأذن والحنجرة أم أخصائي السمعيات: من تستشير أولًا حين يضعف سمعك؟ دور كل واحد، الحالات المستعجلة، وكيف يعمل الاثنان معًا. أوديوليك، المعاريف، الدار البيضاء.',
       h1: 'طبيب الأنف والأذن والحنجرة أم أخصائي السمعيات: من تستشير أولًا؟',
@@ -747,7 +747,7 @@ export default [
     slug: 'perte-auditive-personnes-agees',
     fr: {
       kicker: 'Pour vos parents',
-      title: 'Perte auditive des personnes âgées : signes et comment aider · AudioLik',
+      title: 'Perte auditive des personnes âgées : signes et comment aider',
       description:
         "Presbyacousie : les signes qu'un parent entend moins bien, comment lui en parler, et comment se passe un bilan auditif à Casablanca. AudioLik, Les Princesses.",
       h1: 'Perte auditive des personnes âgées : comment aider un parent',
