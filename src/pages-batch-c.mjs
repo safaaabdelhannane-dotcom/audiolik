@@ -315,7 +315,7 @@ export default [
     slug: 'appareils-auditifs-rechargeables-bluetooth',
     fr: {
       kicker: 'Nos solutions',
-      title: 'Appareils auditifs rechargeables et Bluetooth · AudioLik Casablanca',
+      title: 'Appareils auditifs rechargeables et Bluetooth · AudioLik',
       description:
         "Appareils auditifs rechargeables et connectés à Casablanca : fini les piles, appels et son de la télévision directement dans les appareils. AudioLik, Les Princesses, Maârif.",
       h1: 'Rechargeables et connectés',
@@ -479,7 +479,7 @@ export default [
     slug: 'entretien-et-reparation-appareils-auditifs',
     fr: {
       kicker: 'Au quotidien',
-      title: "Entretien et réparation d'appareils auditifs · AudioLik Casablanca",
+      title: "Entretien et réparation d'appareils auditifs · AudioLik",
       description:
         "Nettoyage, changement des filtres, dépannage et réparation d'appareils auditifs à Casablanca. Piles, pastilles déshydratantes et embouts de rechange chez AudioLik.",
       h1: "Entretien et réparation d'appareils auditifs",
