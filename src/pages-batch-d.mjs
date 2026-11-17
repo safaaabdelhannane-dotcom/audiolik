@@ -281,7 +281,7 @@ export const batchD = [
       faq: [
         {
           q: 'Combien serai-je remboursé exactement ?',
-          a: "Nous ne donnons pas de chiffre, et méfiez-vous des sites qui en affichent un : le montant dépend de votre régime, du tarif de référence en vigueur, du nombre d'oreilles appareillées et de votre couverture complémentaire. Votre caisse est la seule à pouvoir vous le confirmer, formulaire en main.",
+          a: "Pour l'AMO, le forfait appliqué aujourd'hui est d'environ *3 500 DH par appareil* — c'est un ordre de grandeur, pas une promesse : il évolue, et le montant réellement versé dépend de votre régime, du tarif de référence en vigueur, du nombre d'oreilles appareillées et de votre couverture complémentaire. Votre caisse est la seule à pouvoir vous le confirmer, formulaire en main.",
         },
         {
           q: "Puis-je acheter l'appareil d'abord et demander le remboursement après ?",
@@ -365,7 +365,7 @@ export const batchD = [
       faq: [
         {
           q: 'كم سأسترجع بالضبط؟',
-          a: 'لا نعطي رقمًا، وكن حذرًا من المواقع التي تعرض رقمًا: المبلغ يتوقّف على نظامك، وعلى التعريفة المرجعية الجاري بها العمل، وعلى عدد الآذان المجهّزة، وعلى تغطيتك التكميلية. صندوقك وحده من يؤكّده لك، والاستمارة بين يديك.',
+          a: 'بالنسبة للتأمين الإجباري الأساسي عن المرض (AMO)، المبلغ المعتمد اليوم هو حوالي *3500 درهم للجهاز* — وهو مؤشّر تقريبي لا وعد: فهو يتغيّر، والمبلغ المسترجع فعليًا يتوقّف على نظامك، وعلى التعريفة المرجعية الجاري بها العمل، وعلى عدد الآذان المجهّزة، وعلى تغطيتك التكميلية. صندوقك وحده من يؤكّده لك، والاستمارة بين يديك.',
         },
         {
           q: 'هل يمكنني شراء السمّاعة أولًا وطلب الاسترجاع لاحقًا؟',
@@ -449,7 +449,7 @@ export const batchD = [
       faq: [
         {
           q: 'Exactly how much will I get back?',
-          a: 'We do not quote a figure, and be wary of sites that do: the amount depends on your scheme, the reference tariff in force, how many ears are fitted, and your top-up cover. Your fund is the only one that can confirm it, form in hand.',
+          a: 'Under the basic AMO scheme the flat rate applied today is around *MAD 3,500 per device* — an order of magnitude, not a promise: it changes, and what you actually receive depends on your scheme, the reference tariff in force, how many ears are fitted, and your top-up cover. Your fund is the only one that can confirm it, form in hand.',
         },
         {
           q: 'Can I buy the device first and claim afterwards?',
