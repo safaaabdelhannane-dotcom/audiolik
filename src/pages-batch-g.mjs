@@ -481,7 +481,7 @@ export default [
         },
         {
           q: 'Vous déplacez-vous à domicile ?',
-          a: 'Une visite à domicile est possible pour les personnes qui ne peuvent pas se déplacer. Appelez le centre pour en convenir.',
+          a: 'Une visite à domicile est possible uniquement pour les réglages, pour les personnes qui ne peuvent pas se déplacer. Le bilan et le premier appareillage se font au centre, où se trouvent la cabine insonorisée et les appareils de mesure. Appelez le centre pour en convenir.',
         },
       ],
       related: [
@@ -544,7 +544,7 @@ export default [
         },
         {
           q: 'واش كتجيو للدار؟',
-          a: 'الزيارة فالدار ممكنة للي ما قادرينش يتحركو. عيّط للمركز باش نتافقو.',
+          a: 'الزيارة فالدار ممكنة غير للضبط، للي ما قادرينش يتحركو. أما فحص السمع وتركيب الجهاز لأول مرة فكيتدارو فالمركز، حيث كاينة القاعة المعزولة وأجهزة القياس. عيّط للمركز باش نتافقو.',
         },
       ],
       related: [
@@ -607,7 +607,7 @@ export default [
         },
         {
           q: 'Do you make home visits?',
-          a: 'A home visit is possible for people who cannot travel. Call the centre to arrange one.',
+          a: 'A home visit is possible for adjustments only, for people who cannot travel. The assessment and the first fitting take place at the centre, where the soundproof booth and the measuring equipment are. Call the centre to arrange one.',
         },
       ],
       related: [
