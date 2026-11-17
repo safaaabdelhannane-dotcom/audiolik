@@ -55,7 +55,7 @@ export default [
         {
           h2: 'Si vous portez déjà une autre marque',
           p: [
-            "Apportez votre appareil : le nettoyage et le dépannage se font sur place pour *Signia* et *Phonak*, même si l'appareil n'a pas été acheté chez nous. Pour les autres marques, nous regardons au cas par cas ce qui est possible ; les appareils *ReSound* ne sont pas pris en charge au centre. Pour le réglage, cela dépend du modèle et de son âge — certains appareils se reprogramment, d'autres ne sont plus reconnus par les logiciels actuels. Voir l'[entretien et la réparation](/entretien-et-reparation-appareils-auditifs/).",
+            "Apportez votre appareil : le nettoyage et le dépannage se font sur place pour *Signia* et *Phonak*, même si l'appareil n'a pas été acheté chez nous. Pour les autres marques, nous regardons au cas par cas ce qui est possible : certaines ne sont pas prises en charge du tout. Pour le réglage, cela dépend du modèle et de son âge — certains appareils se reprogramment, d'autres ne sont plus reconnus par les logiciels actuels. Voir l'[entretien et la réparation](/entretien-et-reparation-appareils-auditifs/).",
           ],
         },
         {
@@ -76,7 +76,7 @@ export default [
         },
         {
           q: 'Vendez-vous Oticon, Widex ou Starkey ?',
-          a: "Nous appareillons avec Signia et Phonak, et nous assurons leur nettoyage et leur dépannage même s'ils n'ont pas été achetés chez nous. Pour les autres marques, nous regardons au cas par cas ce qui est possible, au nettoyage comme au réglage ; les appareils ReSound ne sont pas pris en charge.",
+          a: "Nous appareillons avec Signia et Phonak, et nous assurons leur nettoyage et leur dépannage même s'ils n'ont pas été achetés chez nous. Pour les autres marques, nous regardons au cas par cas ce qui est possible, au nettoyage comme au réglage : certaines ne sont pas prises en charge.",
         },
         {
           q: 'Une marque européenne est-elle meilleure qu’une américaine ?',
@@ -125,7 +125,7 @@ export default [
         {
           h2: 'إلى كنتي لابس علامة أخرى',
           p: [
-            'جيب الجهاز ديالك: التنظيف والإصلاح كيتمّو فعين المكان لأجهزة *Signia* و*Phonak*، حتى إلى ما تشراوش عندنا. أما العلامات الأخرى فكنشوفو حالة بحالة أشنو ممكن، وأجهزة *ReSound* ما كناخدوهاش فالمركز. أما الضبط فكيتوقف على الطراز وعمرو — شي أجهزة كتعاود تتبرمج، وشي أخرى ما بقاتش كتعرفها البرامج الحالية. شوف [الصيانة والإصلاح](/ar/entretien-et-reparation-appareils-auditifs/).',
+            'جيب الجهاز ديالك: التنظيف والإصلاح كيتمّو فعين المكان لأجهزة *Signia* و*Phonak*، حتى إلى ما تشراوش عندنا. أما العلامات الأخرى فكنشوفو حالة بحالة أشنو ممكن، وكاينة شي علامات ما كناخدوهاش أصلاً. أما الضبط فكيتوقف على الطراز وعمرو — شي أجهزة كتعاود تتبرمج، وشي أخرى ما بقاتش كتعرفها البرامج الحالية. شوف [الصيانة والإصلاح](/ar/entretien-et-reparation-appareils-auditifs/).',
           ],
         },
         {
@@ -146,7 +146,7 @@ export default [
         },
         {
           q: 'واش كتبيعو Oticon ولا Widex ولا Starkey؟',
-          a: 'كنأعملو بـSignia وPhonak، وكنضمنو ليهم التنظيف والإصلاح حتى إلى ما تشراوش عندنا. أما العلامات الأخرى فكنشوفو حالة بحالة أشنو ممكن، فالتنظيف وفالضبط؛ وأجهزة ReSound ما كناخدوهاش.',
+          a: 'كنأعملو بـSignia وPhonak، وكنضمنو ليهم التنظيف والإصلاح حتى إلى ما تشراوش عندنا. أما العلامات الأخرى فكنشوفو حالة بحالة أشنو ممكن، فالتنظيف وفالضبط؛ وكاينة شي علامات ما كناخدوهاش أصلاً.',
         },
         {
           q: 'واش العلامة الأوروبية خير من الأمريكية؟',
@@ -195,7 +195,7 @@ export default [
         {
           h2: 'If you already wear another brand',
           p: [
-            'Bring your device in: cleaning and repairs are handled on site for *Signia* and *Phonak*, even if the device was bought elsewhere. For other brands we look case by case at what is possible; *ReSound* devices are not serviced at the centre. Reprogramming depends on the model and its age — some devices can still be adjusted, others are no longer supported by current software. See [servicing and repairs](/en/entretien-et-reparation-appareils-auditifs/).',
+            'Bring your device in: cleaning and repairs are handled on site for *Signia* and *Phonak*, even if the device was bought elsewhere. For other brands we look case by case at what is possible: some are not serviced at all. Reprogramming depends on the model and its age — some devices can still be adjusted, others are no longer supported by current software. See [servicing and repairs](/en/entretien-et-reparation-appareils-auditifs/).',
           ],
         },
         {
@@ -216,7 +216,7 @@ export default [
         },
         {
           q: 'Do you sell Oticon, Widex or Starkey?',
-          a: 'We fit Signia and Phonak, and we clean and repair them even when they were bought elsewhere. For other brands we look case by case at what is possible, for servicing as well as fitting; ReSound devices are not serviced at the centre.',
+          a: 'We fit Signia and Phonak, and we clean and repair them even when they were bought elsewhere. For other brands we look case by case at what is possible, for servicing as well as fitting: some are not serviced at all.',
         },
         {
           q: 'Is a European brand better than an American one?',
