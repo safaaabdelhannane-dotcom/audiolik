@@ -224,7 +224,7 @@ export default [
         {
           h2: 'Prix d’un appareil auditif Phonak au Maroc',
           p: [
-            "Chez AudioLik, le prix suit le niveau technologique, quelle que soit la marque, par appareil : *Essentiel* à partir de 5 000 DH, *Confort* de 7 000 à 12 000 DH, *Premium* à partir de 14 000 DH. Les modèles rechargeables se trouvent à partir de la gamme Confort, selon le modèle. Le détail est sur la [carte tarifaire](/prix-appareil-auditif-maroc/).",
+            "Chez AudioLik, le prix suit le niveau technologique, quelle que soit la marque, par appareil : *Essentiel* à partir de 5 000 DH, *Confort* de 7 000 à 12 000 DH, *Premium* à partir de 14 000 DH. Des modèles rechargeables existent selon les gammes et les références du moment. Le détail est sur la [carte tarifaire](/prix-appareil-auditif-maroc/).",
             "Le modèle précis est choisi après le bilan, avec un devis détaillé. Rien n'est signé le jour même.",
           ],
         },
@@ -238,7 +238,7 @@ export default [
       faq: [
         {
           q: 'Combien coûte un Phonak rechargeable au Maroc ?',
-          a: "Les appareils rechargeables se trouvent à partir de la gamme Confort (7 000 à 12 000 DH par appareil) et en Premium (à partir de 14 000 DH), selon le modèle. Le prix exact figure sur le devis remis après le bilan.",
+          a: "Des modèles rechargeables existent selon les gammes et les références du moment ; demandez au centre lesquels conviennent à votre perte auditive. Le prix exact figure sur le devis remis après le bilan.",
         },
         {
           q: 'Phonak ou Signia : lequel choisir ?',
@@ -279,7 +279,7 @@ export default [
         {
           h2: 'سعر جهاز Phonak السمعي بالمغرب',
           p: [
-            'في أوديوليك، يتبع السعر المستوى التقني أيًّا كانت العلامة، للجهاز الواحد: *الأساسية* ابتداءً من 5 000 درهم، *الراحة* من 7 000 إلى 12 000 درهم، *بريميوم* ابتداءً من 14 000 درهم. الطرازات القابلة للشحن متوفّرة ابتداءً من فئة الراحة، حسب الطراز. التفاصيل في [جدول الأسعار](/ar/prix-appareil-auditif-maroc/).',
+            'في أوديوليك، يتبع السعر المستوى التقني أيًّا كانت العلامة، للجهاز الواحد: *الأساسية* ابتداءً من 5 000 درهم، *الراحة* من 7 000 إلى 12 000 درهم، *بريميوم* ابتداءً من 14 000 درهم. الطرازات القابلة للشحن متوفّرة حسب الفئات والطرازات المتاحة في حينه. التفاصيل في [جدول الأسعار](/ar/prix-appareil-auditif-maroc/).',
             'يُختار الطراز الدقيق بعد الفحص، مع عرض سعر مفصّل. ولا توقيع في اليوم نفسه.',
           ],
         },
@@ -293,7 +293,7 @@ export default [
       faq: [
         {
           q: 'كم يكلّف جهاز Phonak قابل للشحن بالمغرب؟',
-          a: 'الأجهزة القابلة للشحن متوفّرة ابتداءً من فئة الراحة (7 000 إلى 12 000 درهم للجهاز) وفي فئة بريميوم (ابتداءً من 14 000 درهم)، حسب الطراز. السعر الدقيق يُذكر في عرض السعر بعد الفحص.',
+          a: 'الأجهزة القابلة للشحن متوفّرة حسب الفئات والطرازات المتاحة في حينه؛ سَل المركز على اللي مناسب لحالة سمعك. السعر الدقيق يُذكر في عرض السعر بعد الفحص.',
         },
         {
           q: 'Phonak أم Signia: أيّهما أختار؟',
@@ -334,7 +334,7 @@ export default [
         {
           h2: 'Phonak hearing aid prices in Morocco',
           p: [
-            'At AudioLik the price follows the technology level, whatever the brand, per device: *Essential* from MAD 5,000, *Comfort* MAD 7,000 to 12,000, *Premium* from MAD 14,000. Rechargeable models start from the Comfort range, depending on the model. Details are on the [price list](/en/prix-appareil-auditif-maroc/).',
+            'At AudioLik the price follows the technology level, whatever the brand, per device: *Essential* from MAD 5,000, *Comfort* MAD 7,000 to 12,000, *Premium* from MAD 14,000. Rechargeable models are available depending on the range and on what is in stock at the time. Details are on the [price list](/en/prix-appareil-auditif-maroc/).',
             'The exact model is chosen after the assessment, with a detailed quote. Nothing is signed on the day.',
           ],
         },
@@ -348,7 +348,7 @@ export default [
       faq: [
         {
           q: 'How much is a rechargeable Phonak in Morocco?',
-          a: 'Rechargeable devices start from the Comfort range (MAD 7,000 to 12,000 per device) and are available in Premium (from MAD 14,000), depending on the model. The exact price is on the quote given after the assessment.',
+          a: 'Rechargeable models are available depending on the range and on what is in stock at the time; ask the centre which ones suit your hearing loss. The exact price is on the quote given after the assessment.',
         },
         {
           q: 'Phonak or Signia: which should I choose?',
