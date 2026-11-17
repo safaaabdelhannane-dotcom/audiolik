@@ -38,7 +38,7 @@ export default [
         {
           h2: 'Votre audioprothésiste',
           p: [
-            "Les bilans, l'appareillage et le suivi sont assurés par Safaa Soulimani Abdelhannane, audioprothésiste diplômée d'une université de Madrid, en exercice depuis 2023.",
+            "Les bilans, l'appareillage et le suivi sont assurés par Safaa Soulimani Abdelhannane, audioprothésiste diplômée d'une université de Madrid.",
             "AudioLik travaille en lien avec les médecins ORL. L'audioprothésiste mesure l'audition, choisit, adapte et règle l'appareil, puis assure le suivi ; le diagnostic et le traitement des maladies de l'oreille restent le rôle du médecin, vers qui nous vous orientons dès qu'un signe le justifie.",
           ],
         },
@@ -103,7 +103,7 @@ export default [
         {
           h2: 'أخصائية السمعيات لديكم',
           p: [
-            'يتولّى فحص السمع وتركيب الأجهزة والمتابعة Safaa Soulimani Abdelhannane، أخصائية سمعيات حاصلة على شهادتها من جامعة في مدريد، وتمارس المهنة منذ 2023.',
+            'يتولّى فحص السمع وتركيب الأجهزة والمتابعة Safaa Soulimani Abdelhannane، أخصائية سمعيات حاصلة على شهادتها من جامعة في مدريد.',
             'يعمل أوديوليك بتنسيق مع أطباء الأنف والأذن والحنجرة. تقيس أخصائية السمعيات السمع، وتختار الجهاز وتكيّفه وتضبطه، ثم تتولّى المتابعة؛ أما تشخيص أمراض الأذن وعلاجها فيبقيان من اختصاص الطبيب، ونوجّهك إليه كلما استدعت علامةٌ ذلك.',
           ],
         },
@@ -163,7 +163,7 @@ export default [
         {
           h2: 'Your hearing aid specialist',
           p: [
-            'Assessments, fittings and follow-up are carried out by Safaa Soulimani Abdelhannane, a hearing aid specialist who graduated from a university in Madrid and has been practising since 2023.',
+            'Assessments, fittings and follow-up are carried out by Safaa Soulimani Abdelhannane, a hearing aid specialist who graduated from a university in Madrid.',
             'AudioLik works alongside ENT doctors. The hearing aid specialist measures your hearing, chooses, fits and adjusts the device, then provides follow-up; diagnosing and treating ear conditions remains the doctor’s role, and we refer you to one whenever a sign calls for it.',
           ],
         },
