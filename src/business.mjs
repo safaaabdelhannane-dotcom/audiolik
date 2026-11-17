@@ -219,9 +219,9 @@ export function audiologistSchema(lang = 'fr') {
   if (!A || !A.name) return null;
   const jobTitle = { fr: 'Audioprothésiste', ar: 'أخصائية السمعيات', en: 'Hearing aid specialist' }[lang];
   const description = {
-    fr: `Audioprothésiste diplômée d'une université de ${A.trainedIn}, en exercice depuis ${A.since}.`,
-    ar: `أخصائية سمعيات حاصلة على شهادتها من جامعة في ${A.trainedIn === 'Madrid' ? 'مدريد' : A.trainedIn}، تمارس المهنة منذ ${A.since}.`,
-    en: `Hearing aid specialist who graduated from a university in ${A.trainedIn}, practising since ${A.since}.`,
+    fr: `Audioprothésiste diplômée d'une université de ${A.trainedIn}.`,
+    ar: `أخصائية سمعيات حاصلة على شهادتها من جامعة في ${A.trainedIn === 'Madrid' ? 'مدريد' : A.trainedIn}.`,
+    en: `Hearing aid specialist who graduated from a university in ${A.trainedIn}.`,
   }[lang];
   return {
     '@type': 'Person',
