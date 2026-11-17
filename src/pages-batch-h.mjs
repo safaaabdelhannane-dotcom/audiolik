@@ -26,17 +26,13 @@ export default [
         "Signia, Phonak, Oticon, Widex, Starkey, ReSound, Siemens : qui fabrique quoi, ce qui change vraiment d'une marque à l'autre, et ce qui compte davantage que le logo. AudioLik, Casablanca.",
       h1: "Les marques d'appareils auditifs : s'y retrouver",
       lede:
-        "Six groupes fabriquent la quasi-totalité des appareils auditifs vendus dans le monde, sous une quinzaine de marques. Voici qui est qui, ce qui les distingue réellement, et pourquoi le choix de la marque arrive en dernier.",
+        "Six groupes fabriquent la quasi-totalité des appareils auditifs vendus dans le monde, sous une quinzaine de marques. Voici ce qui les distingue réellement, et pourquoi le choix de la marque arrive en dernier.",
       sections: [
         {
-          h2: 'Qui fabrique quoi',
-          list: [
-            '*Sonova* (Suisse) : Phonak, Unitron, Hansaton',
-            '*WS Audiology* : Signia — qui a pris la suite des appareils auditifs Siemens — ainsi que Widex, Rexton et Audio Service',
-            '*Demant* (Danemark) : Oticon, Bernafon, Philips Hearing Solutions',
-            '*GN* (Danemark) : Beltone, Jabra Enhance',
-            '*Starkey* (États-Unis) : Starkey',
-            '*Amplifon*, *Audika* et les enseignes de ce type ne sont pas des fabricants mais des réseaux de magasins',
+          h2: 'Une poignée de fabricants, une quinzaine de marques',
+          p: [
+            "La quasi-totalité des appareils auditifs vendus dans le monde sort de six groupes industriels, qui les commercialisent sous une quinzaine de marques différentes. Deux appareils aux logos opposés peuvent donc venir de la même usine, avec la même puce et un traitement du son très voisin.",
+            "S'y ajoutent les enseignes à vitrines, qui ne fabriquent rien : ce sont des réseaux de magasins. Savoir qui appartient à qui aide à lire le marché, mais ne vous dira jamais quel appareil vous conviendra : cela se décide après le [bilan auditif](/bilan-auditif-casablanca/), pas devant un catalogue.",
           ],
         },
         {
@@ -75,7 +71,7 @@ export default [
           a: "L'activité audiologie de Siemens est devenue Signia. Si vous portiez un Siemens, Signia en est la suite directe.",
         },
         {
-          q: 'Vendez-vous Oticon, Widex ou Starkey ?',
+          q: 'Vendez-vous d’autres marques que Signia et Phonak ?',
           a: "Nous appareillons avec Signia et Phonak, et nous assurons leur nettoyage et leur dépannage même s'ils n'ont pas été achetés chez nous. Pour les autres marques, nous regardons au cas par cas ce qui est possible, au nettoyage comme au réglage : certaines ne sont pas prises en charge.",
         },
         {
@@ -96,17 +92,13 @@ export default [
         'Signia، Phonak، Oticon، Widex، Starkey، ReSound، سيمنس: شكون كيصنع أشنو، أشنو كيتبدّل فعلًا بين علامة وأخرى، وأشنو أهمّ من الشعار. أوديوليك، الدار البيضاء.',
       h1: 'علامات الأجهزة السمعية: كيفاش تفهم الفرق',
       lede:
-        'ستّ مجموعات كتصنع تقريبًا كل الأجهزة السمعية فالعالم، تحت خمسطاش علامة. هاك شكون هو شكون، وأشنو كيفرّق بيناتهم بصحّ، وعلاش اختيار العلامة كيجي فالأخير.',
+        'ستّ مجموعات كتصنع تقريبًا كل الأجهزة السمعية فالعالم، تحت خمسطاش علامة. هاك أشنو كيفرّق بيناتهم بصحّ، وعلاش اختيار العلامة كيجي فالأخير.',
       sections: [
         {
-          h2: 'شكون كيصنع أشنو',
-          list: [
-            '*Sonova* (سويسرا): Phonak، Unitron، Hansaton',
-            '*WS Audiology*: Signia — اللي خدات مكان أجهزة سيمنس — وكذلك Widex وRexton وAudio Service',
-            '*Demant* (الدانمارك): Oticon، Bernafon، Philips Hearing Solutions',
-            '*GN* (الدانمارك): Beltone، Jabra Enhance',
-            '*Starkey* (الولايات المتحدة): Starkey',
-            '*Amplifon* و*Audika* وأمثالهم ماشي شركات صناعة، ولكن شبكات ديال المحلات',
+          h2: 'شي حفنة ديال المصنّعين، وخمسطاش علامة',
+          p: [
+            'تقريبًا كل الأجهزة السمعية اللي كتّباع فالعالم كتخرج من ستّ مجموعات صناعية، وكيبيعوها تحت خمسطاش علامة مختلفة. يعني جوج أجهزة بشعارين مختلفين يمكن يخرجو من نفس المصنع، بنفس الشريحة وبمعالجة للصوت قريبة بزاف.',
+            'وكاينين حتى الشبكات ديال المحلات، اللي ما كيصنعو والو: غير نقط بيع. معرفة شكون تابع لشكون كتعاون باش تفهم السوق، ولكن عمرها تقول ليك أشنو الجهاز اللي يناسبك: هادشي كيتقرّر من بعد [فحص السمع](/ar/bilan-auditif-casablanca/)، ماشي قدّام كاطالوݣ.',
           ],
         },
         {
@@ -145,7 +137,7 @@ export default [
           a: 'نشاط سيمنس فالسمع ولّا Signia. إلى كنتي لابس سيمنس، فـSignia هي الامتداد المباشر ديالو.',
         },
         {
-          q: 'واش كتبيعو Oticon ولا Widex ولا Starkey؟',
+          q: 'واش كتبيعو علامات أخرى غير Signia وPhonak؟',
           a: 'كنأعملو بـSignia وPhonak، وكنضمنو ليهم التنظيف والإصلاح حتى إلى ما تشراوش عندنا. أما العلامات الأخرى فكنشوفو حالة بحالة أشنو ممكن، فالتنظيف وفالضبط؛ وكاينة شي علامات ما كناخدوهاش أصلاً.',
         },
         {
@@ -166,17 +158,13 @@ export default [
         'Signia, Phonak, Oticon, Widex, Starkey, ReSound, Siemens: who makes what, what really differs between brands, and what matters more than the logo. AudioLik, Casablanca.',
       h1: 'Hearing aid brands: making sense of them',
       lede:
-        'Six groups make almost every hearing aid sold worldwide, under about fifteen brand names. Here is who is who, what genuinely separates them, and why the brand is the last thing to decide.',
+        'Six groups make almost every hearing aid sold worldwide, under about fifteen brand names. Here is what genuinely separates them, and why the brand is the last thing to decide.',
       sections: [
         {
-          h2: 'Who makes what',
-          list: [
-            '*Sonova* (Switzerland): Phonak, Unitron, Hansaton',
-            '*WS Audiology*: Signia — successor to Siemens hearing aids — plus Widex, Rexton and Audio Service',
-            '*Demant* (Denmark): Oticon, Bernafon, Philips Hearing Solutions',
-            '*GN* (Denmark): Beltone, Jabra Enhance',
-            '*Starkey* (United States): Starkey',
-            '*Amplifon*, *Audika* and similar names are retail chains, not manufacturers',
+          h2: 'A handful of manufacturers, about fifteen brands',
+          p: [
+            'Almost every hearing aid sold worldwide comes out of six industrial groups, which market them under about fifteen different brand names. Two devices with opposing logos can therefore come from the same factory, with the same chip and very similar sound processing.',
+            'Add the high-street chains, which manufacture nothing: they are retail networks. Knowing who belongs to whom helps you read the market, but it will never tell you which device suits you — that is decided after the [hearing assessment](/en/bilan-auditif-casablanca/), not in front of a catalogue.',
           ],
         },
         {
@@ -215,7 +203,7 @@ export default [
           a: 'The Siemens audiology business became Signia. If you wore a Siemens, Signia is its direct successor.',
         },
         {
-          q: 'Do you sell Oticon, Widex or Starkey?',
+          q: 'Do you fit brands other than Signia and Phonak?',
           a: 'We fit Signia and Phonak, and we clean and repair them even when they were bought elsewhere. For other brands we look case by case at what is possible, for servicing as well as fitting: some are not serviced at all.',
         },
         {
