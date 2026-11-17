@@ -345,7 +345,7 @@ export default [
         {
           h2: "Prix d’un appareil auditif rechargeable au Maroc",
           p: [
-            "Chez AudioLik, les appareils rechargeables se trouvent à partir de la gamme Confort (7 000 à 12 000 DH par appareil) et en Premium (à partir de 14 000 DH), selon le modèle. À niveau égal, un rechargeable coûte un peu plus cher à l'achat, mais vous n'achetez plus de piles.",
+            "Chez AudioLik, des modèles rechargeables existent selon les gammes et les références du moment : demandez au centre lesquels sont disponibles pour votre perte auditive, le devis les chiffre précisément. À niveau égal, un rechargeable coûte un peu plus cher à l'achat, mais vous n'achetez plus de piles.",
             "Le détail est sur la [carte tarifaire](/prix-appareil-auditif-maroc/), et nos pages [Phonak](/appareils-auditifs-phonak/) et [Signia](/appareils-auditifs-signia/) présentent les deux marques avec lesquelles nous appareillons.",
           ],
         },
@@ -398,7 +398,7 @@ export default [
         {
           h2: "سعر الجهاز السمعي القابل للشحن بالمغرب",
           p: [
-            "في أوديوليك، الأجهزة القابلة للشحن متوفّرة ابتداءً من فئة الراحة (7 000 إلى 12 000 درهم للجهاز) وفي فئة بريميوم (ابتداءً من 14 000 درهم)، حسب الطراز. عند المستوى نفسه، الجهاز القابل للشحن أغلى قليلًا عند الشراء، لكنك لا تشتري البطاريات بعد ذلك.",
+            "في أوديوليك، الأجهزة القابلة للشحن متوفّرة حسب الفئات والطرازات المتاحة في حينه: اسأل المركز عن المتوفّر منها لحالتك، وعرض السعر يحدّد ثمنها بدقّة. عند المستوى نفسه، الجهاز القابل للشحن أغلى قليلًا عند الشراء، لكنك لا تشتري البطاريات بعد ذلك.",
             "التفاصيل في [جدول الأسعار](/ar/prix-appareil-auditif-maroc/)، وصفحتا [Phonak](/ar/appareils-auditifs-phonak/) و[Signia](/ar/appareils-auditifs-signia/) تعرّفان بالعلامتين اللتين نعتمدهما.",
           ],
         },
@@ -451,7 +451,7 @@ export default [
         {
           h2: "Rechargeable hearing aid prices in Morocco",
           p: [
-            "At AudioLik, rechargeable devices start from the Comfort range (MAD 7,000 to 12,000 per device) and are available in Premium (from MAD 14,000), depending on the model. At the same level, a rechargeable costs a little more to buy, but you no longer buy batteries.",
+            "At AudioLik, rechargeable models are available depending on the range and on what is in stock at the time: ask the centre which ones suit your hearing loss, and the quote will price them exactly. At the same level, a rechargeable costs a little more to buy, but you no longer buy batteries.",
             "Details are on the [price list](/en/prix-appareil-auditif-maroc/), and our [Phonak](/en/appareils-auditifs-phonak/) and [Signia](/en/appareils-auditifs-signia/) pages present the two brands we fit.",
           ],
         },
